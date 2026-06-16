@@ -1,0 +1,42 @@
+= How to Contribute
+:toc:
+
+New formats and corrections are welcome via pull request. This guide covers how
+to add an entry and the registry's conventions; see `SCHEMA.adoc` for the full
+normative schema.
+
+== Adding a new format
+
+**New formats are welcome via pull request.** To add one:
+
+. Read `SCHEMA.adoc` — it defines the identity and feature triples, the
+  `format:` / `model:` namespaces, versioning (`..version of..`), sub-formats
+  (`..subformat of..`), and the ddot `,,` metadata syntax.
+. Create `formats/<family>/<format-id>.adoc`. Follow an existing entry such as
+  `formats/dot/dot.adoc` (a complete worked example) for structure: a `= Title`,
+  `:toc:`, a prose summary, an `== Identity` block, an `== Features` block scored
+  against `graph-features.adoc`, and an `== References` section with clickable
+  links to the spec and any related formats.
+. Prefer a real, citable `..spec..` URL. Add `..wikipedia..` / `..wikidata..`
+  only when an entry for the *format itself* exists (not the general concept).
+. If a tool reads or writes the format, add or update its entry in `tools.adoc`
+  with `..reads..` / `..writes.. format:<id>` and link back to it from the
+  format's prose.
+. Add a row (or note) to `catalog.adoc` so the index stays complete.
+. Open a pull request describing the format and citing your sources.
+
+Corrections to existing entries — features, specs, tool coverage — are equally
+welcome as pull requests.
+
+== Conventions in brief
+
+* Filenames stay the bare slug (`graphml-1.1.adoc`); only the ddot subject is
+  namespaced (`format:graphml-1.1`).
+* Versioned formats put the version in the id and link to their family with
+  `..version of..`; umbrella languages (Mermaid, PlantUML) split into
+  `..subformat of..` entries.
+* Triple metadata goes after `,,`: a single note inline
+  (`... ,, Free-text note`), or — for several items — a block opened and closed
+  by `,,` with one item per line.
+
+See `SCHEMA.adoc` for the full details.

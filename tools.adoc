@@ -380,6 +380,7 @@ ucinet ..writes.. format:dl
 
 * Wikidata: https://www.wikidata.org/wiki/Q126084698[Q126084698]
 
+[#_pajek]
 == Pajek
 
 Software for analysis and visualization of very large networks; reads and writes

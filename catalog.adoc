@@ -1,189 +1,134 @@
 = Format Catalog
 
-Every format and model we currently know, with its identity fields as found in
-the Connected JSON source (`cc-gio-ui/src/lib/data/format-*.json`). This is the
-working sheet for **fixing and homogenizing ids**. Each entry lives at
+Every format and model we currently know, with its identity fields as found in the Connected JSON source (`cc-gio-ui/src/lib/data/format-*.json`).
+This is the working sheet for **fixing and homogenizing ids**.
+Each entry lives at
 `formats/<family>/<format-id>.adoc`.
 
 Columns:
 
-* *format-id* — the canonical slug; becomes the AsciiDoc filename (`<format-id>.adoc`). The ddot subject is the slug qualified into the `format:` namespace (e.g. `format:adjlist`); the filename stays the bare slug. Includes the version suffix where the format has one.
+* *format-id* — the canonical slug.
+Without `format:` it becomes the AsciiDoc filename (`<format-id>.adoc`).
+Includes the version suffix where the format has one.
 * *version* — spec version, when the format has one.
 * *released* — release date of that version, ISO 8601 (partial like `2025-04` allowed); blank = unknown.
-* *type* — `format` (a serialisation) or `model` (a conceptual model, not a serialisation).
 * *cat* — category: `text` | `json` | `xml`.
 * *label* — display label.
 * *alt names* — alternative names.
-* *source* — source JSON file.
 
-[cols="1,1,1,1,1,2,2,2",options="header"]
+Formats and models are listed separately below — a *model* is a conceptual graph model, not a serialisation, and its ddot subject uses the `model:` namespace.
+
+== Formats
+
+[cols="3m,1,1,1e,3,4",options="header"]
 |===
-| format-id | version | released | type | cat | label | alt names | source
+| format-id | version | released | cat | label | alt names
 
-| adjlist            |       |            | format | text | Adjacency List (NetworkX) |                                              | format-adjlist.json
-| biogrid-tab-3.0    | 3.0   |            | format | text | BioGRID Tab 3.0           |                                              | format-biogrid-tab.json
-| chaco              |       |            | format | text | Chaco                     |                                              | format-chaco.json
-| connected-json-8.0.0 | 8.0.0 |          | format | json | Connected JSON            | CJ                                           | format-cj.json
-| cytoscape-json     |       |            | format | json | CytoScape JSON            |                                              | format-cytoscape-json.json
-| dl                 |       |            | format | text | UCINET DL                 |                                              | format-dl.json
-| dot                |       |            | format | text | DOT (GraphViz)            | GraphViz                                     | format-dot.json
-| edge-list          |       |            | format | text | Edge List                 |                                              | format-edge-list.json
-| gdf                |       |            | format | text | GDF                       | Graph Data Format, Graph Description Format  | format-gdf.json
-| gexf-1.3           | 1.3   |            | format | xml  | GEXF                      | Graph Exchange XML Format                    | format-gexf.json
-| gjgf-0.1           | 0.1   |            | format | json | gJGF                      | gravis JSON Graph Format                     | format-gjgf.json
-| gml                |       |            | format | text | GML                       | Graph Modelling Language                     | format-gml.json
-| grale-v1           | 1.0.0 | 2026-06-16 | format | json | grale                     | Graph Layout Engine API                      | (new, via graph-layout-api)
-| graph6             |       |            | format | text | Graph6                    |                                              | format-graph6.json
-| harwell-boeing     |       | 1982       | format | text | Harwell-Boeing            | HB                                           | (new, via gcv)
-| graphml-1.0        | 1.0   |            | format | xml  | GraphML                   | Graph Markup Language                        | format-graphml.cj.json
-| graphml-1.1        | 1.1   |            | format | xml  | GraphML                   | Graph Markup Language                        | format-graphml.cj.json
-| gxl-1.0            | 1.0   |            | format | xml  | GXL                       | Graph eXchange Language                      | format-gxl.json
-| jgf-1.0            | 1.0   |            | format | json | JGF                       | JSON Graph Format                            | format-jgf.json
-| jgf-2.0            | 2.0   | 2020-01    | format | json | JGF                       | JSON Graph Format                            | format-jgf.json
-| matrix-market      |       |            | format | text | Matrix Market             |                                              | format-matrix-market.json
-| nested-network     |       |            | format | text | Nested Network Format     |                                              | format-nested-network.json
-| netdraw-vna        |       |            | format | text | Netdraw VNA               |                                              | format-netdraw-vna.json
-| ocif-0.6           | 0.6   | 2025-04    | format | json | OCIF                      | Open Canvas Interchange Format               | format-ocif.json
-| pajek              |       |            | format | text | Pajek                     |                                              | format-pajek.json
-| psimi-tab-2.5      | 2.5   |            | format | text | PSI-MI Tab 2.5            |                                              | format-psimi-tab.json
-| scotch             |       |            | format | text | Scotch Graph Format       | Scotch source graph                          | (new, via gcv)
-| sbml-l3v2          | L3V2  | 2019-03-29 | format | xml  | SBML                      | Systems Biology Markup Language              | format-sbml.json
-| tgf                |       |            | format | text | TGF                       | Trivial Graph Format                         | format-tgf.json
-| vosviewer          |       |            | format | json | VOSviewer JSON            |                                              | format-vosviewer.json
-| xgmml-1.0          | 1.0   |            | format | xml  | XGMML                     | eXtensible Graph Markup and Modeling Language| format-xgmml.json
-| neo4j              |       |            | model  |      | Neo4j Property Graph Model|                                              | g-model-neo4j.json
-|===
-
-All formats are now ported to `formats/<family>/<format-id>.adoc`; each entry carries its
-own Wikipedia/Wikidata refs (on the family slug). This table remains the index.
-The `source` column still points at the original Connected JSON file each entry
-was derived from (`(new, via gcv)` for Scotch / Harwell-Boeing, `(new, via
-graph-layout-api)` for grale).
-
-== Discovered formats (via Wikipedia categories)
-
-Formats found by walking the Wikipedia categories of our seed formats, then
-ported to `formats/<family>/<id>.adoc` with identity triples and a *best-effort,
-conservative* feature assessment (no source JSON exists for these, so feature
-coverage is partial by design). `version` shows the current spec version where
-one was found. The 11 formats with a known version now carry a versioned id
-(e.g. `cellml-2.0`, `biopax-l3`) with a `..version of..` family link, like
-`gexf-1.3`; the rest are unversioned.
-
-[cols="2,1,1,3,1",options="header"]
-|===
-| format-id | version | cat | label | wikidata
-
-5+| _Group A — core graph / network_
-| dgml               |         | xml  | DGML (Directed Graph Markup Language)        | Q5204969
-| dimacs             |         | text | DIMACS Graph Format                          |
-| metis              |         | text | METIS Graph Format                           |
-| leda               |         | text | LEDA Graph Format                            | Q96035181
-| lemon              |         | text | LEMON Graph Format                           | Q135728625
-| tulip-tlp-2.3      | 2.3     | text | Tulip TLP                                    |
-| sif                |         | text | Cytoscape SIF (Simple Interaction Format)    |
-| cytoscape-cx-1     | 1       | json | Cytoscape CX                                 |
-| cytoscape-cx2-2.0  | 2.0     | json | Cytoscape CX2                                |
-| graphson-3.0       | 3.0     | json | GraphSON (Apache TinkerPop)                  |
-| graphviz-plain     |         | text | Graphviz plain output format                 |
-| networkx-node-link |         | json | NetworkX node-link JSON                       |
-| vcg-1.30           | 1.30    | text | VCG (Visualization of Compiler Graphs)       | Q105859875
-| gdl-aisee          |         | text | GDL (aiSee)                                  |
-| graphlet           |         | text | Graphlet file format                         | Q96034734
-
-5+| _Group B — RDF serializations_
-| rdf-xml            |         | xml  | RDF/XML                                      | Q48940
-| n-triples          |         | text | N-Triples                                    | Q44044
-| turtle             |         | text | Turtle                                       | Q114409
-| notation3          |         | text | Notation3 (N3)                               | Q1424987
-| json-ld            |         | json | JSON-LD                                      | Q6108942
-| trig               |         | text | TriG                                         | Q7839811
-| trix               |         | xml  | TriX                                         | Q7839826
-| rdf-json           |         | json | RDF/JSON                                     | Q50322163
-
-5+| _Group C — biological networks_
-| biopax-l3          | Level 3 | xml  | BioPAX                                       | Q4914639
-| psi-mi-xml-3.0     | 3.0     | xml  | PSI-MI XML (MIF)                             | Q29650305
-| kgml-0.7.2         | 0.7.2   | xml  | KGML (KEGG Markup Language)                  |
-| sbgn-ml-0.3        | 0.3     | xml  | SBGN-ML                                      |
-| sbol-3.1           | 3.1     | xml  | SBOL (Synthetic Biology Open Language)       | Q25304751
-| cellml-2.0         | 2.0     | xml  | CellML                                       | Q5058133
-
-5+| _Group D — phylogenetic trees_
-| newick             |         | text | Newick format                                | Q3339116
-| nexus              |         | text | Nexus file                                   | Q1983918
-| phyloxml           |         | xml  | phyloXML                                     | Q7189430
-| xtg                |         | xml  | eXtensible TreeGraph (XTG)                   | Q105762923
-| lcf                |         | text | LCF notation                                 | Q1797915
-
-5+| _Group E — molecular-structure graphs_
-| molfile            |         | text | MDL Molfile / SDF                            | Q5090500
-| cml                |         | xml  | Chemical Markup Language (CML)               | Q1069211
-| smiles             |         | text | SMILES                                       | Q466769
-| inchi              |         | text | InChI                                        | Q203250
-| sln                |         | text | SYBYL Line Notation (SLN)                    | Q7395247
-| mcdl               |         | text | MCDL                                         | Q104880084
-| helm               |         | text | HELM                                         | Q25303708
+| link:formats/adjlist/adjlist.adoc[format:adjlist]   |  |  | text | Adjacency List (NetworkX)  |
+| link:formats/biogrid-tab/biogrid-tab-3.0.adoc[format:biogrid-tab-3.0]| 3.0   |  | text | BioGRID Tab 3.0 |
+| link:formats/biopax/biopax-l3.adoc[format:biopax-l3]| Level 3 || xml  | BioPAX |
+| link:formats/cellml/cellml-2.0.adoc[format:cellml-2.0]    | 2.0|| xml  | CellML  |
+| link:formats/chaco/chaco.adoc[format:chaco]|  |  | text | Chaco      |
+| link:formats/cml/cml.adoc[format:cml] |    || xml  | Chemical Markup Language (CML)|
+| link:formats/connected-json/connected-json-8.0.0.adoc[format:connected-json-8.0.0] | 8.0.0 |  | json | Connected JSON  | CJ
+| link:formats/connected-json5/connected-json5.adoc[format:connected-json5] | | | json | Connected JSON5    |
+| link:formats/cytoscape/cytoscape-cx-1.adoc[format:cytoscape-cx-1]| 1  || json | Cytoscape CX   |
+| link:formats/cytoscape/cytoscape-cx2-2.0.adoc[format:cytoscape-cx2-2.0]  | 2.0|| json | Cytoscape CX2  |
+| link:formats/cytoscape/cytoscape-json.adoc[format:cytoscape-json] |  |  | json | CytoScape JSON  |
+| link:formats/d2/d2.adoc[format:d2]    | | | text | D2 (Terrastruct)   |
+| link:formats/ddot/ddot.adoc[format:ddot]  | | | text | DDot.it Triple Text Format   |
+| link:formats/dgml/dgml.adoc[format:dgml]|    || xml  | DGML (Directed Graph Markup Language)    |
+| link:formats/digraph6/digraph6.adoc[format:digraph6]   | | | text | digraph6    |
+| link:formats/dimacs/dimacs.adoc[format:dimacs]   |    || text | DIMACS Graph Format    |
+| link:formats/dl/dl.adoc[format:dl]   |  |  | text | UCINET DL  |
+| link:formats/dot/dot.adoc[format:dot]  |  |  | text | DOT (GraphViz) | GraphViz
+| link:formats/edge-list/edge-list.adoc[format:edge-list] |  |  | text | Edge List  |
+| link:formats/gdf/gdf.adoc[format:gdf]  |  |  | text | GDF | Graph Data Format, Graph Description Format
+| link:formats/gdl-aisee/gdl-aisee.adoc[format:gdl-aisee]|    || text | GDL (aiSee)   |
+| link:formats/gexf/gexf-1.3.adoc[format:gexf-1.3]  | 1.3   |  | xml  | GEXF| Graph Exchange XML Format
+| link:formats/gjgf/gjgf-0.1.adoc[format:gjgf-0.1]  | 0.1   |  | json | gJGF| gravis JSON Graph Format
+| link:formats/gml/gml.adoc[format:gml]  |  |  | text | GML | Graph Modelling Language
+| link:formats/grale/grale-v1.adoc[format:grale-v1]  | 1.0.0 | 2026-06-16 | json | grale| Graph Layout Engine API
+| link:formats/graph6/graph6.adoc[format:graph6]    |  |  | text | Graph6     |
+| link:formats/graphlet/graphlet.adoc[format:graphlet] |    || text | Graphlet file format   |
+| link:formats/graphml/graphml-1.0.adoc[format:graphml-1.0]    | 1.0   |  | xml  | GraphML     | Graph Markup Language
+| link:formats/graphml/graphml-1.1.adoc[format:graphml-1.1]    | 1.1   |  | xml  | GraphML     | Graph Markup Language
+| link:formats/graphson/graphson-3.0.adoc[format:graphson-3.0]  | 3.0|| json | GraphSON (Apache TinkerPop)    |
+| link:formats/graphviz-plain/graphviz-plain.adoc[format:graphviz-plain]|    || text | Graphviz plain output format   |
+| link:formats/gtfs/gtfs.adoc[format:gtfs]  | | | text | GTFS (General Transit Feed Spec)  |
+| link:formats/gxl/gxl-1.0.adoc[format:gxl-1.0]   | 1.0   |  | xml  | GXL | Graph eXchange Language
+| link:formats/harwell-boeing/harwell-boeing.adoc[format:harwell-boeing] |  | 1982  | text | Harwell-Boeing | HB
+| link:formats/helm/helm.adoc[format:helm]|    || text | HELM molecular-structure graphs    |
+| link:formats/inchi/inchi.adoc[format:inchi]    |    || text | InChI molecular-structure graphs   |
+| link:formats/jgf/jgf-1.0.adoc[format:jgf-1.0]   | 1.0   |  | json | JGF | JSON Graph Format
+| link:formats/jgf/jgf-2.0.adoc[format:jgf-2.0]   | 2.0   | 2020-01    | json | JGF  | JSON Graph Format
+| link:formats/json-ld/json-ld.adoc[format:json-ld]  |    || json | JSON-LD|
+| link:formats/kgml/kgml-0.7.2.adoc[format:kgml-0.7.2]    | 0.7.2   || xml  | KGML (KEGG Markup Language)    |
+| link:formats/lcf/lcf.adoc[format:lcf] |    || text | LCF notation for phylogenetic trees|
+| link:formats/leda/leda.adoc[format:leda]|    || text | LEDA Graph Format |
+| link:formats/lemon/lemon.adoc[format:lemon]    |    || text | LEMON Graph Format|
+| link:formats/matrix-market/matrix-market.adoc[format:matrix-market]  |  |  | text | Matrix Market   |
+| link:formats/mcdl/mcdl.adoc[format:mcdl]|    || text | MCDL molecular-structure graphs    |
+| link:formats/mermaid/mermaid.adoc[format:mermaid]    | | | text | Mermaid|
+| link:formats/metis/metis.adoc[format:metis]    |    || text | METIS Graph Format|
+| link:formats/molfile/molfile.adoc[format:molfile]  |    || text | MDL Molfile / SDF |
+| link:formats/n-triples/n-triples.adoc[format:n-triples]|    || text | N-Triples     |
+| link:formats/neo4j-json/neo4j-json.adoc[format:neo4j-json] | | | json | Neo4j APOC JSON Export Format|
+| link:formats/cytoscape/nested-network.adoc[format:nested-network] |  |  | text | Nested Network Format|
+| link:formats/netdraw-vna/netdraw-vna.adoc[format:netdraw-vna]    |  |  | text | Netdraw VNA |
+| link:formats/networkx-node-link/networkx-node-link.adoc[format:networkx-node-link] |    || json | NetworkX node-link JSON|
+| link:formats/newick/newick.adoc[format:newick]   |    || text | Newick format for phylogenetic trees     |
+| link:formats/nexus/nexus.adoc[format:nexus]    |    || text | Nexus file (phylogenetic trees)    |
+| link:formats/notation3/notation3.adoc[format:notation3]|    || text | Notation3 (N3)|
+| link:formats/ocif/ocif-0.6.adoc[format:ocif-0.6]  | 0.6   | 2025-04    | json | OCIF | Open Canvas Interchange Format
+| link:formats/pajek/pajek.adoc[format:pajek]|  |  | text | Pajek      |
+| link:formats/pg-json/pg-json.adoc[format:pg-json]    | | | json | PG-JSON (Property Graph Format)   |
+| link:formats/phyloxml/phyloxml.adoc[format:phyloxml] |    || xml  | phyloXML      |
+| link:formats/plantuml/plantuml.adoc[format:plantuml]   | | | text | PlantUML Class Diagram  |
+| link:formats/psi-mi-xml/psi-mi-xml-3.0.adoc[format:psi-mi-xml-3.0]| 3.0|| xml  | PSI-MI XML (MIF)   |
+| link:formats/psimi-tab/psimi-tab-2.5.adoc[format:psimi-tab-2.5]  | 2.5   |  | text | PSI-MI Tab 2.5  |
+| link:formats/rdf-json/rdf-json.adoc[format:rdf-json] |    || json | RDF/JSON      |
+| link:formats/rdf-nquads/rdf-nquads.adoc[format:rdf-nquads] | | | text | N-Quads|
+| link:formats/rdf-xml/rdf-xml.adoc[format:rdf-xml]  |    || xml  | RDF/XML|
+| link:formats/sbgn-ml/sbgn-ml-0.3.adoc[format:sbgn-ml-0.3]   | 0.3|| xml  | SBGN-ML |
+| link:formats/sbml/sbml-l3v2.adoc[format:sbml-l3v2] | L3V2  | 2019-03-29 | xml  | SBML | Systems Biology Markup Language
+| link:formats/sbol/sbol-3.1.adoc[format:sbol-3.1] | 3.1|| xml  | SBOL (Synthetic Biology Open Language)   |
+| link:formats/scotch/scotch.adoc[format:scotch]    |  |  | text | Scotch Graph Format | Scotch source graph
+| link:formats/cytoscape/sif.adoc[format:sif] |    || text | Cytoscape SIF (Simple Interaction Format)    |
+| link:formats/sln/sln.adoc[format:sln] |    || text | SYBYL Line Notation (SLN)     |
+| link:formats/smiles/smiles.adoc[format:smiles]   |    || text | SMILES molecular-structure graphs  |
+| link:formats/sparse6/sparse6.adoc[format:sparse6]    | | | text | sparse6|
+| link:formats/tgf/tgf.adoc[format:tgf]  |  |  | text | TGF | Trivial Graph Format
+| link:formats/trig/trig.adoc[format:trig]|    || text | TriG   |
+| link:formats/tripletext/tripletext.adoc[format:tripletext] | | | text | TripleText Format  |
+| link:formats/trix/trix.adoc[format:trix]|    || xml  | TriX   |
+| link:formats/tulip-tlp/tulip-tlp-2.3.adoc[format:tulip-tlp-2.3] | 2.3|| text | Tulip TLP      |
+| link:formats/turtle/turtle.adoc[format:turtle]   |    || text | Turtle |
+| link:formats/vcg/vcg-1.30.adoc[format:vcg-1.30] | 1.30    || text | VCG (Visualization of Compiler Graphs)   |
+| link:formats/vosviewer/vosviewer.adoc[format:vosviewer] |  |  | json | VOSviewer JSON |
+| link:formats/xgmml/xgmml-1.0.adoc[format:xgmml-1.0] | 1.0   |  | xml  | XGMML      | eXtensible Graph Markup and Modeling Language
+| link:formats/xtg/xtg.adoc[format:xtg] |    || xml  | eXtensible TreeGraph (XTG)    |
 |===
 
-== Reader-backed formats (GraphInOut)
+== Models
 
-Audit of the GraphInOut `reader-*` modules (`com.graphinout.reader.*`): every
-format with a reader is now in this registry. Most were already present; these
-11 were added from the reader audit (ported to `formats/<id>/<id>.adoc`):
-
-[cols="2,1,2,2,1",options="header"]
+[cols="1,1,1,1,2,2",options="header"]
 |===
-| format-id | cat | label | file extensions | wikidata
+| format-id | version | released | cat | label | alt names
 
-| d2              | text | D2 (Terrastruct)                  | .d2                          |
-| ddot            | text | DDot.it Triple Text Format        | .ddot, .ddot.txt             |
-| sparse6         | text | sparse6                           | .s6, .sparse6                |
-| digraph6        | text | digraph6                          | .d6, .digraph6               |
-| gtfs            | text | GTFS (General Transit Feed Spec)  | .gtfs.zip, .gtfs             | Q5532250
-| mermaid         | text | Mermaid                           | .mmd, .mermaid               | Q110961986
-| neo4j-json      | json | Neo4j APOC JSON Export Format     | .neo4j.json, .neo4j-export.json |
-| pg-json         | json | PG-JSON (Property Graph Format)   | .pg.json, .pgjson            |
-| tripletext      | text | TripleText Format                 | .tt.txt, .tt, .tripletext    |
-| rdf-nquads      | text | N-Quads                           | .nq                          | Q31398150
-| connected-json5 | json | Connected JSON5                   | .cj.json5, .json5            |
-| plantuml        | text | PlantUML Class Diagram            | .puml, .plantuml, .pu, .iuml |
+| link:formats/neo4j/neo4j.adoc[model:neo4j]|  |  | | Neo4j Property Graph Model |
 |===
 
-`plantuml` (`reader-plantuml`) parses UML *class diagrams* via the official
-MIT-licensed PlantUML library and has both a reader and a writer (round-trip
-tested): classes are nodes, relationships are directed typed edges.
+== Notes
 
-The reader formats already in the registry: adjlist, edge-list, dot, tgf, gml,
-graphml, gexf, graph6, connected-json, ocif, and the RDF set (turtle,
-n-triples, trig, trix, rdf-xml, json-ld, rdf-json). `neo4j-json` is the APOC
-*export format* — distinct from the `neo4j` property-graph *model* entry.
-
-`mermaid` is an umbrella that the `reader-mermaid` parsers split into eight
-diagram-type sub-formats, each `..subformat of.. format:mermaid`:
+* `mermaid` is an umbrella that the `reader-mermaid` parsers split into eight diagram-type sub-formats, each `..subformat of.. format:mermaid`:
 `mermaid-flowchart`, `mermaid-class`, `mermaid-state`, `mermaid-er`,
 `mermaid-c4`, `mermaid-mindmap`, `mermaid-sankey`, `mermaid-architecture`.
-
-`plantuml` is likewise an umbrella; the (still-under-construction)
-`reader-plantuml` covers one sub-format so far, `plantuml-class-diagram`
-(`..subformat of.. format:plantuml`).
-
-Added from the GraphInOut `ecosystem.adoc` survey (everything there that is a
-format or tool, excluding graph datasets and application domains): formats `owl`
-(Web Ontology Language) and `falcor-json-graph` (Netflix Falcor JSON Graph,
-distinct from `jgf`); tools `boost`, `graph-tool`, `neo4j` (database, distinct
-from the `neo4j` model), `memgraph`, `cytoscape-js` and `yed` in `tools.adoc`.
-
-== Notes for homogenization
-
-* `neo4j` is a `model`, not a serialisation; it currently has no `format-id` in the source. A slug `neo4j` is proposed above.
-* *Versions checked against each homepage (2026-06):* biogrid-tab 3.0 (latest), gexf 1.3 (1.1 deprecated; 1.3 recommended), gjgf 0.1, gxl 1.0 (Dagstuhl-ratified), ocif 0.6 (Candidate Recommendation, Apr 2025), psimi-tab 2.5 (2.6/2.7 exist downstream but our entry is 2.5), sbml Level 3 Version 2 Release 2 (2019-03-29). Release dates still mostly need filling in.
+* *Versions checked against each homepage (2026-06):* biogrid-tab 3.0 (latest), gexf 1.3 (1.1 deprecated; 1.3 recommended), gjgf 0.1, gxl 1.0 (Dagstuhl-ratified), ocif 0.6 (Candidate Recommendation, Apr 2025), psimi-tab 2.5 (2.6/2.7 exist downstream but our entry is 2.5), sbml Level 3 Version 2 Release 2 (2019-03-29).
+Release dates still mostly need filling in.
 * *GraphML:* two released versions, 1.0 and 1.1, each with its own XSD/DTD — `graphml-1.0` and `graphml-1.1`.
 * *JGF:* a v1 and a revised v2 — `jgf-1.0` and `jgf-2.0` (v2 updated Jan 2020; GitHub releases still tagged 1.0).
 * *XGMML:* treated as v1 — `xgmml-1.0`.
-* *DOT has no standalone version:* the language evolves with Graphviz (HTML-like labels, new attributes are tied to Graphviz releases). Graphviz is currently at 15.0.0. `dot` stays an unversioned id; the version lives on the Graphviz tool.
-* *Connected JSON is now at 8.0.0:* current spec is https://j-s-o-n.org/connected-json/8.0.0/ (7.0.0 and 5.0.0 archived). Registered as `connected-json-8.0.0`. The cc-gio source (`format-cj.json`) still describes the older "Strict v5.0.0 / v0.5" variant, so **the CJ reader must be upgraded to 8.0.0**.
-* *Scotch & Harwell-Boeing added* (discovered via the gcv tool) — `formats/scotch/scotch.adoc` and `formats/harwell-boeing/harwell-boeing.adoc`. They have no source JSON; source column marked `(new, via gcv)`. Scotch's source-graph header carries a format version `0`; left as an unversioned id for now.
-* *Discovered-format features were verified* against each authoritative spec in a second pass (conservative; undeterminable features omitted). Notable corrections: LEDA attributes downgraded to partial, phyloXML gained typed-edges (clade_relation), CX1 supports sub-networks while CX2 core dropped them, SBOL 3.1 supports edges-on-edges (Participation→Interaction), HELM/MCDL typed-edges removed.
-* Category is `text` for most line-based formats — decide whether the tab-delimited formats (BioGRID, PSI-MI, VNA) deserve their own grouping or stay `text`.
+* *DOT has no standalone version:* the language evolves with Graphviz (HTML-like labels, new attributes are tied to Graphviz releases).
+Graphviz is currently at 15.0.0. `dot` stays an unversioned id; the version lives on the Graphviz tool.
 * Label casing is inconsistent (`CytoScape JSON` vs `VOSviewer JSON`, bare acronyms like `GDF`/`GML`) — homogenize once ids are settled.
