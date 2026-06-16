@@ -1,0 +1,45 @@
+= GTFS (General Transit Feed Specification)
+:toc:
+
+GTFS is a zip archive of CSV files describing public-transit networks. Stops are
+nodes and the transit links between them (trips, routes, transfers) form edges,
+making a transit feed a geographically grounded transport graph.
+
+== Identity
+
+[source]
+----
+format:gtfs ..has type.. format
+format:gtfs ..category.. text
+format:gtfs ..label.. GTFS (General Transit Feed Specification)
+format:gtfs ..file extension.. .gtfs.zip
+format:gtfs ..file extension.. .gtfs
+format:gtfs ..wikipedia.. https://en.wikipedia.org/wiki/GTFS
+format:gtfs ..wikidata.. Q5532250
+format:gtfs ..org.. Google
+format:gtfs ..spec.. https://gtfs.org/documentation/overview/
+----
+
+== Features
+
+[source]
+----
+format:gtfs ..supports.. nodes ,, Stops and stations
+format:gtfs ..supports.. directed-edges ,, Ordered stop times along trips
+format:gtfs ..supports.. node-labels ,, Stop names
+format:gtfs ..supports.. attributes-on-nodes ,, Stop coordinates and metadata
+format:gtfs ..supports.. attributes-on-edges ,, Trip and transfer attributes
+format:gtfs ..lacks.. undirected-edges
+format:gtfs ..lacks.. hyperedges
+format:gtfs ..lacks.. edges-on-edges
+format:gtfs ..lacks.. nested-graphs-in-nodes
+format:gtfs ..lacks.. nested-graphs-in-edges
+format:gtfs ..lacks.. nested-graphs-in-graphs
+format:gtfs ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://gtfs.org/documentation/overview/[gtfs.org documentation]
+* Wikipedia: https://en.wikipedia.org/wiki/GTFS[GTFS]
+* Wikidata: https://www.wikidata.org/wiki/Q5532250[Q5532250]

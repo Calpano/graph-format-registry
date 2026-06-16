@@ -1,0 +1,56 @@
+= Scotch Graph Format
+:toc:
+
+The source graph format of the Scotch / PT-Scotch partitioning and ordering
+suite. A plain-text format describing an undirected graph with optional vertex
+and edge weights and optional vertex labels. The file header begins with a
+format version number (currently `0`), followed by vertex and edge counts and
+a base/flags line.
+
+== Identity
+
+[source]
+----
+format:scotch ..has type.. format
+format:scotch ..category.. text
+format:scotch ..label.. Scotch Graph Format
+format:scotch ..alternative name.. Scotch source graph
+format:scotch ..file extension.. .grf
+format:scotch ..file extension.. .src
+format:scotch ..author.. francois-pellegrini
+format:scotch ..org.. inria
+format:scotch ..spec.. https://gitlab.inria.fr/scotch/scotch
+
+inria ..has type.. org
+inria ..org type.. lab
+inria ..label.. Inria
+francois-pellegrini ..has type.. person
+francois-pellegrini ..label.. François Pellegrini
+francois-pellegrini ..affiliation.. inria
+----
+
+== Features
+
+[source]
+----
+format:scotch ..supports.. nodes
+format:scotch ..supports.. undirected-edges ,, Graphs are symmetric
+format:scotch ..supports.. node-labels ,, Optional vertex labels (labelling flag)
+format:scotch ..supports.. attributes-on-nodes ,, Optional vertex weights/loads
+format:scotch ..supports.. attributes-on-edges ,, Optional edge weights
+format:scotch ..lacks.. directed-edges
+format:scotch ..lacks.. multiple-graphs-per-document
+format:scotch ..lacks.. hyperedges
+format:scotch ..lacks.. mixed-directionality-edges
+format:scotch ..lacks.. edges-on-edges
+format:scotch ..lacks.. nested-graphs-in-nodes
+format:scotch ..lacks.. nested-graphs-in-edges
+format:scotch ..lacks.. nested-graphs-in-graphs
+format:scotch ..lacks.. edge-labels
+format:scotch ..lacks.. attributes-on-graphs
+format:scotch ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://gitlab.inria.fr/scotch/scotch[gitlab.inria.fr/scotch/scotch]

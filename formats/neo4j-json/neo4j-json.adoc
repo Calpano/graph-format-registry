@@ -1,0 +1,45 @@
+= Neo4j APOC JSON Export Format
+:toc:
+
+The JSON export format produced by Neo4j's APOC library (apoc.export.json). It
+emits one JSON object per line for each node and relationship, with labels,
+relationship types and properties, representing a property graph following the
+link:../neo4j/neo4j.adoc[Neo4j Property Graph Model].
+
+== Identity
+
+[source]
+----
+format:neo4j-json ..has type.. format
+format:neo4j-json ..category.. json
+format:neo4j-json ..label.. Neo4j APOC JSON Export Format
+format:neo4j-json ..file extension.. .neo4j.json
+format:neo4j-json ..file extension.. .neo4j-export.json
+format:neo4j-json ..org.. Neo4j
+format:neo4j-json ..spec.. https://neo4j.com/docs/apoc/current/export/json/
+----
+
+== Features
+
+[source]
+----
+format:neo4j-json ..supports.. nodes
+format:neo4j-json ..supports.. directed-edges ,, Relationships have start and end nodes
+format:neo4j-json ..lacks.. undirected-edges
+format:neo4j-json ..supports.. typed-edges ,, Relationship type
+format:neo4j-json ..supports.. node-labels ,, Node labels array
+format:neo4j-json ..supports.. attributes-on-nodes ,, Node properties
+format:neo4j-json ..supports.. attributes-on-edges ,, Relationship properties
+format:neo4j-json ..lacks.. hyperedges
+format:neo4j-json ..lacks.. edges-on-edges
+format:neo4j-json ..lacks.. nested-graphs-in-nodes
+format:neo4j-json ..lacks.. nested-graphs-in-edges
+format:neo4j-json ..lacks.. nested-graphs-in-graphs
+format:neo4j-json ..lacks.. attributes-on-graphs
+----
+
+== References
+
+* Specification: https://neo4j.com/docs/apoc/current/export/json/[neo4j.com/docs/apoc/current/export/json]
+
+See also: link:../neo4j/neo4j.adoc[Neo4j Property Graph Model]

@@ -1,0 +1,50 @@
+= CellML 2.0
+:toc:
+
+CellML is an XML-based language for describing mathematical models of
+biological systems. A model is built from components holding variables and
+MathML equations, wired together through connections that map variables across
+component boundaries, forming a network of coupled components.
+
+== Identity
+
+[source]
+----
+format:cellml ..has type.. format
+format:cellml ..category.. xml
+format:cellml ..label.. CellML
+format:cellml ..wikipedia.. https://en.wikipedia.org/wiki/CellML
+format:cellml ..wikidata.. Q5058133
+
+format:cellml-2.0 ..version of.. format:cellml
+format:cellml-2.0 ..version.. 2.0
+format:cellml-2.0 ..file extension.. .cellml
+format:cellml-2.0 ..spec.. https://www.cellml.org/specifications/cellml_2.0/
+----
+
+== Features
+
+[source]
+----
+format:cellml-2.0 ..supports.. nodes ,, component elements
+format:cellml-2.0 ..supports.. undirected-edges ,, connection elements map variables between two components
+format:cellml-2.0 ..supports.. node-labels ,, name attribute on components
+format:cellml-2.0 ..supports.. nested-graphs-in-nodes ,, encapsulation hierarchy of components
+format:cellml-2.0 ..supports.. attributes-on-nodes ,, variables and units within components
+format:cellml-2.0 ..supports.. attributes-on-edges ,, component_1/component_2 and map_variables on connection
+format:cellml-2.0 ..supports.. attributes-on-graphs ,, model name and metadata
+format:cellml-2.0 ..lacks.. multiple-graphs-per-document
+format:cellml-2.0 ..lacks.. directed-edges
+format:cellml-2.0 ..lacks.. hyperedges
+format:cellml-2.0 ..lacks.. mixed-directionality-edges
+format:cellml-2.0 ..lacks.. edges-on-edges
+format:cellml-2.0 ..lacks.. nested-graphs-in-edges
+format:cellml-2.0 ..lacks.. nested-graphs-in-graphs
+format:cellml-2.0 ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://www.cellml.org/specifications/cellml_2.0/[cellml.org/specifications/cellml_2.0]
+* Wikipedia: https://en.wikipedia.org/wiki/CellML[CellML]
+* Wikidata: https://www.wikidata.org/wiki/Q5058133[Q5058133]

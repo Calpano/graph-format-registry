@@ -1,0 +1,49 @@
+= KGML (KEGG Markup Language) 0.7.2
+:toc:
+
+KGML (KEGG Markup Language) is an XML exchange format for link:../../tools.adoc#_kegg[KEGG] pathway maps. A
+pathway is represented as a graph whose entry nodes (genes, compounds, maps)
+are connected by relation and reaction elements, enabling automatic drawing and
+computational analysis of KEGG networks.
+
+== Identity
+
+[source]
+----
+format:kgml ..has type.. format
+format:kgml ..category.. xml
+format:kgml ..label.. KGML (KEGG Markup Language)
+format:kgml ..alternative name.. KEGG Markup Language
+format:kgml ..org.. KEGG
+
+format:kgml-0.7.2 ..version of.. format:kgml
+format:kgml-0.7.2 ..version.. 0.7.2
+format:kgml-0.7.2 ..file extension.. .xml
+format:kgml-0.7.2 ..spec.. https://www.genome.jp/kegg/xml/docs/
+----
+
+== Features
+
+[source]
+----
+format:kgml-0.7.2 ..supports.. nodes ,, entry elements (gene, compound, map, ortholog)
+format:kgml-0.7.2 ..supports.. undirected-edges ,, Reversible reactions (type="reversible") are bi-directional
+format:kgml-0.7.2 ..supports.. directed-edges ,, relation elements and irreversible reactions
+format:kgml-0.7.2 ..supports.. hyperedges ,, A reaction links multiple substrate and product entries
+format:kgml-0.7.2 ..supports.. node-labels ,, graphics name attribute
+format:kgml-0.7.2 ..supports.. attributes-on-nodes ,, type, link and graphics attributes on entry
+format:kgml-0.7.2 ..supports.. attributes-on-edges ,, type on relation/reaction, name/value on subtype
+format:kgml-0.7.2 ..supports.. attributes-on-graphs ,, pathway element name, org, title, image, link
+format:kgml-0.7.2 ..supports.. typed-edges ,, relation type (ECrel, PPrel, etc.) and subtype
+format:kgml-0.7.2 ..lacks.. multiple-graphs-per-document ,, One pathway element per file
+format:kgml-0.7.2 ..lacks.. mixed-directionality-edges
+format:kgml-0.7.2 ..lacks.. edges-on-edges
+format:kgml-0.7.2 ..lacks.. nested-graphs-in-nodes
+format:kgml-0.7.2 ..lacks.. nested-graphs-in-edges
+format:kgml-0.7.2 ..lacks.. nested-graphs-in-graphs
+format:kgml-0.7.2 ..lacks.. edge-labels
+----
+
+== References
+
+* Specification: https://www.genome.jp/kegg/xml/docs/[www.genome.jp/kegg/xml/docs]

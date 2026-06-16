@@ -1,0 +1,49 @@
+= GML
+:toc:
+
+Hierarchical text format for graphs with arbitrary key-value attributes.
+
+== Identity
+
+[source]
+----
+format:gml ..has type.. format
+format:gml ..category.. text
+format:gml ..label.. GML
+format:gml ..alternative name.. Graph Modelling Language
+format:gml ..file extension.. .gml
+format:gml ..wikipedia.. https://en.wikipedia.org/wiki/Graph_Modelling_Language
+format:gml ..wikidata.. Q1543319
+format:gml ..spec.. https://networkx.org/documentation/stable/reference/readwrite/gml.html
+----
+
+== Features
+
+[source]
+----
+format:gml ..supports.. multiple-graphs-per-document
+format:gml ..supports.. nodes
+format:gml ..supports.. undirected-edges
+format:gml ..supports.. directed-edges ,, Via directed 1 on graph
+format:gml ..lacks.. hyperedges
+format:gml ..lacks.. mixed-directionality-edges
+format:gml ..lacks.. edges-on-edges
+format:gml ..supports.. nested-graphs-in-nodes ,, Via nested graph elements
+format:gml ..lacks.. nested-graphs-in-edges
+format:gml ..supports.. nested-graphs-in-graphs ,, Hierarchical structure
+format:gml ..supports.. node-labels ,, Via label key
+format:gml ..supports.. edge-labels ,, Via label key
+format:gml ..supports.. attributes-on-nodes ,, Arbitrary key-value pairs
+format:gml ..supports.. attributes-on-edges ,, Arbitrary key-value pairs
+format:gml ..supports.. attributes-on-graphs ,, Arbitrary key-value pairs
+format:gml ..supports.. typed-edges ,,
+..status.. partial
+Via custom attribute
+,,
+----
+
+== References
+
+* Specification: https://networkx.org/documentation/stable/reference/readwrite/gml.html[networkx.org GML read/write]
+* Wikipedia: https://en.wikipedia.org/wiki/Graph_Modelling_Language[Graph Modelling Language]
+* Wikidata: https://www.wikidata.org/wiki/Q1543319[Q1543319]

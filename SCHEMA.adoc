@@ -1,0 +1,182 @@
+= Graph Format Registry — Entry Schema
+
+Every format is one AsciiDoc file under `formats/<family>/<format-id>.adoc`
+(one directory per format family — see "Directory layout" below). The file
+carries two layers:
+
+* **Prose + tables** — the human-readable description (rendered as HTML).
+* **ddot triples** — the machine-readable knowledge graph, written inside
+  `[source]` / `----` code blocks, which a https://ddot.it[ddot] reader
+  extracts.
+
+== Subject convention
+
+The subject of every triple is the format's stable id, written as the slug in
+the `format:` namespace, e.g. `format:dot`, `format:graphml`. The `format:`
+prefix marks the entity as a registry format (distinct from `feature`, `person`
+and `org` subjects, which stay un-prefixed). Entries that are a conceptual
+*model* rather than a serialisation (`..has type.. model`) use the `model:`
+namespace instead — e.g. `model:neo4j`. This keeps triples unambiguous and
+machine-resolvable regardless of section nesting (we do not rely on
+`ddot.it/this`).
+
+The **filename** stays the bare slug — `formats/<family>/<slug>.adoc` (e.g.
+`dot.adoc`, `graphml-1.1.adoc`) — only the ddot subject/object carries the
+`format:` prefix. We refer to the bare slug as the `format-id`; the qualified
+id is `format:<format-id>`.
+
+Where a format has a distinct, versioned specification, the version is part of
+the `format-id` (and thus the filename), suffixed after a hyphen — e.g.
+`biogrid-tab-3.0`, `psimi-tab-2.5`, `connected-json-8.0.0`. The bare version is
+also recorded as a `..version..` triple. Formats without a meaningful version
+(e.g. `dot`) keep an unversioned id.
+
+Each versioned entry belongs to a *family*, named by the un-suffixed slug
+(`format:graphml`), and links to it with `..version of..` (e.g.
+`format:graphml-1.1 ..version of.. format:graphml`). Cross-references from other
+entries — notably a tool's `..reads..` / `..writes..` — point at the **family
+slug** (`gephi ..reads.. format:graphml`), since support is usually
+version-agnostic. Where a tool genuinely supports only specific versions, the
+reference may later be refined to the versioned id
+(`gephi ..reads.. format:graphml-1.1`).
+
+== Identity triples
+
+[cols="1,3",options="header"]
+|===
+| Predicate | Object / meaning
+
+| `..has type..`         | `format` or `model` (a model is not a serialisation, e.g. Neo4j)
+| `..category..`         | Coarse syntactic family: `text` \| `json` \| `xml` (see note)
+| `..version..`          | Spec version, when the format has one (also encoded in the `format-id`)
+| `..released..`         | Release date of this version, ISO 8601 (`YYYY-MM-DD`; partial like `2025-04` allowed)
+| `..version of..`       | Family slug this versioned entry belongs to (e.g. `format:graphml-1.1 ..version of.. format:graphml`)
+| `..subformat of..`     | Umbrella format this entry is a variant of, when one format provides several distinct sub-grammars (e.g. `format:mermaid-flowchart ..subformat of.. format:mermaid`). Like `..version of..` but for parallel diagram types, not successive versions.
+| `..label..`            | Display label
+| `..alternative name..` | Repeatable; one triple per synonym
+| `..file extension..`   | Repeatable; one triple per extension, leading dot included (e.g. `.gv`)
+| `..media type..`       | IANA media type, when one exists (e.g. `text/vnd.graphviz`)
+| `..wikipedia..`        | English Wikipedia article URL, when one exists
+| `..wikidata..`         | Wikidata entity id (e.g. `Q1027388`), when one exists
+| `..license..`          | SPDX id of the specification's license, when licensed
+| `..author..`           | Repeatable; person slug, or a literal name when only a name is known (see Actor triples)
+| `..org..`              | Repeatable; organization slug (see Actor triples)
+| `..superseded by..`    | Format slug that replaces this one (e.g. `format:tripletext ..superseded by.. format:ddot`)
+| `..spec..`             | Canonical specification URL
+|===
+
+NOTE: `category` is a coarse syntactic family, **not** an IANA media type.
+IANA has no `tabular` type — tabular data is just `text/csv` under the `text`
+top-level type, and `json`/`xml` are themselves `application/json` /
+`application/xml`, not top-level types. We keep `category` as a pragmatic
+grouping (`text`, `json`, `xml`) for the registry UI and do not try to mirror
+IANA. If a precise media type is wanted, add a separate `..media type..` triple
+(e.g. `text/vnd.graphviz`).
+
+== Feature triples
+
+Scored against the controlled vocabulary in `graph-features.adoc`:
+
+* `format:<format-id> ..supports.. <feature-slug>` — status = true
+* `format:<format-id> ..lacks.. <feature-slug>` — status = false
+* Annotate with triple-metadata after `,,`. A *single* item stays inline (e.g.
+  `format:gml ..supports.. directed-edges ,, Via directed 1 on graph`). The note
+  is bare — no `..note..` predicate.
+
+A `..status.. partial` metadata item can express partial support without
+changing the predicate. When a triple carries *more than one* metadata item, the
+`,,` opens a metadata block that lists each item on its own line and is closed by
+a second `,,` (chaining items inline with multiple `,,` on one line is *not*
+valid ddot):
+
+[source]
+----
+format:adjlist ..supports.. nodes ,,
+..status.. partial
+Implicit as indices
+,,
+----
+
+== Tool triples
+
+`tools.adoc` lists the tools that read/write these formats. A tool is a ddot
+subject of type `tool` with a `..repo..` (source repository URL) and repeatable
+`..reads..` / `..writes..` triples whose objects are qualified format ids in the
+`format:` namespace (e.g. `gephi ..reads.. format:graphml`). The tool subject
+itself stays un-prefixed. A format under both `..reads..` and `..writes..` means
+round-trip support. Tools also take `..license..`, `..author..` and `..org..`
+(same predicates as formats).
+
+== Actor triples
+
+People and organizations are ddot subjects (`person` / `org`) referenced by
+`..author..` / `..org..`. Each actor is defined **inline, in the same code
+block as the entry that references it** — next to the tool or format they made.
+There is no separate actors section. An actor referenced from more than one
+entry is defined once, in the block for the thing they originally authored (e.g.
+DOT's authors are defined in `formats/dot/dot.adoc`, and merely referenced from the
+Graphviz tool).
+
+A person for whom we have nothing but a name gets no slug at all — the literal
+name is used directly as the `..author..` object inline (e.g.
+`gravis ..author.. Robert Haas`).
+
+Actor predicates:
+
+[cols="1,3",options="header"]
+|===
+| Predicate | Object / meaning
+
+| `..has type..`    | `person` or `org`
+| `..label..`       | Display name
+| `..org type..`    | For orgs: `university` \| `company` \| `foundation` \| `consortium` \| `lab`
+| `..affiliation..` | For persons: repeatable org slug
+| `..url..`         | Homepage, when known
+|===
+
+== Mapping from the Connected JSON source
+
+This registry is the AsciiDoc/ddot restatement of the CJ `format-*.json`
+documents in `cc-gio-ui/src/lib/data`:
+
+[cols="1,1",options="header"]
+|===
+| CJ source | Registry
+
+| `format` node `data` fields        | Identity triples
+| `feature` nodes                    | `graph-features.adoc` vocabulary
+| `has feature` edge, `status: true` | `..supports..` triple
+| `has feature` edge, `status: false`| `..lacks..` triple
+| edge `data.notes`                  | trailing `,,` free-text annotation
+| `introText` / `summaryText`        | AsciiDoc prose body
+|===
+
+See `formats/dot/dot.adoc` for a complete worked example.
+
+== Directory layout
+
+Each format family is a directory under `formats/`. The directory holds the
+entry file(s) and may also hold **sample/example files** for that format:
+
+----
+formats/
+  dot/
+    dot.adoc            <- the registry entry
+    sample.gv           <- example data file(s)
+  graphml/
+    graphml.adoc        <- family-level entry
+    graphml-1.0.adoc    <- versioned entry
+    graphml-1.1.adoc
+    sample.graphml
+----
+
+For a single-version or unversioned format the directory holds one `.adoc`
+(named for the format-id). For a multi-version family it holds the family entry
+`<family>.adoc` plus one `<family>-<version>.adoc` per version. Sample files
+live alongside, named freely with the format's real file extension.
+
+A directory may also group **several related formats from one source/vendor** —
+e.g. `formats/cytoscape/` holds `cytoscape-json.adoc`, `cytoscape-cx-1.adoc`,
+`cytoscape-cx2-2.0.adoc`, `sif.adoc` and `nested-network.adoc`. The directory
+is just a grouping for the files and their samples; each format keeps its own
+`format-id` (and its own `..version of..` family link, if versioned).

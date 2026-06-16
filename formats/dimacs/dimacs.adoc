@@ -1,0 +1,49 @@
+= DIMACS Graph Format
+:toc:
+
+Plain-text format originating from the DIMACS Implementation Challenges, widely
+used for clique and graph-coloring instances. A `p` problem line declares the
+vertex and edge counts, followed by `e` edge lines referencing vertex numbers.
+
+== Identity
+
+[source]
+----
+format:dimacs ..has type.. format
+format:dimacs ..category.. text
+format:dimacs ..label.. DIMACS Graph Format
+format:dimacs ..alternative name.. DIMACS Challenge format
+format:dimacs ..file extension.. .col
+format:dimacs ..file extension.. .gr
+format:dimacs ..org.. DIMACS
+format:dimacs ..spec.. http://dimacs.rutgers.edu/archive/pub/challenge/graph/doc/ccformat.tex
+----
+
+== Features
+
+[source]
+----
+format:dimacs ..lacks.. multiple-graphs-per-document ,, One problem line per file
+format:dimacs ..supports.. nodes ,, Vertices numbered 1..N
+format:dimacs ..supports.. undirected-edges ,, Each edge listed once
+format:dimacs ..lacks.. directed-edges
+format:dimacs ..lacks.. hyperedges
+format:dimacs ..lacks.. mixed-directionality-edges
+format:dimacs ..lacks.. edges-on-edges
+format:dimacs ..lacks.. nested-graphs-in-nodes
+format:dimacs ..lacks.. nested-graphs-in-edges
+format:dimacs ..lacks.. nested-graphs-in-graphs
+format:dimacs ..lacks.. node-labels
+format:dimacs ..lacks.. edge-labels
+format:dimacs ..supports.. attributes-on-nodes ,,
+..status.. partial
+Single numeric weight via n line (weighted clique)
+,,
+format:dimacs ..lacks.. attributes-on-edges
+format:dimacs ..lacks.. attributes-on-graphs
+format:dimacs ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: http://dimacs.rutgers.edu/archive/pub/challenge/graph/doc/ccformat.tex[dimacs.rutgers.edu ccformat.tex]

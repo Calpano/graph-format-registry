@@ -1,0 +1,53 @@
+= Cytoscape CX 1
+:toc:
+
+Aspect-oriented JSON network format used by Cytoscape and NDEx. A document is a
+list of aspects (`nodes`, `edges`, `nodeAttributes`, `edgeAttributes`,
+`networkAttributes`, and others). Edges are implicitly directed and may carry an
+interaction type.
+
+== Identity
+
+[source]
+----
+format:cytoscape-cx ..has type.. format
+format:cytoscape-cx ..category.. json
+format:cytoscape-cx ..label.. Cytoscape CX
+format:cytoscape-cx ..alternative name.. CX
+format:cytoscape-cx ..alternative name.. Cytoscape Exchange
+format:cytoscape-cx ..org.. Cytoscape
+format:cytoscape-cx ..wikidata.. Q125253757
+
+format:cytoscape-cx-1 ..version of.. format:cytoscape-cx
+format:cytoscape-cx-1 ..version.. 1
+format:cytoscape-cx-1 ..file extension.. .cx
+format:cytoscape-cx-1 ..spec.. https://cytoscape.org/cx/specification/cytoscape-exchange-format-specification-(version-1)/
+----
+
+== Features
+
+[source]
+----
+format:cytoscape-cx-1 ..supports.. multiple-graphs-per-document ,, cySubNetworks plus cyNetworkRelations aspects
+format:cytoscape-cx-1 ..supports.. nodes ,, nodes aspect
+format:cytoscape-cx-1 ..supports.. directed-edges ,, Edges implicitly directed (s -> t)
+format:cytoscape-cx-1 ..lacks.. hyperedges ,, Edges are binary
+format:cytoscape-cx-1 ..lacks.. mixed-directionality-edges
+format:cytoscape-cx-1 ..lacks.. edges-on-edges
+format:cytoscape-cx-1 ..lacks.. nested-graphs-in-edges
+format:cytoscape-cx-1 ..supports.. nested-graphs-in-graphs ,, cySubNetworks plus cyNetworkRelations parent/child relations
+format:cytoscape-cx-1 ..supports.. node-labels ,, Node name (n) field
+format:cytoscape-cx-1 ..supports.. edge-labels ,,
+..status.. partial
+No dedicated label field; interaction (i) doubles as it
+,,
+format:cytoscape-cx-1 ..supports.. attributes-on-nodes ,, nodeAttributes aspect
+format:cytoscape-cx-1 ..supports.. attributes-on-edges ,, edgeAttributes aspect
+format:cytoscape-cx-1 ..supports.. attributes-on-graphs ,, networkAttributes aspect
+format:cytoscape-cx-1 ..supports.. typed-edges ,, Interaction (i) field
+----
+
+== References
+
+* Specification: https://cytoscape.org/cx/specification/cytoscape-exchange-format-specification-(version-1)/[cytoscape.org/cx/specification version 1]
+* Wikidata: https://www.wikidata.org/wiki/Q125253757[Q125253757]

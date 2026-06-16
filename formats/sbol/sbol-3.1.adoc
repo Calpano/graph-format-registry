@@ -1,0 +1,54 @@
+= SBOL (Synthetic Biology Open Language) 3.1
+:toc:
+
+SBOL is an RDF-based standard for exchanging synthetic-biology design
+information. Designs are captured as a graph of Components linked by
+SubComponents, Interactions and Constraints, serialized using Semantic Web
+technologies and commonly stored as link:../rdf-xml/rdf-xml.adoc[RDF/XML].
+
+== Identity
+
+[source]
+----
+format:sbol ..has type.. format
+format:sbol ..category.. xml
+format:sbol ..label.. SBOL (Synthetic Biology Open Language)
+format:sbol ..alternative name.. Synthetic Biology Open Language
+format:sbol ..wikipedia.. https://en.wikipedia.org/wiki/Synthetic_Biology_Open_Language
+format:sbol ..wikidata.. Q25304751
+
+format:sbol-3.1 ..version of.. format:sbol
+format:sbol-3.1 ..version.. 3.1
+format:sbol-3.1 ..file extension.. .xml
+format:sbol-3.1 ..spec.. https://sbolstandard.org/docs/SBOL3.1.0.pdf
+----
+
+== Features
+
+[source]
+----
+format:sbol-3.1 ..supports.. multiple-graphs-per-document ,, Multiple top-level objects per RDF document
+format:sbol-3.1 ..supports.. nodes ,, Component and other top-level objects as RDF resources
+format:sbol-3.1 ..supports.. directed-edges ,, Interaction participations with SBO roles
+format:sbol-3.1 ..supports.. hyperedges ,, Interactions link multiple participants
+format:sbol-3.1 ..supports.. edges-on-edges ,, 3.1 lets a Participation reference an Interaction (higher-order interactions)
+format:sbol-3.1 ..supports.. nested-graphs-in-nodes ,, SubComponent hierarchy within Components
+format:sbol-3.1 ..supports.. node-labels ,, name / displayId
+format:sbol-3.1 ..supports.. edge-labels ,, name / displayId on Interaction
+format:sbol-3.1 ..supports.. attributes-on-nodes ,, RDF properties on objects
+format:sbol-3.1 ..supports.. attributes-on-edges ,, Interaction and Participation RDF properties
+format:sbol-3.1 ..supports.. attributes-on-graphs ,, RDF properties on the containing Component
+format:sbol-3.1 ..supports.. typed-edges ,, Interaction and participation types from SBO
+format:sbol-3.1 ..lacks.. undirected-edges
+format:sbol-3.1 ..lacks.. mixed-directionality-edges
+format:sbol-3.1 ..lacks.. nested-graphs-in-edges
+format:sbol-3.1 ..lacks.. nested-graphs-in-graphs
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/Synthetic_Biology_Open_Language[Synthetic Biology Open Language]
+* Wikidata: https://www.wikidata.org/wiki/Q25304751[Q25304751]
+* Specification: https://sbolstandard.org/docs/SBOL3.1.0.pdf[sbolstandard.org/docs/SBOL3.1.0.pdf]
+
+See also: link:../rdf-xml/rdf-xml.adoc[RDF/XML]

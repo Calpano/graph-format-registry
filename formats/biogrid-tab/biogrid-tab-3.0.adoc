@@ -1,0 +1,33 @@
+= BioGRID Tab 3.0
+:toc:
+
+Tab-separated format for protein/genetic interactions.
+
+== Identity
+
+[source]
+----
+format:biogrid-tab ..has type.. format
+format:biogrid-tab ..category.. text
+format:biogrid-tab ..label.. BioGRID Tab 3.0
+format:biogrid-tab ..wikipedia.. https://en.wikipedia.org/wiki/BioGRID
+format:biogrid-tab ..wikidata.. Q4914619
+
+format:biogrid-tab-3.0 ..version of.. format:biogrid-tab
+format:biogrid-tab-3.0 ..version.. 3.0
+format:biogrid-tab-3.0 ..spec.. https://wiki.thebiogrid.org/doku.php/biogrid_tab_version_3.0
+----
+
+== Features
+
+[source]
+----
+format:biogrid-tab-3.0 ..supports.. nodes
+format:biogrid-tab-3.0 ..supports.. undirected-edges ,, Interactions
+----
+
+== References
+
+* Specification: https://wiki.thebiogrid.org/doku.php/biogrid_tab_version_3.0[wiki.thebiogrid.org/doku.php/biogrid_tab_version_3.0]
+* Wikipedia: https://en.wikipedia.org/wiki/BioGRID[BioGRID]
+* Wikidata: https://www.wikidata.org/wiki/Q4914619[Q4914619]

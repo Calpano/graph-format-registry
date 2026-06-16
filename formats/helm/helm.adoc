@@ -1,0 +1,49 @@
+= HELM
+:toc:
+
+A hierarchical line-notation format for macromolecules. Monomers act as nodes
+and the connection list as edges, with each simple polymer (peptide, RNA,
+chemistry) a sub-graph and inter-polymer connections joining them. A monomer can
+itself expand to an atom-level molecular graph, giving nested structure.
+
+== Identity
+
+[source]
+----
+format:helm ..has type.. format
+format:helm ..category.. text
+format:helm ..label.. HELM
+format:helm ..alternative name.. Hierarchical Editing Language for Macromolecules
+format:helm ..wikipedia.. https://en.wikipedia.org/wiki/Hierarchical_editing_language_for_macromolecules
+format:helm ..wikidata.. Q25303708
+format:helm ..org.. Pistoia Alliance
+format:helm ..spec.. https://pistoiaalliance.atlassian.net/wiki/spaces/PUB/pages/13795362/HELM+Notation
+----
+
+== Features
+
+[source]
+----
+format:helm ..supports.. multiple-graphs-per-document ,, Multiple simple polymers per notation
+format:helm ..supports.. nodes ,, Monomers as nodes
+format:helm ..supports.. undirected-edges ,, Backbone and explicit connections
+format:helm ..lacks.. directed-edges
+format:helm ..lacks.. hyperedges
+format:helm ..lacks.. mixed-directionality-edges
+format:helm ..lacks.. edges-on-edges
+format:helm ..supports.. nested-graphs-in-nodes ,, A monomer expands to an atom-level structure
+format:helm ..lacks.. nested-graphs-in-edges
+format:helm ..supports.. nested-graphs-in-graphs ,, Simple polymers nest within the complex polymer
+format:helm ..supports.. node-labels ,, Monomer symbols name each node
+format:helm ..lacks.. edge-labels
+format:helm ..supports.. attributes-on-nodes ,, Per-monomer annotations
+format:helm ..supports.. attributes-on-edges ,, Connections specify attachment points (R-groups)
+format:helm ..supports.. attributes-on-graphs ,, Extended annotation section
+format:helm ..lacks.. typed-edges ,, No bond-type taxonomy; bond determined implicitly by R-group attachment points (an edge attribute, not a type)
+----
+
+== References
+
+* Specification: https://pistoiaalliance.atlassian.net/wiki/spaces/PUB/pages/13795362/HELM+Notation[HELM Notation]
+* Wikipedia: https://en.wikipedia.org/wiki/Hierarchical_editing_language_for_macromolecules[Hierarchical editing language for macromolecules]
+* Wikidata: https://www.wikidata.org/wiki/Q25303708[Q25303708]

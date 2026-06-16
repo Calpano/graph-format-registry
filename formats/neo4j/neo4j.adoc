@@ -1,0 +1,32 @@
+= Neo4j Property Graph Model
+:toc:
+
+Not a serialisation format.
+
+== Identity
+
+[source]
+----
+model:neo4j ..has type.. model
+model:neo4j ..label.. Neo4j Property Graph Model
+model:neo4j ..wikipedia.. https://en.wikipedia.org/wiki/Neo4j
+model:neo4j ..wikidata.. Q1628290
+model:neo4j ..spec.. https://neo4j.com/docs/getting-started/graph-database/
+----
+
+== Features
+
+[source]
+----
+model:neo4j ..supports.. nodes
+model:neo4j ..supports.. directed-edges ,, Relationships are strictly directed and binary
+model:neo4j ..supports.. typed-edges ,, Exactly one type required per relationship
+model:neo4j ..supports.. attributes-on-nodes ,, Flat key-value properties
+model:neo4j ..supports.. attributes-on-edges ,, Flat key-value properties
+----
+
+== References
+
+* Specification: https://neo4j.com/docs/getting-started/graph-database/[neo4j.com property graph model]
+* Wikipedia: https://en.wikipedia.org/wiki/Neo4j[Neo4j]
+* Wikidata: https://www.wikidata.org/wiki/Q1628290[Q1628290]

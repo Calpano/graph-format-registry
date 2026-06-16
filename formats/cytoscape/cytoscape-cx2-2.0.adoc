@@ -1,0 +1,55 @@
+= Cytoscape CX2 2.0
+:toc:
+
+Aspect-oriented JSON network format, the successor to
+link:cytoscape-cx-1.adoc[CX]. An `attributeDeclarations` aspect declares
+attribute types and defaults before the `nodes` and `edges` aspects, whose
+values live in a per-element `v` object. Edges carry source (s) and target (t).
+
+== Identity
+
+[source]
+----
+format:cytoscape-cx2 ..has type.. format
+format:cytoscape-cx2 ..category.. json
+format:cytoscape-cx2 ..label.. Cytoscape CX2
+format:cytoscape-cx2 ..alternative name.. CX2
+format:cytoscape-cx2 ..alternative name.. Cytoscape Exchange version 2
+format:cytoscape-cx2 ..org.. Cytoscape
+
+format:cytoscape-cx2-2.0 ..version of.. format:cytoscape-cx2
+format:cytoscape-cx2-2.0 ..version.. 2.0
+format:cytoscape-cx2-2.0 ..file extension.. .cx2
+format:cytoscape-cx2-2.0 ..spec.. https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/
+----
+
+== Features
+
+[source]
+----
+format:cytoscape-cx2-2.0 ..lacks.. multiple-graphs-per-document ,, Single network; hierarchy via separate HCX schema
+format:cytoscape-cx2-2.0 ..supports.. nodes ,, nodes aspect
+format:cytoscape-cx2-2.0 ..supports.. directed-edges ,,
+..status.. partial
+Edges have source (s)/target (t) order but core spec states no directedness
+,,
+format:cytoscape-cx2-2.0 ..lacks.. hyperedges ,, Edges are binary
+format:cytoscape-cx2-2.0 ..lacks.. mixed-directionality-edges
+format:cytoscape-cx2-2.0 ..lacks.. edges-on-edges
+format:cytoscape-cx2-2.0 ..lacks.. nested-graphs-in-edges
+format:cytoscape-cx2-2.0 ..supports.. node-labels ,, Declared name attribute in v
+format:cytoscape-cx2-2.0 ..supports.. edge-labels ,,
+..status.. partial
+No dedicated label; declared interaction attribute doubles as it
+,,
+format:cytoscape-cx2-2.0 ..supports.. attributes-on-nodes ,, Node v object plus attributeDeclarations
+format:cytoscape-cx2-2.0 ..supports.. attributes-on-edges ,, Edge v object plus attributeDeclarations
+format:cytoscape-cx2-2.0 ..supports.. attributes-on-graphs ,, networkAttributes aspect
+format:cytoscape-cx2-2.0 ..supports.. typed-edges ,, Declared interaction edge attribute
+----
+
+== References
+
+* Specification: https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/[Cytoscape Exchange Format Specification (version 2)]
+
+See also: link:cytoscape-cx-1.adoc[Cytoscape CX], link:cytoscape-json.adoc[Cytoscape JSON]

@@ -1,0 +1,45 @@
+= LCF notation
+:toc:
+
+A compact text notation for representing cubic Hamiltonian graphs, named after
+Lederberg, Coxeter and Frucht. A graph is described by its Hamiltonian cycle
+plus a list of offsets giving the third edge at each vertex.
+
+== Identity
+
+[source]
+----
+format:lcf ..has type.. format
+format:lcf ..category.. text
+format:lcf ..label.. LCF notation
+format:lcf ..alternative name.. LCF
+format:lcf ..wikipedia.. https://en.wikipedia.org/wiki/LCF_notation
+format:lcf ..wikidata.. Q1797915
+----
+
+== Features
+
+[source]
+----
+format:lcf ..lacks.. multiple-graphs-per-document ,, One graph per notation
+format:lcf ..supports.. nodes ,, Vertices of a cubic Hamiltonian graph
+format:lcf ..supports.. undirected-edges ,, Edges of an undirected 3-regular graph
+format:lcf ..lacks.. directed-edges
+format:lcf ..lacks.. hyperedges
+format:lcf ..lacks.. mixed-directionality-edges
+format:lcf ..lacks.. edges-on-edges
+format:lcf ..lacks.. nested-graphs-in-nodes
+format:lcf ..lacks.. nested-graphs-in-edges
+format:lcf ..lacks.. nested-graphs-in-graphs
+format:lcf ..lacks.. node-labels
+format:lcf ..lacks.. edge-labels
+format:lcf ..lacks.. attributes-on-nodes
+format:lcf ..lacks.. attributes-on-edges
+format:lcf ..lacks.. attributes-on-graphs
+format:lcf ..lacks.. typed-edges
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/LCF_notation[LCF notation]
+* Wikidata: https://www.wikidata.org/wiki/Q1797915[Q1797915]

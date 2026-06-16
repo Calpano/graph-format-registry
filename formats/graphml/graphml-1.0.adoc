@@ -1,0 +1,52 @@
+= GraphML 1.0
+:toc:
+
+See link:graphml.adoc[GraphML] for the family-level identity (label, Wikipedia,
+Wikidata). This entry covers the 1.0 release.
+
+== Identity
+
+[source]
+----
+format:graphml-1.0 ..version of.. format:graphml
+format:graphml-1.0 ..version.. 1.0
+format:graphml-1.0 ..file extension.. .graphml
+format:graphml-1.0 ..spec.. http://graphml.graphdrawing.org/specification.html
+----
+
+== Features
+
+[source]
+----
+format:graphml-1.0 ..supports.. multiple-graphs-per-document
+format:graphml-1.0 ..supports.. nodes
+format:graphml-1.0 ..supports.. undirected-edges ,, Via edgedefault="undirected"
+format:graphml-1.0 ..supports.. directed-edges ,, Via edgedefault="directed"
+format:graphml-1.0 ..supports.. hyperedges ,, Via <hyperedge> with <endpoint> elements
+format:graphml-1.0 ..supports.. mixed-directionality-edges ,, Per-edge directed attribute
+format:graphml-1.0 ..lacks.. edges-on-edges
+format:graphml-1.0 ..supports.. nested-graphs-in-nodes ,, <node> can contain <graph>
+format:graphml-1.0 ..supports.. nested-graphs-in-edges ,, <edge> can contain <graph>
+format:graphml-1.0 ..supports.. nested-graphs-in-graphs
+format:graphml-1.0 ..supports.. node-labels ,,
+..status.. partial
+Via custom attributes
+,,
+format:graphml-1.0 ..supports.. edge-labels ,,
+..status.. partial
+Via custom attributes
+,,
+format:graphml-1.0 ..supports.. attributes-on-nodes ,, Via <data> elements
+format:graphml-1.0 ..supports.. attributes-on-edges ,, Via <data> elements
+format:graphml-1.0 ..supports.. attributes-on-graphs ,, Via <data> elements
+format:graphml-1.0 ..supports.. typed-edges ,,
+..status.. partial
+Via custom attributes
+,,
+----
+
+== References
+
+* Specification: http://graphml.graphdrawing.org/specification.html[graphml.graphdrawing.org/specification]
+
+See also: link:graphml.adoc[GraphML], link:graphml-1.1.adoc[GraphML 1.1]

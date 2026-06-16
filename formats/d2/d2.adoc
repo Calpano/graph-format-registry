@@ -1,0 +1,35 @@
+= D2 (Terrastruct)
+:toc:
+
+D2 is a declarative, text-based language for describing diagrams and graphs,
+developed by Terrastruct. Shapes are nodes and connections are edges; the
+compiler lays them out automatically into rendered diagrams.
+
+== Identity
+
+[source]
+----
+format:d2 ..has type.. format
+format:d2 ..category.. text
+format:d2 ..label.. D2 (Terrastruct)
+format:d2 ..file extension.. .d2
+format:d2 ..spec.. https://d2lang.com/
+----
+
+== Features
+
+[source]
+----
+format:d2 ..supports.. nodes ,, Shapes
+format:d2 ..supports.. undirected-edges ,, Via -- connections
+format:d2 ..supports.. directed-edges ,, Via -> and <- connections
+format:d2 ..supports.. node-labels ,, Shape labels
+format:d2 ..supports.. edge-labels ,, Connection labels
+format:d2 ..supports.. nested-graphs-in-nodes ,, Containers (nested shapes)
+format:d2 ..supports.. attributes-on-nodes ,, Style and shape attributes
+format:d2 ..supports.. attributes-on-edges ,, Style attributes on connections
+----
+
+== References
+
+* Specification: https://d2lang.com/[d2lang.com]

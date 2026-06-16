@@ -1,0 +1,49 @@
+= Mermaid C4 Diagram
+:toc:
+
+The C4-model type of link:mermaid.adoc[Mermaid], opened by a `C4Context`,
+`C4Container`, `C4Component`, `C4Dynamic` or `C4Deployment` keyword. Persons,
+systems, containers and components are nodes (each with a label and description);
+`Rel(...)` declares directed relationships; `Boundary(...)` blocks nest elements.
+
+== Identity
+
+[source]
+----
+format:mermaid-c4 ..has type.. format
+format:mermaid-c4 ..subformat of.. format:mermaid
+format:mermaid-c4 ..category.. text
+format:mermaid-c4 ..label.. Mermaid C4 Diagram
+format:mermaid-c4 ..spec.. https://mermaid.js.org/syntax/c4.html
+----
+
+== Features
+
+[source]
+----
+format:mermaid-c4 ..lacks.. multiple-graphs-per-document
+format:mermaid-c4 ..supports.. nodes ,, Person, System, Container, Component, …
+format:mermaid-c4 ..lacks.. undirected-edges
+format:mermaid-c4 ..supports.. directed-edges ,, Rel(from, to, …)
+format:mermaid-c4 ..lacks.. mixed-directionality-edges
+format:mermaid-c4 ..lacks.. hyperedges
+format:mermaid-c4 ..lacks.. edges-on-edges
+format:mermaid-c4 ..supports.. nested-graphs-in-nodes ,, Boundary / Enterprise_Boundary / System_Boundary
+format:mermaid-c4 ..lacks.. nested-graphs-in-edges
+format:mermaid-c4 ..lacks.. nested-graphs-in-graphs
+format:mermaid-c4 ..supports.. node-labels ,, Label argument
+format:mermaid-c4 ..supports.. edge-labels ,, Rel label argument
+format:mermaid-c4 ..supports.. attributes-on-nodes ,,
+..status.. partial
+Description and technology arguments
+,,
+format:mermaid-c4 ..lacks.. attributes-on-edges
+format:mermaid-c4 ..lacks.. attributes-on-graphs
+format:mermaid-c4 ..lacks.. typed-edges ,, Rel variants encode direction/layout, not edge type
+----
+
+== References
+
+* Specification: https://mermaid.js.org/syntax/c4.html[mermaid.js.org C4 diagram syntax]
+
+See also: link:mermaid.adoc[Mermaid]

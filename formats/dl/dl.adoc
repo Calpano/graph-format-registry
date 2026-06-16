@@ -1,0 +1,27 @@
+= UCINET DL
+:toc:
+
+Format for link:../../tools.adoc#_ucinet[UCINET] social network analysis software.
+
+== Identity
+
+[source]
+----
+format:dl ..has type.. format
+format:dl ..category.. text
+format:dl ..label.. UCINET DL
+format:dl ..file extension.. .dl
+format:dl ..spec.. https://docs.gephi.org/desktop/User_Manual/Import/UCINET_DL_Format/
+----
+
+== Features
+
+[source]
+----
+format:dl ..supports.. nodes
+format:dl ..supports.. directed-edges
+----
+
+== References
+
+* Specification: https://docs.gephi.org/desktop/User_Manual/Import/UCINET_DL_Format/[docs.gephi.org UCINET DL Format]

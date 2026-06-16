@@ -1,0 +1,77 @@
+= Harwell-Boeing
+:toc:
+
+A fixed-format, 80-column ASCII format for exchanging sparse matrices. Graphs
+are represented as sparse adjacency matrices. Largely superseded by link:../matrix-market/matrix-market.adoc[Matrix
+Market], but still widely used for test-matrix collections.
+
+== Identity
+
+[source]
+----
+format:harwell-boeing ..has type.. format
+format:harwell-boeing ..category.. text
+format:harwell-boeing ..label.. Harwell-Boeing
+format:harwell-boeing ..alternative name.. HB
+format:harwell-boeing ..alternative name.. Harwell-Boeing Exchange Format
+format:harwell-boeing ..file extension.. .hb
+format:harwell-boeing ..wikipedia.. https://en.wikipedia.org/wiki/Harwell-Boeing_file_format
+format:harwell-boeing ..wikidata.. Q1587964
+format:harwell-boeing ..released.. 1982
+format:harwell-boeing ..author.. iain-duff
+format:harwell-boeing ..author.. roger-grimes
+format:harwell-boeing ..author.. john-lewis
+format:harwell-boeing ..author.. bill-poole
+format:harwell-boeing ..org.. harwell
+format:harwell-boeing ..org.. boeing
+format:harwell-boeing ..spec.. https://math.nist.gov/MatrixMarket/formats.html
+
+harwell ..has type.. org
+harwell ..org type.. lab
+harwell ..label.. Harwell Laboratory (AERE)
+boeing ..has type.. org
+boeing ..org type.. company
+boeing ..label.. Boeing Computer Services
+iain-duff ..has type.. person
+iain-duff ..label.. Iain Duff
+iain-duff ..affiliation.. harwell
+roger-grimes ..has type.. person
+roger-grimes ..label.. Roger Grimes
+roger-grimes ..affiliation.. boeing
+john-lewis ..has type.. person
+john-lewis ..label.. John Lewis
+john-lewis ..affiliation.. boeing
+bill-poole ..has type.. person
+bill-poole ..label.. Bill Poole
+bill-poole ..affiliation.. boeing
+----
+
+== Features
+
+[source]
+----
+format:harwell-boeing ..supports.. nodes ,, Implicit as matrix indices
+format:harwell-boeing ..supports.. undirected-edges ,, Symmetric matrices
+format:harwell-boeing ..supports.. directed-edges ,, Unsymmetric matrices
+format:harwell-boeing ..supports.. attributes-on-edges ,, Numeric matrix values (weights)
+format:harwell-boeing ..lacks.. multiple-graphs-per-document
+format:harwell-boeing ..lacks.. hyperedges
+format:harwell-boeing ..lacks.. mixed-directionality-edges
+format:harwell-boeing ..lacks.. edges-on-edges
+format:harwell-boeing ..lacks.. nested-graphs-in-nodes
+format:harwell-boeing ..lacks.. nested-graphs-in-edges
+format:harwell-boeing ..lacks.. nested-graphs-in-graphs
+format:harwell-boeing ..lacks.. node-labels
+format:harwell-boeing ..lacks.. edge-labels
+format:harwell-boeing ..lacks.. attributes-on-nodes
+format:harwell-boeing ..lacks.. attributes-on-graphs
+format:harwell-boeing ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://math.nist.gov/MatrixMarket/formats.html[NIST Matrix Market formats]
+* Wikipedia: https://en.wikipedia.org/wiki/Harwell-Boeing_file_format[Harwell-Boeing file format]
+* Wikidata: https://www.wikidata.org/wiki/Q1587964[Q1587964]
+
+See also: link:../matrix-market/matrix-market.adoc[Matrix Market]

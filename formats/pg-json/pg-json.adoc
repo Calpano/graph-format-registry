@@ -1,0 +1,53 @@
+= PG-JSON (Property Graph Format)
+:toc:
+
+PG-JSON is the JSON serialization of the Property Graph Exchange Format (PG). A
+document contains a nodes array and an edges array; each node and edge carries
+labels and properties, modeling a labelled property graph.
+
+== Identity
+
+[source]
+----
+format:pg-json ..has type.. format
+format:pg-json ..category.. json
+format:pg-json ..label.. PG-JSON (Property Graph Format)
+format:pg-json ..file extension.. .pg.json
+format:pg-json ..file extension.. .pgjson
+format:pg-json ..author.. hirokazu-chiba
+format:pg-json ..author.. ryota-yamanaka
+format:pg-json ..author.. shota-matsumoto
+format:pg-json ..spec.. https://pg-format.github.io/specification/
+
+hirokazu-chiba ..has type.. person
+hirokazu-chiba ..label.. Hirokazu Chiba
+ryota-yamanaka ..has type.. person
+ryota-yamanaka ..label.. Ryota Yamanaka
+shota-matsumoto ..has type.. person
+shota-matsumoto ..label.. Shota Matsumoto
+----
+
+== Features
+
+[source]
+----
+format:pg-json ..supports.. nodes
+format:pg-json ..supports.. directed-edges
+format:pg-json ..supports.. undirected-edges ,, Via the undirected flag on an edge
+format:pg-json ..supports.. mixed-directionality-edges ,, Direction is per-edge
+format:pg-json ..supports.. node-labels ,, Labels array
+format:pg-json ..supports.. edge-labels ,, Labels array
+format:pg-json ..supports.. typed-edges ,, Edge labels act as types
+format:pg-json ..supports.. attributes-on-nodes ,, Properties
+format:pg-json ..supports.. attributes-on-edges ,, Properties
+format:pg-json ..lacks.. hyperedges
+format:pg-json ..lacks.. edges-on-edges
+format:pg-json ..lacks.. nested-graphs-in-nodes
+format:pg-json ..lacks.. nested-graphs-in-edges
+format:pg-json ..lacks.. nested-graphs-in-graphs
+format:pg-json ..lacks.. attributes-on-graphs
+----
+
+== References
+
+* Specification: https://pg-format.github.io/specification/[pg-format.github.io/specification]

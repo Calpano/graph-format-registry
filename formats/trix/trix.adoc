@@ -1,0 +1,54 @@
+= TriX
+:toc:
+
+An XML serialization for RDF datasets, encoding named graphs as a sequence of
+triple elements. Resources are nodes and triples are directed edges typed by
+their predicate.
+
+== Identity
+
+[source]
+----
+format:trix ..has type.. format
+format:trix ..category.. xml
+format:trix ..label.. TriX
+format:trix ..alternative name.. Triples in XML
+format:trix ..file extension.. .trix
+format:trix ..wikipedia.. https://en.wikipedia.org/wiki/TriX_(serialization_format)
+format:trix ..wikidata.. Q7839826
+format:trix ..spec.. https://www.hpl.hp.com/techreports/2004/HPL-2004-56.html
+----
+
+== Features
+
+[source]
+----
+format:trix ..supports.. multiple-graphs-per-document ,, Multiple named graph elements per document
+format:trix ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:trix ..lacks.. undirected-edges
+format:trix ..supports.. directed-edges ,, Triples are directed subject to object
+format:trix ..lacks.. hyperedges
+format:trix ..lacks.. mixed-directionality-edges
+format:trix ..supports.. edges-on-edges ,,
+..status.. partial
+Via RDF reification (rdf:Statement)
+,,
+format:trix ..lacks.. nested-graphs-in-nodes
+format:trix ..lacks.. nested-graphs-in-edges
+format:trix ..lacks.. nested-graphs-in-graphs ,, Named graphs are a flat sequence, not nested
+format:trix ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:trix ..supports.. edge-labels ,, Predicate IRI names the edge
+format:trix ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:trix ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:trix ..supports.. attributes-on-graphs ,,
+..status.. partial
+Properties asserted about a graph name IRI
+,,
+format:trix ..supports.. typed-edges ,, Every triple is typed by its predicate
+----
+
+== References
+
+* Specification: https://www.hpl.hp.com/techreports/2004/HPL-2004-56.html[www.hpl.hp.com/techreports/2004/HPL-2004-56.html]
+* Wikipedia: https://en.wikipedia.org/wiki/TriX_(serialization_format)[TriX (serialization format)]
+* Wikidata: https://www.wikidata.org/wiki/Q7839826[Q7839826]

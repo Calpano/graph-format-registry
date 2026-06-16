@@ -1,0 +1,30 @@
+= PSI-MI Tab 2.5
+:toc:
+
+HUPO PSI standard for molecular interactions.
+
+== Identity
+
+[source]
+----
+format:psimi-tab ..has type.. format
+format:psimi-tab ..category.. text
+format:psimi-tab ..label.. PSI-MI Tab 2.5
+
+format:psimi-tab-2.5 ..version of.. format:psimi-tab
+format:psimi-tab-2.5 ..version.. 2.5
+format:psimi-tab-2.5 ..file extension.. .txt
+format:psimi-tab-2.5 ..spec.. https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-5-44
+----
+
+== Features
+
+[source]
+----
+format:psimi-tab-2.5 ..supports.. nodes
+format:psimi-tab-2.5 ..supports.. undirected-edges ,, Interactions
+----
+
+== References
+
+* Specification: https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-5-44[bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-5-44]

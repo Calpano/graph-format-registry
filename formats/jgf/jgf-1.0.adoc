@@ -1,0 +1,43 @@
+= JGF 1.0
+:toc:
+
+See link:jgf.adoc[JGF (JSON Graph Format)] for the family-level identity. This entry covers the
+original v1.
+
+== Identity
+
+[source]
+----
+format:jgf-1.0 ..version of.. format:jgf
+format:jgf-1.0 ..version.. 1.0
+format:jgf-1.0 ..file extension.. .json
+format:jgf-1.0 ..spec.. https://github.com/jsongraph/json-graph-specification
+----
+
+== Features
+
+[source]
+----
+format:jgf-1.0 ..supports.. multiple-graphs-per-document ,, Via graphs array
+format:jgf-1.0 ..supports.. nodes ,, Stored as map with ID as key
+format:jgf-1.0 ..supports.. undirected-edges ,, Via directed: false
+format:jgf-1.0 ..supports.. directed-edges ,, Via directed: true
+format:jgf-1.0 ..supports.. hyperedges ,, Both directed and undirected
+format:jgf-1.0 ..lacks.. mixed-directionality-edges ,, Graph uses one edge type only
+format:jgf-1.0 ..lacks.. edges-on-edges
+format:jgf-1.0 ..lacks.. nested-graphs-in-nodes
+format:jgf-1.0 ..lacks.. nested-graphs-in-edges
+format:jgf-1.0 ..lacks.. nested-graphs-in-graphs
+format:jgf-1.0 ..supports.. node-labels ,, Via label field
+format:jgf-1.0 ..supports.. edge-labels ,, Via label field
+format:jgf-1.0 ..supports.. attributes-on-nodes ,, Via metadata object
+format:jgf-1.0 ..supports.. attributes-on-edges ,, Via metadata object
+format:jgf-1.0 ..supports.. attributes-on-graphs ,, Via metadata object
+format:jgf-1.0 ..supports.. typed-edges ,, Via relation field
+----
+
+== References
+
+* Specification: https://github.com/jsongraph/json-graph-specification[github.com/jsongraph/json-graph-specification]
+
+See also: link:jgf.adoc[JGF (JSON Graph Format)]

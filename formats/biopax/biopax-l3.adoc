@@ -1,0 +1,52 @@
+= BioPAX Level 3
+:toc:
+
+BioPAX is an OWL-based standard for representing biological pathways such as
+metabolic, signaling and gene-regulatory networks. Pathways are modelled as
+RDF/OWL graphs of typed entities (proteins, small molecules, complexes) linked
+by interactions and conversions.
+
+== Identity
+
+[source]
+----
+format:biopax ..has type.. format
+format:biopax ..category.. xml
+format:biopax ..label.. BioPAX
+format:biopax ..alternative name.. Biological Pathway Exchange
+format:biopax ..wikipedia.. https://en.wikipedia.org/wiki/BioPAX
+format:biopax ..wikidata.. Q4914639
+
+format:biopax-l3 ..version of.. format:biopax
+format:biopax-l3 ..version.. Level 3
+format:biopax-l3 ..file extension.. .owl
+format:biopax-l3 ..spec.. http://www.biopax.org/release/biopax-level3.owl
+----
+
+== Features
+
+[source]
+----
+format:biopax-l3 ..supports.. multiple-graphs-per-document ,, Multiple Pathway instances per OWL document
+format:biopax-l3 ..supports.. nodes ,, Physical entities and interactions as OWL individuals
+format:biopax-l3 ..supports.. directed-edges ,, Conversion (left/right, conversionDirection) and Control (controlType)
+format:biopax-l3 ..supports.. undirected-edges ,, MolecularInteraction is non-directional
+format:biopax-l3 ..supports.. hyperedges ,, Interactions link multiple participants
+format:biopax-l3 ..supports.. nested-graphs-in-graphs ,, pathwayComponent nests sub-pathways
+format:biopax-l3 ..supports.. node-labels ,, displayName / standardName
+format:biopax-l3 ..supports.. edge-labels ,, Interactions are Entities with displayName / standardName
+format:biopax-l3 ..supports.. attributes-on-nodes ,, OWL datatype and object properties
+format:biopax-l3 ..supports.. attributes-on-edges ,, Interaction properties (controlType, evidence, comment)
+format:biopax-l3 ..supports.. attributes-on-graphs ,, Pathway properties (organism, displayName, comment)
+format:biopax-l3 ..supports.. typed-edges ,, Interaction subclasses (Control, Conversion, etc.)
+format:biopax-l3 ..lacks.. mixed-directionality-edges
+format:biopax-l3 ..lacks.. edges-on-edges
+format:biopax-l3 ..lacks.. nested-graphs-in-nodes
+format:biopax-l3 ..lacks.. nested-graphs-in-edges
+----
+
+== References
+
+* Specification: http://www.biopax.org/release/biopax-level3.owl[biopax.org/release/biopax-level3.owl]
+* Wikipedia: https://en.wikipedia.org/wiki/BioPAX[BioPAX]
+* Wikidata: https://www.wikidata.org/wiki/Q4914639[Q4914639]

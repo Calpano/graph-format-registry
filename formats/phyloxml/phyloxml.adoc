@@ -1,0 +1,49 @@
+= phyloXML
+:toc:
+
+An XML format for phylogenetic trees and associated biological data, defined by
+an XML Schema. It allows rich annotation of clades and branches, including
+taxonomy, sequences, events and confidence values.
+
+== Identity
+
+[source]
+----
+format:phyloxml ..has type.. format
+format:phyloxml ..category.. xml
+format:phyloxml ..label.. phyloXML
+format:phyloxml ..file extension.. .xml
+format:phyloxml ..file extension.. .phyloxml
+format:phyloxml ..wikipedia.. https://en.wikipedia.org/wiki/PhyloXML
+format:phyloxml ..wikidata.. Q7189430
+format:phyloxml ..released.. 2009
+format:phyloxml ..spec.. http://www.phyloxml.org/
+----
+
+== Features
+
+[source]
+----
+format:phyloxml ..supports.. multiple-graphs-per-document ,, Several <phylogeny> elements per file
+format:phyloxml ..supports.. nodes ,, <clade> elements, internal and leaf
+format:phyloxml ..supports.. undirected-edges ,, rooted="false" phylogenies
+format:phyloxml ..supports.. directed-edges ,, rooted="true" phylogenies
+format:phyloxml ..lacks.. hyperedges
+format:phyloxml ..lacks.. mixed-directionality-edges
+format:phyloxml ..lacks.. edges-on-edges
+format:phyloxml ..lacks.. nested-graphs-in-nodes
+format:phyloxml ..lacks.. nested-graphs-in-edges
+format:phyloxml ..lacks.. nested-graphs-in-graphs
+format:phyloxml ..supports.. node-labels ,, <name> on clades
+format:phyloxml ..lacks.. edge-labels
+format:phyloxml ..supports.. attributes-on-nodes ,, Taxonomy, sequence and other clade sub-elements
+format:phyloxml ..supports.. attributes-on-edges ,, <branch_length> and branch-level data
+format:phyloxml ..supports.. attributes-on-graphs ,, Phylogeny-level name, description and confidence
+format:phyloxml ..supports.. typed-edges ,, clade_relation links two clades with a type (e.g. duplication)
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/PhyloXML[PhyloXML]
+* Wikidata: https://www.wikidata.org/wiki/Q7189430[Q7189430]
+* Specification: http://www.phyloxml.org/[phyloxml.org]

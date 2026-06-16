@@ -1,0 +1,33 @@
+= GraphML
+:toc:
+
+Family entry for GraphML. The released versions are link:graphml-1.0.adoc[GraphML 1.0] and
+link:graphml-1.1.adoc[GraphML 1.1], each with its own XSD/DTD.
+
+GraphML is an XML-based file format for graphs. It consists of a language core
+to describe the structural properties of a graph and a flexible extension
+mechanism to add application-specific data.
+
+It is widely used for representing graph structures and is supported by various
+graph visualization and analysis tools.
+
+== Identity
+
+[source]
+----
+format:graphml ..has type.. format
+format:graphml ..category.. xml
+format:graphml ..label.. GraphML
+format:graphml ..alternative name.. Graph Markup Language
+format:graphml ..wikipedia.. https://en.wikipedia.org/wiki/GraphML
+format:graphml ..wikidata.. Q1543325
+format:graphml ..spec.. http://graphml.graphdrawing.org/specification.html
+----
+
+== References
+
+* Specification: http://graphml.graphdrawing.org/specification.html[graphml.graphdrawing.org specification]
+* Wikipedia: https://en.wikipedia.org/wiki/GraphML[GraphML]
+* Wikidata: https://www.wikidata.org/wiki/Q1543325[Q1543325]
+
+See also: link:graphml-1.0.adoc[GraphML 1.0], link:graphml-1.1.adoc[GraphML 1.1]

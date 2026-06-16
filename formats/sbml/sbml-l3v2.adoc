@@ -1,0 +1,54 @@
+= SBML L3V2
+:toc:
+
+Domain-specific format for biological/biochemical models. Nodes are species, edges are reactions.
+
+== Identity
+
+[source]
+----
+format:sbml ..has type.. format
+format:sbml ..category.. xml
+format:sbml ..label.. SBML
+format:sbml ..alternative name.. Systems Biology Markup Language
+format:sbml ..wikipedia.. https://en.wikipedia.org/wiki/SBML
+format:sbml ..wikidata.. Q452197
+
+format:sbml-l3v2 ..version of.. format:sbml
+format:sbml-l3v2 ..version.. L3V2
+format:sbml-l3v2 ..released.. 2019-03-29
+format:sbml-l3v2 ..file extension.. .sbml
+format:sbml-l3v2 ..file extension.. .xml
+format:sbml-l3v2 ..spec.. http://sbml.org/documents/specifications/
+----
+
+== Features
+
+[source]
+----
+format:sbml-l3v2 ..supports.. multiple-graphs-per-document ,, Via comp package (hierarchical model composition)
+format:sbml-l3v2 ..supports.. nodes ,, Species in compartments
+format:sbml-l3v2 ..lacks.. undirected-edges ,, Reactions are directional
+format:sbml-l3v2 ..supports.. directed-edges ,, Reactions (reactants → products)
+format:sbml-l3v2 ..supports.. hyperedges ,, Reactions with multiple reactants/products
+format:sbml-l3v2 ..lacks.. mixed-directionality-edges
+format:sbml-l3v2 ..lacks.. edges-on-edges
+format:sbml-l3v2 ..supports.. nested-graphs-in-nodes ,, Compartments can be nested
+format:sbml-l3v2 ..lacks.. nested-graphs-in-edges
+format:sbml-l3v2 ..supports.. nested-graphs-in-graphs ,, Via comp package
+format:sbml-l3v2 ..supports.. node-labels ,, Via name attribute
+format:sbml-l3v2 ..supports.. edge-labels ,, Via name attribute on reactions
+format:sbml-l3v2 ..supports.. attributes-on-nodes ,, Extensive annotations (RDF-based)
+format:sbml-l3v2 ..supports.. attributes-on-edges ,, Kinetic laws, modifiers
+format:sbml-l3v2 ..supports.. attributes-on-graphs ,, Model metadata
+format:sbml-l3v2 ..supports.. typed-edges ,,
+..status.. partial
+Implicit via reaction structure
+,,
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/SBML[SBML]
+* Wikidata: https://www.wikidata.org/wiki/Q452197[Q452197]
+* Specification: http://sbml.org/documents/specifications/[sbml.org/documents/specifications]

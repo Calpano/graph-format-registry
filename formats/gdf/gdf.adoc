@@ -1,0 +1,46 @@
+= GDF
+:toc:
+
+CSV-like format used by GUESS and Gephi.
+
+== Identity
+
+[source]
+----
+format:gdf ..has type.. format
+format:gdf ..category.. text
+format:gdf ..label.. GDF
+format:gdf ..alternative name.. Graph Data Format
+format:gdf ..alternative name.. Graph Description Format
+format:gdf ..file extension.. .gdf
+format:gdf ..spec.. https://docs.gephi.org/desktop/User_Manual/Import/GDF_File_Format/
+----
+
+== Features
+
+[source]
+----
+format:gdf ..lacks.. multiple-graphs-per-document
+format:gdf ..supports.. nodes ,, nodedef> section
+format:gdf ..supports.. undirected-edges ,, Default
+format:gdf ..supports.. directed-edges ,, Via directed BOOLEAN attribute
+format:gdf ..lacks.. hyperedges
+format:gdf ..supports.. mixed-directionality-edges ,, Per-edge directed attribute
+format:gdf ..lacks.. edges-on-edges
+format:gdf ..lacks.. nested-graphs-in-nodes
+format:gdf ..lacks.. nested-graphs-in-edges
+format:gdf ..lacks.. nested-graphs-in-graphs
+format:gdf ..supports.. node-labels ,, Via label VARCHAR attribute
+format:gdf ..supports.. edge-labels ,, Via custom attribute
+format:gdf ..supports.. attributes-on-nodes ,, VARCHAR, DOUBLE, BOOLEAN types
+format:gdf ..supports.. attributes-on-edges ,, VARCHAR, DOUBLE, BOOLEAN types
+format:gdf ..lacks.. attributes-on-graphs
+format:gdf ..supports.. typed-edges ,,
+..status.. partial
+Via custom attribute
+,,
+----
+
+== References
+
+* Specification: https://docs.gephi.org/desktop/User_Manual/Import/GDF_File_Format/[docs.gephi.org GDF File Format]

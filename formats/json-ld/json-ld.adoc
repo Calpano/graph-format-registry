@@ -1,0 +1,56 @@
+= JSON-LD
+:toc:
+
+A JSON-based serialization of RDF that maps JSON keys to IRIs via a context.
+Resources are nodes and triples are directed edges typed by their predicate.
+Supports named graphs through the @graph keyword.
+
+== Identity
+
+[source]
+----
+format:json-ld ..has type.. format
+format:json-ld ..category.. json
+format:json-ld ..label.. JSON-LD
+format:json-ld ..alternative name.. JSON Linked Data
+format:json-ld ..file extension.. .jsonld
+format:json-ld ..media type.. application/ld+json
+format:json-ld ..wikipedia.. https://en.wikipedia.org/wiki/JSON-LD
+format:json-ld ..wikidata.. Q6108942
+format:json-ld ..org.. W3C
+format:json-ld ..spec.. https://www.w3.org/TR/json-ld11/
+----
+
+== Features
+
+[source]
+----
+format:json-ld ..supports.. multiple-graphs-per-document ,, Named graphs via @graph
+format:json-ld ..supports.. nodes ,, Node objects (IRIs and blank nodes)
+format:json-ld ..lacks.. undirected-edges
+format:json-ld ..supports.. directed-edges ,, Triples are directed subject to object
+format:json-ld ..lacks.. hyperedges
+format:json-ld ..lacks.. mixed-directionality-edges
+format:json-ld ..supports.. edges-on-edges ,,
+..status.. partial
+Via RDF reification (rdf:Statement)
+,,
+format:json-ld ..lacks.. nested-graphs-in-nodes
+format:json-ld ..lacks.. nested-graphs-in-edges
+format:json-ld ..lacks.. nested-graphs-in-graphs ,, RDF datasets are flat; named graphs are not nested
+format:json-ld ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:json-ld ..supports.. edge-labels ,, Predicate IRI names the edge
+format:json-ld ..supports.. attributes-on-nodes ,, Literal-valued properties on node objects
+format:json-ld ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:json-ld ..supports.. attributes-on-graphs ,,
+..status.. partial
+Properties asserted about the graph name @id
+,,
+format:json-ld ..supports.. typed-edges ,, Every triple is typed by its predicate
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/JSON-LD[JSON-LD]
+* Wikidata: https://www.wikidata.org/wiki/Q6108942[Q6108942]
+* Specification: https://www.w3.org/TR/json-ld11/[www.w3.org/TR/json-ld11]

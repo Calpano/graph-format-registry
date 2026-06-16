@@ -1,0 +1,45 @@
+= Mermaid Sankey
+:toc:
+
+The Sankey type of link:mermaid.adoc[Mermaid], opened by the `sankey-beta`
+keyword. Each line is a weighted flow `source,target,value`; nodes are implied
+by the names, and the value is the flow magnitude carried on the directed edge.
+
+== Identity
+
+[source]
+----
+format:mermaid-sankey ..has type.. format
+format:mermaid-sankey ..subformat of.. format:mermaid
+format:mermaid-sankey ..category.. text
+format:mermaid-sankey ..label.. Mermaid Sankey
+format:mermaid-sankey ..spec.. https://mermaid.js.org/syntax/sankey.html
+----
+
+== Features
+
+[source]
+----
+format:mermaid-sankey ..lacks.. multiple-graphs-per-document
+format:mermaid-sankey ..supports.. nodes ,, Implied by source/target names
+format:mermaid-sankey ..lacks.. undirected-edges
+format:mermaid-sankey ..supports.. directed-edges ,, source to target flow
+format:mermaid-sankey ..lacks.. mixed-directionality-edges
+format:mermaid-sankey ..lacks.. hyperedges
+format:mermaid-sankey ..lacks.. edges-on-edges
+format:mermaid-sankey ..lacks.. nested-graphs-in-nodes
+format:mermaid-sankey ..lacks.. nested-graphs-in-edges
+format:mermaid-sankey ..lacks.. nested-graphs-in-graphs
+format:mermaid-sankey ..lacks.. node-labels ,, Node name is the id; no separate label
+format:mermaid-sankey ..lacks.. edge-labels
+format:mermaid-sankey ..lacks.. attributes-on-nodes
+format:mermaid-sankey ..supports.. attributes-on-edges ,, Flow value (weight) per edge
+format:mermaid-sankey ..lacks.. attributes-on-graphs
+format:mermaid-sankey ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://mermaid.js.org/syntax/sankey.html[mermaid.js.org sankey syntax]
+
+See also: link:mermaid.adoc[Mermaid]

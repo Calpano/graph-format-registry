@@ -1,0 +1,24 @@
+= JGF (JSON Graph Format)
+:toc:
+
+Family entry for the JSON Graph Format. Released versions are link:jgf-1.0.adoc[JGF 1.0] and the
+revised link:jgf-2.0.adoc[JGF 2.0]; see `jgf-1.0.adoc` and `jgf-2.0.adoc` in this directory.
+
+JGF is a standardized JSON format for representing graph structures with nodes
+and edges.
+
+== Identity
+
+[source]
+----
+format:jgf ..has type.. format
+format:jgf ..category.. json
+format:jgf ..label.. JGF
+format:jgf ..alternative name.. JSON Graph Format
+format:jgf ..spec.. https://github.com/jsongraph/json-graph-specification
+----
+
+== References
+
+* Specification: https://github.com/jsongraph/json-graph-specification[JSON Graph Format specification]
+See also: link:jgf-1.0.adoc[JGF 1.0], link:jgf-2.0.adoc[JGF 2.0]

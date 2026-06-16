@@ -1,0 +1,51 @@
+= Newick format
+:toc:
+
+A compact text format for representing rooted or unrooted phylogenetic trees
+using nested parentheses. Each tree is written as a single expression
+terminated by a semicolon, where leaves carry names and branches may carry
+lengths.
+
+== Identity
+
+[source]
+----
+format:newick ..has type.. format
+format:newick ..category.. text
+format:newick ..label.. Newick format
+format:newick ..alternative name.. New Hampshire format
+format:newick ..file extension.. .nwk
+format:newick ..file extension.. .newick
+format:newick ..file extension.. .tree
+format:newick ..wikipedia.. https://en.wikipedia.org/wiki/Newick_format
+format:newick ..wikidata.. Q3339116
+format:newick ..spec.. http://evolution.genetics.washington.edu/phylip/newicktree.html
+----
+
+== Features
+
+[source]
+----
+format:newick ..lacks.. multiple-graphs-per-document ,, One tree per expression, though some tools concatenate several
+format:newick ..supports.. nodes ,, Internal and leaf nodes
+format:newick ..supports.. undirected-edges ,, Unrooted trees
+format:newick ..supports.. directed-edges ,, Rooted trees imply parent-to-child direction
+format:newick ..lacks.. hyperedges
+format:newick ..lacks.. mixed-directionality-edges
+format:newick ..lacks.. edges-on-edges
+format:newick ..lacks.. nested-graphs-in-nodes
+format:newick ..lacks.. nested-graphs-in-edges
+format:newick ..lacks.. nested-graphs-in-graphs
+format:newick ..supports.. node-labels ,, Names on leaf and internal nodes
+format:newick ..lacks.. edge-labels
+format:newick ..lacks.. attributes-on-nodes
+format:newick ..supports.. attributes-on-edges ,, Branch lengths after a colon
+format:newick ..lacks.. attributes-on-graphs
+format:newick ..lacks.. typed-edges
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/Newick_format[Newick format]
+* Wikidata: https://www.wikidata.org/wiki/Q3339116[Q3339116]
+* Specification: http://evolution.genetics.washington.edu/phylip/newicktree.html[evolution.genetics.washington.edu/phylip/newicktree.html]

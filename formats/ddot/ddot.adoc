@@ -1,0 +1,35 @@
+= DDot.it Triple Text Format
+:toc:
+
+A simple line-based triple text format in which each statement is written as
+subject..predicate..object. Subjects and objects are nodes and predicates name
+the directed, typed edges between them.
+
+== Identity
+
+[source]
+----
+format:ddot ..has type.. format
+format:ddot ..category.. text
+format:ddot ..label.. DDot.it Triple Text Format
+format:ddot ..file extension.. .ddot
+format:ddot ..file extension.. .ddot.txt
+format:ddot ..spec.. https://ddot.it
+format:ddot ..org.. calpano
+----
+
+== Features
+
+[source]
+----
+format:ddot ..supports.. nodes ,, Subjects and objects
+format:ddot ..supports.. directed-edges ,, Each triple is directed subject to object
+format:ddot ..lacks.. undirected-edges
+format:ddot ..supports.. edge-labels ,, Predicate names the edge
+format:ddot ..supports.. typed-edges ,, Every triple is typed by its predicate
+format:ddot ..supports.. attributes-on-nodes ,, Literal-valued triples on a subject
+----
+
+== References
+
+* Specification: https://ddot.it[ddot.it]

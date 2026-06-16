@@ -1,0 +1,50 @@
+= SMILES
+:toc:
+
+A compact line-notation molecular-graph format. Atoms are written as element
+symbols (nodes) and bonds as the implicit or explicit characters between them
+(edges); ring-closure digits encode cycles. Per-atom attributes such as charge
+and isotope go inside bracketed atoms, and bond order is a typed edge
+(`-`, `=`, `#`, `:`).
+
+== Identity
+
+[source]
+----
+format:smiles ..has type.. format
+format:smiles ..category.. text
+format:smiles ..label.. SMILES
+format:smiles ..alternative name.. Simplified Molecular Input Line Entry System
+format:smiles ..file extension.. .smi
+format:smiles ..wikipedia.. https://en.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System
+format:smiles ..wikidata.. Q466769
+format:smiles ..spec.. http://opensmiles.org/opensmiles.html
+----
+
+== Features
+
+[source]
+----
+format:smiles ..supports.. multiple-graphs-per-document ,, Disconnected components joined with . ; .smi files hold one per line
+format:smiles ..supports.. nodes ,, Atoms as element symbols
+format:smiles ..supports.. undirected-edges ,, Bonds are undirected
+format:smiles ..lacks.. directed-edges ,, / and \ mark cis/trans geometry, not direction
+format:smiles ..lacks.. hyperedges
+format:smiles ..lacks.. mixed-directionality-edges
+format:smiles ..lacks.. edges-on-edges
+format:smiles ..lacks.. nested-graphs-in-nodes
+format:smiles ..lacks.. nested-graphs-in-edges
+format:smiles ..lacks.. nested-graphs-in-graphs
+format:smiles ..lacks.. node-labels
+format:smiles ..lacks.. edge-labels
+format:smiles ..supports.. attributes-on-nodes ,, Charge, isotope, chirality in bracket atoms
+format:smiles ..lacks.. attributes-on-edges
+format:smiles ..lacks.. attributes-on-graphs
+format:smiles ..supports.. typed-edges ,, Bond order via - = # : characters
+----
+
+== References
+
+* Specification: http://opensmiles.org/opensmiles.html[opensmiles.org/opensmiles.html]
+* Wikipedia: https://en.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System[Simplified Molecular Input Line Entry System]
+* Wikidata: https://www.wikidata.org/wiki/Q466769[Q466769]

@@ -1,0 +1,49 @@
+= DGML
+:toc:
+
+XML-based format used by Visual Studio for directed graph documents ("code maps").
+A document has a single root <DirectedGraph> with <Node>, <Link> and <Category>
+elements.
+
+== Identity
+
+[source]
+----
+format:dgml ..has type.. format
+format:dgml ..category.. xml
+format:dgml ..label.. DGML
+format:dgml ..alternative name.. Directed Graph Markup Language
+format:dgml ..file extension.. .dgml
+format:dgml ..wikipedia.. https://en.wikipedia.org/wiki/DGML
+format:dgml ..wikidata.. Q5204969
+format:dgml ..org.. Microsoft
+format:dgml ..spec.. https://learn.microsoft.com/en-us/visualstudio/modeling/directed-graph-markup-language-dgml-reference
+----
+
+== Features
+
+[source]
+----
+format:dgml ..lacks.. multiple-graphs-per-document ,, Single <DirectedGraph> root
+format:dgml ..supports.. nodes ,, <Node> elements
+format:dgml ..supports.. directed-edges ,, <Link Source Target>
+format:dgml ..lacks.. hyperedges
+format:dgml ..lacks.. edges-on-edges
+format:dgml ..supports.. nested-graphs-in-nodes ,, Group nodes with Contains links
+format:dgml ..lacks.. nested-graphs-in-edges
+format:dgml ..supports.. node-labels ,, Label attribute on <Node>
+format:dgml ..supports.. edge-labels ,, Label attribute on <Link>
+format:dgml ..supports.. attributes-on-nodes ,, Via <Property> definitions
+format:dgml ..supports.. attributes-on-edges ,, Via <Property> definitions
+format:dgml ..supports.. attributes-on-graphs ,,
+..status.. partial
+Fixed <DirectedGraph> attributes (Title, Layout, etc.)
+,,
+format:dgml ..supports.. typed-edges ,, Category attribute on <Link>
+----
+
+== References
+
+* Specification: https://learn.microsoft.com/en-us/visualstudio/modeling/directed-graph-markup-language-dgml-reference[learn.microsoft.com DGML reference]
+* Wikipedia: https://en.wikipedia.org/wiki/DGML[DGML]
+* Wikidata: https://www.wikidata.org/wiki/Q5204969[Q5204969]

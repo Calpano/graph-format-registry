@@ -1,0 +1,31 @@
+= Matrix Market
+:toc:
+
+Matrix exchange format. Graphs represented as sparse matrices.
+
+== Identity
+
+[source]
+----
+format:matrix-market ..has type.. format
+format:matrix-market ..category.. text
+format:matrix-market ..label.. Matrix Market
+format:matrix-market ..file extension.. .mtx
+format:matrix-market ..wikipedia.. https://en.wikipedia.org/wiki/Matrix_Market_exchange_formats
+format:matrix-market ..wikidata.. Q6787857
+format:matrix-market ..spec.. https://math.nist.gov/MatrixMarket/formats.html#MMformat
+----
+
+== Features
+
+[source]
+----
+format:matrix-market ..supports.. nodes ,, Implicit as indices
+format:matrix-market ..supports.. directed-edges ,, Sparse matrix entries
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/Matrix_Market_exchange_formats[Matrix Market exchange formats]
+* Wikidata: https://www.wikidata.org/wiki/Q6787857[Q6787857]
+* Specification: https://math.nist.gov/MatrixMarket/formats.html#MMformat[math.nist.gov/MatrixMarket/formats.html#MMformat]

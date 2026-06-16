@@ -1,0 +1,102 @@
+= Graph Features
+
+The controlled vocabulary of graph-model features that every format entry is
+scored against. Each feature is a ddot subject of type `feature`; format
+entries reference these slugs in their `..supports..` / `..lacks..` triples.
+
+The features describe what a format's *data model* can express — independent of
+any particular syntax. A format either can or cannot represent each concept.
+
+[source]
+----
+multiple-graphs-per-document ..has type.. feature ,, ..label.. Multiple Graphs per Document
+nodes                        ..has type.. feature ,, ..label.. Nodes
+undirected-edges             ..has type.. feature ,, ..label.. Undirected Edges
+directed-edges               ..has type.. feature ,, ..label.. Directed Edges
+hyperedges                   ..has type.. feature ,, ..label.. Hyperedges
+mixed-directionality-edges   ..has type.. feature ,, ..label.. Mixed-directionality Edges
+edges-on-edges               ..has type.. feature ,, ..label.. Edges on Edges
+nested-graphs-in-nodes       ..has type.. feature ,, ..label.. Nested Graphs in Nodes
+nested-graphs-in-edges       ..has type.. feature ,, ..label.. Nested Graphs in Edges
+nested-graphs-in-graphs      ..has type.. feature ,, ..label.. Nested Graphs in Graphs
+node-labels                  ..has type.. feature ,, ..label.. Node Labels
+edge-labels                  ..has type.. feature ,, ..label.. Edge Labels
+attributes-on-nodes          ..has type.. feature ,, ..label.. Attributes on Nodes
+attributes-on-edges          ..has type.. feature ,, ..label.. Attributes on Edges
+attributes-on-graphs         ..has type.. feature ,, ..label.. Attributes on Graphs
+typed-edges                  ..has type.. feature ,, ..label.. Typed Edges
+----
+
+== Structure & containment
+
+`multiple-graphs-per-document`::
+Multiple Graphs per Document. The format can carry more than one independent
+graph in a single file or document, rather than exactly one graph per file.
+
+`nodes`::
+Nodes. The format has an explicit notion of a node (vertex) as a first-class
+entity. Nearly universal, but listed so that purely edge-list-style formats
+that only imply nodes can be distinguished.
+
+== Edges & directionality
+
+`undirected-edges`::
+Undirected Edges. An edge can be declared symmetric, expressing a relationship
+with no inherent direction between its endpoints.
+
+`directed-edges`::
+Directed Edges. An edge can carry a direction, distinguishing a source (tail)
+endpoint from a target (head) endpoint.
+
+`hyperedges`::
+Hyperedges. A single edge can connect more than two nodes (an n-ary
+relationship), rather than being limited to exactly two endpoints.
+
+`mixed-directionality-edges`::
+Mixed-directionality Edges. Directed and undirected edges can coexist in the
+*same* graph. Formats that force the whole graph to be either directed or
+undirected lack this feature even if they support both modes separately.
+
+`edges-on-edges`::
+Edges on Edges. An edge may itself be an endpoint of another edge, allowing
+statements about relationships (edge reification / meta-edges).
+
+`typed-edges`::
+Typed Edges. An edge can be assigned a type / kind / relationship label drawn
+from a controlled set, distinct from a free-text display label.
+
+== Nesting
+
+`nested-graphs-in-nodes`::
+Nested Graphs in Nodes. A node can contain a whole sub-graph (compound /
+container nodes), enabling hierarchical decomposition.
+
+`nested-graphs-in-edges`::
+Nested Graphs in Edges. An edge can contain a sub-graph, attaching internal
+structure to a relationship.
+
+`nested-graphs-in-graphs`::
+Nested Graphs in Graphs. A graph can directly contain sub-graphs (e.g. clusters
+or grouping), independent of node or edge containment.
+
+== Labels
+
+`node-labels`::
+Node Labels. A node can carry a human-readable display label, separate from its
+identifier.
+
+`edge-labels`::
+Edge Labels. An edge can carry a human-readable display label.
+
+== Attributes / data
+
+`attributes-on-nodes`::
+Attributes on Nodes. Arbitrary key–value data can be attached to a node beyond
+its identifier and label.
+
+`attributes-on-edges`::
+Attributes on Edges. Arbitrary key–value data can be attached to an edge.
+
+`attributes-on-graphs`::
+Attributes on Graphs. Arbitrary key–value data can be attached to the graph (or
+sub-graph) as a whole.

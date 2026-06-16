@@ -1,0 +1,49 @@
+= Chemical Markup Language (CML)
+:toc:
+
+An XML-based molecular-graph format. Atoms appear as `<atom>` nodes inside an
+`<atomArray>` and bonds as `<bond>` edges inside a `<bondArray>`. Per-atom
+attributes such as element, formal charge and isotope, and per-bond bond order,
+are expressed as XML attributes or `<scalar>` properties.
+
+== Identity
+
+[source]
+----
+format:cml ..has type.. format
+format:cml ..category.. xml
+format:cml ..label.. Chemical Markup Language (CML)
+format:cml ..alternative name.. CML
+format:cml ..file extension.. .cml
+format:cml ..wikipedia.. https://en.wikipedia.org/wiki/Chemical_Markup_Language
+format:cml ..wikidata.. Q1069211
+format:cml ..spec.. http://www.xml-cml.org/
+----
+
+== Features
+
+[source]
+----
+format:cml ..supports.. multiple-graphs-per-document ,, Multiple <molecule> elements per document
+format:cml ..supports.. nodes ,, <atom> elements
+format:cml ..supports.. undirected-edges ,, <bond> elements are undirected
+format:cml ..lacks.. directed-edges
+format:cml ..lacks.. hyperedges
+format:cml ..lacks.. mixed-directionality-edges
+format:cml ..lacks.. edges-on-edges
+format:cml ..lacks.. nested-graphs-in-nodes ,, <molecule> nests in <molecule>, not in an <atom> node
+format:cml ..lacks.. nested-graphs-in-edges
+format:cml ..supports.. nested-graphs-in-graphs ,, <molecule> may contain child <molecule> elements
+format:cml ..supports.. node-labels ,, <atom> may carry <label> child elements
+format:cml ..lacks.. edge-labels
+format:cml ..supports.. attributes-on-nodes ,, Element, charge, isotope via XML attributes
+format:cml ..supports.. attributes-on-edges ,, Bond stereo and properties
+format:cml ..supports.. attributes-on-graphs ,, Molecule-level properties
+format:cml ..supports.. typed-edges ,, order attribute on <bond>
+----
+
+== References
+
+* Specification: http://www.xml-cml.org/[xml-cml.org]
+* Wikipedia: https://en.wikipedia.org/wiki/Chemical_Markup_Language[Chemical Markup Language]
+* Wikidata: https://www.wikidata.org/wiki/Q1069211[Q1069211]

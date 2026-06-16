@@ -1,0 +1,44 @@
+= CytoScape JSON
+:toc:
+
+JSON format used by Cytoscape.js for graph visualization.
+
+== Identity
+
+[source]
+----
+format:cytoscape-json ..has type.. format
+format:cytoscape-json ..category.. json
+format:cytoscape-json ..label.. CytoScape JSON
+format:cytoscape-json ..file extension.. .cyjs
+format:cytoscape-json ..spec.. https://js.cytoscape.org/#notation/elements-json
+----
+
+== Features
+
+[source]
+----
+format:cytoscape-json ..lacks.. multiple-graphs-per-document ,, Single graph per instance
+format:cytoscape-json ..supports.. nodes
+format:cytoscape-json ..supports.. undirected-edges ,, Supports directed, undirected, and mixed graphs
+format:cytoscape-json ..supports.. directed-edges ,, Via source/target properties
+format:cytoscape-json ..lacks.. hyperedges ,, Edges connect exactly 2 nodes
+format:cytoscape-json ..lacks.. mixed-directionality-edges
+format:cytoscape-json ..lacks.. edges-on-edges ,, Edges only connect nodes
+format:cytoscape-json ..supports.. nested-graphs-in-nodes ,, Via compound nodes (parent property)
+format:cytoscape-json ..lacks.. nested-graphs-in-edges
+format:cytoscape-json ..lacks.. nested-graphs-in-graphs
+format:cytoscape-json ..supports.. node-labels ,, Via data field and styling
+format:cytoscape-json ..supports.. edge-labels ,, Via data field and styling
+format:cytoscape-json ..supports.. attributes-on-nodes ,, Via data field (JSON-serializable)
+format:cytoscape-json ..supports.. attributes-on-edges ,, Via data field (JSON-serializable)
+format:cytoscape-json ..supports.. attributes-on-graphs ,, Via graph data property
+format:cytoscape-json ..supports.. typed-edges ,,
+..status.. partial
+No formal types, but can use data field
+,,
+----
+
+== References
+
+* Specification: https://js.cytoscape.org/#notation/elements-json[js.cytoscape.org elements-json]

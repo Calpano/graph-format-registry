@@ -1,0 +1,49 @@
+= Mermaid ER Diagram
+:toc:
+
+The entity-relationship type of link:mermaid.adoc[Mermaid], opened by the
+`erDiagram` keyword. Entities are nodes and relationships are edges whose two
+endpoints carry a cardinality (one, zero-or-one, one-or-many, zero-or-many);
+entities may declare attribute blocks.
+
+== Identity
+
+[source]
+----
+format:mermaid-er ..has type.. format
+format:mermaid-er ..subformat of.. format:mermaid
+format:mermaid-er ..category.. text
+format:mermaid-er ..label.. Mermaid ER Diagram
+format:mermaid-er ..spec.. https://mermaid.js.org/syntax/entityRelationshipDiagram.html
+----
+
+== Features
+
+[source]
+----
+format:mermaid-er ..lacks.. multiple-graphs-per-document
+format:mermaid-er ..supports.. nodes ,, Entities
+format:mermaid-er ..supports.. undirected-edges ,, Relationships are non-directional with cardinality at each end
+format:mermaid-er ..lacks.. directed-edges
+format:mermaid-er ..lacks.. mixed-directionality-edges
+format:mermaid-er ..lacks.. hyperedges
+format:mermaid-er ..lacks.. edges-on-edges
+format:mermaid-er ..lacks.. nested-graphs-in-nodes
+format:mermaid-er ..lacks.. nested-graphs-in-edges
+format:mermaid-er ..lacks.. nested-graphs-in-graphs
+format:mermaid-er ..supports.. node-labels ,, Entity name
+format:mermaid-er ..supports.. edge-labels ,, Relationship verb phrase after :
+format:mermaid-er ..supports.. attributes-on-nodes ,,
+..status.. partial
+Entity attribute blocks (reader parses but does not promote them)
+,,
+format:mermaid-er ..lacks.. attributes-on-edges
+format:mermaid-er ..lacks.. attributes-on-graphs
+format:mermaid-er ..supports.. typed-edges ,, Cardinality types (one / zero-or-one / one-or-many / zero-or-many)
+----
+
+== References
+
+* Specification: https://mermaid.js.org/syntax/entityRelationshipDiagram.html[mermaid.js.org entity relationship diagram syntax]
+
+See also: link:mermaid.adoc[Mermaid]

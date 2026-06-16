@@ -1,0 +1,25 @@
+= Nested Network Format
+:toc:
+
+Cytoscape format supporting nested networks within nodes.
+
+== Identity
+
+[source]
+----
+format:nested-network ..has type.. format
+format:nested-network ..category.. text
+format:nested-network ..label.. Nested Network Format
+format:nested-network ..spec.. https://manual.cytoscape.org/en/stable/Nested_Networks.html
+----
+
+== Features
+
+[source]
+----
+format:nested-network ..supports.. nested-graphs-in-nodes ,, Cytoscape format supporting nested networks within nodes.
+----
+
+== References
+
+* Specification: https://manual.cytoscape.org/en/stable/Nested_Networks.html[manual.cytoscape.org Nested Networks]

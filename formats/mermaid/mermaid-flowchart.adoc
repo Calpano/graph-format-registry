@@ -1,0 +1,49 @@
+= Mermaid Flowchart
+:toc:
+
+The flowchart diagram type of link:mermaid.adoc[Mermaid], opened by the
+`flowchart` or `graph` keyword. Declared nodes (with one of many shapes) and the
+links between them form a directed or undirected graph; `subgraph … end` blocks
+group nodes.
+
+== Identity
+
+[source]
+----
+format:mermaid-flowchart ..has type.. format
+format:mermaid-flowchart ..subformat of.. format:mermaid
+format:mermaid-flowchart ..category.. text
+format:mermaid-flowchart ..label.. Mermaid Flowchart
+format:mermaid-flowchart ..spec.. https://mermaid.js.org/syntax/flowchart.html
+----
+
+== Features
+
+[source]
+----
+format:mermaid-flowchart ..lacks.. multiple-graphs-per-document
+format:mermaid-flowchart ..supports.. nodes
+format:mermaid-flowchart ..supports.. undirected-edges ,, Via --- links
+format:mermaid-flowchart ..supports.. directed-edges ,, Via --> links
+format:mermaid-flowchart ..supports.. mixed-directionality-edges ,, Directed and undirected links may be mixed
+format:mermaid-flowchart ..lacks.. hyperedges
+format:mermaid-flowchart ..lacks.. edges-on-edges
+format:mermaid-flowchart ..supports.. nested-graphs-in-nodes ,, Via subgraph … end
+format:mermaid-flowchart ..lacks.. nested-graphs-in-edges
+format:mermaid-flowchart ..lacks.. nested-graphs-in-graphs
+format:mermaid-flowchart ..supports.. node-labels ,, Label inside the node shape
+format:mermaid-flowchart ..supports.. edge-labels ,, Via -->|text| or -- text -->
+format:mermaid-flowchart ..supports.. attributes-on-nodes ,,
+..status.. partial
+Visual class via classDef/class
+,,
+format:mermaid-flowchart ..lacks.. attributes-on-edges
+format:mermaid-flowchart ..lacks.. attributes-on-graphs
+format:mermaid-flowchart ..lacks.. typed-edges ,, Arrow variants (==>, -.-) are visual, not semantic types
+----
+
+== References
+
+* Specification: https://mermaid.js.org/syntax/flowchart.html[mermaid.js.org flowchart syntax]
+
+See also: link:mermaid.adoc[Mermaid]

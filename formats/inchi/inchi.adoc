@@ -1,0 +1,52 @@
+= InChI
+:toc:
+
+A canonical line-notation identifier derived from a molecular graph. Atoms are
+nodes and bonds are edges, but they are not written out directly: the
+connectivity layer encodes the canonically numbered bond list, while separate
+layers carry per-atom attributes such as formal charge, isotope and hydrogen
+counts. InChI is normalized and layered, so it is a derived identifier rather
+than a round-trippable structure file.
+
+== Identity
+
+[source]
+----
+format:inchi ..has type.. format
+format:inchi ..category.. text
+format:inchi ..label.. InChI
+format:inchi ..alternative name.. International Chemical Identifier
+format:inchi ..alternative name.. IUPAC International Chemical Identifier
+format:inchi ..wikipedia.. https://en.wikipedia.org/wiki/International_Chemical_Identifier
+format:inchi ..wikidata.. Q203250
+format:inchi ..org.. IUPAC
+format:inchi ..spec.. https://www.inchi-trust.org/technical-faq/
+----
+
+== Features
+
+[source]
+----
+format:inchi ..lacks.. multiple-graphs-per-document ,, One identifier per structure
+format:inchi ..supports.. nodes ,, Atoms encoded in the formula and connection layers
+format:inchi ..supports.. undirected-edges ,, Connection layer encodes undirected bonds
+format:inchi ..lacks.. directed-edges
+format:inchi ..lacks.. hyperedges
+format:inchi ..lacks.. mixed-directionality-edges
+format:inchi ..lacks.. edges-on-edges
+format:inchi ..lacks.. nested-graphs-in-nodes
+format:inchi ..lacks.. nested-graphs-in-edges
+format:inchi ..lacks.. nested-graphs-in-graphs
+format:inchi ..lacks.. node-labels
+format:inchi ..lacks.. edge-labels
+format:inchi ..supports.. attributes-on-nodes ,, Charge, isotope and H layers per atom
+format:inchi ..lacks.. attributes-on-edges ,, Bond order is normalized away
+format:inchi ..lacks.. attributes-on-graphs
+format:inchi ..lacks.. typed-edges ,, Bonds are not typed by order; tautomers/charges are normalized
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/International_Chemical_Identifier[International Chemical Identifier]
+* Wikidata: https://www.wikidata.org/wiki/Q203250[Q203250]
+* Specification: https://www.inchi-trust.org/technical-faq/[www.inchi-trust.org/technical-faq]

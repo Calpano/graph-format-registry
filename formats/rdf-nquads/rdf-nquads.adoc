@@ -1,0 +1,55 @@
+= N-Quads
+:toc:
+
+A line-based, plain-text RDF serialization that extends link:../n-triples/n-triples.adoc[N-Triples] with a fourth
+term naming the graph each statement belongs to. Resources are nodes, triples
+are directed edges typed by their predicate, and the fourth term partitions
+statements into named graphs.
+
+== Identity
+
+[source]
+----
+format:rdf-nquads ..has type.. format
+format:rdf-nquads ..category.. text
+format:rdf-nquads ..label.. N-Quads
+format:rdf-nquads ..file extension.. .nq
+format:rdf-nquads ..media type.. application/n-quads
+format:rdf-nquads ..wikipedia.. https://en.wikipedia.org/wiki/N-Quads
+format:rdf-nquads ..wikidata.. Q31398150
+format:rdf-nquads ..org.. W3C
+format:rdf-nquads ..spec.. https://www.w3.org/TR/n-quads/
+----
+
+== Features
+
+[source]
+----
+format:rdf-nquads ..supports.. multiple-graphs-per-document ,, Fourth term names the graph
+format:rdf-nquads ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:rdf-nquads ..lacks.. undirected-edges
+format:rdf-nquads ..supports.. directed-edges ,, Triples are directed subject to object
+format:rdf-nquads ..lacks.. hyperedges
+format:rdf-nquads ..lacks.. mixed-directionality-edges
+format:rdf-nquads ..supports.. edges-on-edges ,,
+..status.. partial
+Via RDF reification (rdf:Statement)
+,,
+format:rdf-nquads ..lacks.. nested-graphs-in-nodes
+format:rdf-nquads ..lacks.. nested-graphs-in-edges
+format:rdf-nquads ..lacks.. nested-graphs-in-graphs
+format:rdf-nquads ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:rdf-nquads ..supports.. edge-labels ,, Predicate IRI names the edge
+format:rdf-nquads ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:rdf-nquads ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:rdf-nquads ..lacks.. attributes-on-graphs
+format:rdf-nquads ..supports.. typed-edges ,, Every triple is typed by its predicate
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/N-Quads[N-Quads]
+* Wikidata: https://www.wikidata.org/wiki/Q31398150[Q31398150]
+* Specification: https://www.w3.org/TR/n-quads/[www.w3.org/TR/n-quads]
+
+See also: link:../n-triples/n-triples.adoc[N-Triples]

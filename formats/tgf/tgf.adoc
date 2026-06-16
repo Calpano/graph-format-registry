@@ -1,0 +1,46 @@
+= TGF
+:toc:
+
+Simple text format with nodes and edges separated by #.
+
+== Identity
+
+[source]
+----
+format:tgf ..has type.. format
+format:tgf ..category.. text
+format:tgf ..label.. TGF
+format:tgf ..alternative name.. Trivial Graph Format
+format:tgf ..file extension.. .tgf
+format:tgf ..wikipedia.. https://en.wikipedia.org/wiki/Trivial_Graph_Format
+format:tgf ..wikidata.. Q4051789
+format:tgf ..spec.. https://docs.yworks.com/yfiles/doc/developers-guide/tgf.html
+----
+
+== Features
+
+[source]
+----
+format:tgf ..lacks.. multiple-graphs-per-document
+format:tgf ..supports.. nodes
+format:tgf ..lacks.. undirected-edges ,, A source-target line is read as directed; treated as directed-only
+format:tgf ..supports.. directed-edges ,, Source-target order; the spec covers both directed and undirected graphs
+format:tgf ..lacks.. hyperedges
+format:tgf ..lacks.. mixed-directionality-edges
+format:tgf ..lacks.. edges-on-edges
+format:tgf ..lacks.. nested-graphs-in-nodes
+format:tgf ..lacks.. nested-graphs-in-edges
+format:tgf ..lacks.. nested-graphs-in-graphs
+format:tgf ..supports.. node-labels ,, After node ID
+format:tgf ..supports.. edge-labels ,, After edge endpoints
+format:tgf ..lacks.. attributes-on-nodes
+format:tgf ..lacks.. attributes-on-edges
+format:tgf ..lacks.. attributes-on-graphs
+format:tgf ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://docs.yworks.com/yfiles/doc/developers-guide/tgf.html[docs.yworks.com TGF]
+* Wikipedia: https://en.wikipedia.org/wiki/Trivial_Graph_Format[Trivial Graph Format]
+* Wikidata: https://www.wikidata.org/wiki/Q4051789[Q4051789]

@@ -1,0 +1,48 @@
+= Cytoscape SIF (Simple Interaction Format)
+:toc:
+
+Minimal text format used by Cytoscape. Each line is `nodeA relationshipType nodeB
+nodeC ...`, where the middle token names the interaction type. Node and edge
+attributes are not stored in the SIF file itself but in separate companion files.
+
+== Identity
+
+[source]
+----
+format:sif ..has type.. format
+format:sif ..category.. text
+format:sif ..label.. Cytoscape SIF (Simple Interaction Format)
+format:sif ..alternative name.. SIF
+format:sif ..alternative name.. Simple Interaction Format
+format:sif ..file extension.. .sif
+format:sif ..org.. Cytoscape
+format:sif ..wikidata.. Q125253619
+format:sif ..spec.. http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html
+----
+
+== Features
+
+[source]
+----
+format:sif ..lacks.. multiple-graphs-per-document
+format:sif ..supports.. nodes ,, Implicit from interaction lines
+format:sif ..lacks.. hyperedges ,, Multi-target lines expand to binary edges
+format:sif ..lacks.. edges-on-edges
+format:sif ..lacks.. nested-graphs-in-nodes
+format:sif ..lacks.. nested-graphs-in-edges
+format:sif ..lacks.. nested-graphs-in-graphs
+format:sif ..lacks.. node-labels ,, Node token is the id; no distinct label
+format:sif ..supports.. edge-labels ,,
+..status.. partial
+Only the interaction-type token, no label distinct from type
+,,
+format:sif ..lacks.. attributes-on-nodes ,, Held in separate attribute files
+format:sif ..lacks.. attributes-on-edges ,, Held in separate attribute files
+format:sif ..lacks.. attributes-on-graphs
+format:sif ..supports.. typed-edges ,, Middle token is the interaction type
+----
+
+== References
+
+* Specification: http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html[manual.cytoscape.org Supported Network File Formats]
+* Wikidata: https://www.wikidata.org/wiki/Q125253619[Q125253619]

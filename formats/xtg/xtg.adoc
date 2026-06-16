@@ -1,0 +1,45 @@
+= eXtensible TreeGraph (XTG)
+:toc:
+
+An XML format used by link:../../tools.adoc#_treegraph[TreeGraph 2] to store phylogenetic trees together with
+annotations and graphical formatting. Nodes and branches can carry an unlimited
+number of labelled data values as well as styling such as colours and line
+widths.
+
+== Identity
+
+[source]
+----
+format:xtg ..has type.. format
+format:xtg ..category.. xml
+format:xtg ..label.. eXtensible TreeGraph (XTG)
+format:xtg ..alternative name.. XTG
+format:xtg ..alternative name.. extensible TreeGraph format
+format:xtg ..file extension.. .xtg
+format:xtg ..wikidata.. Q105762923
+format:xtg ..spec.. http://treegraph.bioinfweb.info/Development/XTG
+----
+
+== Features
+
+[source]
+----
+format:xtg ..lacks.. multiple-graphs-per-document ,, One tree per document
+format:xtg ..supports.. nodes ,, Internal and leaf nodes
+format:xtg ..supports.. directed-edges ,, Rooted parent-to-child branches
+format:xtg ..lacks.. hyperedges
+format:xtg ..lacks.. mixed-directionality-edges
+format:xtg ..lacks.. edges-on-edges
+format:xtg ..lacks.. nested-graphs-in-nodes
+format:xtg ..lacks.. nested-graphs-in-edges
+format:xtg ..lacks.. nested-graphs-in-graphs
+format:xtg ..supports.. node-labels ,, Text labels on nodes
+format:xtg ..supports.. edge-labels ,, Labels attachable to branches
+format:xtg ..supports.. attributes-on-nodes ,, Arbitrary labelled data values per node
+format:xtg ..supports.. attributes-on-edges ,, Branch lengths and per-branch data values
+format:xtg ..lacks.. typed-edges
+----
+
+== References
+
+* Wikidata: https://www.wikidata.org/wiki/Q105762923[Q105762923]

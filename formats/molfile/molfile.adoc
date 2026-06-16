@@ -1,0 +1,55 @@
+= MDL Molfile / SDF
+:toc:
+
+A molecular-graph format whose connection table lists atoms as nodes and bonds
+as edges. The atom block carries per-node attributes (element, charge,
+isotope, coordinates) and the bond block carries bond order as a typed edge
+(single, double, triple, aromatic). SDF concatenates many such molfiles, each
+delimited by `$$$$` and followed by named data fields.
+
+== Identity
+
+[source]
+----
+format:molfile ..has type.. format
+format:molfile ..category.. text
+format:molfile ..label.. MDL Molfile / SDF
+format:molfile ..alternative name.. Chemical table file
+format:molfile ..alternative name.. CTfile
+format:molfile ..alternative name.. SDF
+format:molfile ..alternative name.. Structure-Data File
+format:molfile ..file extension.. .mol
+format:molfile ..file extension.. .sdf
+format:molfile ..wikipedia.. https://en.wikipedia.org/wiki/Chemical_table_file
+format:molfile ..wikidata.. Q5090500
+format:molfile ..org.. MDL
+format:molfile ..spec.. https://www.daylight.com/meetings/mug05/Kappler/ctfile.pdf
+----
+
+== Features
+
+[source]
+----
+format:molfile ..supports.. multiple-graphs-per-document ,, SDF concatenates molecules separated by $$$$
+format:molfile ..supports.. nodes ,, Atoms in the atom block
+format:molfile ..supports.. undirected-edges ,, Bonds are undirected
+format:molfile ..lacks.. directed-edges
+format:molfile ..lacks.. hyperedges
+format:molfile ..lacks.. mixed-directionality-edges
+format:molfile ..lacks.. edges-on-edges
+format:molfile ..lacks.. nested-graphs-in-nodes
+format:molfile ..lacks.. nested-graphs-in-edges
+format:molfile ..lacks.. nested-graphs-in-graphs
+format:molfile ..lacks.. node-labels
+format:molfile ..lacks.. edge-labels
+format:molfile ..supports.. attributes-on-nodes ,, Element, charge, isotope, coordinates per atom
+format:molfile ..supports.. attributes-on-edges ,, Bond stereo and topology flags
+format:molfile ..supports.. attributes-on-graphs ,, SDF data fields per molecule
+format:molfile ..supports.. typed-edges ,, Bond order (single, double, triple, aromatic)
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/Chemical_table_file[Chemical table file]
+* Wikidata: https://www.wikidata.org/wiki/Q5090500[Q5090500]
+* Specification: https://www.daylight.com/meetings/mug05/Kappler/ctfile.pdf[www.daylight.com/meetings/mug05/Kappler/ctfile.pdf]

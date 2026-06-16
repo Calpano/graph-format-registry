@@ -1,0 +1,48 @@
+= GraphSON (Apache TinkerPop) 3.0
+:toc:
+
+JSON serialization for property graphs from Apache TinkerPop, with versions 1.0,
+2.0 and 3.0. Vertices have a label and properties; edges are directed (outV to
+inV) and have a label that serves as the edge type.
+
+== Identity
+
+[source]
+----
+format:graphson ..has type.. format
+format:graphson ..category.. json
+format:graphson ..label.. GraphSON (Apache TinkerPop)
+format:graphson ..alternative name.. GraphSON
+format:graphson ..org.. Apache TinkerPop
+
+format:graphson-3.0 ..version of.. format:graphson
+format:graphson-3.0 ..version.. 3.0
+format:graphson-3.0 ..file extension.. .json
+format:graphson-3.0 ..spec.. https://tinkerpop.apache.org/docs/current/dev/io/
+----
+
+== Features
+
+[source]
+----
+format:graphson-3.0 ..lacks.. multiple-graphs-per-document ,, One vertex per line, one graph per document
+format:graphson-3.0 ..supports.. nodes ,, Vertices are first-class
+format:graphson-3.0 ..lacks.. undirected-edges ,, Edges always directed via inV/outV
+format:graphson-3.0 ..supports.. directed-edges ,, Explicit outV and inV
+format:graphson-3.0 ..lacks.. hyperedges
+format:graphson-3.0 ..lacks.. mixed-directionality-edges
+format:graphson-3.0 ..lacks.. edges-on-edges
+format:graphson-3.0 ..lacks.. nested-graphs-in-nodes
+format:graphson-3.0 ..lacks.. nested-graphs-in-edges
+format:graphson-3.0 ..lacks.. nested-graphs-in-graphs
+format:graphson-3.0 ..supports.. node-labels ,, Vertex label
+format:graphson-3.0 ..supports.. edge-labels ,, Edge label
+format:graphson-3.0 ..supports.. attributes-on-nodes ,, Vertex properties (multi-valued)
+format:graphson-3.0 ..supports.. attributes-on-edges ,, Edge properties
+format:graphson-3.0 ..lacks.. attributes-on-graphs ,, Per-element serialization carries no graph-level variables
+format:graphson-3.0 ..supports.. typed-edges ,, Edge label is the edge type
+----
+
+== References
+
+* Specification: https://tinkerpop.apache.org/docs/current/dev/io/[TinkerPop IO reference]

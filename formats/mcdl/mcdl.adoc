@@ -1,0 +1,50 @@
+= MCDL (Modular Chemical Descriptor Language)
+:toc:
+
+A linear molecular-graph descriptor built from modules. The composition module
+lists the atoms (nodes) and the connectivity module encodes the bond sequence
+(edges) over canonically ordered atoms. The core connectivity module records
+which atoms are bonded but not bond order; bond order is a supplementary module.
+Further supplementary modules add per-atom attributes such as charge, isotope and
+radicals, plus coordinates, spectra and physical-chemical data.
+
+== Identity
+
+[source]
+----
+format:mcdl ..has type.. format
+format:mcdl ..category.. text
+format:mcdl ..label.. MCDL (Modular Chemical Descriptor Language)
+format:mcdl ..alternative name.. Modular Chemical Descriptor Language
+format:mcdl ..wikipedia.. https://en.wikipedia.org/wiki/Modular_Chemical_Descriptor_Language
+format:mcdl ..wikidata.. Q104880084
+format:mcdl ..spec.. https://doi.org/10.1021/ci000108y
+----
+
+== Features
+
+[source]
+----
+format:mcdl ..lacks.. multiple-graphs-per-document ,, One descriptor per structure
+format:mcdl ..supports.. nodes ,, Atoms in the composition module
+format:mcdl ..supports.. undirected-edges ,, Connectivity module encodes undirected bonds
+format:mcdl ..lacks.. directed-edges
+format:mcdl ..lacks.. hyperedges
+format:mcdl ..lacks.. mixed-directionality-edges
+format:mcdl ..lacks.. edges-on-edges
+format:mcdl ..lacks.. nested-graphs-in-nodes
+format:mcdl ..lacks.. nested-graphs-in-edges
+format:mcdl ..lacks.. nested-graphs-in-graphs
+format:mcdl ..lacks.. node-labels
+format:mcdl ..lacks.. edge-labels
+format:mcdl ..supports.. attributes-on-nodes ,, Charge, isotope, radicals via supplementary modules
+format:mcdl ..lacks.. attributes-on-edges ,, Only per-bond datum is bond order, covered by typed-edges; no other bond attributes
+format:mcdl ..lacks.. attributes-on-graphs
+format:mcdl ..supports.. typed-edges ,, Bond order (single, double, triple) via supplementary module
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/Modular_Chemical_Descriptor_Language[Modular Chemical Descriptor Language]
+* Wikidata: https://www.wikidata.org/wiki/Q104880084[Q104880084]
+* Specification: https://doi.org/10.1021/ci000108y[doi.org/10.1021/ci000108y]

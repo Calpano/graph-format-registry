@@ -1,0 +1,44 @@
+= VOSviewer JSON
+:toc:
+
+JSON format for VOSviewer bibliometric network visualization.
+
+== Identity
+
+[source]
+----
+format:vosviewer ..has type.. format
+format:vosviewer ..category.. json
+format:vosviewer ..label.. VOSviewer JSON
+format:vosviewer ..file extension.. .json
+format:vosviewer ..spec.. https://app.vosviewer.com/docs/file-types/json-file-type/
+----
+
+== Features
+
+[source]
+----
+format:vosviewer ..lacks.. multiple-graphs-per-document ,, Single network object
+format:vosviewer ..supports.. nodes ,, Called items
+format:vosviewer ..supports.. undirected-edges ,, Called links with strength
+format:vosviewer ..lacks.. directed-edges ,, Links are undirected
+format:vosviewer ..lacks.. hyperedges ,, Links connect exactly 2 items
+format:vosviewer ..lacks.. mixed-directionality-edges
+format:vosviewer ..lacks.. edges-on-edges
+format:vosviewer ..lacks.. nested-graphs-in-nodes
+format:vosviewer ..lacks.. nested-graphs-in-edges
+format:vosviewer ..lacks.. nested-graphs-in-graphs
+format:vosviewer ..supports.. node-labels ,, Via label field
+format:vosviewer ..lacks.. edge-labels
+format:vosviewer ..supports.. attributes-on-nodes ,, Via weights, scores, cluster, description, url
+format:vosviewer ..supports.. attributes-on-edges ,,
+..status.. partial
+Only strength
+,,
+format:vosviewer ..lacks.. attributes-on-graphs
+format:vosviewer ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://app.vosviewer.com/docs/file-types/json-file-type/[app.vosviewer.com/docs/file-types/json-file-type]

@@ -1,0 +1,53 @@
+= PSI-MI XML (MIF) 3.0
+:toc:
+
+PSI-MI XML (also called the Molecular Interaction Format, MIF) is an XML schema
+from the HUPO Proteomics Standards Initiative for exchanging molecular
+interaction data. Interactions connect interactors (proteins, nucleic acids,
+small molecules) and carry detailed experimental and ontology annotation.
+
+== Identity
+
+[source]
+----
+format:psi-mi-xml ..has type.. format
+format:psi-mi-xml ..category.. xml
+format:psi-mi-xml ..label.. PSI-MI XML (MIF)
+format:psi-mi-xml ..alternative name.. MIF
+format:psi-mi-xml ..alternative name.. Molecular Interaction Format
+format:psi-mi-xml ..alternative name.. PSI-MI XML
+format:psi-mi-xml ..wikidata.. Q29650305
+format:psi-mi-xml ..org.. HUPO-PSI
+
+format:psi-mi-xml-3.0 ..version of.. format:psi-mi-xml
+format:psi-mi-xml-3.0 ..version.. 3.0
+format:psi-mi-xml-3.0 ..file extension.. .xml
+format:psi-mi-xml-3.0 ..spec.. https://github.com/HUPO-PSI/miXML/blob/master/3.0/src/MIF300.xsd
+----
+
+== Features
+
+[source]
+----
+format:psi-mi-xml-3.0 ..supports.. multiple-graphs-per-document ,, entrySet holds multiple self-contained entry elements
+format:psi-mi-xml-3.0 ..supports.. nodes ,, interactor elements
+format:psi-mi-xml-3.0 ..supports.. undirected-edges ,, Physical interactions without bait/prey are non-directional
+format:psi-mi-xml-3.0 ..supports.. directed-edges ,, participant roles (bait/prey) and causal statements (source/target)
+format:psi-mi-xml-3.0 ..supports.. hyperedges ,, An interaction links any number of participants
+format:psi-mi-xml-3.0 ..supports.. node-labels ,, names / shortLabel on interactors
+format:psi-mi-xml-3.0 ..supports.. edge-labels ,, names (shortLabel / fullName) on interactions
+format:psi-mi-xml-3.0 ..supports.. attributes-on-nodes ,, xref and attributeList on interactors
+format:psi-mi-xml-3.0 ..supports.. attributes-on-edges ,, attributeList on interactions
+format:psi-mi-xml-3.0 ..supports.. attributes-on-graphs ,, attributeList on entry
+format:psi-mi-xml-3.0 ..supports.. typed-edges ,, interactionType from controlled vocabulary
+format:psi-mi-xml-3.0 ..lacks.. mixed-directionality-edges
+format:psi-mi-xml-3.0 ..lacks.. edges-on-edges
+format:psi-mi-xml-3.0 ..lacks.. nested-graphs-in-nodes
+format:psi-mi-xml-3.0 ..lacks.. nested-graphs-in-edges
+format:psi-mi-xml-3.0 ..lacks.. nested-graphs-in-graphs
+----
+
+== References
+
+* Wikidata: https://www.wikidata.org/wiki/Q29650305[Q29650305]
+* Specification: https://github.com/HUPO-PSI/miXML/blob/master/3.0/src/MIF300.xsd[github.com/HUPO-PSI/miXML/blob/master/3.0/src/MIF300.xsd]

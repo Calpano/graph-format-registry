@@ -1,0 +1,49 @@
+= OCIF 0.6
+:toc:
+
+Open Canvas Interchange Format (OCIF) for canvas-based visual applications.
+
+== Identity
+
+[source]
+----
+format:ocif ..has type.. format
+format:ocif ..category.. json
+format:ocif ..label.. OCIF
+format:ocif ..alternative name.. Open Canvas Interchange Format
+
+format:ocif-0.6 ..version of.. format:ocif
+format:ocif-0.6 ..version.. 0.6
+format:ocif-0.6 ..released.. 2025-04
+format:ocif-0.6 ..file extension.. .json
+format:ocif-0.6 ..spec.. https://spec.canvasprotocol.org/v0.6
+----
+
+== Features
+
+[source]
+----
+format:ocif-0.6 ..supports.. multiple-graphs-per-document ,, Multiple canvases
+format:ocif-0.6 ..supports.. nodes ,, Visual elements
+format:ocif-0.6 ..supports.. undirected-edges ,, Connections between elements
+format:ocif-0.6 ..supports.. directed-edges ,, Arrows/directed connections
+format:ocif-0.6 ..lacks.. hyperedges
+format:ocif-0.6 ..lacks.. mixed-directionality-edges
+format:ocif-0.6 ..lacks.. edges-on-edges
+format:ocif-0.6 ..supports.. nested-graphs-in-nodes ,, Groups/containers
+format:ocif-0.6 ..lacks.. nested-graphs-in-edges
+format:ocif-0.6 ..lacks.. nested-graphs-in-graphs
+format:ocif-0.6 ..supports.. node-labels ,, Text content
+format:ocif-0.6 ..supports.. edge-labels ,, Connection labels
+format:ocif-0.6 ..supports.. attributes-on-nodes ,, Visual properties, metadata
+format:ocif-0.6 ..supports.. attributes-on-edges ,, Line style, color
+format:ocif-0.6 ..supports.. attributes-on-graphs ,, Canvas metadata
+format:ocif-0.6 ..supports.. typed-edges ,,
+..status.. partial
+Via connection type
+,,
+----
+
+== References
+
+* Specification: https://spec.canvasprotocol.org/v0.6[spec.canvasprotocol.org/v0.6]

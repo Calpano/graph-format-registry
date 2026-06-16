@@ -1,0 +1,46 @@
+= Mermaid State Diagram
+:toc:
+
+The state-diagram type of link:mermaid.adoc[Mermaid], opened by the
+`stateDiagram` (or `stateDiagram-v2`) keyword. States are nodes and transitions
+are directed edges labelled with their trigger; composite states nest other
+states. The `[*]` token marks the start/end pseudo-state.
+
+== Identity
+
+[source]
+----
+format:mermaid-state ..has type.. format
+format:mermaid-state ..subformat of.. format:mermaid
+format:mermaid-state ..category.. text
+format:mermaid-state ..label.. Mermaid State Diagram
+format:mermaid-state ..spec.. https://mermaid.js.org/syntax/stateDiagram.html
+----
+
+== Features
+
+[source]
+----
+format:mermaid-state ..lacks.. multiple-graphs-per-document
+format:mermaid-state ..supports.. nodes ,, States
+format:mermaid-state ..lacks.. undirected-edges
+format:mermaid-state ..supports.. directed-edges ,, Transitions (-->)
+format:mermaid-state ..lacks.. mixed-directionality-edges
+format:mermaid-state ..lacks.. hyperedges
+format:mermaid-state ..lacks.. edges-on-edges
+format:mermaid-state ..supports.. nested-graphs-in-nodes ,, Composite states
+format:mermaid-state ..lacks.. nested-graphs-in-edges
+format:mermaid-state ..lacks.. nested-graphs-in-graphs
+format:mermaid-state ..supports.. node-labels ,, State long description via alias
+format:mermaid-state ..supports.. edge-labels ,, Transition label after :
+format:mermaid-state ..lacks.. attributes-on-nodes
+format:mermaid-state ..lacks.. attributes-on-edges
+format:mermaid-state ..lacks.. attributes-on-graphs
+format:mermaid-state ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://mermaid.js.org/syntax/stateDiagram.html[mermaid.js.org state diagram syntax]
+
+See also: link:mermaid.adoc[Mermaid]

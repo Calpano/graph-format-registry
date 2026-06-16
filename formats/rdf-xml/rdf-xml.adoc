@@ -1,0 +1,54 @@
+= RDF/XML
+:toc:
+
+XML syntax for serializing RDF graphs. Resources are nodes, triples are
+directed edges typed by their predicate. The original W3C-recommended RDF
+serialization.
+
+== Identity
+
+[source]
+----
+format:rdf-xml ..has type.. format
+format:rdf-xml ..category.. xml
+format:rdf-xml ..label.. RDF/XML
+format:rdf-xml ..alternative name.. RDF/XML Syntax
+format:rdf-xml ..file extension.. .rdf
+format:rdf-xml ..file extension.. .xml
+format:rdf-xml ..media type.. application/rdf+xml
+format:rdf-xml ..wikipedia.. https://en.wikipedia.org/wiki/RDF/XML
+format:rdf-xml ..wikidata.. Q48940
+format:rdf-xml ..org.. W3C
+format:rdf-xml ..spec.. https://www.w3.org/TR/rdf-syntax-grammar/
+----
+
+== Features
+
+[source]
+----
+format:rdf-xml ..lacks.. multiple-graphs-per-document ,, No named graphs; single graph per document
+format:rdf-xml ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:rdf-xml ..lacks.. undirected-edges
+format:rdf-xml ..supports.. directed-edges ,, Triples are directed subject to object
+format:rdf-xml ..lacks.. hyperedges
+format:rdf-xml ..lacks.. mixed-directionality-edges
+format:rdf-xml ..supports.. edges-on-edges ,,
+..status.. partial
+Via RDF reification (rdf:Statement)
+,,
+format:rdf-xml ..lacks.. nested-graphs-in-nodes
+format:rdf-xml ..lacks.. nested-graphs-in-edges
+format:rdf-xml ..lacks.. nested-graphs-in-graphs
+format:rdf-xml ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:rdf-xml ..supports.. edge-labels ,, Predicate IRI names the edge
+format:rdf-xml ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:rdf-xml ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:rdf-xml ..lacks.. attributes-on-graphs
+format:rdf-xml ..supports.. typed-edges ,, Every triple is typed by its predicate
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/RDF/XML[RDF/XML]
+* Wikidata: https://www.wikidata.org/wiki/Q48940[Q48940]
+* Specification: https://www.w3.org/TR/rdf-syntax-grammar/[www.w3.org/TR/rdf-syntax-grammar]

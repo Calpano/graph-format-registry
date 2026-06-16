@@ -1,0 +1,64 @@
+= DOT (GraphViz)
+:toc:
+
+The DOT format is used by GraphViz for graph description and visualization.
+
+== Identity
+
+[source]
+----
+format:dot ..has type.. format
+format:dot ..category.. text
+format:dot ..label.. DOT (GraphViz)
+format:dot ..alternative name.. GraphViz
+format:dot ..file extension.. .gv
+format:dot ..file extension.. .dot
+format:dot ..media type.. text/vnd.graphviz
+format:dot ..wikipedia.. https://en.wikipedia.org/wiki/DOT_(graph_description_language)
+format:dot ..wikidata.. Q900927
+format:dot ..author.. emden-gansner
+format:dot ..author.. stephen-north
+format:dot ..org.. att
+format:dot ..spec.. https://graphviz.org/doc/info/lang.html
+
+att ..has type.. org
+att ..org type.. company
+att ..label.. AT&T
+emden-gansner ..has type.. person
+emden-gansner ..label.. Emden R. Gansner
+emden-gansner ..affiliation.. att
+stephen-north ..has type.. person
+stephen-north ..label.. Stephen C. North
+stephen-north ..affiliation.. att
+----
+
+== Features
+
+Subject is the format id `format:dot`. Use `..supports..` for status = true and
+`..lacks..` for status = false; attach a free-text note after `,,`.
+
+[source]
+----
+format:dot ..lacks.. multiple-graphs-per-document ,, One graph per file
+format:dot ..supports.. nodes
+format:dot ..supports.. undirected-edges ,, graph with -- operator
+format:dot ..supports.. directed-edges ,, digraph with -> operator
+format:dot ..lacks.. hyperedges
+format:dot ..lacks.. mixed-directionality-edges ,, Graph is either directed or undirected
+format:dot ..lacks.. edges-on-edges
+format:dot ..supports.. nested-graphs-in-nodes ,, Via subgraphs/clusters
+format:dot ..lacks.. nested-graphs-in-edges
+format:dot ..supports.. nested-graphs-in-graphs ,, Via subgraphs/clusters
+format:dot ..supports.. node-labels ,, Via label attribute
+format:dot ..supports.. edge-labels ,, Via label attribute
+format:dot ..supports.. attributes-on-nodes ,, Extensive attribute system
+format:dot ..supports.. attributes-on-edges ,, Extensive attribute system
+format:dot ..supports.. attributes-on-graphs ,, Extensive attribute system
+format:dot ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://graphviz.org/doc/info/lang.html[graphviz.org DOT language]
+* Wikipedia: https://en.wikipedia.org/wiki/DOT_(graph_description_language)[DOT (graph description language)]
+* Wikidata: https://www.wikidata.org/wiki/Q900927[Q900927]

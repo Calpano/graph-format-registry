@@ -1,0 +1,617 @@
+= Tools
+:toc:
+
+Tools that read and/or write the graph formats in this registry, and which
+formats each one handles. Format objects are qualified format ids in the
+`format:` namespace (e.g. `format:graphml`), built from the `format-id` slugs in
+`catalog.adoc`.
+
+Tool-entry triple shape:
+
+[cols="1,3",options="header"]
+|===
+| Predicate | Object / meaning
+
+| `..has type..` | `tool`
+| `..label..`    | Display label
+| `..repo..`     | Source repository URL (GitHub unless noted)
+| `..reads..`    | Repeatable; one triple per format the tool can import
+| `..writes..`   | Repeatable; one triple per format the tool can export
+|===
+
+NOTE: The read/write coverage below is a first pass transcribed from each
+tool's documentation and still needs verification format-by-format. A format
+appearing under both `..reads..` and `..writes..` means round-trip support.
+
+== GraphInOut
+
+The reference implementation behind this registry; converts between Connected
+JSON and the other formats.
+
+[source]
+----
+graphinout ..has type.. tool
+graphinout ..label.. GraphInOut
+graphinout ..repo.. https://github.com/calpano/graphinout
+graphinout ..author.. max-voelkel
+graphinout ..org.. calpano
+// reads — one per reader-* module (com.graphinout.reader.*)
+graphinout ..reads.. format:connected-json
+graphinout ..reads.. format:connected-json5
+graphinout ..reads.. format:graphml
+graphinout ..reads.. format:gexf
+graphinout ..reads.. format:gml
+graphinout ..reads.. format:dot
+graphinout ..reads.. format:tgf
+graphinout ..reads.. format:adjlist
+graphinout ..reads.. format:edge-list
+graphinout ..reads.. format:graph6
+graphinout ..reads.. format:sparse6
+graphinout ..reads.. format:digraph6
+graphinout ..reads.. format:ocif
+graphinout ..reads.. format:neo4j-json
+graphinout ..reads.. format:pg-json
+graphinout ..reads.. format:d2
+graphinout ..reads.. format:mermaid
+graphinout ..reads.. format:gtfs
+graphinout ..reads.. format:ddot
+graphinout ..reads.. format:tripletext
+graphinout ..reads.. format:plantuml ,, class diagram only; reader-plantuml still under construction
+graphinout ..reads.. format:turtle
+graphinout ..reads.. format:n-triples
+graphinout ..reads.. format:rdf-nquads
+graphinout ..reads.. format:trig
+graphinout ..reads.. format:trix
+graphinout ..reads.. format:rdf-xml
+graphinout ..reads.. format:json-ld
+graphinout ..reads.. format:rdf-json
+// writes — one per format with a registered GioWriter (each module's GioService.writers())
+graphinout ..writes.. format:connected-json ,, canonical output; writer still emits the older v5.0.0/v0.5 variant — must be upgraded to 8.0.0
+graphinout ..writes.. format:connected-json5 ,, no dedicated writer; the Connected JSON writer's output is valid JSON5
+graphinout ..writes.. format:graphml
+graphinout ..writes.. format:gml
+graphinout ..writes.. format:dot
+graphinout ..writes.. format:tgf
+graphinout ..writes.. format:ocif
+graphinout ..writes.. format:d2
+graphinout ..writes.. format:mermaid
+graphinout ..writes.. format:ddot
+graphinout ..writes.. format:turtle
+graphinout ..writes.. format:n-triples
+graphinout ..writes.. format:rdf-nquads
+graphinout ..writes.. format:trig
+graphinout ..writes.. format:trix
+graphinout ..writes.. format:rdf-xml
+graphinout ..writes.. format:json-ld
+graphinout ..writes.. format:rdf-json
+graphinout ..writes.. format:gexf
+graphinout ..writes.. format:adjlist
+graphinout ..writes.. format:edge-list
+graphinout ..writes.. format:plantuml ,, class diagram only; reader-plantuml (PlantUmlWriter) still under construction
+// read-only (reader but no GioWriter): gtfs, graph6, sparse6, digraph6, tripletext
+
+calpano ..has type.. org
+calpano ..org type.. company
+calpano ..label.. calpano
+max-voelkel ..has type.. person
+max-voelkel ..label.. Max Völkel
+max-voelkel ..affiliation.. calpano
+----
+
+* Repository: https://github.com/calpano/graphinout[github.com/calpano/graphinout]
+
+== NetworkX
+
+Python library for graph creation, manipulation and study.
+
+[source]
+----
+networkx ..has type.. tool
+networkx ..label.. NetworkX
+networkx ..repo.. https://github.com/networkx/networkx
+networkx ..wikipedia.. https://en.wikipedia.org/wiki/NetworkX
+networkx ..wikidata.. Q7000696
+networkx ..license.. BSD-3-Clause
+networkx ..author.. aric-hagberg
+networkx ..author.. Daniel Schult
+networkx ..author.. pieter-swart
+networkx ..org.. los-alamos
+networkx ..reads.. format:graphml
+networkx ..reads.. format:gml
+networkx ..reads.. format:gexf
+networkx ..reads.. format:pajek
+networkx ..reads.. format:adjlist
+networkx ..reads.. format:edge-list
+networkx ..reads.. format:graph6
+networkx ..reads.. format:matrix-market
+networkx ..reads.. format:leda
+networkx ..writes.. format:graphml
+networkx ..writes.. format:gml
+networkx ..writes.. format:gexf
+networkx ..writes.. format:pajek
+networkx ..writes.. format:adjlist
+networkx ..writes.. format:edge-list
+networkx ..writes.. format:graph6
+networkx ..writes.. format:matrix-market
+
+los-alamos ..has type.. org
+los-alamos ..org type.. lab
+los-alamos ..label.. Los Alamos National Laboratory
+aric-hagberg ..has type.. person
+aric-hagberg ..label.. Aric Hagberg
+aric-hagberg ..affiliation.. los-alamos
+pieter-swart ..has type.. person
+pieter-swart ..label.. Pieter Swart
+pieter-swart ..affiliation.. los-alamos
+----
+
+* Repository: https://github.com/networkx/networkx[github.com/networkx/networkx]
+* Wikipedia: https://en.wikipedia.org/wiki/NetworkX[NetworkX]
+* Wikidata: https://www.wikidata.org/wiki/Q7000696[Q7000696]
+
+== Gephi
+
+Interactive network visualization and exploration platform.
+
+[source]
+----
+gephi ..has type.. tool
+gephi ..label.. Gephi
+gephi ..repo.. https://github.com/gephi/gephi
+gephi ..wikipedia.. https://en.wikipedia.org/wiki/Gephi
+gephi ..wikidata.. Q5548660
+gephi ..license.. CDDL-1.0
+gephi ..license.. GPL-3.0-only
+gephi ..author.. mathieu-bastian
+gephi ..author.. sebastien-heymann
+gephi ..author.. mathieu-jacomy
+gephi ..org.. gephi-consortium
+gephi ..reads.. format:gexf
+gephi ..reads.. format:graphml
+gephi ..reads.. format:gml
+gephi ..reads.. format:gdf
+gephi ..reads.. format:dot
+gephi ..reads.. format:pajek
+gephi ..reads.. format:netdraw-vna
+gephi ..writes.. format:gexf
+gephi ..writes.. format:graphml
+gephi ..writes.. format:gml
+gephi ..writes.. format:gdf
+gephi ..writes.. format:pajek
+
+gephi-consortium ..has type.. org
+gephi-consortium ..org type.. consortium
+gephi-consortium ..label.. Gephi Consortium
+mathieu-bastian ..has type.. person
+mathieu-bastian ..label.. Mathieu Bastian
+mathieu-bastian ..affiliation.. gephi-consortium
+sebastien-heymann ..has type.. person
+sebastien-heymann ..label.. Sébastien Heymann
+sebastien-heymann ..affiliation.. gephi-consortium
+mathieu-jacomy ..has type.. person
+mathieu-jacomy ..label.. Mathieu Jacomy
+mathieu-jacomy ..affiliation.. gephi-consortium
+----
+
+* Repository: https://github.com/gephi/gephi[github.com/gephi/gephi]
+* Wikipedia: https://en.wikipedia.org/wiki/Gephi[Gephi]
+* Wikidata: https://www.wikidata.org/wiki/Q5548660[Q5548660]
+
+== Graphviz
+
+Graph layout and rendering engine; native home of the DOT language.
+
+[source]
+----
+graphviz ..has type.. tool
+graphviz ..label.. Graphviz
+graphviz ..repo.. https://gitlab.com/graphviz/graphviz
+graphviz ..version.. 15.0.0
+graphviz ..wikipedia.. https://en.wikipedia.org/wiki/Graphviz
+graphviz ..wikidata.. Q260889
+graphviz ..license.. EPL-1.0
+graphviz ..author.. emden-gansner
+graphviz ..author.. stephen-north
+graphviz ..author.. john-ellson
+graphviz ..org.. att
+graphviz ..reads.. format:dot
+graphviz ..reads.. format:gxl
+graphviz ..writes.. format:dot
+graphviz ..writes.. format:gxl
+
+// att, emden-gansner, stephen-north are defined in formats/dot/dot.adoc
+john-ellson ..has type.. person
+john-ellson ..label.. John Ellson
+john-ellson ..affiliation.. att
+----
+
+* Repository: https://gitlab.com/graphviz/graphviz[gitlab.com/graphviz/graphviz]
+* Wikipedia: https://en.wikipedia.org/wiki/Graphviz[Graphviz]
+* Wikidata: https://www.wikidata.org/wiki/Q260889[Q260889]
+
+== Cytoscape
+
+Desktop platform for visualizing molecular interaction networks.
+
+[source]
+----
+cytoscape ..has type.. tool
+cytoscape ..label.. Cytoscape
+cytoscape ..repo.. https://github.com/cytoscape/cytoscape
+cytoscape ..wikipedia.. https://en.wikipedia.org/wiki/Cytoscape
+cytoscape ..wikidata.. Q3699942
+cytoscape ..license.. LGPL-2.1-or-later
+cytoscape ..org.. cytoscape-consortium
+cytoscape ..reads.. format:cytoscape-json
+cytoscape ..reads.. format:xgmml
+cytoscape ..reads.. format:graphml
+cytoscape ..reads.. format:gml
+cytoscape ..reads.. format:nested-network
+cytoscape ..writes.. format:cytoscape-json
+cytoscape ..writes.. format:xgmml
+cytoscape ..writes.. format:graphml
+cytoscape ..writes.. format:gml
+
+cytoscape-consortium ..has type.. org
+cytoscape-consortium ..org type.. consortium
+cytoscape-consortium ..label.. Cytoscape Consortium
+----
+
+* Repository: https://github.com/cytoscape/cytoscape[github.com/cytoscape/cytoscape]
+* Wikipedia: https://en.wikipedia.org/wiki/Cytoscape[Cytoscape]
+* Wikidata: https://www.wikidata.org/wiki/Q3699942[Q3699942]
+
+== igraph
+
+C library (with Python/R bindings) for network analysis.
+
+[source]
+----
+igraph ..has type.. tool
+igraph ..label.. igraph
+igraph ..repo.. https://github.com/igraph/igraph
+igraph ..wikipedia.. https://en.wikipedia.org/wiki/Igraph
+igraph ..wikidata.. Q25052508
+igraph ..license.. GPL-2.0-or-later
+igraph ..author.. Gábor Csárdi
+igraph ..author.. Tamás Nepusz
+igraph ..reads.. format:graphml
+igraph ..reads.. format:gml
+igraph ..reads.. format:pajek
+igraph ..reads.. format:edge-list
+igraph ..writes.. format:graphml
+igraph ..writes.. format:gml
+igraph ..writes.. format:pajek
+igraph ..writes.. format:edge-list
+igraph ..writes.. format:dot
+----
+
+* Repository: https://github.com/igraph/igraph[github.com/igraph/igraph]
+* Wikipedia: https://en.wikipedia.org/wiki/Igraph[Igraph]
+* Wikidata: https://www.wikidata.org/wiki/Q25052508[Q25052508]
+
+== gravis
+
+Python library for interactive graph visualization; defines gJGF.
+
+[source]
+----
+gravis ..has type.. tool
+gravis ..label.. gravis
+gravis ..repo.. https://github.com/robert-haas/gravis
+gravis ..license.. Apache-2.0
+gravis ..author.. Robert Haas
+gravis ..reads.. format:gjgf
+gravis ..writes.. format:gjgf
+----
+
+* Repository: https://github.com/robert-haas/gravis[github.com/robert-haas/gravis]
+
+== VOSviewer
+
+Tool for constructing and visualizing bibliometric networks.
+
+[source]
+----
+vosviewer-tool ..has type.. tool
+vosviewer-tool ..label.. VOSviewer
+vosviewer-tool ..repo.. https://github.com/neesjanvaneck/VOSviewer-Online
+vosviewer-tool ..wikidata.. Q56475613
+vosviewer-tool ..license.. MIT
+vosviewer-tool ..author.. nees-jan-van-eck
+vosviewer-tool ..author.. ludo-waltman
+vosviewer-tool ..org.. leiden-university
+vosviewer-tool ..reads.. format:vosviewer
+vosviewer-tool ..reads.. format:gml
+vosviewer-tool ..reads.. format:pajek
+vosviewer-tool ..writes.. format:vosviewer
+
+leiden-university ..has type.. org
+leiden-university ..org type.. university
+leiden-university ..label.. Leiden University (CWTS)
+nees-jan-van-eck ..has type.. person
+nees-jan-van-eck ..label.. Nees Jan van Eck
+nees-jan-van-eck ..affiliation.. leiden-university
+ludo-waltman ..has type.. person
+ludo-waltman ..label.. Ludo Waltman
+ludo-waltman ..affiliation.. leiden-university
+----
+
+* Repository: https://github.com/neesjanvaneck/VOSviewer-Online[github.com/neesjanvaneck/VOSviewer-Online]
+* Wikidata: https://www.wikidata.org/wiki/Q56475613[Q56475613]
+
+== gcv (Scotch)
+
+Command-line graph file converter shipped with the Scotch partitioning suite;
+converts Scotch graph files from/to other formats.
+
+[source]
+----
+gcv ..has type.. tool
+gcv ..label.. gcv (Scotch Graph File Converter)
+gcv ..repo.. https://gitlab.inria.fr/scotch/scotch
+gcv ..license.. CeCILL-C
+gcv ..author.. francois-pellegrini
+gcv ..org.. inria
+gcv ..reads.. format:scotch
+gcv ..reads.. format:chaco
+gcv ..reads.. format:matrix-market
+gcv ..reads.. format:harwell-boeing
+gcv ..writes.. format:scotch
+gcv ..writes.. format:chaco
+gcv ..writes.. format:matrix-market
+// francois-pellegrini and inria are defined in formats/scotch/scotch.adoc
+----
+
+* Repository: https://gitlab.inria.fr/scotch/scotch[gitlab.inria.fr/scotch/scotch]
+
+== UCINET
+
+Social network analysis software; its native import/export format is UCINET DL.
+
+[source]
+----
+ucinet ..has type.. tool
+ucinet ..label.. UCINET
+ucinet ..wikidata.. Q126084698
+ucinet ..reads.. format:dl
+ucinet ..writes.. format:dl
+----
+
+* Wikidata: https://www.wikidata.org/wiki/Q126084698[Q126084698]
+
+== Pajek
+
+Software for analysis and visualization of very large networks; reads and writes
+its native Pajek format.
+
+[source]
+----
+pajek ..has type.. tool
+pajek ..label.. Pajek
+pajek ..wikidata.. Q96075529
+pajek ..reads.. format:pajek
+pajek ..writes.. format:pajek
+----
+
+* Wikidata: https://www.wikidata.org/wiki/Q96075529[Q96075529]
+
+== aiSee
+
+Graph layout and visualization tool by AbsInt; its input language is GDL.
+
+[source]
+----
+aisee ..has type.. tool
+aisee ..label.. aiSee
+aisee ..reads.. format:gdl-aisee
+aisee ..writes.. format:gdl-aisee
+----
+
+== TreeGraph
+
+TreeGraph 2 — editor for phylogenetic trees; its native document format is XTG.
+
+[source]
+----
+treegraph ..has type.. tool
+treegraph ..label.. TreeGraph 2
+treegraph ..reads.. format:xtg
+treegraph ..writes.. format:xtg
+----
+
+== Tulip
+
+Graph visualization and analysis software; its native format is Tulip TLP.
+
+[source]
+----
+tulip ..has type.. tool
+tulip ..label.. Tulip
+tulip ..reads.. format:tulip-tlp
+tulip ..writes.. format:tulip-tlp
+----
+
+== LEDA
+
+C++ library of efficient data types and algorithms; reads and writes its native
+LEDA graph format (also via the GraphWin viewer).
+
+[source]
+----
+leda ..has type.. tool
+leda ..label.. LEDA
+leda ..reads.. format:leda
+leda ..writes.. format:leda
+----
+
+== LEMON
+
+C++ optimization library (COIN-OR); reads and writes the LEMON Graph Format
+(LGF).
+
+[source]
+----
+lemon ..has type.. tool
+lemon ..label.. LEMON
+lemon ..reads.. format:lemon
+lemon ..writes.. format:lemon
+----
+
+== METIS
+
+Serial graph partitioning and fill-reducing matrix ordering software; reads its
+native METIS graph format.
+
+[source]
+----
+metis ..has type.. tool
+metis ..label.. METIS
+metis ..repo.. https://github.com/KarypisLab/METIS
+metis ..reads.. format:metis
+----
+
+* Repository: https://github.com/KarypisLab/METIS[github.com/KarypisLab/METIS]
+
+== Chaco
+
+Software for partitioning graphs; reads its native Chaco graph format.
+
+[source]
+----
+chaco ..has type.. tool
+chaco ..label.. Chaco
+chaco ..reads.. format:chaco
+----
+
+== Graphlet
+
+Graph editor system (by Michael Himsolt) built on a GML-based file format.
+
+[source]
+----
+graphlet ..has type.. tool
+graphlet ..label.. Graphlet
+graphlet ..reads.. format:graphlet
+graphlet ..writes.. format:graphlet
+----
+
+== KEGG
+
+Kyoto Encyclopedia of Genes and Genomes; exports its pathway maps as KGML.
+
+[source]
+----
+kegg ..has type.. tool
+kegg ..label.. KEGG
+kegg ..wikidata.. Q909442
+kegg ..writes.. format:kgml
+----
+
+* Wikidata: https://www.wikidata.org/wiki/Q909442[Q909442]
+
+== Boost Graph Library
+
+C++ template library of graph data structures and algorithms (part of Boost);
+reads and writes GraphML.
+
+[source]
+----
+boost ..has type.. tool
+boost ..label.. Boost Graph Library
+boost ..repo.. https://www.boost.org/doc/libs/release/libs/graph/
+boost ..wikidata.. Q893105
+boost ..reads.. format:graphml
+boost ..writes.. format:graphml
+----
+
+* Repository: https://www.boost.org/doc/libs/release/libs/graph/[boost.org Graph Library]
+* Wikidata: https://www.wikidata.org/wiki/Q893105[Q893105]
+
+== graph-tool
+
+Python module for manipulation and statistical analysis of graphs; reads and
+writes GraphML, GML and DOT.
+
+[source]
+----
+graph-tool ..has type.. tool
+graph-tool ..label.. graph-tool
+graph-tool ..repo.. https://graph-tool.skewed.de/
+graph-tool ..wikidata.. Q5597060
+graph-tool ..reads.. format:graphml
+graph-tool ..reads.. format:gml
+graph-tool ..reads.. format:dot
+graph-tool ..writes.. format:graphml
+graph-tool ..writes.. format:gml
+graph-tool ..writes.. format:dot
+----
+
+* Repository: https://graph-tool.skewed.de/[graph-tool.skewed.de]
+* Wikidata: https://www.wikidata.org/wiki/Q5597060[Q5597060]
+
+== Neo4j
+
+Graph database implementing the link:formats/neo4j/neo4j.adoc[Neo4j property
+graph model]; via APOC it imports/exports GraphML and its APOC JSON export.
+
+[source]
+----
+neo4j ..has type.. tool
+neo4j ..label.. Neo4j
+neo4j ..repo.. https://neo4j.com/
+neo4j ..reads.. format:graphml
+neo4j ..writes.. format:graphml
+neo4j ..writes.. format:neo4j-json
+// the property-graph model itself is model:neo4j (formats/neo4j/neo4j.adoc)
+----
+
+* Repository: https://neo4j.com/[neo4j.com]
+
+== Memgraph
+
+In-memory graph database compatible with the Cypher query language and Bolt
+protocol.
+
+[source]
+----
+memgraph ..has type.. tool
+memgraph ..label.. Memgraph
+memgraph ..repo.. https://memgraph.com
+memgraph ..wikidata.. Q112300562
+----
+
+* Repository: https://memgraph.com[memgraph.com]
+* Wikidata: https://www.wikidata.org/wiki/Q112300562[Q112300562]
+
+== Cytoscape.js
+
+JavaScript graph-theory library for visualisation and analysis; consumes the
+Cytoscape JSON format.
+
+[source]
+----
+cytoscape-js ..has type.. tool
+cytoscape-js ..label.. Cytoscape.js
+cytoscape-js ..repo.. https://js.cytoscape.org/
+cytoscape-js ..reads.. format:cytoscape-json
+cytoscape-js ..writes.. format:cytoscape-json
+----
+
+* Repository: https://js.cytoscape.org/[js.cytoscape.org]
+
+== yEd
+
+Desktop graph editor by yWorks (the originators of GraphML); reads and writes
+GraphML.
+
+[source]
+----
+yed ..has type.. tool
+yed ..label.. yEd
+yed ..repo.. https://www.yworks.com/products/yed
+yed ..reads.. format:graphml
+yed ..writes.. format:graphml
+----
+
+* Repository: https://www.yworks.com/products/yed[yworks.com/products/yed]

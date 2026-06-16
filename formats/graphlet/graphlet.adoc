@@ -1,0 +1,64 @@
+= Graphlet file format
+:toc:
+
+The file format of the link:../../tools.adoc#_graphlet[Graphlet] graph editor system, which uses GML (Graph
+Modelling Language). GML is a hierarchical, key-value text format: a `graph`
+contains `node` and `edge` blocks with arbitrary attributes. (Distinct from
+link:../graphml/graphml.adoc[GraphML] and from OGC GML.)
+
+== Identity
+
+[source]
+----
+format:graphlet ..has type.. format
+format:graphlet ..category.. text
+format:graphlet ..label.. Graphlet file format
+format:graphlet ..alternative name.. GML
+format:graphlet ..alternative name.. Graph Modelling Language
+format:graphlet ..wikidata.. Q96034734
+format:graphlet ..org.. Universität Passau
+format:graphlet ..author.. michael-himsolt
+format:graphlet ..spec.. https://en.wikipedia.org/wiki/Graph_Modelling_Language
+
+michael-himsolt ..has type.. person
+michael-himsolt ..label.. Michael Himsolt
+michael-himsolt ..affiliation.. Universität Passau
+----
+
+== Features
+
+[source]
+----
+format:graphlet ..supports.. multiple-graphs-per-document ,,
+..status.. partial
+Grammar permits multiple graph objects, but one expected
+,,
+format:graphlet ..supports.. nodes ,, node [ id ... ]
+format:graphlet ..supports.. undirected-edges ,, directed 0
+format:graphlet ..supports.. directed-edges ,, directed 1
+format:graphlet ..lacks.. hyperedges
+format:graphlet ..lacks.. mixed-directionality-edges ,, Single graph-level directed flag
+format:graphlet ..lacks.. edges-on-edges
+format:graphlet ..supports.. nested-graphs-in-nodes ,, A node may contain an inner graph
+format:graphlet ..lacks.. nested-graphs-in-edges
+format:graphlet ..supports.. nested-graphs-in-graphs ,,
+..status.. partial
+Achieved through node nesting
+,,
+format:graphlet ..supports.. node-labels ,, node [ label "..." ]
+format:graphlet ..supports.. edge-labels ,, edge [ label "..." ]
+format:graphlet ..supports.. attributes-on-nodes ,, Arbitrary key-values in node
+format:graphlet ..supports.. attributes-on-edges ,, Arbitrary key-values in edge
+format:graphlet ..supports.. attributes-on-graphs ,, Arbitrary keys at graph level
+format:graphlet ..supports.. typed-edges ,,
+..status.. partial
+Emulated via an arbitrary type attribute
+,,
+----
+
+== References
+
+* Specification: https://en.wikipedia.org/wiki/Graph_Modelling_Language[Graph Modelling Language]
+* Wikidata: https://www.wikidata.org/wiki/Q96034734[Q96034734]
+
+See also: link:../graphml/graphml.adoc[GraphML]

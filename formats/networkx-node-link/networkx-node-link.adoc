@@ -1,0 +1,43 @@
+= NetworkX node-link JSON
+:toc:
+
+JSON serialization produced by NetworkX `node_link_data()`. The document has a
+`nodes` list (each with an `id` and arbitrary attributes), an edges list (with
+`source`, `target` and attributes), a top-level `directed` flag, and a `graph`
+dictionary of graph-level attributes.
+
+== Identity
+
+[source]
+----
+format:networkx-node-link ..has type.. format
+format:networkx-node-link ..category.. json
+format:networkx-node-link ..label.. NetworkX node-link JSON
+format:networkx-node-link ..alternative name.. node-link data
+format:networkx-node-link ..file extension.. .json
+format:networkx-node-link ..org.. NetworkX
+format:networkx-node-link ..spec.. https://networkx.org/documentation/stable/reference/readwrite/json_graph.html
+----
+
+== Features
+
+[source]
+----
+format:networkx-node-link ..lacks.. multiple-graphs-per-document ,, Document root is one graph
+format:networkx-node-link ..supports.. nodes ,, nodes list
+format:networkx-node-link ..supports.. undirected-edges ,, directed: false (default)
+format:networkx-node-link ..supports.. directed-edges ,, directed: true
+format:networkx-node-link ..lacks.. hyperedges
+format:networkx-node-link ..lacks.. mixed-directionality-edges ,, Single graph-level directed flag
+format:networkx-node-link ..lacks.. edges-on-edges
+format:networkx-node-link ..lacks.. node-labels ,, Has id but no dedicated label
+format:networkx-node-link ..lacks.. edge-labels
+format:networkx-node-link ..supports.. attributes-on-nodes ,, Arbitrary per-node key/values
+format:networkx-node-link ..supports.. attributes-on-edges ,, Arbitrary per-edge key/values
+format:networkx-node-link ..supports.. attributes-on-graphs ,, Top-level graph dict
+format:networkx-node-link ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://networkx.org/documentation/stable/reference/readwrite/json_graph.html[networkx.org/documentation/stable/reference/readwrite/json_graph.html]

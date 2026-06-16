@@ -1,0 +1,49 @@
+= SBGN-ML 0.3
+:toc:
+
+SBGN-ML is the XML serialization of the Systems Biology Graphical Notation, a
+standard for diagramming signaling, metabolic and gene-regulatory networks. A
+map consists of glyph nodes connected by arc edges, covering the Process
+Description, Entity Relationship and Activity Flow languages.
+
+== Identity
+
+[source]
+----
+format:sbgn-ml ..has type.. format
+format:sbgn-ml ..category.. xml
+format:sbgn-ml ..label.. SBGN-ML
+format:sbgn-ml ..alternative name.. Systems Biology Graphical Notation Markup Language
+format:sbgn-ml ..wikipedia.. https://en.wikipedia.org/wiki/Systems_Biology_Graphical_Notation
+
+format:sbgn-ml-0.3 ..version of.. format:sbgn-ml
+format:sbgn-ml-0.3 ..version.. 0.3
+format:sbgn-ml-0.3 ..file extension.. .sbgn
+format:sbgn-ml-0.3 ..spec.. http://co.mbine.org/specifications/sbgnml.version-0.3.release-1
+----
+
+== Features
+
+[source]
+----
+format:sbgn-ml-0.3 ..supports.. multiple-graphs-per-document ,, 0.3 allows multiple map elements per document
+format:sbgn-ml-0.3 ..supports.. nodes ,, glyph elements
+format:sbgn-ml-0.3 ..supports.. directed-edges ,, arc elements with source and target
+format:sbgn-ml-0.3 ..supports.. node-labels ,, label element on glyphs
+format:sbgn-ml-0.3 ..supports.. nested-graphs-in-nodes ,, compartment and complex glyphs contain sub-glyphs
+format:sbgn-ml-0.3 ..supports.. nested-graphs-in-graphs ,, 0.3 adds sub-maps (submap glyphs / nested maps)
+format:sbgn-ml-0.3 ..supports.. attributes-on-nodes ,, class attribute, state and bbox
+format:sbgn-ml-0.3 ..supports.. attributes-on-edges ,, class, id, source, target and extension on arc
+format:sbgn-ml-0.3 ..supports.. attributes-on-graphs ,, 0.3 adds map metadata, notes and extension
+format:sbgn-ml-0.3 ..supports.. typed-edges ,, arc class (production, consumption, catalysis, etc.)
+format:sbgn-ml-0.3 ..lacks.. undirected-edges
+format:sbgn-ml-0.3 ..lacks.. hyperedges
+format:sbgn-ml-0.3 ..lacks.. mixed-directionality-edges
+format:sbgn-ml-0.3 ..lacks.. edges-on-edges
+format:sbgn-ml-0.3 ..lacks.. nested-graphs-in-edges
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/Systems_Biology_Graphical_Notation[Systems Biology Graphical Notation]
+* Specification: http://co.mbine.org/specifications/sbgnml.version-0.3.release-1[co.mbine.org/specifications/sbgnml.version-0.3.release-1]

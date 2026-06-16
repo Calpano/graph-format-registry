@@ -1,0 +1,52 @@
+= Graphviz plain output format
+:toc:
+
+Simple line-based layout output produced by Graphviz (`dot -Tplain`). It records
+a `graph` line with scale and size, one `node` line per node with coordinates and
+a label, one `edge` line per edge with its control points, and a `stop` line.
+
+== Identity
+
+[source]
+----
+format:graphviz-plain ..has type.. format
+format:graphviz-plain ..category.. text
+format:graphviz-plain ..label.. Graphviz plain output format
+format:graphviz-plain ..alternative name.. plain
+format:graphviz-plain ..org.. Graphviz
+format:graphviz-plain ..spec.. https://graphviz.org/docs/outputs/plain/
+----
+
+== Features
+
+[source]
+----
+format:graphviz-plain ..lacks.. multiple-graphs-per-document ,, One drawn graph per output
+format:graphviz-plain ..supports.. nodes ,, node lines
+format:graphviz-plain ..lacks.. hyperedges ,, Each edge has one tail and one head
+format:graphviz-plain ..lacks.. edges-on-edges
+format:graphviz-plain ..lacks.. nested-graphs-in-nodes
+format:graphviz-plain ..lacks.. nested-graphs-in-edges
+format:graphviz-plain ..lacks.. nested-graphs-in-graphs ,, Clusters are flattened
+format:graphviz-plain ..supports.. node-labels ,, label field on node lines
+format:graphviz-plain ..supports.. edge-labels ,, Optional label on edge lines
+format:graphviz-plain ..supports.. attributes-on-nodes ,,
+..status.. partial
+Fixed layout attributes only
+,,
+format:graphviz-plain ..supports.. attributes-on-edges ,,
+..status.. partial
+Style and color only
+,,
+format:graphviz-plain ..supports.. attributes-on-graphs ,,
+..status.. partial
+Scale and size only
+,,
+format:graphviz-plain ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://graphviz.org/docs/outputs/plain/[graphviz.org plain output]
+
+See also: link:../dot/dot.adoc[DOT]

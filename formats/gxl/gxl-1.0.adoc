@@ -1,0 +1,49 @@
+= GXL 1.0
+:toc:
+
+Standard exchange format for graphs, particularly for software reengineering tools.
+
+== Identity
+
+[source]
+----
+format:gxl ..has type.. format
+format:gxl ..category.. xml
+format:gxl ..label.. GXL
+format:gxl ..alternative name.. Graph eXchange Language
+format:gxl ..wikipedia.. https://en.wikipedia.org/wiki/GXL
+format:gxl ..wikidata.. Q3756354
+
+format:gxl-1.0 ..version of.. format:gxl
+format:gxl-1.0 ..version.. 1.0
+format:gxl-1.0 ..file extension.. .gxl
+format:gxl-1.0 ..spec.. http://www.gupro.de/GXL/
+----
+
+== Features
+
+[source]
+----
+format:gxl-1.0 ..supports.. multiple-graphs-per-document
+format:gxl-1.0 ..supports.. nodes
+format:gxl-1.0 ..supports.. undirected-edges
+format:gxl-1.0 ..supports.. directed-edges
+format:gxl-1.0 ..supports.. hyperedges
+format:gxl-1.0 ..lacks.. mixed-directionality-edges
+format:gxl-1.0 ..lacks.. edges-on-edges
+format:gxl-1.0 ..supports.. nested-graphs-in-nodes ,, Hierarchical graphs
+format:gxl-1.0 ..lacks.. nested-graphs-in-edges
+format:gxl-1.0 ..supports.. nested-graphs-in-graphs ,, Hierarchical graphs
+format:gxl-1.0 ..supports.. node-labels
+format:gxl-1.0 ..supports.. edge-labels
+format:gxl-1.0 ..supports.. attributes-on-nodes
+format:gxl-1.0 ..supports.. attributes-on-edges
+format:gxl-1.0 ..supports.. attributes-on-graphs
+format:gxl-1.0 ..supports.. typed-edges ,, User-defined edge types
+----
+
+== References
+
+* Specification: http://www.gupro.de/GXL/[gupro.de/GXL]
+* Wikipedia: https://en.wikipedia.org/wiki/GXL[GXL]
+* Wikidata: https://www.wikidata.org/wiki/Q3756354[Q3756354]
