@@ -12,8 +12,10 @@ normative schema.
 . Read `SCHEMA.adoc` — it defines the identity and feature triples, the
   `format:` / `model:` namespaces, versioning (`..version of..`), sub-formats
   (`..subformat of..`), and the ddot `,,` metadata syntax.
-. Create `formats/<family>/<format-id>.adoc`. Follow an existing entry such as
-  `formats/dot/dot.adoc` (a complete worked example) for structure: a `= Title`,
+. Create `formats/<category>/<family>/<format-id>.adoc` (category is `text`,
+  `json`, `xml` or `binary`; conceptual models go under `models/`).
+  Follow an existing entry such as
+  `formats/text/dot/dot.adoc` (a complete worked example) for structure: a `= Title`,
   `:toc:`, a prose summary, an `== Identity` block, an `== Features` block scored
   against `graph-features.adoc`, and an `== References` section with clickable
   links to the spec and any related formats.
