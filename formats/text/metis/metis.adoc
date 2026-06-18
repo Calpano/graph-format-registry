@@ -1,0 +1,50 @@
+= METIS Graph Format
+:toc:
+
+Plain-text input format for the link:../../../tools.adoc#_metis[METIS] graph partitioning software. A header line
+gives the vertex and edge counts plus an optional format flag; each subsequent
+line is the adjacency list of one vertex, with optional vertex and edge weights.
+
+== Identity
+
+[source]
+----
+format:metis ..has type.. format
+format:metis ..category.. text
+format:metis ..label.. METIS Graph Format
+format:metis ..file extension.. .graph
+format:metis ..org.. University of Minnesota
+format:metis ..spec.. https://github.com/KarypisLab/METIS/blob/master/manual/manual.pdf
+----
+
+== Features
+
+[source]
+----
+format:metis ..lacks.. multiple-graphs-per-document ,, One graph per file
+format:metis ..supports.. nodes ,, Vertices numbered 1..n, one line each
+format:metis ..supports.. undirected-edges ,, Symmetric adjacency, edge counted once
+format:metis ..lacks.. directed-edges
+format:metis ..lacks.. hyperedges
+format:metis ..lacks.. mixed-directionality-edges
+format:metis ..lacks.. edges-on-edges
+format:metis ..lacks.. nested-graphs-in-nodes
+format:metis ..lacks.. nested-graphs-in-edges
+format:metis ..lacks.. nested-graphs-in-graphs
+format:metis ..lacks.. node-labels
+format:metis ..lacks.. edge-labels
+format:metis ..supports.. attributes-on-nodes ,,
+..status.. partial
+Numeric vertex weights (multi-constraint)
+,,
+format:metis ..supports.. attributes-on-edges ,,
+..status.. partial
+Single numeric edge weight
+,,
+format:metis ..lacks.. attributes-on-graphs
+format:metis ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://github.com/KarypisLab/METIS/blob/master/manual/manual.pdf[github.com/KarypisLab/METIS/blob/master/manual/manual.pdf]

@@ -1,0 +1,64 @@
+= Notation3 (N3)
+:toc:
+
+A text syntax that extends RDF with rules, formulae (quoted graphs) and
+built-in functions. Resources are nodes and triples are directed edges typed by
+their predicate. link:../../text/turtle/turtle.adoc[Turtle] is a subset of N3.
+
+== Identity
+
+[source]
+----
+format:notation3 ..has type.. format
+format:notation3 ..category.. text
+format:notation3 ..label.. Notation3 (N3)
+format:notation3 ..alternative name.. N3
+format:notation3 ..file extension.. .n3
+format:notation3 ..media type.. text/n3
+format:notation3 ..wikipedia.. https://en.wikipedia.org/wiki/Notation3
+format:notation3 ..wikidata.. Q1424987
+format:notation3 ..org.. W3C
+format:notation3 ..spec.. https://w3c.github.io/N3/spec/
+----
+
+== Features
+
+[source]
+----
+format:notation3 ..supports.. multiple-graphs-per-document ,,
+..status.. partial
+Formulae are quoted graphs embedded as terms, not named graphs
+,,
+format:notation3 ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:notation3 ..lacks.. undirected-edges
+format:notation3 ..supports.. directed-edges ,, Triples are directed subject to object
+format:notation3 ..lacks.. hyperedges
+format:notation3 ..lacks.. mixed-directionality-edges
+format:notation3 ..supports.. edges-on-edges ,,
+..status.. partial
+Via reification or a quoted single-triple formula
+,,
+format:notation3 ..supports.. nested-graphs-in-nodes ,, Formulae { ... } may be subject or object of a triple
+format:notation3 ..supports.. nested-graphs-in-edges ,,
+..status.. partial
+Formulae may appear as predicate terms
+,,
+format:notation3 ..supports.. nested-graphs-in-graphs ,,
+..status.. partial
+Formulae may be nested inside other formulae
+,,
+format:notation3 ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:notation3 ..supports.. edge-labels ,, Predicate IRI names the edge
+format:notation3 ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:notation3 ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:notation3 ..lacks.. attributes-on-graphs
+format:notation3 ..supports.. typed-edges ,, Every triple is typed by its predicate
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/Notation3[Notation3]
+* Wikidata: https://www.wikidata.org/wiki/Q1424987[Q1424987]
+* Specification: https://w3c.github.io/N3/spec/[w3c.github.io/N3/spec]
+
+See also: link:../../text/turtle/turtle.adoc[Turtle]

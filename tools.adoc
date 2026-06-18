@@ -57,6 +57,8 @@ graphinout ..reads.. format:gtfs
 graphinout ..reads.. format:ddot
 graphinout ..reads.. format:tripletext
 graphinout ..reads.. format:plantuml ,, class diagram only; reader-plantuml still under construction
+graphinout ..reads.. format:structurizr-dsl
+graphinout ..reads.. format:grale
 graphinout ..reads.. format:turtle
 graphinout ..reads.. format:n-triples
 graphinout ..reads.. format:rdf-nquads
@@ -88,7 +90,8 @@ graphinout ..writes.. format:gexf
 graphinout ..writes.. format:adjlist
 graphinout ..writes.. format:edge-list
 graphinout ..writes.. format:plantuml ,, class diagram only; reader-plantuml (PlantUmlWriter) still under construction
-// read-only (reader but no GioWriter): gtfs, graph6, sparse6, digraph6, tripletext
+graphinout ..writes.. format:grale ,, estimates node width/height from the label (Roboto 16px) when none is given
+// read-only (reader but no GioWriter): gtfs, graph6, sparse6, digraph6, tripletext, structurizr-dsl
 
 calpano ..has type.. org
 calpano ..org type.. company
@@ -219,7 +222,7 @@ graphviz ..reads.. format:gxl
 graphviz ..writes.. format:dot
 graphviz ..writes.. format:gxl
 
-// att, emden-gansner, stephen-north are defined in formats/dot/dot.adoc
+// att, emden-gansner, stephen-north are defined in formats/text/dot/dot.adoc
 john-ellson ..has type.. person
 john-ellson ..label.. John Ellson
 john-ellson ..affiliation.. att
@@ -360,7 +363,7 @@ gcv ..reads.. format:harwell-boeing
 gcv ..writes.. format:scotch
 gcv ..writes.. format:chaco
 gcv ..writes.. format:matrix-market
-// francois-pellegrini and inria are defined in formats/scotch/scotch.adoc
+// francois-pellegrini and inria are defined in formats/text/scotch/scotch.adoc
 ----
 
 * Repository: https://gitlab.inria.fr/scotch/scotch[gitlab.inria.fr/scotch/scotch]
@@ -553,7 +556,7 @@ graph-tool ..writes.. format:dot
 
 == Neo4j
 
-Graph database implementing the link:formats/neo4j/neo4j.adoc[Neo4j property
+Graph database implementing the link:models/neo4j.adoc[Neo4j property
 graph model]; via APOC it imports/exports GraphML and its APOC JSON export.
 
 [source]
@@ -564,7 +567,7 @@ neo4j ..repo.. https://neo4j.com/
 neo4j ..reads.. format:graphml
 neo4j ..writes.. format:graphml
 neo4j ..writes.. format:neo4j-json
-// the property-graph model itself is model:neo4j (formats/neo4j/neo4j.adoc)
+// the property-graph model itself is model:neo4j (models/neo4j.adoc)
 ----
 
 * Repository: https://neo4j.com/[neo4j.com]

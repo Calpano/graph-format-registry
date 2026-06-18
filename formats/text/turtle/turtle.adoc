@@ -1,0 +1,56 @@
+= Turtle
+:toc:
+
+A compact, human-readable text syntax for RDF, with prefixes and shorthand for
+predicate and object lists. Resources are nodes and triples are directed edges
+typed by their predicate. A syntactic subset of
+link:../../text/notation3/notation3.adoc[Notation3].
+
+== Identity
+
+[source]
+----
+format:turtle ..has type.. format
+format:turtle ..category.. text
+format:turtle ..label.. Turtle
+format:turtle ..alternative name.. Terse RDF Triple Language
+format:turtle ..file extension.. .ttl
+format:turtle ..media type.. text/turtle
+format:turtle ..wikipedia.. https://en.wikipedia.org/wiki/Turtle_(syntax)
+format:turtle ..wikidata.. Q114409
+format:turtle ..org.. W3C
+format:turtle ..spec.. https://www.w3.org/TR/turtle/
+----
+
+== Features
+
+[source]
+----
+format:turtle ..lacks.. multiple-graphs-per-document ,, No named graphs; use TriG for multiple graphs
+format:turtle ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:turtle ..lacks.. undirected-edges
+format:turtle ..supports.. directed-edges ,, Triples are directed subject to object
+format:turtle ..lacks.. hyperedges
+format:turtle ..lacks.. mixed-directionality-edges
+format:turtle ..supports.. edges-on-edges ,,
+..status.. partial
+Via RDF reification (rdf:Statement)
+,,
+format:turtle ..lacks.. nested-graphs-in-nodes
+format:turtle ..lacks.. nested-graphs-in-edges
+format:turtle ..lacks.. nested-graphs-in-graphs
+format:turtle ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:turtle ..supports.. edge-labels ,, Predicate IRI names the edge
+format:turtle ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:turtle ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:turtle ..lacks.. attributes-on-graphs
+format:turtle ..supports.. typed-edges ,, Every triple is typed by its predicate
+----
+
+== References
+
+* Specification: https://www.w3.org/TR/turtle/[www.w3.org/TR/turtle]
+* Wikipedia: https://en.wikipedia.org/wiki/Turtle_(syntax)[Turtle (syntax)]
+* Wikidata: https://www.wikidata.org/wiki/Q114409[Q114409]
+
+See also: link:../../text/notation3/notation3.adoc[Notation3], link:../../text/trig/trig.adoc[TriG]

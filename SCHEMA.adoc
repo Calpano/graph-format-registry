@@ -1,7 +1,8 @@
 = Graph Format Registry — Entry Schema
 
-Every format is one AsciiDoc file under `formats/<family>/<format-id>.adoc`
-(one directory per format family — see "Directory layout" below). The file
+Every format is one AsciiDoc file under
+`formats/<category>/<family>/<format-id>.adoc` (grouped first by category, then
+one directory per format family — see "Directory layout" below). The file
 carries two layers:
 
 * **Prose + tables** — the human-readable description (rendered as HTML).
@@ -20,7 +21,7 @@ namespace instead — e.g. `model:neo4j`. This keeps triples unambiguous and
 machine-resolvable regardless of section nesting (we do not rely on
 `ddot.it/this`).
 
-The **filename** stays the bare slug — `formats/<family>/<slug>.adoc` (e.g.
+The **filename** stays the bare slug — `formats/<category>/<family>/<slug>.adoc` (e.g.
 `dot.adoc`, `graphml-1.1.adoc`) — only the ddot subject/object carries the
 `format:` prefix. We refer to the bare slug as the `format-id`; the qualified
 id is `format:<format-id>`.
@@ -114,7 +115,7 @@ People and organizations are ddot subjects (`person` / `org`) referenced by
 block as the entry that references it** — next to the tool or format they made.
 There is no separate actors section. An actor referenced from more than one
 entry is defined once, in the block for the thing they originally authored (e.g.
-DOT's authors are defined in `formats/dot/dot.adoc`, and merely referenced from the
+DOT's authors are defined in `formats/text/dot/dot.adoc`, and merely referenced from the
 Graphviz tool).
 
 A person for whom we have nothing but a name gets no slug at all — the literal
@@ -151,32 +152,45 @@ documents in `cc-gio-ui/src/lib/data`:
 | `introText` / `summaryText`        | AsciiDoc prose body
 |===
 
-See `formats/dot/dot.adoc` for a complete worked example.
+See `formats/text/dot/dot.adoc` for a complete worked example.
 
 == Directory layout
 
-Each format family is a directory under `formats/`. The directory holds the
-entry file(s) and may also hold **sample/example files** for that format:
+Formats are grouped first by **category** (`text` \| `json` \| `xml` \|
+`binary`), and within each category by **family**. A family is a directory
+holding the entry file(s) and any **sample/example files** for that format.
+Conceptual *models* (no serialisation category) live under `models/` at the
+repository root, separate from the serialisation `formats/` tree.
 
 ----
 formats/
-  dot/
-    dot.adoc            <- the registry entry
-    sample.gv           <- example data file(s)
-  graphml/
-    graphml.adoc        <- family-level entry
-    graphml-1.0.adoc    <- versioned entry
-    graphml-1.1.adoc
-    sample.graphml
+  text/
+    dot/
+      dot.adoc            <- the registry entry
+      sample.gv           <- example data file(s)
+  xml/
+    graphml/
+      graphml.adoc        <- family-level entry
+      graphml-1.0.adoc    <- versioned entry
+      graphml-1.1.adoc
+      sample.graphml
+  binary/
+    graph6/
+      graph6.adoc
+models/
+  neo4j.adoc              <- conceptual model (model:neo4j), no category
 ----
 
-For a single-version or unversioned format the directory holds one `.adoc`
-(named for the format-id). For a multi-version family it holds the family entry
-`<family>.adoc` plus one `<family>-<version>.adoc` per version. Sample files
-live alongside, named freely with the format's real file extension.
+For a single-version or unversioned format the family directory holds one
+`.adoc` (named for the format-id). For a multi-version family it holds the
+family entry `<family>.adoc` plus one `<family>-<version>.adoc` per version.
+Sample files live alongside, named freely with the format's real file extension.
 
-A directory may also group **several related formats from one source/vendor** —
-e.g. `formats/cytoscape/` holds `cytoscape-json.adoc`, `cytoscape-cx-1.adoc`,
-`cytoscape-cx2-2.0.adoc`, `sif.adoc` and `nested-network.adoc`. The directory
-is just a grouping for the files and their samples; each format keeps its own
-`format-id` (and its own `..version of..` family link, if versioned).
+A family may also group **several related formats from one source/vendor**. When
+those formats fall in different categories, the family directory appears under
+each — e.g. Cytoscape's JSON formats live in `formats/json/cytoscape/`
+(`cytoscape-json.adoc`, `cytoscape-cx-1.adoc`, `cytoscape-cx2-2.0.adoc`) while
+its text formats live in `formats/text/cytoscape/` (`sif.adoc`,
+`nested-network.adoc`). The directory is just a grouping for the files and their
+samples; each format keeps its own `format-id` (and its own `..version of..`
+family link, if versioned).

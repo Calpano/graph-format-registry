@@ -1,0 +1,22 @@
+= Chaco
+:toc:
+
+Graph partitioning format used by link:../../../tools.adoc#_chaco[Chaco] software.
+
+== Identity
+
+[source]
+----
+format:chaco ..has type.. format
+format:chaco ..category.. text
+format:chaco ..label.. Chaco
+format:chaco ..file extension.. .graph
+----
+
+== Features
+
+[source]
+----
+format:chaco ..supports.. nodes
+format:chaco ..supports.. undirected-edges
+----

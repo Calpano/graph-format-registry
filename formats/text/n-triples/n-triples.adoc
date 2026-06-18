@@ -1,0 +1,54 @@
+= N-Triples
+:toc:
+
+A line-based, plain-text RDF serialization where each line is one triple
+terminated by a period. Resources are nodes and triples are directed edges
+typed by their predicate. Designed to be simple to parse and easy to stream.
+
+== Identity
+
+[source]
+----
+format:n-triples ..has type.. format
+format:n-triples ..category.. text
+format:n-triples ..label.. N-Triples
+format:n-triples ..file extension.. .nt
+format:n-triples ..media type.. application/n-triples
+format:n-triples ..wikipedia.. https://en.wikipedia.org/wiki/N-Triples
+format:n-triples ..wikidata.. Q44044
+format:n-triples ..org.. W3C
+format:n-triples ..spec.. https://www.w3.org/TR/n-triples/
+----
+
+== Features
+
+[source]
+----
+format:n-triples ..lacks.. multiple-graphs-per-document ,, No named graphs; use N-Quads for multiple graphs
+format:n-triples ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:n-triples ..lacks.. undirected-edges
+format:n-triples ..supports.. directed-edges ,, Triples are directed subject to object
+format:n-triples ..lacks.. hyperedges
+format:n-triples ..lacks.. mixed-directionality-edges
+format:n-triples ..supports.. edges-on-edges ,,
+..status.. partial
+Via RDF reification (rdf:Statement)
+,,
+format:n-triples ..lacks.. nested-graphs-in-nodes
+format:n-triples ..lacks.. nested-graphs-in-edges
+format:n-triples ..lacks.. nested-graphs-in-graphs
+format:n-triples ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:n-triples ..supports.. edge-labels ,, Predicate IRI names the edge
+format:n-triples ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:n-triples ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:n-triples ..lacks.. attributes-on-graphs
+format:n-triples ..supports.. typed-edges ,, Every triple is typed by its predicate
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/N-Triples[N-Triples]
+* Wikidata: https://www.wikidata.org/wiki/Q44044[Q44044]
+* Specification: https://www.w3.org/TR/n-triples/[www.w3.org/TR/n-triples]
+
+See also: link:../../text/rdf-nquads/rdf-nquads.adoc[N-Quads]

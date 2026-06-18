@@ -1,0 +1,51 @@
+= Adjacency List (NetworkX)
+:toc:
+
+Simple export format provided by link:../../../tools.adoc#_networkx[NetworkX]
+(Python): each line lists a source node followed by its adjacent nodes.
+
+== Identity
+
+[source]
+----
+format:adjlist ..has type.. format
+format:adjlist ..category.. text
+format:adjlist ..label.. Adjacency List (NetworkX)
+format:adjlist ..file extension.. .adjlist
+format:adjlist ..spec.. https://networkx.org/documentation/stable/reference/readwrite/adjlist.html
+----
+
+== Features
+
+[source]
+----
+format:adjlist ..lacks.. multiple-graphs-per-document
+format:adjlist ..supports.. nodes ,,
+..status.. partial
+Implicit as indices
+,,
+format:adjlist ..lacks.. undirected-edges ,, No direction marker; a line is read as directed (source -> listed neighbours)
+format:adjlist ..supports.. directed-edges
+format:adjlist ..lacks.. hyperedges
+format:adjlist ..lacks.. mixed-directionality-edges
+format:adjlist ..lacks.. edges-on-edges
+format:adjlist ..lacks.. nested-graphs-in-nodes
+format:adjlist ..lacks.. nested-graphs-in-edges
+format:adjlist ..lacks.. nested-graphs-in-graphs
+format:adjlist ..lacks.. node-labels
+format:adjlist ..lacks.. edge-labels
+format:adjlist ..lacks.. attributes-on-nodes
+format:adjlist ..supports.. attributes-on-edges ,,
+..status.. partial
+Weights possible in some variants
+,,
+format:adjlist ..lacks.. attributes-on-graphs
+format:adjlist ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://networkx.org/documentation/stable/reference/readwrite/adjlist.html[networkx.org adjacency list read/write]
+* Multiline variant: https://networkx.org/documentation/stable/reference/readwrite/multiline_adjlist.html[networkx.org multiline adjacency list]
+
+See also: link:../../../tools.adoc#_networkx[NetworkX]

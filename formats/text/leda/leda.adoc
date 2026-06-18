@@ -1,0 +1,70 @@
+= LEDA Graph Format
+:toc:
+
+Plain-text native graph format of the link:../../../tools.adoc#_leda[LEDA] C++ library and its GraphWin viewer.
+A file holds one LEDA graph (nodes and edges, each carrying a typed data value)
+optionally followed by a GraphWin layout section with drawing attributes.
+
+== Identity
+
+[source]
+----
+format:leda ..has type.. format
+format:leda ..category.. text
+format:leda ..label.. LEDA Graph Format
+format:leda ..alternative name.. GW
+format:leda ..alternative name.. GraphWin format
+format:leda ..file extension.. .gw
+format:leda ..wikidata.. Q96035181
+format:leda ..org.. Max Planck Institute for Informatics
+format:leda ..org.. Algorithmic Solutions
+format:leda ..spec.. https://www.algorithmic-solutions.info/leda_manual/GW.html
+----
+
+== Features
+
+[source]
+----
+format:leda ..lacks.. multiple-graphs-per-document ,, One graph plus layout per file
+format:leda ..supports.. nodes
+format:leda ..supports.. undirected-edges ,, Undirected graphs / undirected_edge
+format:leda ..supports.. directed-edges ,, Directed by default
+format:leda ..lacks.. hyperedges
+format:leda ..supports.. mixed-directionality-edges ,,
+..status.. partial
+Per-edge direction styling in layout section
+,,
+format:leda ..lacks.. edges-on-edges
+format:leda ..lacks.. nested-graphs-in-nodes
+format:leda ..lacks.. nested-graphs-in-edges
+format:leda ..lacks.. nested-graphs-in-graphs
+format:leda ..supports.. node-labels ,,
+..status.. partial
+GW drawing-layer label distinct from node index
+,,
+format:leda ..supports.. edge-labels ,,
+..status.. partial
+GW drawing-layer edge label
+,,
+format:leda ..supports.. attributes-on-nodes ,,
+..status.. partial
+Single globally-typed data value per node, not arbitrary attributes
+,,
+format:leda ..supports.. attributes-on-edges ,,
+..status.. partial
+Single globally-typed data value per edge, not arbitrary attributes
+,,
+format:leda ..supports.. attributes-on-graphs ,,
+..status.. partial
+GW global parameter section (fonts, window params)
+,,
+format:leda ..supports.. typed-edges ,,
+..status.. partial
+Single global edge data type, no per-edge class
+,,
+----
+
+== References
+
+* Wikidata: https://www.wikidata.org/wiki/Q96035181[Q96035181]
+* Specification: https://www.algorithmic-solutions.info/leda_manual/GW.html[www.algorithmic-solutions.info/leda_manual/GW.html]

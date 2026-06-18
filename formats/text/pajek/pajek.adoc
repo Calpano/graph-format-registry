@@ -1,0 +1,47 @@
+= Pajek
+:toc:
+
+Format for link:../../../tools.adoc#_pajek[Pajek] network analysis software. Supports arcs (directed) and edges (undirected).
+
+== Identity
+
+[source]
+----
+format:pajek ..has type.. format
+format:pajek ..category.. text
+format:pajek ..label.. Pajek
+format:pajek ..file extension.. .net
+format:pajek ..spec.. http://vlado.fmf.uni-lj.si/pub/networks/pajek/doc/pajekman.pdf
+----
+
+== Features
+
+[source]
+----
+format:pajek ..supports.. multiple-graphs-per-document ,, Multiple relations via *Arcs / *Edges sections
+format:pajek ..supports.. nodes ,, *Vertices section
+format:pajek ..supports.. undirected-edges ,, *Edges section
+format:pajek ..supports.. directed-edges ,, *Arcs section
+format:pajek ..lacks.. hyperedges
+format:pajek ..supports.. mixed-directionality-edges ,, Can have both *Arcs and *Edges
+format:pajek ..lacks.. edges-on-edges
+format:pajek ..lacks.. nested-graphs-in-nodes
+format:pajek ..lacks.. nested-graphs-in-edges
+format:pajek ..lacks.. nested-graphs-in-graphs
+format:pajek ..supports.. node-labels ,, After vertex ID
+format:pajek ..supports.. edge-labels ,,
+..status.. partial
+Via edge value
+,,
+format:pajek ..supports.. attributes-on-nodes ,, Coordinates, colors, shapes
+format:pajek ..supports.. attributes-on-edges ,, Weights, colors, widths
+format:pajek ..lacks.. attributes-on-graphs
+format:pajek ..supports.. typed-edges ,,
+..status.. partial
+Via multiple relation sections
+,,
+----
+
+== References
+
+* Specification: http://vlado.fmf.uni-lj.si/pub/networks/pajek/doc/pajekman.pdf[vlado.fmf.uni-lj.si/pub/networks/pajek/doc/pajekman.pdf]

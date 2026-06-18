@@ -1,0 +1,51 @@
+= XGMML 1.0
+:toc:
+
+XML application based on link:../../text/gml/gml.adoc[GML], used by Cytoscape for biological networks.
+
+== Identity
+
+[source]
+----
+format:xgmml ..has type.. format
+format:xgmml ..category.. xml
+format:xgmml ..label.. XGMML
+format:xgmml ..alternative name.. eXtensible Graph Markup and Modeling Language
+format:xgmml ..wikipedia.. https://en.wikipedia.org/wiki/XGMML
+format:xgmml ..wikidata.. Q8041961
+
+format:xgmml-1.0 ..version of.. format:xgmml
+format:xgmml-1.0 ..version.. 1.0
+format:xgmml-1.0 ..file extension.. .xgmml
+format:xgmml ..spec.. https://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html
+----
+
+== Features
+
+[source]
+----
+format:xgmml-1.0 ..lacks.. multiple-graphs-per-document
+format:xgmml-1.0 ..supports.. nodes
+format:xgmml-1.0 ..supports.. undirected-edges ,, Default (directed="0")
+format:xgmml-1.0 ..supports.. directed-edges ,, Via directed="1" on graph
+format:xgmml-1.0 ..lacks.. hyperedges
+format:xgmml-1.0 ..lacks.. mixed-directionality-edges
+format:xgmml-1.0 ..lacks.. edges-on-edges
+format:xgmml-1.0 ..lacks.. nested-graphs-in-nodes
+format:xgmml-1.0 ..lacks.. nested-graphs-in-edges
+format:xgmml-1.0 ..lacks.. nested-graphs-in-graphs
+format:xgmml-1.0 ..supports.. node-labels ,, Via label attribute
+format:xgmml-1.0 ..supports.. edge-labels ,, Via label attribute
+format:xgmml-1.0 ..supports.. attributes-on-nodes ,, Via <att> elements
+format:xgmml-1.0 ..supports.. attributes-on-edges ,, Via <att> elements
+format:xgmml-1.0 ..supports.. attributes-on-graphs ,, Via <att> elements
+format:xgmml-1.0 ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html[manual.cytoscape.org XGMML]
+* Wikipedia: https://en.wikipedia.org/wiki/XGMML[XGMML]
+* Wikidata: https://www.wikidata.org/wiki/Q8041961[Q8041961]
+
+See also: link:../../text/gml/gml.adoc[GML]

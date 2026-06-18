@@ -1,0 +1,53 @@
+= GDL (aiSee)
+:toc:
+
+Text input language of the link:../../../tools.adoc#_aisee[aiSee] graph layout tool, a superset of
+link:../../text/vcg/vcg-1.30.adoc[VCG]. A graph
+contains `node` and `edge` entries with rich visual attributes and may nest
+foldable subgraphs. (Distinct from the unrelated Microsoft GDL.)
+
+== Identity
+
+[source]
+----
+format:gdl-aisee ..has type.. format
+format:gdl-aisee ..category.. text
+format:gdl-aisee ..label.. GDL (aiSee)
+format:gdl-aisee ..alternative name.. Graph Description Language
+format:gdl-aisee ..file extension.. .gdl
+format:gdl-aisee ..org.. AbsInt
+format:gdl-aisee ..spec.. https://www.absint.com/aisee/manual/
+----
+
+== Features
+
+[source]
+----
+format:gdl-aisee ..supports.. nodes ,, node entries
+format:gdl-aisee ..supports.. undirected-edges ,,
+..status.. partial
+Only by suppressing arrowheads
+,,
+format:gdl-aisee ..supports.. directed-edges ,, source -> target
+format:gdl-aisee ..lacks.. hyperedges
+format:gdl-aisee ..supports.. mixed-directionality-edges ,,
+..status.. partial
+Per-edge arrowstyle; undirected is only arrowhead suppression
+,,
+format:gdl-aisee ..lacks.. edges-on-edges
+format:gdl-aisee ..supports.. nested-graphs-in-nodes ,, A subgraph is a foldable node
+format:gdl-aisee ..lacks.. nested-graphs-in-edges
+format:gdl-aisee ..supports.. nested-graphs-in-graphs ,, Nested graph blocks (folding)
+format:gdl-aisee ..supports.. node-labels ,, label/info on nodes
+format:gdl-aisee ..supports.. edge-labels ,, label on edges
+format:gdl-aisee ..supports.. attributes-on-nodes ,, color, shape, textcolor, bitmap
+format:gdl-aisee ..supports.. attributes-on-edges ,, color, thickness, linestyle, arrowstyle, priority
+format:gdl-aisee ..supports.. attributes-on-graphs ,, layout, colors, spacing, orientation
+format:gdl-aisee ..supports.. typed-edges ,, edge class
+----
+
+== References
+
+* Specification: https://www.absint.com/aisee/manual/[absint.com aiSee manual]
+
+See also: link:../../text/vcg/vcg-1.30.adoc[VCG]

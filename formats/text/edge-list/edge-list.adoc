@@ -1,0 +1,46 @@
+= Edge List
+:toc:
+
+Simple list of edges, optionally with weights.
+
+== Identity
+
+[source]
+----
+format:edge-list ..has type.. format
+format:edge-list ..category.. text
+format:edge-list ..label.. Edge List
+format:edge-list ..file extension.. .edgelist
+format:edge-list ..spec.. https://networkx.org/documentation/stable/reference/readwrite/edgelist.html
+----
+
+== Features
+
+[source]
+----
+format:edge-list ..lacks.. multiple-graphs-per-document
+format:edge-list ..supports.. nodes ,, Implicit from edge endpoints
+format:edge-list ..supports.. undirected-edges
+format:edge-list ..supports.. directed-edges
+format:edge-list ..lacks.. mixed-directionality-edges
+format:edge-list ..lacks.. hyperedges
+format:edge-list ..lacks.. edges-on-edges
+format:edge-list ..lacks.. nested-graphs-in-nodes
+format:edge-list ..lacks.. nested-graphs-in-edges
+format:edge-list ..lacks.. nested-graphs-in-graphs
+format:edge-list ..lacks.. node-labels ,, Nodes are bare tokens; no distinct label
+format:edge-list ..lacks.. edge-labels
+format:edge-list ..lacks.. attributes-on-nodes
+format:edge-list ..supports.. attributes-on-edges ,,
+..status.. partial
+Trailing data dict / weights (read_weighted_edgelist, data=True)
+,,
+format:edge-list ..lacks.. attributes-on-graphs
+format:edge-list ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://networkx.org/documentation/stable/reference/readwrite/edgelist.html[networkx.org edge list read/write]
+
+See also: link:../../../tools.adoc#_networkx[NetworkX], link:../../../tools.adoc#_igraph[igraph]

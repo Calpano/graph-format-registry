@@ -1,0 +1,53 @@
+= Nexus file
+:toc:
+
+An extensible, modular text format for systematic and phylogenetic data,
+organized into blocks such as TAXA, CHARACTERS and TREES. Trees are embedded
+in a TREES block using link:../../text/newick/newick.adoc[Newick] expressions, alongside taxa, alignments and
+other comparative data.
+
+== Identity
+
+[source]
+----
+format:nexus ..has type.. format
+format:nexus ..category.. text
+format:nexus ..label.. Nexus file
+format:nexus ..alternative name.. NEXUS
+format:nexus ..file extension.. .nex
+format:nexus ..file extension.. .nexus
+format:nexus ..file extension.. .nxs
+format:nexus ..wikipedia.. https://en.wikipedia.org/wiki/Nexus_file
+format:nexus ..wikidata.. Q1983918
+format:nexus ..released.. 1997
+format:nexus ..spec.. https://doi.org/10.1093/sysbio/46.4.590
+----
+
+== Features
+
+[source]
+----
+format:nexus ..supports.. multiple-graphs-per-document ,, TREES block may hold several trees
+format:nexus ..supports.. nodes ,, Internal and leaf nodes
+format:nexus ..supports.. undirected-edges ,, Unrooted trees
+format:nexus ..supports.. directed-edges ,, Rooted trees imply parent-to-child direction
+format:nexus ..lacks.. hyperedges
+format:nexus ..lacks.. mixed-directionality-edges
+format:nexus ..lacks.. edges-on-edges
+format:nexus ..lacks.. nested-graphs-in-nodes
+format:nexus ..lacks.. nested-graphs-in-edges
+format:nexus ..lacks.. nested-graphs-in-graphs
+format:nexus ..supports.. node-labels ,, Taxon names on leaves
+format:nexus ..lacks.. edge-labels
+format:nexus ..supports.. attributes-on-edges ,, Branch lengths in Newick tree strings
+format:nexus ..supports.. attributes-on-graphs ,, Block-level commands and metadata
+format:nexus ..lacks.. typed-edges
+----
+
+== References
+
+* Wikipedia: https://en.wikipedia.org/wiki/Nexus_file[Nexus file]
+* Wikidata: https://www.wikidata.org/wiki/Q1983918[Q1983918]
+* Specification: https://doi.org/10.1093/sysbio/46.4.590[doi.org/10.1093/sysbio/46.4.590]
+
+See also: link:../../text/newick/newick.adoc[Newick format]

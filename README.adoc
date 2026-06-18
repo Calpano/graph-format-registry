@@ -11,7 +11,7 @@ https://ddot.it[ddot] knowledge graph in the same files.
 |===
 | File / directory | Contents
 
-| `formats/<family>/<format-id>.adoc` | One entry per format (identity + feature triples + prose). Sample data files may sit alongside.
+| `formats/<category>/<family>/<format-id>.adoc` | One entry per format, grouped by category (`text`/`json`/`xml`/`binary`; conceptual models under `models/`). Identity + feature triples + prose. Sample data files may sit alongside.
 | link:tools.adoc[`tools.adoc`]                 | Tools that read/write the formats, with `..reads..` / `..writes..` links.
 | link:graph-features.adoc[`graph-features.adoc`] | The controlled vocabulary of graph-model features every format is scored against.
 | link:catalog.adoc[`catalog.adoc`]             | The index of all known formats.

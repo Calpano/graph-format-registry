@@ -1,0 +1,47 @@
+= JSON Graph (Falcor)
+:toc:
+
+A convention from Netflix's Falcor for modeling graph data as a single JSON
+object without duplication. Entities are JSON objects addressed by path; edges
+are *References* (symbolic links to a canonical path), alongside *Atoms* (values)
+and *Errors*. Distinct from the unrelated link:../../json/jgf/jgf.adoc[JSON Graph Format]
+(jsongraph).
+
+== Identity
+
+[source]
+----
+format:falcor-json-graph ..has type.. format
+format:falcor-json-graph ..category.. json
+format:falcor-json-graph ..label.. JSON Graph (Falcor)
+format:falcor-json-graph ..org.. Netflix
+format:falcor-json-graph ..spec.. https://netflix.github.io/falcor/documentation/jsongraph.html
+----
+
+== Features
+
+[source]
+----
+format:falcor-json-graph ..lacks.. multiple-graphs-per-document ,, One JSON Graph object per document
+format:falcor-json-graph ..supports.. nodes ,, Entities addressed by path
+format:falcor-json-graph ..lacks.. undirected-edges
+format:falcor-json-graph ..supports.. directed-edges ,, References point to a canonical path
+format:falcor-json-graph ..lacks.. mixed-directionality-edges
+format:falcor-json-graph ..lacks.. hyperedges
+format:falcor-json-graph ..lacks.. edges-on-edges
+format:falcor-json-graph ..lacks.. nested-graphs-in-nodes
+format:falcor-json-graph ..lacks.. nested-graphs-in-edges
+format:falcor-json-graph ..lacks.. nested-graphs-in-graphs
+format:falcor-json-graph ..lacks.. node-labels ,, Entities are keyed by path, no distinct label
+format:falcor-json-graph ..lacks.. edge-labels ,, References are paths, not labelled
+format:falcor-json-graph ..supports.. attributes-on-nodes ,, Atoms and JSON values on entities
+format:falcor-json-graph ..lacks.. attributes-on-edges
+format:falcor-json-graph ..lacks.. attributes-on-graphs
+format:falcor-json-graph ..lacks.. typed-edges
+----
+
+== References
+
+* Specification: https://netflix.github.io/falcor/documentation/jsongraph.html[Falcor JSON Graph documentation]
+
+See also: link:../../json/jgf/jgf.adoc[JSON Graph Format]
