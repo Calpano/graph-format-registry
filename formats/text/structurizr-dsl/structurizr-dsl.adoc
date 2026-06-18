@@ -1,0 +1,39 @@
+= Structurizr DSL (C4 model)
+:toc:
+
+The Structurizr DSL is a text language for authoring software architecture
+models in the https://c4model.com/[C4 model]. A workspace declares
+*software systems*, *containers* and *components* (the nodes, which nest inside
+one another) and the *relationships* between them (directed, labelled edges),
+plus the views that render them. It is the text front-end to the Structurizr
+tooling and is parsed by GraphInOut's `reader-structurizr-dsl`.
+
+== Identity
+
+[source]
+----
+format:structurizr-dsl ..has type.. format
+format:structurizr-dsl ..category.. text
+format:structurizr-dsl ..label.. Structurizr DSL (C4 model)
+format:structurizr-dsl ..alternative name.. Structurizr DSL
+format:structurizr-dsl ..file extension.. .dsl
+format:structurizr-dsl ..spec.. https://docs.structurizr.com/dsl
+----
+
+== Features
+
+[source]
+----
+format:structurizr-dsl ..supports.. nodes ,, Software systems, containers, components, people
+format:structurizr-dsl ..supports.. directed-edges ,, Relationships (`a -> b`)
+format:structurizr-dsl ..supports.. node-labels ,, Element names
+format:structurizr-dsl ..supports.. edge-labels ,, Relationship descriptions
+format:structurizr-dsl ..supports.. nested-graphs-in-nodes ,, Containment: containers within systems, components within containers
+format:structurizr-dsl ..supports.. attributes-on-nodes ,, Tags, technology, description, custom properties
+----
+
+== References
+
+* DSL reference: https://docs.structurizr.com/dsl[docs.structurizr.com/dsl]
+* C4 model: https://c4model.com/[c4model.com]
+* Reader: link:../../../tools.adoc#_graphinout[GraphInOut] `reader-structurizr-dsl`
