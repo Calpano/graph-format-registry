@@ -19,6 +19,7 @@ format:grale ..has type.. format
 format:grale ..category.. json
 format:grale ..label.. grale
 format:grale ..alternative name.. Graph Layout Engine API
+format:grale ..file extension.. .grale.json
 format:grale ..media type.. application/json
 format:grale ..license.. MIT
 format:grale ..author.. max-voelkel
