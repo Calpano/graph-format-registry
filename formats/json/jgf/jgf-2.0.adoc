@@ -25,6 +25,8 @@ format:jgf-2.0 ..supports.. undirected-edges ,, Via directed: false
 format:jgf-2.0 ..supports.. directed-edges ,, Via directed: true
 format:jgf-2.0 ..supports.. hyperedges ,, Both directed and undirected
 format:jgf-2.0 ..lacks.. mixed-directionality-edges ,, Graph uses one edge type only
+format:jgf-2.0 ..supports.. parallel-edges ,, Edges are a list; multiple entries may share source/target
+format:jgf-2.0 ..supports.. self-loops ,, An edge may have source equal to target
 format:jgf-2.0 ..lacks.. edges-on-edges
 format:jgf-2.0 ..lacks.. nested-graphs-in-nodes
 format:jgf-2.0 ..lacks.. nested-graphs-in-edges

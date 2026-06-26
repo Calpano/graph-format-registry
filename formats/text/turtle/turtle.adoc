@@ -32,6 +32,8 @@ format:turtle ..lacks.. undirected-edges
 format:turtle ..supports.. directed-edges ,, Triples are directed subject to object
 format:turtle ..lacks.. hyperedges
 format:turtle ..lacks.. mixed-directionality-edges
+format:turtle ..supports.. parallel-edges ,, Distinct predicates between the same two resources
+format:turtle ..supports.. self-loops ,, Subject and object may be the same resource
 format:turtle ..supports.. edges-on-edges ,,
 ..status.. partial
 Via RDF reification (rdf:Statement)

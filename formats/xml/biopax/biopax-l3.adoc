@@ -40,6 +40,8 @@ format:biopax-l3 ..supports.. attributes-on-edges ,, Interaction properties (con
 format:biopax-l3 ..supports.. attributes-on-graphs ,, Pathway properties (organism, displayName, comment)
 format:biopax-l3 ..supports.. typed-edges ,, Interaction subclasses (Control, Conversion, etc.)
 format:biopax-l3 ..lacks.. mixed-directionality-edges
+format:biopax-l3 ..supports.. parallel-edges ,, RDF/OWL based: distinct predicates (interactions) may connect two entities
+format:biopax-l3 ..supports.. self-loops ,, RDF/OWL based: an entity can be both subject and object of an interaction
 format:biopax-l3 ..lacks.. edges-on-edges
 format:biopax-l3 ..lacks.. nested-graphs-in-nodes
 format:biopax-l3 ..lacks.. nested-graphs-in-edges

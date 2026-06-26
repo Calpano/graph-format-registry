@@ -34,6 +34,8 @@ format:notation3 ..lacks.. undirected-edges
 format:notation3 ..supports.. directed-edges ,, Triples are directed subject to object
 format:notation3 ..lacks.. hyperedges
 format:notation3 ..lacks.. mixed-directionality-edges
+format:notation3 ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges
+format:notation3 ..supports.. self-loops ,, Subject and object may be the same resource
 format:notation3 ..supports.. edges-on-edges ,,
 ..status.. partial
 Via reification or a quoted single-triple formula

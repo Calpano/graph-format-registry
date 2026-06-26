@@ -30,6 +30,8 @@ format:neo4j-json ..supports.. typed-edges ,, Relationship type
 format:neo4j-json ..supports.. node-labels ,, Node labels array
 format:neo4j-json ..supports.. attributes-on-nodes ,, Node properties
 format:neo4j-json ..supports.. attributes-on-edges ,, Relationship properties
+format:neo4j-json ..supports.. parallel-edges ,, Multiple relationships may connect the same node pair
+format:neo4j-json ..supports.. self-loops ,, A relationship may have the same start and end node
 format:neo4j-json ..lacks.. hyperedges
 format:neo4j-json ..lacks.. edges-on-edges
 format:neo4j-json ..lacks.. nested-graphs-in-nodes

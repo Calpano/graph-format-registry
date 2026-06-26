@@ -38,6 +38,8 @@ format:graphlet ..supports.. undirected-edges ,, directed 0
 format:graphlet ..supports.. directed-edges ,, directed 1
 format:graphlet ..lacks.. hyperedges
 format:graphlet ..lacks.. mixed-directionality-edges ,, Single graph-level directed flag
+format:graphlet ..supports.. parallel-edges ,, Multiple edge blocks may repeat a source and target
+format:graphlet ..supports.. self-loops ,, An edge whose source equals its target
 format:graphlet ..lacks.. edges-on-edges
 format:graphlet ..supports.. nested-graphs-in-nodes ,, A node may contain an inner graph
 format:graphlet ..lacks.. nested-graphs-in-edges

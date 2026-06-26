@@ -37,6 +37,8 @@ format:cellml-2.0 ..lacks.. multiple-graphs-per-document
 format:cellml-2.0 ..lacks.. directed-edges
 format:cellml-2.0 ..lacks.. hyperedges
 format:cellml-2.0 ..lacks.. mixed-directionality-edges
+format:cellml-2.0 ..lacks.. parallel-edges ,, At most one connection per component pair; map_variables are grouped within it, not separate edges
+format:cellml-2.0 ..lacks.. self-loops ,, A connection maps variables between two distinct components
 format:cellml-2.0 ..lacks.. edges-on-edges
 format:cellml-2.0 ..lacks.. nested-graphs-in-edges
 format:cellml-2.0 ..lacks.. nested-graphs-in-graphs

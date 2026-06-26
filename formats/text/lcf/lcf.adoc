@@ -27,6 +27,8 @@ format:lcf ..supports.. undirected-edges ,, Edges of an undirected 3-regular gra
 format:lcf ..lacks.. directed-edges
 format:lcf ..lacks.. hyperedges
 format:lcf ..lacks.. mixed-directionality-edges
+format:lcf ..lacks.. parallel-edges ,, Cubic simple graph
+format:lcf ..lacks.. self-loops ,, Cubic simple graph
 format:lcf ..lacks.. edges-on-edges
 format:lcf ..lacks.. nested-graphs-in-nodes
 format:lcf ..lacks.. nested-graphs-in-edges

@@ -20,6 +20,8 @@ model:neo4j ..spec.. https://neo4j.com/docs/getting-started/graph-database/
 ----
 model:neo4j ..supports.. nodes
 model:neo4j ..supports.. directed-edges ,, Relationships are strictly directed and binary
+model:neo4j ..supports.. parallel-edges ,, Multiple relationships may connect the same pair of nodes
+model:neo4j ..supports.. self-loops ,, A relationship may connect a node to itself
 model:neo4j ..supports.. typed-edges ,, Exactly one type required per relationship
 model:neo4j ..supports.. attributes-on-nodes ,, Flat key-value properties
 model:neo4j ..supports.. attributes-on-edges ,, Flat key-value properties

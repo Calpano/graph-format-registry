@@ -26,6 +26,8 @@ format:gdf ..supports.. undirected-edges ,, Default
 format:gdf ..supports.. directed-edges ,, Via directed BOOLEAN attribute
 format:gdf ..lacks.. hyperedges
 format:gdf ..supports.. mixed-directionality-edges ,, Per-edge directed attribute
+format:gdf ..supports.. parallel-edges ,, Multiple edgedef rows may repeat a node pair
+format:gdf ..supports.. self-loops ,, An edge row may reference the same node twice
 format:gdf ..lacks.. edges-on-edges
 format:gdf ..lacks.. nested-graphs-in-nodes
 format:gdf ..lacks.. nested-graphs-in-edges

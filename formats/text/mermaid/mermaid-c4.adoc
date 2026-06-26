@@ -27,6 +27,8 @@ format:mermaid-c4 ..lacks.. undirected-edges
 format:mermaid-c4 ..supports.. directed-edges ,, Rel(from, to, …)
 format:mermaid-c4 ..lacks.. mixed-directionality-edges
 format:mermaid-c4 ..lacks.. hyperedges
+format:mermaid-c4 ..supports.. parallel-edges ,, Multiple Rel(...) between the same two elements
+format:mermaid-c4 ..supports.. self-loops ,, Rel(...) from an element to itself
 format:mermaid-c4 ..lacks.. edges-on-edges
 format:mermaid-c4 ..supports.. nested-graphs-in-nodes ,, Boundary / Enterprise_Boundary / System_Boundary
 format:mermaid-c4 ..lacks.. nested-graphs-in-edges

@@ -24,6 +24,8 @@ format:vosviewer ..supports.. undirected-edges ,, Called links with strength
 format:vosviewer ..lacks.. directed-edges ,, Links are undirected
 format:vosviewer ..lacks.. hyperedges ,, Links connect exactly 2 items
 format:vosviewer ..lacks.. mixed-directionality-edges
+format:vosviewer ..lacks.. parallel-edges ,, At most one link per item pair; strength is a single aggregated weight
+format:vosviewer ..lacks.. self-loops ,, Links connect two distinct items
 format:vosviewer ..lacks.. edges-on-edges
 format:vosviewer ..lacks.. nested-graphs-in-nodes
 format:vosviewer ..lacks.. nested-graphs-in-edges

@@ -29,6 +29,8 @@ format:dimacs ..supports.. undirected-edges ,, Each edge listed once
 format:dimacs ..lacks.. directed-edges
 format:dimacs ..lacks.. hyperedges
 format:dimacs ..lacks.. mixed-directionality-edges
+format:dimacs ..lacks.. parallel-edges ,, Simple graph; one edge per vertex pair
+format:dimacs ..lacks.. self-loops ,, Simple graph; no loops
 format:dimacs ..lacks.. edges-on-edges
 format:dimacs ..lacks.. nested-graphs-in-nodes
 format:dimacs ..lacks.. nested-graphs-in-edges

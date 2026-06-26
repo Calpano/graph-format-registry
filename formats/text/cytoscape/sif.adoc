@@ -27,6 +27,8 @@ format:sif ..spec.. http://manual.cytoscape.org/en/stable/Supported_Network_File
 format:sif ..lacks.. multiple-graphs-per-document
 format:sif ..supports.. nodes ,, Implicit from interaction lines
 format:sif ..lacks.. hyperedges ,, Multi-target lines expand to binary edges
+format:sif ..supports.. parallel-edges ,, Distinct interaction types between the same pair are distinct edges
+format:sif ..supports.. self-loops ,, A node may interact with itself
 format:sif ..lacks.. edges-on-edges
 format:sif ..lacks.. nested-graphs-in-nodes
 format:sif ..lacks.. nested-graphs-in-edges

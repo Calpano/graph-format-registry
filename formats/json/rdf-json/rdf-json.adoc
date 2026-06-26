@@ -29,6 +29,8 @@ format:rdf-json ..lacks.. undirected-edges
 format:rdf-json ..supports.. directed-edges ,, Triples are directed subject to object
 format:rdf-json ..lacks.. hyperedges
 format:rdf-json ..lacks.. mixed-directionality-edges
+format:rdf-json ..supports.. parallel-edges ,, Via distinct predicates between the same two nodes
+format:rdf-json ..supports.. self-loops ,, A triple with subject equal to object
 format:rdf-json ..supports.. edges-on-edges ,,
 ..status.. partial
 Via RDF reification (rdf:Statement)

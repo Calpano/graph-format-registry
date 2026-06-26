@@ -41,6 +41,8 @@ format:psi-mi-xml-3.0 ..supports.. attributes-on-edges ,, attributeList on inter
 format:psi-mi-xml-3.0 ..supports.. attributes-on-graphs ,, attributeList on entry
 format:psi-mi-xml-3.0 ..supports.. typed-edges ,, interactionType from controlled vocabulary
 format:psi-mi-xml-3.0 ..lacks.. mixed-directionality-edges
+format:psi-mi-xml-3.0 ..supports.. parallel-edges ,, Multiple interaction records may connect the same pair of interactors
+format:psi-mi-xml-3.0 ..supports.. self-loops ,, An interactor may self-interact (homodimer / self-interaction)
 format:psi-mi-xml-3.0 ..lacks.. edges-on-edges
 format:psi-mi-xml-3.0 ..lacks.. nested-graphs-in-nodes
 format:psi-mi-xml-3.0 ..lacks.. nested-graphs-in-edges

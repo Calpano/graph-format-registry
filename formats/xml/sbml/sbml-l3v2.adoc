@@ -32,6 +32,8 @@ format:sbml-l3v2 ..lacks.. undirected-edges ,, Reactions are directional
 format:sbml-l3v2 ..supports.. directed-edges ,, Reactions (reactants → products)
 format:sbml-l3v2 ..supports.. hyperedges ,, Reactions with multiple reactants/products
 format:sbml-l3v2 ..lacks.. mixed-directionality-edges
+format:sbml-l3v2 ..supports.. parallel-edges ,, Multiple reactions may share the same species pair (via reactions)
+format:sbml-l3v2 ..supports.. self-loops ,, A species may be both reactant and product of one reaction (via reactions)
 format:sbml-l3v2 ..lacks.. edges-on-edges
 format:sbml-l3v2 ..supports.. nested-graphs-in-nodes ,, Compartments can be nested
 format:sbml-l3v2 ..lacks.. nested-graphs-in-edges

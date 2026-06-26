@@ -24,6 +24,8 @@ format:pajek ..supports.. undirected-edges ,, *Edges section
 format:pajek ..supports.. directed-edges ,, *Arcs section
 format:pajek ..lacks.. hyperedges
 format:pajek ..supports.. mixed-directionality-edges ,, Can have both *Arcs and *Edges
+format:pajek ..supports.. parallel-edges ,, Multiple arcs/edges between the same pair
+format:pajek ..supports.. self-loops ,, Loops permitted
 format:pajek ..lacks.. edges-on-edges
 format:pajek ..lacks.. nested-graphs-in-nodes
 format:pajek ..lacks.. nested-graphs-in-edges

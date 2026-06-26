@@ -31,6 +31,8 @@ format:graphson-3.0 ..lacks.. undirected-edges ,, Edges always directed via inV/
 format:graphson-3.0 ..supports.. directed-edges ,, Explicit outV and inV
 format:graphson-3.0 ..lacks.. hyperedges
 format:graphson-3.0 ..lacks.. mixed-directionality-edges
+format:graphson-3.0 ..supports.. parallel-edges ,, TinkerPop multigraph allows multiple edges per vertex pair
+format:graphson-3.0 ..supports.. self-loops ,, An edge may have the same outV and inV
 format:graphson-3.0 ..lacks.. edges-on-edges
 format:graphson-3.0 ..lacks.. nested-graphs-in-nodes
 format:graphson-3.0 ..lacks.. nested-graphs-in-edges

@@ -35,6 +35,8 @@ Edges have source (s)/target (t) order but core spec states no directedness
 ,,
 format:cytoscape-cx2-2.0 ..lacks.. hyperedges ,, Edges are binary
 format:cytoscape-cx2-2.0 ..lacks.. mixed-directionality-edges
+format:cytoscape-cx2-2.0 ..supports.. parallel-edges ,, Each edge is a distinct object with its own id
+format:cytoscape-cx2-2.0 ..supports.. self-loops ,, Edge source and target may be the same node
 format:cytoscape-cx2-2.0 ..lacks.. edges-on-edges
 format:cytoscape-cx2-2.0 ..lacks.. nested-graphs-in-edges
 format:cytoscape-cx2-2.0 ..supports.. node-labels ,, Declared name attribute in v

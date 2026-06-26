@@ -33,6 +33,8 @@ format:tripletext ..superseded by.. format:ddot
 ----
 format:tripletext ..supports.. nodes ,, Subjects and objects (identified by their text)
 format:tripletext ..supports.. directed-edges ,, Each line is an edge subject -> object
+format:tripletext ..supports.. parallel-edges ,, Distinct predicates between the same subject and object
+format:tripletext ..supports.. self-loops ,, Subject and object may be the same node
 format:tripletext ..lacks.. undirected-edges
 format:tripletext ..supports.. typed-edges ,, The predicate is the edge type
 format:tripletext ..supports.. attributes-on-edges ,, Optional ".. meta" stored as tt:meta data

@@ -33,6 +33,8 @@ format:inchi ..supports.. undirected-edges ,, Connection layer encodes undirecte
 format:inchi ..lacks.. directed-edges
 format:inchi ..lacks.. hyperedges
 format:inchi ..lacks.. mixed-directionality-edges
+format:inchi ..lacks.. parallel-edges ,, One bond per atom pair; bond order is an attribute
+format:inchi ..lacks.. self-loops ,, No atom bonds itself
 format:inchi ..lacks.. edges-on-edges
 format:inchi ..lacks.. nested-graphs-in-nodes
 format:inchi ..lacks.. nested-graphs-in-edges

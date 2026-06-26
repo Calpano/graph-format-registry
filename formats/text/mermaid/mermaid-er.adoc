@@ -27,6 +27,8 @@ format:mermaid-er ..supports.. undirected-edges ,, Relationships are non-directi
 format:mermaid-er ..lacks.. directed-edges
 format:mermaid-er ..lacks.. mixed-directionality-edges
 format:mermaid-er ..lacks.. hyperedges
+format:mermaid-er ..supports.. parallel-edges ,, Multiple relationships between the same two entities
+format:mermaid-er ..supports.. self-loops ,, Recursive relationship on one entity
 format:mermaid-er ..lacks.. edges-on-edges
 format:mermaid-er ..lacks.. nested-graphs-in-nodes
 format:mermaid-er ..lacks.. nested-graphs-in-edges

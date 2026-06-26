@@ -28,6 +28,8 @@ format:falcor-json-graph ..lacks.. undirected-edges
 format:falcor-json-graph ..supports.. directed-edges ,, References point to a canonical path
 format:falcor-json-graph ..lacks.. mixed-directionality-edges
 format:falcor-json-graph ..lacks.. hyperedges
+format:falcor-json-graph ..lacks.. parallel-edges ,, References are keyed path slots, not a multigraph
+format:falcor-json-graph ..supports.. self-loops ,, An entity reference may target its own path
 format:falcor-json-graph ..lacks.. edges-on-edges
 format:falcor-json-graph ..lacks.. nested-graphs-in-nodes
 format:falcor-json-graph ..lacks.. nested-graphs-in-edges

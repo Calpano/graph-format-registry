@@ -26,6 +26,8 @@ format:mermaid-mindmap ..lacks.. undirected-edges
 format:mermaid-mindmap ..supports.. directed-edges ,, Implicit parent-to-child edges from indentation
 format:mermaid-mindmap ..lacks.. mixed-directionality-edges
 format:mermaid-mindmap ..lacks.. hyperedges
+format:mermaid-mindmap ..lacks.. parallel-edges ,, Tree: one parent edge per node
+format:mermaid-mindmap ..lacks.. self-loops ,, Tree: no node attaches to itself
 format:mermaid-mindmap ..lacks.. edges-on-edges
 format:mermaid-mindmap ..supports.. nested-graphs-in-nodes ,, Indentation hierarchy (tree)
 format:mermaid-mindmap ..lacks.. nested-graphs-in-edges

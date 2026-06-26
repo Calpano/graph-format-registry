@@ -24,6 +24,8 @@ format:cytoscape-json ..supports.. undirected-edges ,, Supports directed, undire
 format:cytoscape-json ..supports.. directed-edges ,, Via source/target properties
 format:cytoscape-json ..lacks.. hyperedges ,, Edges connect exactly 2 nodes
 format:cytoscape-json ..lacks.. mixed-directionality-edges
+format:cytoscape-json ..supports.. parallel-edges ,, Each edge is a distinct element with its own id
+format:cytoscape-json ..supports.. self-loops ,, Edge source and target may be the same node
 format:cytoscape-json ..lacks.. edges-on-edges ,, Edges only connect nodes
 format:cytoscape-json ..supports.. nested-graphs-in-nodes ,, Via compound nodes (parent property)
 format:cytoscape-json ..lacks.. nested-graphs-in-edges

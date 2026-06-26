@@ -32,6 +32,8 @@ format:connected-json-8.0.0 ..supports.. undirected-edges ,, Via undir endpoint 
 format:connected-json-8.0.0 ..supports.. directed-edges ,, Via in/out endpoint directions
 format:connected-json-8.0.0 ..supports.. hyperedges ,, N-ary endpoints
 format:connected-json-8.0.0 ..supports.. mixed-directionality-edges ,, Each endpoint specifies own direction
+format:connected-json-8.0.0 ..supports.. parallel-edges ,, Distinct edge objects may share endpoints
+format:connected-json-8.0.0 ..supports.. self-loops ,, An edge may reference the same node twice
 format:connected-json-8.0.0 ..lacks.. edges-on-edges
 format:connected-json-8.0.0 ..supports.. nested-graphs-in-nodes ,, Via graphs property (compound nodes)
 format:connected-json-8.0.0 ..supports.. nested-graphs-in-edges ,, Via graphs property (compound edges)

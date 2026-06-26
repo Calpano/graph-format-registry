@@ -24,6 +24,8 @@ format:graph6 ..spec.. https://users.cecs.anu.edu.au/~bdm/data/formats.txt
 ----
 format:graph6 ..supports.. nodes
 format:graph6 ..supports.. undirected-edges
+format:graph6 ..lacks.. parallel-edges ,, Simple graph, one bit per node pair
+format:graph6 ..lacks.. self-loops ,, Simple graph, no diagonal loops
 ----
 
 == References

@@ -43,6 +43,8 @@ format:vcg-1.30 ..supports.. mixed-directionality-edges ,,
 ..status.. partial
 Per-edge arrowstyle; undirected is only arrowhead suppression
 ,,
+format:vcg-1.30 ..supports.. parallel-edges ,, Multiple edge entries may share source and target
+format:vcg-1.30 ..supports.. self-loops ,, An edge may target its own source node
 format:vcg-1.30 ..lacks.. edges-on-edges
 format:vcg-1.30 ..supports.. nested-graphs-in-nodes ,, A foldable subgraph collapses into a summary node
 format:vcg-1.30 ..lacks.. nested-graphs-in-edges

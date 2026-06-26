@@ -28,6 +28,8 @@ format:adjlist ..lacks.. undirected-edges ,, No direction marker; a line is read
 format:adjlist ..supports.. directed-edges
 format:adjlist ..lacks.. hyperedges
 format:adjlist ..lacks.. mixed-directionality-edges
+format:adjlist ..supports.. parallel-edges ,, A neighbour may be listed more than once on a line
+format:adjlist ..supports.. self-loops ,, A node may appear in its own adjacency list
 format:adjlist ..lacks.. edges-on-edges
 format:adjlist ..lacks.. nested-graphs-in-nodes
 format:adjlist ..lacks.. nested-graphs-in-edges

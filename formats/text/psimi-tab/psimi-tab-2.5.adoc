@@ -23,6 +23,8 @@ format:psimi-tab-2.5 ..spec.. https://bmcbiol.biomedcentral.com/articles/10.1186
 ----
 format:psimi-tab-2.5 ..supports.. nodes
 format:psimi-tab-2.5 ..supports.. undirected-edges ,, Interactions
+format:psimi-tab-2.5 ..supports.. parallel-edges ,, Multiple interaction records (distinct evidence) per pair
+format:psimi-tab-2.5 ..supports.. self-loops ,, Self-interaction (same molecule as both partners)
 ----
 
 == References

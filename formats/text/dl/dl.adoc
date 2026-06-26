@@ -20,6 +20,8 @@ format:dl ..spec.. https://docs.gephi.org/desktop/User_Manual/Import/UCINET_DL_F
 ----
 format:dl ..supports.. nodes
 format:dl ..supports.. directed-edges
+format:dl ..lacks.. parallel-edges ,, One matrix cell per ordered pair
+format:dl ..supports.. self-loops ,, Matrix diagonal
 ----
 
 == References

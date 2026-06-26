@@ -27,6 +27,8 @@ format:gml ..supports.. undirected-edges
 format:gml ..supports.. directed-edges ,, Via directed 1 on graph
 format:gml ..lacks.. hyperedges
 format:gml ..lacks.. mixed-directionality-edges
+format:gml ..supports.. parallel-edges ,, Multiple edge blocks may repeat a source and target
+format:gml ..supports.. self-loops ,, An edge whose source equals its target
 format:gml ..lacks.. edges-on-edges
 format:gml ..supports.. nested-graphs-in-nodes ,, Via nested graph elements
 format:gml ..lacks.. nested-graphs-in-edges

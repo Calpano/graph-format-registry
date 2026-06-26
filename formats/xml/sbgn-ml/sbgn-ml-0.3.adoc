@@ -39,6 +39,8 @@ format:sbgn-ml-0.3 ..supports.. typed-edges ,, arc class (production, consumptio
 format:sbgn-ml-0.3 ..lacks.. undirected-edges
 format:sbgn-ml-0.3 ..lacks.. hyperedges
 format:sbgn-ml-0.3 ..lacks.. mixed-directionality-edges
+format:sbgn-ml-0.3 ..supports.. parallel-edges ,, Multiple arcs of different class/role may connect the same two glyphs
+format:sbgn-ml-0.3 ..supports.. self-loops ,, An arc may connect a glyph to itself (e.g. autocatalysis / self-modulation)
 format:sbgn-ml-0.3 ..lacks.. edges-on-edges
 format:sbgn-ml-0.3 ..lacks.. nested-graphs-in-edges
 ----

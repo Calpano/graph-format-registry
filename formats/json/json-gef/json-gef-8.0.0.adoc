@@ -1,0 +1,69 @@
+= JSON Graph Entry Format 8.0.0
+:toc:
+
+The JSON Graph Entry Format (GEF) is a lenient JSON graph format and a *superset* of
+link:../connected-json/connected-json-8.0.0.adoc[Connected JSON] (CJ): every valid CJ file is also a valid GEF file,
+but GEF additionally accepts relaxed, convenient dialects of CJ-like JSON. Where CJ is a *strict* graph **interchange**
+format (one canonical way to express each construct), GEF is a forgiving **entry** format meant for hand-authoring and
+for importing varied inputs.
+
+Its defining trait is *graph-at-root*: a graph may be stated directly at the document root (`nodes`/`edges` with no
+`graphs` wrapper), so the file itself *is* a single graph. GEF also relaxes parsing: numeric ids are coerced to strings
+(`12` becomes `"12"`), any property not defined by the spec is read as `data`, `source`/`target` (and
+`sources`/`targets`) are shortcuts for the canonical `endpoints` array, `graph` is an alias for `graphs`, and a bare
+string label is shorthand for `{ "value": … }`. None of these are new graph-model features — they are syntactic
+conveniences over the CJ model.
+
+== Identity
+
+[source]
+----
+format:json-gef ..has type.. format
+format:json-gef ..category.. json
+format:json-gef ..label.. JSON Graph Entry Format
+format:json-gef ..alternative name.. GEF
+format:json-gef ..alternative name.. JSON GEF
+format:json-gef ..alternative name.. Graph Entry Format
+
+format:json-gef-8.0.0 ..version of.. format:json-gef
+format:json-gef-8.0.0 ..version.. 8.0.0
+format:json-gef-8.0.0 ..released.. 2025-07-14
+format:json-gef-8.0.0 ..file extension.. .gef.json
+format:json-gef-8.0.0 ..file extension.. .gef
+format:json-gef-8.0.0 ..file extension.. .json
+format:json-gef-8.0.0 ..spec.. https://j-s-o-n.org/connected-json/8.0.0/json-graph-entry-format/
+----
+
+== Features
+
+GEF inherits the full Connected JSON graph model (it is a superset), so its graph-model feature support mirrors
+link:../connected-json/connected-json-8.0.0.adoc[CJ 8.0.0]. The GEF additions (graph-at-root, lenient ids, property
+aliases, arbitrary-keys-as-data) are syntactic, not new features.
+
+[source]
+----
+format:json-gef-8.0.0 ..supports.. multiple-graphs-per-document ,, graphs array, or graph-at-root plus subgraphs
+format:json-gef-8.0.0 ..supports.. nodes
+format:json-gef-8.0.0 ..supports.. undirected-edges ,, undir endpoint, or edgeDefault undirected
+format:json-gef-8.0.0 ..supports.. directed-edges ,, in/out endpoints, or source/target shortcuts
+format:json-gef-8.0.0 ..supports.. hyperedges ,, N-ary endpoints array
+format:json-gef-8.0.0 ..supports.. mixed-directionality-edges ,, Each endpoint specifies its own direction
+format:json-gef-8.0.0 ..supports.. parallel-edges ,, Distinct edge objects may share endpoints
+format:json-gef-8.0.0 ..supports.. self-loops ,, An edge may reference the same node twice
+format:json-gef-8.0.0 ..lacks.. edges-on-edges
+format:json-gef-8.0.0 ..supports.. nested-graphs-in-nodes ,, Compound nodes via graph/graphs
+format:json-gef-8.0.0 ..supports.. nested-graphs-in-edges ,, Via graph/graphs on an edge
+format:json-gef-8.0.0 ..supports.. nested-graphs-in-graphs
+format:json-gef-8.0.0 ..supports.. node-labels ,, String shorthand or multilingual object
+format:json-gef-8.0.0 ..supports.. edge-labels ,, String shorthand or multilingual object
+format:json-gef-8.0.0 ..supports.. attributes-on-nodes ,, data property, or any unknown key
+format:json-gef-8.0.0 ..supports.. attributes-on-edges ,, data property, or any unknown key
+format:json-gef-8.0.0 ..supports.. attributes-on-graphs ,, data property, or any unknown key
+format:json-gef-8.0.0 ..supports.. typed-edges ,, Via type
+----
+
+== References
+
+* Specification: https://j-s-o-n.org/connected-json/8.0.0/json-graph-entry-format/[JSON Graph Entry Format 8.0.0]
+
+See also: link:../connected-json/connected-json-8.0.0.adoc[Connected JSON]

@@ -30,6 +30,8 @@ brendan-mckay ..label.. Brendan McKay
 format:digraph6 ..supports.. nodes
 format:digraph6 ..supports.. directed-edges
 format:digraph6 ..lacks.. undirected-edges
+format:digraph6 ..lacks.. parallel-edges ,, Simple digraph, one bit per ordered pair
+format:digraph6 ..lacks.. self-loops ,, Simple digraph, no diagonal loops
 format:digraph6 ..lacks.. node-labels
 format:digraph6 ..lacks.. edge-labels
 format:digraph6 ..lacks.. attributes-on-nodes

@@ -30,6 +30,8 @@ format:helm ..supports.. undirected-edges ,, Backbone and explicit connections
 format:helm ..lacks.. directed-edges
 format:helm ..lacks.. hyperedges
 format:helm ..lacks.. mixed-directionality-edges
+format:helm ..lacks.. parallel-edges ,, Distinct R-group attachment points, not duplicate connections, join a monomer pair
+format:helm ..lacks.. self-loops ,, A monomer does not connect to itself
 format:helm ..lacks.. edges-on-edges
 format:helm ..supports.. nested-graphs-in-nodes ,, A monomer expands to an atom-level structure
 format:helm ..lacks.. nested-graphs-in-edges

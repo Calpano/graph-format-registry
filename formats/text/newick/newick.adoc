@@ -32,6 +32,8 @@ format:newick ..supports.. undirected-edges ,, Unrooted trees
 format:newick ..supports.. directed-edges ,, Rooted trees imply parent-to-child direction
 format:newick ..lacks.. hyperedges
 format:newick ..lacks.. mixed-directionality-edges
+format:newick ..lacks.. parallel-edges ,, Tree: one branch per node pair
+format:newick ..lacks.. self-loops ,, Tree: no node attaches to itself
 format:newick ..lacks.. edges-on-edges
 format:newick ..lacks.. nested-graphs-in-nodes
 format:newick ..lacks.. nested-graphs-in-edges

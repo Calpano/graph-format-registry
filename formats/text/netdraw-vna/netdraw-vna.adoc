@@ -20,6 +20,8 @@ format:netdraw-vna ..spec.. https://faculty.ucr.edu/~hanneman/nettext/C4_netdraw
 ----
 format:netdraw-vna ..supports.. nodes
 format:netdraw-vna ..supports.. directed-edges
+format:netdraw-vna ..supports.. parallel-edges ,, Multiple relation types between two actors
+format:netdraw-vna ..supports.. self-loops ,, Self-ties representable
 ----
 
 == References

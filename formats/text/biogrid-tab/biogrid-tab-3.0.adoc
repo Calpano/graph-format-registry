@@ -24,6 +24,8 @@ format:biogrid-tab-3.0 ..spec.. https://wiki.thebiogrid.org/doku.php/biogrid_tab
 ----
 format:biogrid-tab-3.0 ..supports.. nodes
 format:biogrid-tab-3.0 ..supports.. undirected-edges ,, Interactions
+format:biogrid-tab-3.0 ..supports.. parallel-edges ,, Multiple interaction records for the same pair (distinct evidence)
+format:biogrid-tab-3.0 ..supports.. self-loops ,, Self-interactions are representable
 ----
 
 == References

@@ -31,6 +31,8 @@ format:sbol-3.1 ..supports.. multiple-graphs-per-document ,, Multiple top-level 
 format:sbol-3.1 ..supports.. nodes ,, Component and other top-level objects as RDF resources
 format:sbol-3.1 ..supports.. directed-edges ,, Interaction participations with SBO roles
 format:sbol-3.1 ..supports.. hyperedges ,, Interactions link multiple participants
+format:sbol-3.1 ..supports.. parallel-edges ,, Distinct predicates between two objects are distinct edges (RDF/OWL based)
+format:sbol-3.1 ..supports.. self-loops ,, A triple may have the same subject and object (RDF/OWL based)
 format:sbol-3.1 ..supports.. edges-on-edges ,, 3.1 lets a Participation reference an Interaction (higher-order interactions)
 format:sbol-3.1 ..supports.. nested-graphs-in-nodes ,, SubComponent hierarchy within Components
 format:sbol-3.1 ..supports.. node-labels ,, name / displayId

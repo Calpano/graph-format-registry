@@ -27,6 +27,8 @@ format:mermaid-state ..lacks.. undirected-edges
 format:mermaid-state ..supports.. directed-edges ,, Transitions (-->)
 format:mermaid-state ..lacks.. mixed-directionality-edges
 format:mermaid-state ..lacks.. hyperedges
+format:mermaid-state ..supports.. parallel-edges ,, Multiple transitions (different triggers) between two states
+format:mermaid-state ..supports.. self-loops ,, Self-transition (A --> A)
 format:mermaid-state ..lacks.. edges-on-edges
 format:mermaid-state ..supports.. nested-graphs-in-nodes ,, Composite states
 format:mermaid-state ..lacks.. nested-graphs-in-edges

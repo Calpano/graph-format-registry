@@ -27,6 +27,8 @@ format:mermaid-architecture ..supports.. undirected-edges ,, Plain connection (-
 format:mermaid-architecture ..supports.. directed-edges ,, Arrow connection (-->)
 format:mermaid-architecture ..supports.. mixed-directionality-edges ,, Connections may be plain or arrowed
 format:mermaid-architecture ..lacks.. hyperedges
+format:mermaid-architecture ..supports.. parallel-edges ,, Multiple connections may join the same services
+format:mermaid-architecture ..supports.. self-loops ,, A service may connect to itself
 format:mermaid-architecture ..lacks.. edges-on-edges
 format:mermaid-architecture ..supports.. nested-graphs-in-nodes ,, A service or group may sit in a parent group
 format:mermaid-architecture ..lacks.. nested-graphs-in-edges

@@ -26,6 +26,8 @@ format:structurizr-dsl ..spec.. https://docs.structurizr.com/dsl
 ----
 format:structurizr-dsl ..supports.. nodes ,, Software systems, containers, components, people
 format:structurizr-dsl ..supports.. directed-edges ,, Relationships (`a -> b`)
+format:structurizr-dsl ..supports.. parallel-edges ,, Multiple relationships between the same two elements
+format:structurizr-dsl ..supports.. self-loops ,, An element may relate to itself
 format:structurizr-dsl ..supports.. node-labels ,, Element names
 format:structurizr-dsl ..supports.. edge-labels ,, Relationship descriptions
 format:structurizr-dsl ..supports.. nested-graphs-in-nodes ,, Containment: containers within systems, components within containers

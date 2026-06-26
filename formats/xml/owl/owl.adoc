@@ -35,6 +35,8 @@ format:owl ..lacks.. undirected-edges
 format:owl ..supports.. directed-edges ,, RDF triples / property assertions are directed
 format:owl ..lacks.. mixed-directionality-edges
 format:owl ..lacks.. hyperedges
+format:owl ..supports.. parallel-edges ,, RDF/OWL based: distinct predicates may connect the same two resources
+format:owl ..supports.. self-loops ,, RDF/OWL based: a triple may have subject == object
 format:owl ..supports.. edges-on-edges ,,
 ..status.. partial
 OWL 2 axiom annotations / RDF reification

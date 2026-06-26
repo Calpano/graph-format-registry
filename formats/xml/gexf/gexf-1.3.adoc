@@ -29,6 +29,8 @@ format:gexf-1.3 ..supports.. undirected-edges ,, Via defaultedgetype="undirected
 format:gexf-1.3 ..supports.. directed-edges ,, Via defaultedgetype="directed"
 format:gexf-1.3 ..lacks.. hyperedges
 format:gexf-1.3 ..supports.. mixed-directionality-edges ,, Per-edge type attribute overrides default
+format:gexf-1.3 ..supports.. parallel-edges ,, Each <edge> has its own id; multiple edges may connect a pair
+format:gexf-1.3 ..supports.. self-loops ,, An <edge> may have source == target
 format:gexf-1.3 ..lacks.. edges-on-edges
 format:gexf-1.3 ..supports.. nested-graphs-in-nodes ,, Hierarchy module (compound nodes)
 format:gexf-1.3 ..lacks.. nested-graphs-in-edges

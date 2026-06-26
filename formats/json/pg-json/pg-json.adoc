@@ -40,6 +40,8 @@ format:pg-json ..supports.. edge-labels ,, Labels array
 format:pg-json ..supports.. typed-edges ,, Edge labels act as types
 format:pg-json ..supports.. attributes-on-nodes ,, Properties
 format:pg-json ..supports.. attributes-on-edges ,, Properties
+format:pg-json ..supports.. parallel-edges ,, Edges are a list; multiple entries may share the same endpoints
+format:pg-json ..supports.. self-loops ,, An edge may have the same from and to node
 format:pg-json ..lacks.. hyperedges
 format:pg-json ..lacks.. edges-on-edges
 format:pg-json ..lacks.. nested-graphs-in-nodes

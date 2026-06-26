@@ -31,6 +31,8 @@ format:sln ..supports.. undirected-edges ,, Bonds are undirected
 format:sln ..lacks.. directed-edges
 format:sln ..lacks.. hyperedges
 format:sln ..lacks.. mixed-directionality-edges
+format:sln ..lacks.. parallel-edges ,, Bond order is an attribute, not distinct edges
+format:sln ..lacks.. self-loops ,, A bond connects two distinct atoms
 format:sln ..lacks.. edges-on-edges
 format:sln ..lacks.. nested-graphs-in-nodes
 format:sln ..lacks.. nested-graphs-in-edges

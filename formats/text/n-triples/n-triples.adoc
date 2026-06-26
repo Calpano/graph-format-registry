@@ -30,6 +30,8 @@ format:n-triples ..lacks.. undirected-edges
 format:n-triples ..supports.. directed-edges ,, Triples are directed subject to object
 format:n-triples ..lacks.. hyperedges
 format:n-triples ..lacks.. mixed-directionality-edges
+format:n-triples ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges
+format:n-triples ..supports.. self-loops ,, Subject and object may be the same resource
 format:n-triples ..supports.. edges-on-edges ,,
 ..status.. partial
 Via RDF reification (rdf:Statement)

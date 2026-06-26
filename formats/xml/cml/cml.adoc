@@ -30,6 +30,8 @@ format:cml ..supports.. undirected-edges ,, <bond> elements are undirected
 format:cml ..lacks.. directed-edges
 format:cml ..lacks.. hyperedges
 format:cml ..lacks.. mixed-directionality-edges
+format:cml ..lacks.. parallel-edges ,, One <bond> per atom pair; bond order is an attribute, not a second edge
+format:cml ..lacks.. self-loops ,, A <bond> connects two distinct atoms
 format:cml ..lacks.. edges-on-edges
 format:cml ..lacks.. nested-graphs-in-nodes ,, <molecule> nests in <molecule>, not in an <atom> node
 format:cml ..lacks.. nested-graphs-in-edges

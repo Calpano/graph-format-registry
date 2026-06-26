@@ -36,6 +36,8 @@ format:molfile ..supports.. undirected-edges ,, Bonds are undirected
 format:molfile ..lacks.. directed-edges
 format:molfile ..lacks.. hyperedges
 format:molfile ..lacks.. mixed-directionality-edges
+format:molfile ..lacks.. parallel-edges ,, Bond order is an attribute, not multiple bonds
+format:molfile ..lacks.. self-loops ,, No bond from an atom to itself
 format:molfile ..lacks.. edges-on-edges
 format:molfile ..lacks.. nested-graphs-in-nodes
 format:molfile ..lacks.. nested-graphs-in-edges

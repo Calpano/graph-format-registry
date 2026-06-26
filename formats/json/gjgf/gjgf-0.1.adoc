@@ -31,6 +31,8 @@ format:gjgf-0.1 ..supports.. hyperedges ,,
 Defined in spec but ignored by gravis tooling
 ,,
 format:gjgf-0.1 ..lacks.. mixed-directionality-edges
+format:gjgf-0.1 ..supports.. parallel-edges ,, Edges are a list, multiple may share endpoints
+format:gjgf-0.1 ..supports.. self-loops ,, Edge source and target may be the same node
 format:gjgf-0.1 ..lacks.. edges-on-edges
 format:gjgf-0.1 ..lacks.. nested-graphs-in-nodes
 format:gjgf-0.1 ..lacks.. nested-graphs-in-edges

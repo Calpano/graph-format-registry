@@ -33,6 +33,8 @@ Edges store source/target; undirected use is application-level
 ,,
 format:tulip-tlp-2.3 ..supports.. directed-edges ,, Ordered source/target pairs
 format:tulip-tlp-2.3 ..lacks.. hyperedges
+format:tulip-tlp-2.3 ..supports.. parallel-edges ,, Each edge has its own id; multiple edges may share endpoints
+format:tulip-tlp-2.3 ..supports.. self-loops ,, An edge may use the same node as source and target
 format:tulip-tlp-2.3 ..lacks.. edges-on-edges
 format:tulip-tlp-2.3 ..lacks.. nested-graphs-in-nodes
 format:tulip-tlp-2.3 ..lacks.. nested-graphs-in-edges

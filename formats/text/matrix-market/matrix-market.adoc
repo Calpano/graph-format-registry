@@ -22,6 +22,8 @@ format:matrix-market ..spec.. https://math.nist.gov/MatrixMarket/formats.html#MM
 ----
 format:matrix-market ..supports.. nodes ,, Implicit as indices
 format:matrix-market ..supports.. directed-edges ,, Sparse matrix entries
+format:matrix-market ..lacks.. parallel-edges ,, Single matrix cell per pair
+format:matrix-market ..supports.. self-loops ,, Diagonal entries
 ----
 
 == References

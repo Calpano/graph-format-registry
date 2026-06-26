@@ -57,6 +57,8 @@ format:harwell-boeing ..supports.. attributes-on-edges ,, Numeric matrix values 
 format:harwell-boeing ..lacks.. multiple-graphs-per-document
 format:harwell-boeing ..lacks.. hyperedges
 format:harwell-boeing ..lacks.. mixed-directionality-edges
+format:harwell-boeing ..lacks.. parallel-edges ,, Single matrix cell per pair
+format:harwell-boeing ..supports.. self-loops ,, Diagonal entries
 format:harwell-boeing ..lacks.. edges-on-edges
 format:harwell-boeing ..lacks.. nested-graphs-in-nodes
 format:harwell-boeing ..lacks.. nested-graphs-in-edges

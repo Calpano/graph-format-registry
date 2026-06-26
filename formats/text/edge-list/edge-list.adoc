@@ -24,6 +24,8 @@ format:edge-list ..supports.. undirected-edges
 format:edge-list ..supports.. directed-edges
 format:edge-list ..lacks.. mixed-directionality-edges
 format:edge-list ..lacks.. hyperedges
+format:edge-list ..supports.. parallel-edges ,, The same pair may be listed more than once
+format:edge-list ..supports.. self-loops ,, A pair (a a) is a loop
 format:edge-list ..lacks.. edges-on-edges
 format:edge-list ..lacks.. nested-graphs-in-nodes
 format:edge-list ..lacks.. nested-graphs-in-edges

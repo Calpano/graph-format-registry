@@ -30,6 +30,8 @@ format:trig ..lacks.. undirected-edges
 format:trig ..supports.. directed-edges ,, Triples are directed subject to object
 format:trig ..lacks.. hyperedges
 format:trig ..lacks.. mixed-directionality-edges
+format:trig ..supports.. parallel-edges ,, Distinct predicates between the same two resources
+format:trig ..supports.. self-loops ,, Subject and object may be the same resource
 format:trig ..supports.. edges-on-edges ,,
 ..status.. partial
 Via RDF reification (rdf:Statement)

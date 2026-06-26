@@ -24,6 +24,8 @@ format:graphml-1.0 ..supports.. undirected-edges ,, Via edgedefault="undirected"
 format:graphml-1.0 ..supports.. directed-edges ,, Via edgedefault="directed"
 format:graphml-1.0 ..supports.. hyperedges ,, Via <hyperedge> with <endpoint> elements
 format:graphml-1.0 ..supports.. mixed-directionality-edges ,, Per-edge directed attribute
+format:graphml-1.0 ..supports.. parallel-edges ,, Each <edge> may carry its own id; multiple edges may connect a pair
+format:graphml-1.0 ..supports.. self-loops ,, An <edge> may have source == target
 format:graphml-1.0 ..lacks.. edges-on-edges
 format:graphml-1.0 ..supports.. nested-graphs-in-nodes ,, <node> can contain <graph>
 format:graphml-1.0 ..supports.. nested-graphs-in-edges ,, <edge> can contain <graph>

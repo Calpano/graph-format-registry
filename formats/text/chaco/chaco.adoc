@@ -19,4 +19,6 @@ format:chaco ..file extension.. .graph
 ----
 format:chaco ..supports.. nodes
 format:chaco ..supports.. undirected-edges
+format:chaco ..lacks.. parallel-edges ,, Adjacency model encodes a simple graph
+format:chaco ..lacks.. self-loops ,, Vertices may not be adjacent to themselves
 ----

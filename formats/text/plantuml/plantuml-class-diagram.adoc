@@ -29,6 +29,8 @@ format:plantuml-class-diagram ..supports.. undirected-edges ,, Plain association
 format:plantuml-class-diagram ..supports.. directed-edges ,, Relationships are oriented
 format:plantuml-class-diagram ..supports.. mixed-directionality-edges ,, A diagram can mix -- and -->
 format:plantuml-class-diagram ..lacks.. hyperedges
+format:plantuml-class-diagram ..supports.. parallel-edges ,, Multiple associations between two classes
+format:plantuml-class-diagram ..supports.. self-loops ,, Self-association on a class
 format:plantuml-class-diagram ..lacks.. edges-on-edges
 format:plantuml-class-diagram ..lacks.. nested-graphs-in-nodes
 format:plantuml-class-diagram ..lacks.. nested-graphs-in-edges

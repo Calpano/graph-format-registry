@@ -42,6 +42,8 @@ format:scotch ..lacks.. directed-edges
 format:scotch ..lacks.. multiple-graphs-per-document
 format:scotch ..lacks.. hyperedges
 format:scotch ..lacks.. mixed-directionality-edges
+format:scotch ..lacks.. parallel-edges ,, Simple graph
+format:scotch ..lacks.. self-loops ,, Simple graph
 format:scotch ..lacks.. edges-on-edges
 format:scotch ..lacks.. nested-graphs-in-nodes
 format:scotch ..lacks.. nested-graphs-in-edges

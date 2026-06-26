@@ -27,6 +27,8 @@ format:mermaid-class ..supports.. undirected-edges ,, Plain association (--)
 format:mermaid-class ..supports.. directed-edges ,, Inheritance/association arrows
 format:mermaid-class ..lacks.. mixed-directionality-edges
 format:mermaid-class ..lacks.. hyperedges
+format:mermaid-class ..supports.. parallel-edges ,, Multiple relationships between the same two classes
+format:mermaid-class ..supports.. self-loops ,, Self-association on a class
 format:mermaid-class ..lacks.. edges-on-edges
 format:mermaid-class ..lacks.. nested-graphs-in-nodes
 format:mermaid-class ..lacks.. nested-graphs-in-edges

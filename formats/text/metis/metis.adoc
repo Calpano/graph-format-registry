@@ -27,6 +27,8 @@ format:metis ..supports.. undirected-edges ,, Symmetric adjacency, edge counted 
 format:metis ..lacks.. directed-edges
 format:metis ..lacks.. hyperedges
 format:metis ..lacks.. mixed-directionality-edges
+format:metis ..lacks.. parallel-edges ,, Simple undirected graph
+format:metis ..lacks.. self-loops ,, No vertex adjacent to itself
 format:metis ..lacks.. edges-on-edges
 format:metis ..lacks.. nested-graphs-in-nodes
 format:metis ..lacks.. nested-graphs-in-edges

@@ -29,6 +29,8 @@ format:ocif-0.6 ..supports.. undirected-edges ,, Connections between elements
 format:ocif-0.6 ..supports.. directed-edges ,, Arrows/directed connections
 format:ocif-0.6 ..lacks.. hyperedges
 format:ocif-0.6 ..lacks.. mixed-directionality-edges
+format:ocif-0.6 ..supports.. parallel-edges ,, Connections are distinct objects; several may join the same elements
+format:ocif-0.6 ..supports.. self-loops ,, A connection may reference the same element at both ends
 format:ocif-0.6 ..lacks.. edges-on-edges
 format:ocif-0.6 ..supports.. nested-graphs-in-nodes ,, Groups/containers
 format:ocif-0.6 ..lacks.. nested-graphs-in-edges

@@ -29,6 +29,8 @@ format:networkx-node-link ..supports.. undirected-edges ,, directed: false (defa
 format:networkx-node-link ..supports.. directed-edges ,, directed: true
 format:networkx-node-link ..lacks.. hyperedges
 format:networkx-node-link ..lacks.. mixed-directionality-edges ,, Single graph-level directed flag
+format:networkx-node-link ..supports.. parallel-edges ,, Multigraph via the multigraph flag and per-edge key
+format:networkx-node-link ..supports.. self-loops ,, An edge may have source equal to target
 format:networkx-node-link ..lacks.. edges-on-edges
 format:networkx-node-link ..lacks.. node-labels ,, Has id but no dedicated label
 format:networkx-node-link ..lacks.. edge-labels

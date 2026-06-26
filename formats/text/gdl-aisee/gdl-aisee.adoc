@@ -34,6 +34,8 @@ format:gdl-aisee ..supports.. mixed-directionality-edges ,,
 ..status.. partial
 Per-edge arrowstyle; undirected is only arrowhead suppression
 ,,
+format:gdl-aisee ..supports.. parallel-edges ,, Multiple edge entries may share a source and target
+format:gdl-aisee ..supports.. self-loops ,, An edge may target its own source node
 format:gdl-aisee ..lacks.. edges-on-edges
 format:gdl-aisee ..supports.. nested-graphs-in-nodes ,, A subgraph is a foldable node
 format:gdl-aisee ..lacks.. nested-graphs-in-edges

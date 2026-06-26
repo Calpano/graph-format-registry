@@ -17,6 +17,8 @@ format:nested-network ..spec.. https://manual.cytoscape.org/en/stable/Nested_Net
 
 [source]
 ----
+format:nested-network ..supports.. parallel-edges ,, Property-graph model allows several edges between the same nodes
+format:nested-network ..supports.. self-loops ,, An edge may connect a node to itself
 format:nested-network ..supports.. nested-graphs-in-nodes ,, Cytoscape format supporting nested networks within nodes.
 ----
 

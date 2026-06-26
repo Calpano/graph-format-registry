@@ -45,6 +45,8 @@ format:dot ..supports.. undirected-edges ,, graph with -- operator
 format:dot ..supports.. directed-edges ,, digraph with -> operator
 format:dot ..lacks.. hyperedges
 format:dot ..lacks.. mixed-directionality-edges ,, Graph is either directed or undirected
+format:dot ..supports.. parallel-edges ,, Repeated edge statements between the same pair
+format:dot ..supports.. self-loops ,, An edge may have the same head and tail
 format:dot ..lacks.. edges-on-edges
 format:dot ..supports.. nested-graphs-in-nodes ,, Via subgraphs/clusters
 format:dot ..lacks.. nested-graphs-in-edges

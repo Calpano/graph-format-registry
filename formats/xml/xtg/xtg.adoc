@@ -29,6 +29,8 @@ format:xtg ..supports.. nodes ,, Internal and leaf nodes
 format:xtg ..supports.. directed-edges ,, Rooted parent-to-child branches
 format:xtg ..lacks.. hyperedges
 format:xtg ..lacks.. mixed-directionality-edges
+format:xtg ..lacks.. parallel-edges ,, Tree structure: each node has a single parent branch
+format:xtg ..lacks.. self-loops ,, Tree structure is acyclic; a branch cannot connect a node to itself
 format:xtg ..lacks.. edges-on-edges
 format:xtg ..lacks.. nested-graphs-in-nodes
 format:xtg ..lacks.. nested-graphs-in-edges

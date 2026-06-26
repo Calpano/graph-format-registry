@@ -23,6 +23,8 @@ format:d2 ..spec.. https://d2lang.com/
 format:d2 ..supports.. nodes ,, Shapes
 format:d2 ..supports.. undirected-edges ,, Via -- connections
 format:d2 ..supports.. directed-edges ,, Via -> and <- connections
+format:d2 ..supports.. parallel-edges ,, Multiple connections allowed between the same pair
+format:d2 ..supports.. self-loops ,, A shape may connect to itself
 format:d2 ..supports.. node-labels ,, Shape labels
 format:d2 ..supports.. edge-labels ,, Connection labels
 format:d2 ..supports.. nested-graphs-in-nodes ,, Containers (nested shapes)

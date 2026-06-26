@@ -32,6 +32,8 @@ format:rdf-xml ..lacks.. undirected-edges
 format:rdf-xml ..supports.. directed-edges ,, Triples are directed subject to object
 format:rdf-xml ..lacks.. hyperedges
 format:rdf-xml ..lacks.. mixed-directionality-edges
+format:rdf-xml ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges (RDF/OWL based)
+format:rdf-xml ..supports.. self-loops ,, A triple may have the same subject and object (RDF/OWL based)
 format:rdf-xml ..supports.. edges-on-edges ,,
 ..status.. partial
 Via RDF reification (rdf:Statement)

@@ -27,6 +27,8 @@ format:mermaid-flowchart ..supports.. undirected-edges ,, Via --- links
 format:mermaid-flowchart ..supports.. directed-edges ,, Via --> links
 format:mermaid-flowchart ..supports.. mixed-directionality-edges ,, Directed and undirected links may be mixed
 format:mermaid-flowchart ..lacks.. hyperedges
+format:mermaid-flowchart ..supports.. parallel-edges ,, Multiple links between the same two nodes
+format:mermaid-flowchart ..supports.. self-loops ,, A node may link to itself (A-->A)
 format:mermaid-flowchart ..lacks.. edges-on-edges
 format:mermaid-flowchart ..supports.. nested-graphs-in-nodes ,, Via subgraph … end
 format:mermaid-flowchart ..lacks.. nested-graphs-in-edges

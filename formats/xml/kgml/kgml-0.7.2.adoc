@@ -37,6 +37,8 @@ format:kgml-0.7.2 ..supports.. attributes-on-graphs ,, pathway element name, org
 format:kgml-0.7.2 ..supports.. typed-edges ,, relation type (ECrel, PPrel, etc.) and subtype
 format:kgml-0.7.2 ..lacks.. multiple-graphs-per-document ,, One pathway element per file
 format:kgml-0.7.2 ..lacks.. mixed-directionality-edges
+format:kgml-0.7.2 ..supports.. parallel-edges ,, Multiple relations (distinct types/subtypes) may connect the same two entries
+format:kgml-0.7.2 ..supports.. self-loops ,, A relation may link an entry to itself (e.g. autophosphorylation)
 format:kgml-0.7.2 ..lacks.. edges-on-edges
 format:kgml-0.7.2 ..lacks.. nested-graphs-in-nodes
 format:kgml-0.7.2 ..lacks.. nested-graphs-in-edges

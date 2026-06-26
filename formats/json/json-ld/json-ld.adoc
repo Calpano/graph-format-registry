@@ -31,6 +31,8 @@ format:json-ld ..lacks.. undirected-edges
 format:json-ld ..supports.. directed-edges ,, Triples are directed subject to object
 format:json-ld ..lacks.. hyperedges
 format:json-ld ..lacks.. mixed-directionality-edges
+format:json-ld ..supports.. parallel-edges ,, Via distinct predicates between the same two nodes
+format:json-ld ..supports.. self-loops ,, A triple with subject equal to object
 format:json-ld ..supports.. edges-on-edges ,,
 ..status.. partial
 Via RDF reification (rdf:Statement)

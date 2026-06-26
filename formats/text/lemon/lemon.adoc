@@ -28,6 +28,8 @@ format:lemon ..supports.. nodes ,, @nodes section
 format:lemon ..supports.. undirected-edges ,, @edges section
 format:lemon ..supports.. directed-edges ,, @arcs section
 format:lemon ..lacks.. hyperedges
+format:lemon ..supports.. parallel-edges ,, Multiple arcs/edges between the same nodes
+format:lemon ..supports.. self-loops ,, Loop arcs/edges permitted
 format:lemon ..lacks.. edges-on-edges
 format:lemon ..lacks.. nested-graphs-in-nodes
 format:lemon ..lacks.. nested-graphs-in-edges

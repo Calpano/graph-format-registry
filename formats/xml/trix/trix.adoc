@@ -29,6 +29,8 @@ format:trix ..lacks.. undirected-edges
 format:trix ..supports.. directed-edges ,, Triples are directed subject to object
 format:trix ..lacks.. hyperedges
 format:trix ..lacks.. mixed-directionality-edges
+format:trix ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges (RDF/OWL based)
+format:trix ..supports.. self-loops ,, A triple may have the same subject and object (RDF/OWL based)
 format:trix ..supports.. edges-on-edges ,,
 ..status.. partial
 Via RDF reification (rdf:Statement)

@@ -25,6 +25,8 @@ format:ddot ..org.. calpano
 format:ddot ..supports.. nodes ,, Subjects and objects
 format:ddot ..supports.. directed-edges ,, Each triple is directed subject to object
 format:ddot ..lacks.. undirected-edges
+format:ddot ..supports.. parallel-edges ,, Distinct predicates between the same subject and object
+format:ddot ..supports.. self-loops ,, A triple whose subject equals its object
 format:ddot ..supports.. edge-labels ,, Predicate names the edge
 format:ddot ..supports.. typed-edges ,, Every triple is typed by its predicate
 format:ddot ..supports.. attributes-on-nodes ,, Literal-valued triples on a subject

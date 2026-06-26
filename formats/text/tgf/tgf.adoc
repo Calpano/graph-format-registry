@@ -27,6 +27,8 @@ format:tgf ..lacks.. undirected-edges ,, A source-target line is read as directe
 format:tgf ..supports.. directed-edges ,, Source-target order; the spec covers both directed and undirected graphs
 format:tgf ..lacks.. hyperedges
 format:tgf ..lacks.. mixed-directionality-edges
+format:tgf ..supports.. parallel-edges ,, Repeated source-target lines between a pair
+format:tgf ..supports.. self-loops ,, A line may use the same node as source and target
 format:tgf ..lacks.. edges-on-edges
 format:tgf ..lacks.. nested-graphs-in-nodes
 format:tgf ..lacks.. nested-graphs-in-edges

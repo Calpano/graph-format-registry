@@ -31,6 +31,8 @@ format:mcdl ..supports.. undirected-edges ,, Connectivity module encodes undirec
 format:mcdl ..lacks.. directed-edges
 format:mcdl ..lacks.. hyperedges
 format:mcdl ..lacks.. mixed-directionality-edges
+format:mcdl ..lacks.. parallel-edges ,, One bond per atom pair; bond order is an attribute
+format:mcdl ..lacks.. self-loops ,, No atom bonds itself
 format:mcdl ..lacks.. edges-on-edges
 format:mcdl ..lacks.. nested-graphs-in-nodes
 format:mcdl ..lacks.. nested-graphs-in-edges

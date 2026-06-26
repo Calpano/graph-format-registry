@@ -26,6 +26,8 @@ format:mermaid-sankey ..lacks.. undirected-edges
 format:mermaid-sankey ..supports.. directed-edges ,, source to target flow
 format:mermaid-sankey ..lacks.. mixed-directionality-edges
 format:mermaid-sankey ..lacks.. hyperedges
+format:mermaid-sankey ..lacks.. parallel-edges ,, Aggregated flows: one link per ordered pair
+format:mermaid-sankey ..lacks.. self-loops ,, No flow from a node to itself
 format:mermaid-sankey ..lacks.. edges-on-edges
 format:mermaid-sankey ..lacks.. nested-graphs-in-nodes
 format:mermaid-sankey ..lacks.. nested-graphs-in-edges

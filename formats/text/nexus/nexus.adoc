@@ -33,6 +33,8 @@ format:nexus ..supports.. undirected-edges ,, Unrooted trees
 format:nexus ..supports.. directed-edges ,, Rooted trees imply parent-to-child direction
 format:nexus ..lacks.. hyperedges
 format:nexus ..lacks.. mixed-directionality-edges
+format:nexus ..lacks.. parallel-edges ,, Tree-based: one branch per node pair
+format:nexus ..lacks.. self-loops ,, Tree-based: no node attaches to itself
 format:nexus ..lacks.. edges-on-edges
 format:nexus ..lacks.. nested-graphs-in-nodes
 format:nexus ..lacks.. nested-graphs-in-edges

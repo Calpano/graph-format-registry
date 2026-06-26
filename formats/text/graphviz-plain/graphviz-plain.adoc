@@ -24,6 +24,8 @@ format:graphviz-plain ..spec.. https://graphviz.org/docs/outputs/plain/
 format:graphviz-plain ..lacks.. multiple-graphs-per-document ,, One drawn graph per output
 format:graphviz-plain ..supports.. nodes ,, node lines
 format:graphviz-plain ..lacks.. hyperedges ,, Each edge has one tail and one head
+format:graphviz-plain ..supports.. parallel-edges ,, One edge line emitted per drawn edge, including duplicates
+format:graphviz-plain ..supports.. self-loops ,, An edge line may share its tail and head node
 format:graphviz-plain ..lacks.. edges-on-edges
 format:graphviz-plain ..lacks.. nested-graphs-in-nodes
 format:graphviz-plain ..lacks.. nested-graphs-in-edges

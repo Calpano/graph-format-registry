@@ -30,6 +30,8 @@ format:gxl-1.0 ..supports.. undirected-edges
 format:gxl-1.0 ..supports.. directed-edges
 format:gxl-1.0 ..supports.. hyperedges
 format:gxl-1.0 ..lacks.. mixed-directionality-edges
+format:gxl-1.0 ..supports.. parallel-edges ,, Each edge has its own id; multiple typed edges may connect a pair
+format:gxl-1.0 ..supports.. self-loops ,, An edge may connect a node to itself
 format:gxl-1.0 ..lacks.. edges-on-edges
 format:gxl-1.0 ..supports.. nested-graphs-in-nodes ,, Hierarchical graphs
 format:gxl-1.0 ..lacks.. nested-graphs-in-edges

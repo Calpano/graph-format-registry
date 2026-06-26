@@ -31,6 +31,8 @@ format:gtfs ..supports.. attributes-on-nodes ,, Stop coordinates and metadata
 format:gtfs ..supports.. attributes-on-edges ,, Trip and transfer attributes
 format:gtfs ..lacks.. undirected-edges
 format:gtfs ..lacks.. hyperedges
+format:gtfs ..supports.. parallel-edges ,, Multiple trips and routes between the same two stops
+format:gtfs ..lacks.. self-loops ,, A stop linking to itself is not meaningful
 format:gtfs ..lacks.. edges-on-edges
 format:gtfs ..lacks.. nested-graphs-in-nodes
 format:gtfs ..lacks.. nested-graphs-in-edges

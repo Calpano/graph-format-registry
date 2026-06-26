@@ -30,6 +30,8 @@ format:phyloxml ..supports.. undirected-edges ,, rooted="false" phylogenies
 format:phyloxml ..supports.. directed-edges ,, rooted="true" phylogenies
 format:phyloxml ..lacks.. hyperedges
 format:phyloxml ..lacks.. mixed-directionality-edges
+format:phyloxml ..lacks.. parallel-edges ,, Tree: at most one branch between a clade and its parent
+format:phyloxml ..lacks.. self-loops ,, Tree: a clade cannot branch to itself
 format:phyloxml ..lacks.. edges-on-edges
 format:phyloxml ..lacks.. nested-graphs-in-nodes
 format:phyloxml ..lacks.. nested-graphs-in-edges

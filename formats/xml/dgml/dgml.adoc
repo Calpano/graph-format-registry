@@ -28,6 +28,8 @@ format:dgml ..lacks.. multiple-graphs-per-document ,, Single <DirectedGraph> roo
 format:dgml ..supports.. nodes ,, <Node> elements
 format:dgml ..supports.. directed-edges ,, <Link Source Target>
 format:dgml ..lacks.. hyperedges
+format:dgml ..supports.. parallel-edges ,, Multiple <Link> elements may connect the same Source/Target pair
+format:dgml ..supports.. self-loops ,, A <Link> may have equal Source and Target
 format:dgml ..lacks.. edges-on-edges
 format:dgml ..supports.. nested-graphs-in-nodes ,, Group nodes with Contains links
 format:dgml ..lacks.. nested-graphs-in-edges

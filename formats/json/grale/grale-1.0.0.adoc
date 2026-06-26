@@ -41,6 +41,8 @@ format:grale-1.0.0 ..supports.. undirected-edges ,, options.directed false
 format:grale-1.0.0 ..supports.. directed-edges ,, options.directed true
 format:grale-1.0.0 ..lacks.. mixed-directionality-edges ,, Directedness is graph-level via options.directed
 format:grale-1.0.0 ..supports.. hyperedges ,, n-ary hyperedges[] array, GraphML-style
+format:grale-1.0.0 ..supports.. parallel-edges ,, graphlib/dagre multigraph allows multiple edges per pair
+format:grale-1.0.0 ..supports.. self-loops ,, Edge source and target may be the same node
 format:grale-1.0.0 ..lacks.. edges-on-edges
 format:grale-1.0.0 ..supports.. nested-graphs-in-nodes ,, Compound graphs via node parent (options.compound)
 format:grale-1.0.0 ..lacks.. nested-graphs-in-edges

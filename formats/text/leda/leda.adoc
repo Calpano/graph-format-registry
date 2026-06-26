@@ -34,6 +34,8 @@ format:leda ..supports.. mixed-directionality-edges ,,
 ..status.. partial
 Per-edge direction styling in layout section
 ,,
+format:leda ..supports.. parallel-edges ,, Multigraphs permitted
+format:leda ..supports.. self-loops ,, Self-loops permitted
 format:leda ..lacks.. edges-on-edges
 format:leda ..lacks.. nested-graphs-in-nodes
 format:leda ..lacks.. nested-graphs-in-edges

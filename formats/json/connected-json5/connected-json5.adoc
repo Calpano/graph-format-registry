@@ -29,6 +29,8 @@ format:connected-json5 ..supports.. undirected-edges ,, Via undir endpoint direc
 format:connected-json5 ..supports.. directed-edges ,, Via in/out endpoint directions
 format:connected-json5 ..supports.. hyperedges ,, N-ary endpoints
 format:connected-json5 ..supports.. mixed-directionality-edges ,, Each endpoint specifies own direction
+format:connected-json5 ..supports.. parallel-edges ,, Distinct edge objects may share endpoints
+format:connected-json5 ..supports.. self-loops ,, An edge may reference the same node twice
 format:connected-json5 ..lacks.. edges-on-edges
 format:connected-json5 ..supports.. nested-graphs-in-nodes ,, Via graphs property (compound nodes)
 format:connected-json5 ..supports.. nested-graphs-in-edges ,, Via graphs property (compound edges)

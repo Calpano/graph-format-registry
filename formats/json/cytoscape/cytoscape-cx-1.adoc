@@ -33,6 +33,8 @@ format:cytoscape-cx-1 ..supports.. nodes ,, nodes aspect
 format:cytoscape-cx-1 ..supports.. directed-edges ,, Edges implicitly directed (s -> t)
 format:cytoscape-cx-1 ..lacks.. hyperedges ,, Edges are binary
 format:cytoscape-cx-1 ..lacks.. mixed-directionality-edges
+format:cytoscape-cx-1 ..supports.. parallel-edges ,, Each edge is a distinct object with its own id
+format:cytoscape-cx-1 ..supports.. self-loops ,, Edge source and target may be the same node
 format:cytoscape-cx-1 ..lacks.. edges-on-edges
 format:cytoscape-cx-1 ..lacks.. nested-graphs-in-edges
 format:cytoscape-cx-1 ..supports.. nested-graphs-in-graphs ,, cySubNetworks plus cyNetworkRelations parent/child relations

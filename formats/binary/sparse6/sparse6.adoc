@@ -29,6 +29,8 @@ brendan-mckay ..label.. Brendan McKay
 ----
 format:sparse6 ..supports.. nodes
 format:sparse6 ..supports.. undirected-edges
+format:sparse6 ..supports.. parallel-edges ,, Sparse6 explicitly permits multiple edges
+format:sparse6 ..supports.. self-loops ,, Sparse6 explicitly permits loops
 format:sparse6 ..lacks.. directed-edges
 format:sparse6 ..lacks.. node-labels
 format:sparse6 ..lacks.. edge-labels
