@@ -9,22 +9,42 @@ any particular syntax. A format either can or cannot represent each concept.
 
 [source]
 ----
-multiple-graphs-per-document ..has type.. feature ,, ..label.. Multiple Graphs per Document
-nodes                        ..has type.. feature ,, ..label.. Nodes
-undirected-edges             ..has type.. feature ,, ..label.. Undirected Edges
-directed-edges               ..has type.. feature ,, ..label.. Directed Edges
-hyperedges                   ..has type.. feature ,, ..label.. Hyperedges
-mixed-directionality-edges   ..has type.. feature ,, ..label.. Mixed-directionality Edges
-edges-on-edges               ..has type.. feature ,, ..label.. Edges on Edges
-nested-graphs-in-nodes       ..has type.. feature ,, ..label.. Nested Graphs in Nodes
-nested-graphs-in-edges       ..has type.. feature ,, ..label.. Nested Graphs in Edges
-nested-graphs-in-graphs      ..has type.. feature ,, ..label.. Nested Graphs in Graphs
-node-labels                  ..has type.. feature ,, ..label.. Node Labels
-edge-labels                  ..has type.. feature ,, ..label.. Edge Labels
-attributes-on-nodes          ..has type.. feature ,, ..label.. Attributes on Nodes
-attributes-on-edges          ..has type.. feature ,, ..label.. Attributes on Edges
-attributes-on-graphs         ..has type.. feature ,, ..label.. Attributes on Graphs
-typed-edges                  ..has type.. feature ,, ..label.. Typed Edges
+multiple-graphs-per-document ..has type.. feature
+multiple-graphs-per-document ..label.. Multiple Graphs per Document
+nodes ..has type.. feature
+nodes ..label.. Nodes
+undirected-edges ..has type.. feature
+undirected-edges ..label.. Undirected Edges
+directed-edges ..has type.. feature
+directed-edges ..label.. Directed Edges
+hyperedges ..has type.. feature
+hyperedges ..label.. Hyperedges
+mixed-directionality-edges ..has type.. feature
+mixed-directionality-edges ..label.. Mixed-directionality Edges
+parallel-edges ..has type.. feature
+parallel-edges ..label.. Parallel Edges
+self-loops ..has type.. feature
+self-loops ..label.. Self-loops
+edges-on-edges ..has type.. feature
+edges-on-edges ..label.. Edges on Edges
+nested-graphs-in-nodes ..has type.. feature
+nested-graphs-in-nodes ..label.. Nested Graphs in Nodes
+nested-graphs-in-edges ..has type.. feature
+nested-graphs-in-edges ..label.. Nested Graphs in Edges
+nested-graphs-in-graphs ..has type.. feature
+nested-graphs-in-graphs ..label.. Nested Graphs in Graphs
+node-labels ..has type.. feature
+node-labels ..label.. Node Labels
+edge-labels ..has type.. feature
+edge-labels ..label.. Edge Labels
+attributes-on-nodes ..has type.. feature
+attributes-on-nodes ..label.. Attributes on Nodes
+attributes-on-edges ..has type.. feature
+attributes-on-edges ..label.. Attributes on Edges
+attributes-on-graphs ..has type.. feature
+attributes-on-graphs ..label.. Attributes on Graphs
+typed-edges ..has type.. feature
+typed-edges ..label.. Typed Edges
 ----
 
 == Structure & containment
@@ -56,6 +76,16 @@ relationship), rather than being limited to exactly two endpoints.
 Mixed-directionality Edges. Directed and undirected edges can coexist in the
 *same* graph. Formats that force the whole graph to be either directed or
 undirected lack this feature even if they support both modes separately.
+
+`parallel-edges`::
+Parallel Edges. More than one distinct edge can connect the *same* pair of
+endpoints (a multigraph / multi-edge). Formats limited to a simple graph — at
+most one edge per node pair — lack this feature.
+
+`self-loops`::
+Self-loops. An edge can connect a node to itself (both endpoints are the same
+node). Formats that forbid loops — many simple-graph and tree formats — lack
+this feature.
 
 `edges-on-edges`::
 Edges on Edges. An edge may itself be an endpoint of another edge, allowing
