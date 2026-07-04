@@ -1,0 +1,2412 @@
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/sbol/sbol-3.1.adoc ..links to.. ../../xml/rdf-xml/rdf-xml.adoc ,, RDF/XML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/xtg/xtg.adoc ..links to.. ../../../tools.adoc#_treegraph ,, TreeGraph 2
+format:biopax ..has type.. format
+format:cml ..has type.. format
+format:sbgn-ml ..has type.. format
+format:dgml ..has type.. format
+format:rdf-xml ..has type.. format
+format:cml ..category.. xml
+format:biopax ..category.. xml
+format:gxl ..has type.. format
+format:cml ..label.. Chemical Markup Language (CML)
+format:rdf-xml ..category.. xml
+format:gxl ..category.. xml
+format:cml ..alternative name.. CML
+format:gxl ..label.. GXL
+format:cml ..file extension.. .cml
+format:sbgn-ml ..category.. xml
+format:dgml ..category.. xml
+format:cml ..wikipedia.. https://en.wikipedia.org/wiki/Chemical_Markup_Language
+format:rdf-xml ..label.. RDF/XML
+format:biopax ..label.. BioPAX
+format:cml ..wikidata.. Q1069211
+format:biopax ..alternative name.. Biological Pathway Exchange
+format:sbgn-ml ..label.. SBGN-ML
+format:gxl ..alternative name.. Graph eXchange Language
+format:cml ..spec.. http://www.xml-cml.org/
+format:rdf-xml ..alternative name.. RDF/XML Syntax
+format:sbgn-ml ..alternative name.. Systems Biology Graphical Notation Markup Language
+format:biopax ..wikipedia.. https://en.wikipedia.org/wiki/BioPAX
+format:gxl ..wikipedia.. https://en.wikipedia.org/wiki/GXL
+format:sbgn-ml ..wikipedia.. https://en.wikipedia.org/wiki/Systems_Biology_Graphical_Notation
+format:rdf-xml ..file extension.. .rdf
+format:cml ..supports.. multiple-graphs-per-document ,, Multiple <molecule> elements per document
+format:sbgn-ml-0.3 ..version of.. format:sbgn-ml
+format:biopax ..wikidata.. Q4914639
+format:rdf-xml ..file extension.. .xml
+format:gxl ..wikidata.. Q3756354
+format:biopax-l3 ..version of.. format:biopax
+format:rdf-xml ..media type.. application/rdf+xml
+format:sbgn-ml-0.3 ..version.. 0.3
+format:gxl-1.0 ..version of.. format:gxl
+format:rdf-xml ..wikipedia.. https://en.wikipedia.org/wiki/RDF/XML
+format:biopax-l3 ..version.. Level 3
+format:rdf-xml ..wikidata.. Q48940
+format:gxl-1.0 ..version.. 1.0
+format:sbgn-ml-0.3 ..file extension.. .sbgn
+format:rdf-xml ..org.. W3C
+format:biopax-l3 ..file extension.. .owl
+format:rdf-xml ..spec.. https://www.w3.org/TR/rdf-syntax-grammar/
+format:sbgn-ml-0.3 ..spec.. http://co.mbine.org/specifications/sbgnml.version-0.3.release-1
+format:gxl-1.0 ..file extension.. .gxl
+format:biopax-l3 ..spec.. http://www.biopax.org/release/biopax-level3.owl
+format:gxl-1.0 ..spec.. http://www.gupro.de/GXL/
+format:sbgn-ml-0.3 ..supports.. multiple-graphs-per-document ,, 0.3 allows multiple map elements per document
+format:rdf-xml ..lacks.. multiple-graphs-per-document ,, No named graphs; single graph per document
+format:gxl-1.0 ..supports.. multiple-graphs-per-document
+format:biopax-l3 ..supports.. multiple-graphs-per-document ,, Multiple Pathway instances per OWL document
+format:gxl-1.0 ..supports.. nodes
+format:gxl-1.0 ..supports.. undirected-edges
+format:sbgn-ml-0.3 ..supports.. nodes ,, glyph elements
+format:gxl-1.0 ..supports.. directed-edges
+format:biopax-l3 ..supports.. nodes ,, Physical entities and interactions as OWL individuals
+format:rdf-xml ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:gxl-1.0 ..supports.. hyperedges
+format:sbgn-ml-0.3 ..supports.. directed-edges ,, arc elements with source and target
+format:sbol ..has type.. format
+format:xtg ..has type.. format
+format:gxl-1.0 ..lacks.. mixed-directionality-edges
+format:rdf-xml ..lacks.. undirected-edges
+format:biopax-l3 ..supports.. directed-edges ,, Conversion (left/right, conversionDirection) and Control (controlType)
+format:cml ..supports.. nodes ,, <atom> elements
+format:sbgn-ml-0.3 ..supports.. node-labels ,, label element on glyphs
+format:sbol ..category.. xml
+format:gxl-1.0 ..supports.. parallel-edges ,, Each edge has its own id; multiple typed edges may connect a pair
+format:rdf-xml ..supports.. directed-edges ,, Triples are directed subject to object
+format:biopax-l3 ..supports.. undirected-edges ,, MolecularInteraction is non-directional
+format:sbgn-ml-0.3 ..supports.. nested-graphs-in-nodes ,, compartment and complex glyphs contain sub-glyphs
+format:cml ..supports.. undirected-edges ,, <bond> elements are undirected
+format:gxl-1.0 ..supports.. self-loops ,, An edge may connect a node to itself
+format:biopax-l3 ..supports.. hyperedges ,, Interactions link multiple participants
+format:sbgn-ml-0.3 ..supports.. nested-graphs-in-graphs ,, 0.3 adds sub-maps (submap glyphs / nested maps)
+format:sbol ..label.. SBOL (Synthetic Biology Open Language)
+format:gxl-1.0 ..lacks.. edges-on-edges
+format:rdf-xml ..lacks.. hyperedges
+format:biopax-l3 ..supports.. nested-graphs-in-graphs ,, pathwayComponent nests sub-pathways
+format:cml ..lacks.. directed-edges
+format:sbgn-ml-0.3 ..supports.. attributes-on-nodes ,, class attribute, state and bbox
+format:sbol ..alternative name.. Synthetic Biology Open Language
+format:biopax-l3 ..supports.. node-labels ,, displayName / standardName
+format:rdf-xml ..lacks.. mixed-directionality-edges
+format:gxl-1.0 ..supports.. nested-graphs-in-nodes ,, Hierarchical graphs
+format:sbgn-ml-0.3 ..supports.. attributes-on-edges ,, class, id, source, target and extension on arc
+format:sbol ..wikipedia.. https://en.wikipedia.org/wiki/Synthetic_Biology_Open_Language
+format:cml ..lacks.. hyperedges
+format:rdf-xml ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges (RDF/OWL based)
+format:biopax-l3 ..supports.. edge-labels ,, Interactions are Entities with displayName / standardName
+format:gxl-1.0 ..lacks.. nested-graphs-in-edges
+format:sbol ..wikidata.. Q25304751
+format:sbgn-ml-0.3 ..supports.. attributes-on-graphs ,, 0.3 adds map metadata, notes and extension
+format:rdf-xml ..supports.. self-loops ,, A triple may have the same subject and object (RDF/OWL based)
+format:cml ..lacks.. mixed-directionality-edges
+format:gxl-1.0 ..supports.. nested-graphs-in-graphs ,, Hierarchical graphs
+format:biopax-l3 ..supports.. attributes-on-nodes ,, OWL datatype and object properties
+format:sbol-3.1 ..version of.. format:sbol
+format:rdf-xml ..supports.. edges-on-edges
+format:sbgn-ml-0.3 ..supports.. typed-edges ,, arc class (production, consumption, catalysis, etc.)
+format:gxl-1.0 ..supports.. node-labels
+format:cml ..lacks.. parallel-edges ,, One <bond> per atom pair; bond order is an attribute, not a second edge
+format:biopax-l3 ..supports.. attributes-on-edges ,, Interaction properties (controlType, evidence, comment)
+format:sbol-3.1 ..version.. 3.1
+format:gxl-1.0 ..supports.. edge-labels
+format:rdf-xml ..status.. partial
+format:sbgn-ml-0.3 ..lacks.. undirected-edges
+format:cml ..lacks.. self-loops ,, A <bond> connects two distinct atoms
+format:biopax-l3 ..supports.. attributes-on-graphs ,, Pathway properties (organism, displayName, comment)
+format:gxl-1.0 ..supports.. attributes-on-nodes
+format:sbol-3.1 ..file extension.. .xml
+format:rdf-xml ..lacks.. nested-graphs-in-nodes
+format:sbgn-ml-0.3 ..lacks.. hyperedges
+format:cml ..lacks.. edges-on-edges
+format:gxl-1.0 ..supports.. attributes-on-edges
+format:biopax-l3 ..supports.. typed-edges ,, Interaction subclasses (Control, Conversion, etc.)
+format:sbol-3.1 ..spec.. https://sbolstandard.org/docs/SBOL3.1.0.pdf
+format:rdf-xml ..lacks.. nested-graphs-in-edges
+format:sbgn-ml-0.3 ..lacks.. mixed-directionality-edges
+format:gxl-1.0 ..supports.. attributes-on-graphs
+format:cml ..lacks.. nested-graphs-in-nodes ,, <molecule> nests in <molecule>, not in an <atom> node
+format:biopax-l3 ..lacks.. mixed-directionality-edges
+format:sbol-3.1 ..supports.. multiple-graphs-per-document ,, Multiple top-level objects per RDF document
+format:gxl-1.0 ..supports.. typed-edges ,, User-defined edge types
+format:rdf-xml ..lacks.. nested-graphs-in-graphs
+format:cml ..lacks.. nested-graphs-in-edges
+format:sbgn-ml-0.3 ..supports.. parallel-edges ,, Multiple arcs of different class/role may connect the same two glyphs
+format:biopax-l3 ..supports.. parallel-edges ,, RDF/OWL based: distinct predicates (interactions) may connect two entities
+format:sbol-3.1 ..supports.. nodes ,, Component and other top-level objects as RDF resources
+format:rdf-xml ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:sbgn-ml-0.3 ..supports.. self-loops ,, An arc may connect a glyph to itself (e.g. autocatalysis / self-modulation)
+format:cml ..supports.. nested-graphs-in-graphs ,, <molecule> may contain child <molecule> elements
+format:biopax-l3 ..supports.. self-loops ,, RDF/OWL based: an entity can be both subject and object of an interaction
+format:rdf-xml ..supports.. edge-labels ,, Predicate IRI names the edge
+format:sbgn-ml-0.3 ..lacks.. edges-on-edges
+format:sbol-3.1 ..supports.. directed-edges ,, Interaction participations with SBO roles
+format:biopax-l3 ..lacks.. edges-on-edges
+format:cml ..supports.. node-labels ,, <atom> may carry <label> child elements
+format:rdf-xml ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:biopax-l3 ..lacks.. nested-graphs-in-nodes
+format:sbgn-ml-0.3 ..lacks.. nested-graphs-in-edges
+format:cml ..lacks.. edge-labels
+format:sbol-3.1 ..supports.. hyperedges ,, Interactions link multiple participants
+format:rdf-xml ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:biopax-l3 ..lacks.. nested-graphs-in-edges
+format:cml ..supports.. attributes-on-nodes ,, Element, charge, isotope via XML attributes
+format:rdf-xml ..lacks.. attributes-on-graphs
+format:cml ..supports.. attributes-on-edges ,, Bond stereo and properties
+format:rdf-xml ..supports.. typed-edges ,, Every triple is typed by its predicate
+format:sbol-3.1 ..supports.. parallel-edges ,, Distinct predicates between two objects are distinct edges (RDF/OWL based)
+format:cml ..supports.. attributes-on-graphs ,, Molecule-level properties
+format:sbol-3.1 ..supports.. self-loops ,, A triple may have the same subject and object (RDF/OWL based)
+format:cml ..supports.. typed-edges ,, order attribute on <bond>
+format:sbol-3.1 ..supports.. edges-on-edges ,, 3.1 lets a Participation reference an Interaction (higher-order interactions)
+format:sbol-3.1 ..supports.. nested-graphs-in-nodes ,, SubComponent hierarchy within Components
+format:sbol-3.1 ..supports.. node-labels ,, name / displayId
+format:sbol-3.1 ..supports.. edge-labels ,, name / displayId on Interaction
+format:sbol-3.1 ..supports.. attributes-on-nodes ,, RDF properties on objects
+format:sbol-3.1 ..supports.. attributes-on-edges ,, Interaction and Participation RDF properties
+format:sbol-3.1 ..supports.. attributes-on-graphs ,, RDF properties on the containing Component
+format:sbol-3.1 ..supports.. typed-edges ,, Interaction and participation types from SBO
+format:sbol-3.1 ..lacks.. undirected-edges
+format:sbol-3.1 ..lacks.. mixed-directionality-edges
+format:sbol-3.1 ..lacks.. nested-graphs-in-edges
+format:sbol-3.1 ..lacks.. nested-graphs-in-graphs
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/sbol/sbol-3.1.adoc ..links to.. ../../xml/rdf-xml/rdf-xml.adoc ,, RDF/XML
+format:trix ..has type.. format
+format:sbml ..has type.. format
+format:gexf ..has type.. format
+format:trix ..category.. xml
+format:sbml ..category.. xml
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/xgmml/xgmml-1.0.adoc ..links to.. ../../text/gml/gml.adoc ,, GML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/kgml/kgml-0.7.2.adoc ..links to.. ../../../tools.adoc#_kegg ,, KEGG
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/owl/owl.adoc ..links to.. ../../xml/biopax/biopax-l3.adoc ,, BioPAX
+format:gexf ..category.. xml
+format:sbml ..label.. SBML
+format:trix ..label.. TriX
+format:sbml ..alternative name.. Systems Biology Markup Language
+format:xgmml ..has type.. format
+format:kgml ..has type.. format
+format:trix ..alternative name.. Triples in XML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/owl/owl.adoc ..links to.. ../../xml/rdf-xml/rdf-xml.adoc ,, RDF/XML
+format:sbml ..wikipedia.. https://en.wikipedia.org/wiki/SBML
+format:trix ..file extension.. .trix
+format:sbml ..wikidata.. Q452197
+format:owl ..has type.. format
+format:trix ..wikipedia.. https://en.wikipedia.org/wiki/TriX_(serialization_format)
+format:xgmml ..category.. xml
+format:sbml-l3v2 ..version of.. format:sbml
+format:owl ..category.. xml
+format:trix ..wikidata.. Q7839826
+format:sbml-l3v2 ..version.. L3V2
+format:owl ..label.. OWL
+format:sbml-l3v2 ..released.. 2019-03-29
+format:trix ..spec.. https://www.hpl.hp.com/techreports/2004/HPL-2004-56.html
+format:sbml-l3v2 ..file extension.. .sbml
+format:owl ..alternative name.. Web Ontology Language
+format:sbml-l3v2 ..file extension.. .xml
+format:trix ..supports.. multiple-graphs-per-document ,, Multiple named graph elements per document
+format:owl ..file extension.. .owl
+format:sbml-l3v2 ..spec.. http://sbml.org/documents/specifications/
+format:trix ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:owl ..file extension.. .owl.xml
+format:trix ..lacks.. undirected-edges
+format:owl ..media type.. application/owl+xml
+format:sbml-l3v2 ..supports.. multiple-graphs-per-document ,, Via comp package (hierarchical model composition)
+format:trix ..supports.. directed-edges ,, Triples are directed subject to object
+format:owl ..wikipedia.. https://en.wikipedia.org/wiki/Web_Ontology_Language
+format:trix ..lacks.. hyperedges
+format:owl ..wikidata.. Q826165
+format:trix ..lacks.. mixed-directionality-edges
+format:sbml-l3v2 ..supports.. nodes ,, Species in compartments
+format:owl ..org.. W3C
+format:trix ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges (RDF/OWL based)
+format:owl ..spec.. https://www.w3.org/TR/owl2-overview/
+format:sbml-l3v2 ..lacks.. undirected-edges ,, Reactions are directional
+format:trix ..supports.. self-loops ,, A triple may have the same subject and object (RDF/OWL based)
+format:owl ..lacks.. multiple-graphs-per-document ,, One ontology per document; reuse via owl:imports
+format:trix ..supports.. edges-on-edges
+format:trix ..status.. partial
+format:owl ..supports.. nodes ,, Classes, individuals and properties (resources)
+format:sbml-l3v2 ..supports.. directed-edges ,, Reactions (reactants → products)
+format:trix ..lacks.. nested-graphs-in-nodes
+format:owl ..lacks.. undirected-edges
+format:sbml-l3v2 ..supports.. hyperedges ,, Reactions with multiple reactants/products
+format:trix ..lacks.. nested-graphs-in-edges
+format:owl ..supports.. directed-edges ,, RDF triples / property assertions are directed
+format:trix ..lacks.. nested-graphs-in-graphs ,, Named graphs are a flat sequence, not nested
+format:owl ..lacks.. mixed-directionality-edges
+format:sbml-l3v2 ..lacks.. mixed-directionality-edges
+format:owl ..lacks.. hyperedges
+format:trix ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:sbml-l3v2 ..supports.. parallel-edges
+format:trix ..supports.. edge-labels ,, Predicate IRI names the edge
+format:owl ..supports.. parallel-edges ,, RDF/OWL based: distinct predicates may connect the same two resources
+format:trix ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:owl ..supports.. self-loops ,, RDF/OWL based: a triple may have subject == object
+format:trix ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:owl ..supports.. edges-on-edges
+format:trix ..supports.. attributes-on-graphs
+format:owl ..status.. partial
+format:trix ..status.. partial
+format:owl ..lacks.. nested-graphs-in-nodes
+format:trix ..supports.. typed-edges ,, Every triple is typed by its predicate
+format:owl ..lacks.. nested-graphs-in-edges
+format:owl ..lacks.. nested-graphs-in-graphs
+format:owl ..lacks.. node-labels ,, rdfs:label is data, not syntax
+format:owl ..supports.. edge-labels ,, Predicate IRI names the edge
+format:owl ..supports.. attributes-on-nodes ,, Data-property assertions (literals on resources)
+format:owl ..lacks.. attributes-on-edges
+format:owl ..lacks.. attributes-on-graphs
+format:owl ..supports.. typed-edges ,, Object properties; every triple typed by its predicate
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/owl/owl.adoc ..links to.. ../../xml/rdf-xml/rdf-xml.adoc ,, RDF/XML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/owl/owl.adoc ..links to.. ../../xml/biopax/biopax-l3.adoc ,, BioPAX
+format:phyloxml ..has type.. format
+format:phyloxml ..category.. xml
+format:phyloxml ..label.. phyloXML
+format:phyloxml ..file extension.. .xml
+format:phyloxml ..file extension.. .phyloxml
+format:phyloxml ..wikipedia.. https://en.wikipedia.org/wiki/PhyloXML
+format:phyloxml ..wikidata.. Q7189430
+format:phyloxml ..released.. 2009
+format:phyloxml ..spec.. http://www.phyloxml.org/
+format:phyloxml ..supports.. multiple-graphs-per-document ,, Several <phylogeny> elements per file
+format:psi-mi-xml ..has type.. format
+format:phyloxml ..supports.. nodes ,, <clade> elements, internal and leaf
+format:psi-mi-xml ..category.. xml
+format:phyloxml ..supports.. undirected-edges ,, rooted="false" phylogenies
+format:psi-mi-xml ..label.. PSI-MI XML (MIF)
+format:phyloxml ..supports.. directed-edges ,, rooted="true" phylogenies
+format:psi-mi-xml ..alternative name.. MIF
+format:psi-mi-xml ..alternative name.. Molecular Interaction Format
+format:phyloxml ..lacks.. hyperedges
+format:psi-mi-xml ..alternative name.. PSI-MI XML
+format:phyloxml ..lacks.. mixed-directionality-edges
+format:psi-mi-xml ..wikidata.. Q29650305
+format:psi-mi-xml ..org.. HUPO-PSI
+format:phyloxml ..lacks.. parallel-edges ,, Tree: at most one branch between a clade and its parent
+format:psi-mi-xml-3.0 ..version of.. format:psi-mi-xml
+format:psi-mi-xml-3.0 ..version.. 3.0
+format:phyloxml ..lacks.. self-loops ,, Tree: a clade cannot branch to itself
+format:psi-mi-xml-3.0 ..file extension.. .xml
+format:psi-mi-xml-3.0 ..spec.. https://github.com/HUPO-PSI/miXML/blob/master/3.0/src/MIF300.xsd
+format:phyloxml ..lacks.. edges-on-edges
+format:psi-mi-xml-3.0 ..supports.. multiple-graphs-per-document ,, entrySet holds multiple self-contained entry elements
+format:phyloxml ..lacks.. nested-graphs-in-nodes
+format:psi-mi-xml-3.0 ..supports.. nodes ,, interactor elements
+format:phyloxml ..lacks.. nested-graphs-in-edges
+format:psi-mi-xml-3.0 ..supports.. undirected-edges ,, Physical interactions without bait/prey are non-directional
+format:phyloxml ..lacks.. nested-graphs-in-graphs
+format:psi-mi-xml-3.0 ..supports.. directed-edges ,, participant roles (bait/prey) and causal statements (source/target)
+format:phyloxml ..supports.. node-labels ,, <name> on clades
+format:psi-mi-xml-3.0 ..supports.. hyperedges ,, An interaction links any number of participants
+format:phyloxml ..lacks.. edge-labels
+format:psi-mi-xml-3.0 ..supports.. node-labels ,, names / shortLabel on interactors
+format:phyloxml ..supports.. attributes-on-nodes ,, Taxonomy, sequence and other clade sub-elements
+format:psi-mi-xml-3.0 ..supports.. edge-labels ,, names (shortLabel / fullName) on interactions
+format:psi-mi-xml-3.0 ..supports.. attributes-on-nodes ,, xref and attributeList on interactors
+format:phyloxml ..supports.. attributes-on-edges ,, <branch_length> and branch-level data
+format:psi-mi-xml-3.0 ..supports.. attributes-on-edges ,, attributeList on interactions
+format:phyloxml ..supports.. attributes-on-graphs ,, Phylogeny-level name, description and confidence
+format:psi-mi-xml-3.0 ..supports.. attributes-on-graphs ,, attributeList on entry
+format:phyloxml ..supports.. typed-edges
+format:psi-mi-xml-3.0 ..supports.. typed-edges ,, interactionType from controlled vocabulary
+format:psi-mi-xml-3.0 ..lacks.. mixed-directionality-edges
+format:psi-mi-xml-3.0 ..supports.. parallel-edges ,, Multiple interaction records may connect the same pair of interactors
+format:psi-mi-xml-3.0 ..supports.. self-loops ,, An interactor may self-interact (homodimer / self-interaction)
+format:psi-mi-xml-3.0 ..lacks.. edges-on-edges
+format:psi-mi-xml-3.0 ..lacks.. nested-graphs-in-nodes
+format:psi-mi-xml-3.0 ..lacks.. nested-graphs-in-edges
+format:psi-mi-xml-3.0 ..lacks.. nested-graphs-in-graphs
+format:cellml ..has type.. format
+format:cellml ..category.. xml
+format:cellml ..label.. CellML
+format:cellml ..wikipedia.. https://en.wikipedia.org/wiki/CellML
+format:cellml ..wikidata.. Q5058133
+format:cellml-2.0 ..version of.. format:cellml
+format:cellml-2.0 ..version.. 2.0
+format:cellml-2.0 ..file extension.. .cellml
+format:cellml-2.0 ..spec.. https://www.cellml.org/specifications/cellml_2.0/
+format:cellml-2.0 ..supports.. nodes ,, component elements
+format:cellml-2.0 ..supports.. undirected-edges ,, connection elements map variables between two components
+format:cellml-2.0 ..supports.. node-labels ,, name attribute on components
+format:cellml-2.0 ..supports.. nested-graphs-in-nodes ,, encapsulation hierarchy of components
+format:cellml-2.0 ..supports.. attributes-on-nodes ,, variables and units within components
+format:cellml-2.0 ..supports.. attributes-on-edges ,, component_1/component_2 and map_variables on connection
+format:cellml-2.0 ..supports.. attributes-on-graphs ,, model name and metadata
+format:cellml-2.0 ..lacks.. multiple-graphs-per-document
+format:cellml-2.0 ..lacks.. directed-edges
+format:cellml-2.0 ..lacks.. hyperedges
+format:cellml-2.0 ..lacks.. mixed-directionality-edges
+format:cellml-2.0 ..lacks.. parallel-edges ,, At most one connection per component pair; map_variables are grouped within it, not separate edges
+format:cellml-2.0 ..lacks.. self-loops ,, A connection maps variables between two distinct components
+format:cellml-2.0 ..lacks.. edges-on-edges
+format:cellml-2.0 ..lacks.. nested-graphs-in-edges
+format:cellml-2.0 ..lacks.. nested-graphs-in-graphs
+format:cellml-2.0 ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml-1.1.adoc ..links to.. graphml.adoc ,, GraphML
+format:graphml-1.1 ..version of.. format:graphml
+format:graphml-1.1 ..version.. 1.1
+format:graphml-1.1 ..file extension.. .graphml
+format:graphml-1.1 ..spec.. http://graphml.graphdrawing.org/specification.html
+format:graphml-1.1 ..supports.. multiple-graphs-per-document
+format:graphml-1.1 ..supports.. nodes
+format:graphml-1.1 ..supports.. undirected-edges ,, Via edgedefault="undirected"
+format:graphml-1.1 ..supports.. directed-edges ,, Via edgedefault="directed"
+format:graphml-1.1 ..supports.. hyperedges ,, Via <hyperedge> with <endpoint> elements
+format:graphml-1.1 ..supports.. mixed-directionality-edges ,, Per-edge directed attribute
+format:graphml-1.1 ..supports.. parallel-edges ,, Each <edge> may carry its own id; multiple edges may connect a pair
+format:graphml-1.1 ..supports.. self-loops ,, An <edge> may have source == target
+format:graphml-1.1 ..lacks.. edges-on-edges
+format:graphml-1.1 ..supports.. nested-graphs-in-nodes ,, <node> can contain <graph>
+format:graphml-1.1 ..supports.. nested-graphs-in-edges ,, <edge> can contain <graph>
+format:graphml-1.1 ..supports.. nested-graphs-in-graphs
+format:graphml-1.1 ..supports.. node-labels
+format:graphml-1.1 ..status.. partial
+format:graphml-1.1 ..supports.. edge-labels
+format:graphml-1.1 ..status.. partial
+format:graphml-1.1 ..supports.. attributes-on-nodes ,, Via <data> elements
+format:graphml-1.1 ..supports.. attributes-on-edges ,, Via <data> elements
+format:graphml-1.1 ..supports.. attributes-on-graphs ,, Via <data> elements
+format:graphml-1.1 ..supports.. typed-edges
+format:graphml-1.1 ..status.. partial
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml-1.1.adoc ..links to.. graphml.adoc ,, GraphML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml-1.1.adoc ..links to.. graphml-1.0.adoc ,, GraphML 1.0
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml-1.0.adoc ..links to.. graphml.adoc ,, GraphML
+format:graphml-1.0 ..version of.. format:graphml
+format:graphml-1.0 ..version.. 1.0
+format:graphml-1.0 ..file extension.. .graphml
+format:graphml-1.0 ..spec.. http://graphml.graphdrawing.org/specification.html
+format:graphml-1.0 ..supports.. multiple-graphs-per-document
+format:graphml-1.0 ..supports.. nodes
+format:graphml-1.0 ..supports.. undirected-edges ,, Via edgedefault="undirected"
+format:graphml-1.0 ..supports.. directed-edges ,, Via edgedefault="directed"
+format:graphml-1.0 ..supports.. hyperedges ,, Via <hyperedge> with <endpoint> elements
+format:graphml-1.0 ..supports.. mixed-directionality-edges ,, Per-edge directed attribute
+format:graphml-1.0 ..supports.. parallel-edges ,, Each <edge> may carry its own id; multiple edges may connect a pair
+format:graphml-1.0 ..supports.. self-loops ,, An <edge> may have source == target
+format:graphml-1.0 ..lacks.. edges-on-edges
+format:graphml-1.0 ..supports.. nested-graphs-in-nodes ,, <node> can contain <graph>
+format:graphml-1.0 ..supports.. nested-graphs-in-edges ,, <edge> can contain <graph>
+format:graphml-1.0 ..supports.. nested-graphs-in-graphs
+format:graphml-1.0 ..supports.. node-labels
+format:graphml-1.0 ..status.. partial
+format:graphml-1.0 ..supports.. edge-labels
+format:graphml-1.0 ..status.. partial
+format:graphml-1.0 ..supports.. attributes-on-nodes ,, Via <data> elements
+format:graphml-1.0 ..supports.. attributes-on-edges ,, Via <data> elements
+format:graphml-1.0 ..supports.. attributes-on-graphs ,, Via <data> elements
+format:graphml-1.0 ..supports.. typed-edges
+format:graphml-1.0 ..status.. partial
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml-1.0.adoc ..links to.. graphml.adoc ,, GraphML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml-1.0.adoc ..links to.. graphml-1.1.adoc ,, GraphML 1.1
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml.adoc ..links to.. graphml-1.0.adoc ,, GraphML 1.0
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml.adoc ..links to.. graphml-1.1.adoc ,, GraphML 1.1
+format:graphml ..has type.. format
+format:graphml ..category.. xml
+format:graphml ..label.. GraphML
+format:graphml ..alternative name.. Graph Markup Language
+format:graphml ..wikipedia.. https://en.wikipedia.org/wiki/GraphML
+format:graphml ..wikidata.. Q1543325
+format:graphml ..spec.. http://graphml.graphdrawing.org/specification.html
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml.adoc ..links to.. graphml-1.0.adoc ,, GraphML 1.0
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/xml/graphml/graphml.adoc ..links to.. graphml-1.1.adoc ,, GraphML 1.1
+format:pg-json ..has type.. format
+format:pg-json ..category.. json
+format:pg-json ..label.. PG-JSON (Property Graph Format)
+format:pg-json ..file extension.. .pg.json
+format:pg-json ..file extension.. .pgjson
+format:pg-json ..author.. hirokazu-chiba
+format:pg-json ..author.. ryota-yamanaka
+format:pg-json ..author.. shota-matsumoto
+format:pg-json ..spec.. https://pg-format.github.io/specification/
+hirokazu-chiba ..has type.. person
+hirokazu-chiba ..label.. Hirokazu Chiba
+ryota-yamanaka ..has type.. person
+ryota-yamanaka ..label.. Ryota Yamanaka
+shota-matsumoto ..has type.. person
+shota-matsumoto ..label.. Shota Matsumoto
+format:pg-json ..supports.. nodes
+format:pg-json ..supports.. directed-edges
+format:pg-json ..supports.. undirected-edges ,, Via the undirected flag on an edge
+format:pg-json ..supports.. mixed-directionality-edges ,, Direction is per-edge
+format:pg-json ..supports.. node-labels ,, Labels array
+format:pg-json ..supports.. edge-labels ,, Labels array
+format:pg-json ..supports.. typed-edges ,, Edge labels act as types
+format:pg-json ..supports.. attributes-on-nodes ,, Properties
+format:pg-json ..supports.. attributes-on-edges ,, Properties
+format:pg-json ..supports.. parallel-edges ,, Edges are a list; multiple entries may share the same endpoints
+format:pg-json ..supports.. self-loops ,, An edge may have the same from and to node
+format:pg-json ..lacks.. hyperedges
+format:pg-json ..lacks.. edges-on-edges
+format:pg-json ..lacks.. nested-graphs-in-nodes
+format:pg-json ..lacks.. nested-graphs-in-edges
+format:pg-json ..lacks.. nested-graphs-in-graphs
+format:pg-json ..lacks.. attributes-on-graphs
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/gjgf/gjgf-0.1.adoc ..links to.. ../../json/jgf/jgf-2.0.adoc ,, JGF
+format:gjgf ..has type.. format
+format:gjgf ..category.. json
+format:gjgf ..label.. gJGF
+format:gjgf ..alternative name.. gravis JSON Graph Format
+format:gjgf-0.1 ..version of.. format:gjgf
+format:gjgf-0.1 ..version.. 0.1
+format:gjgf-0.1 ..file extension.. .json
+format:gjgf-0.1 ..spec.. https://robert-haas.github.io/gravis-docs/rst/format_specification.html
+format:gjgf-0.1 ..supports.. multiple-graphs-per-document ,, Via graphs structure
+format:gjgf-0.1 ..supports.. nodes
+format:gjgf-0.1 ..supports.. undirected-edges ,, Via directed property (graph or edge level)
+format:gjgf-0.1 ..supports.. directed-edges ,, Via directed property (graph or edge level)
+format:gjgf-0.1 ..supports.. hyperedges
+format:gjgf-0.1 ..status.. partial
+format:gjgf-0.1 ..lacks.. mixed-directionality-edges
+format:gjgf-0.1 ..supports.. parallel-edges ,, Edges are a list, multiple may share endpoints
+format:gjgf-0.1 ..supports.. self-loops ,, Edge source and target may be the same node
+format:gjgf-0.1 ..lacks.. edges-on-edges
+format:gjgf-0.1 ..lacks.. nested-graphs-in-nodes
+format:gjgf-0.1 ..lacks.. nested-graphs-in-edges
+format:gjgf-0.1 ..lacks.. nested-graphs-in-graphs
+format:gjgf-0.1 ..supports.. node-labels ,, Via label field
+format:gjgf-0.1 ..supports.. edge-labels ,, Via label field
+format:gjgf-0.1 ..supports.. attributes-on-nodes ,, Via metadata object
+format:gjgf-0.1 ..supports.. attributes-on-edges ,, Via metadata object
+format:gjgf-0.1 ..supports.. attributes-on-graphs ,, Inherited from JGF
+format:gjgf-0.1 ..supports.. typed-edges
+format:gjgf-0.1 ..status.. partial
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/gjgf/gjgf-0.1.adoc ..links to.. ../../json/jgf/jgf-2.0.adoc ,, JGF
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/cytoscape/cytoscape-cx2-2.0.adoc ..links to.. cytoscape-cx-1.adoc ,, CX
+format:cytoscape-cx2 ..has type.. format
+format:cytoscape-cx2 ..category.. json
+format:cytoscape-cx2 ..label.. Cytoscape CX2
+format:cytoscape-cx2 ..alternative name.. CX2
+format:cytoscape-cx2 ..alternative name.. Cytoscape Exchange version 2
+format:cytoscape-cx2 ..org.. Cytoscape
+format:cytoscape-cx2-2.0 ..version of.. format:cytoscape-cx2
+format:cytoscape-cx2-2.0 ..version.. 2.0
+format:cytoscape-cx2-2.0 ..file extension.. .cx2
+format:cytoscape-cx2-2.0 ..spec.. https://cytoscape.org/cx/cx2/specification/cytoscape-exchange-format-specification-(version-2)/
+format:cytoscape-cx2-2.0 ..lacks.. multiple-graphs-per-document ,, Single network; hierarchy via separate HCX schema
+format:cytoscape-cx2-2.0 ..supports.. nodes ,, nodes aspect
+format:cytoscape-cx2-2.0 ..supports.. directed-edges
+format:cytoscape-cx2-2.0 ..status.. partial
+format:cytoscape-cx2-2.0 ..lacks.. hyperedges ,, Edges are binary
+format:cytoscape-cx2-2.0 ..lacks.. mixed-directionality-edges
+format:cytoscape-cx2-2.0 ..supports.. parallel-edges ,, Each edge is a distinct object with its own id
+format:cytoscape-cx2-2.0 ..supports.. self-loops ,, Edge source and target may be the same node
+format:cytoscape-cx2-2.0 ..lacks.. edges-on-edges
+format:cytoscape-cx2-2.0 ..lacks.. nested-graphs-in-edges
+format:cytoscape-cx2-2.0 ..supports.. node-labels ,, Declared name attribute in v
+format:cytoscape-cx2-2.0 ..supports.. edge-labels
+format:cytoscape-cx2-2.0 ..status.. partial
+format:cytoscape-cx2-2.0 ..supports.. attributes-on-nodes ,, Node v object plus attributeDeclarations
+format:cytoscape-cx2-2.0 ..supports.. attributes-on-edges ,, Edge v object plus attributeDeclarations
+format:cytoscape-cx2-2.0 ..supports.. attributes-on-graphs ,, networkAttributes aspect
+format:cytoscape-cx2-2.0 ..supports.. typed-edges ,, Declared interaction edge attribute
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/cytoscape/cytoscape-cx2-2.0.adoc ..links to.. cytoscape-cx-1.adoc ,, Cytoscape CX
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/cytoscape/cytoscape-cx2-2.0.adoc ..links to.. cytoscape-json.adoc ,, Cytoscape JSON
+format:cytoscape-json ..has type.. format
+format:cytoscape-json ..category.. json
+format:cytoscape-json ..label.. CytoScape JSON
+format:cytoscape-json ..file extension.. .cyjs
+format:cytoscape-json ..spec.. https://js.cytoscape.org/#notation/elements-json
+format:cytoscape-json ..lacks.. multiple-graphs-per-document ,, Single graph per instance
+format:cytoscape-json ..supports.. nodes
+format:cytoscape-json ..supports.. undirected-edges ,, Supports directed, undirected, and mixed graphs
+format:cytoscape-json ..supports.. directed-edges ,, Via source/target properties
+format:cytoscape-json ..lacks.. hyperedges ,, Edges connect exactly 2 nodes
+format:cytoscape-json ..lacks.. mixed-directionality-edges
+format:cytoscape-json ..supports.. parallel-edges ,, Each edge is a distinct element with its own id
+format:cytoscape-json ..supports.. self-loops ,, Edge source and target may be the same node
+format:cytoscape-json ..lacks.. edges-on-edges ,, Edges only connect nodes
+format:cytoscape-json ..supports.. nested-graphs-in-nodes ,, Via compound nodes (parent property)
+format:cytoscape-json ..lacks.. nested-graphs-in-edges
+format:cytoscape-json ..lacks.. nested-graphs-in-graphs
+format:cytoscape-json ..supports.. node-labels ,, Via data field and styling
+format:cytoscape-json ..supports.. edge-labels ,, Via data field and styling
+format:cytoscape-json ..supports.. attributes-on-nodes ,, Via data field (JSON-serializable)
+format:cytoscape-json ..supports.. attributes-on-edges ,, Via data field (JSON-serializable)
+format:cytoscape-json ..supports.. attributes-on-graphs ,, Via graph data property
+format:cytoscape-json ..supports.. typed-edges
+format:cytoscape-json ..status.. partial
+format:cytoscape-cx ..has type.. format
+format:cytoscape-cx ..category.. json
+format:cytoscape-cx ..label.. Cytoscape CX
+format:cytoscape-cx ..alternative name.. CX
+format:cytoscape-cx ..alternative name.. Cytoscape Exchange
+format:cytoscape-cx ..org.. Cytoscape
+format:cytoscape-cx ..wikidata.. Q125253757
+format:cytoscape-cx-1 ..version of.. format:cytoscape-cx
+format:cytoscape-cx-1 ..version.. 1
+format:cytoscape-cx-1 ..file extension.. .cx
+format:cytoscape-cx-1 ..spec.. https://cytoscape.org/cx/specification/cytoscape-exchange-format-specification-(version-1)/
+format:cytoscape-cx-1 ..supports.. multiple-graphs-per-document ,, cySubNetworks plus cyNetworkRelations aspects
+format:cytoscape-cx-1 ..supports.. nodes ,, nodes aspect
+format:cytoscape-cx-1 ..supports.. directed-edges ,, Edges implicitly directed (s -> t)
+format:cytoscape-cx-1 ..lacks.. hyperedges ,, Edges are binary
+format:cytoscape-cx-1 ..lacks.. mixed-directionality-edges
+format:cytoscape-cx-1 ..supports.. parallel-edges ,, Each edge is a distinct object with its own id
+format:cytoscape-cx-1 ..supports.. self-loops ,, Edge source and target may be the same node
+format:cytoscape-cx-1 ..lacks.. edges-on-edges
+format:cytoscape-cx-1 ..lacks.. nested-graphs-in-edges
+format:cytoscape-cx-1 ..supports.. nested-graphs-in-graphs ,, cySubNetworks plus cyNetworkRelations parent/child relations
+format:cytoscape-cx-1 ..supports.. node-labels ,, Node name (n) field
+format:cytoscape-cx-1 ..supports.. edge-labels
+format:cytoscape-cx-1 ..status.. partial
+format:cytoscape-cx-1 ..supports.. attributes-on-nodes ,, nodeAttributes aspect
+format:cytoscape-cx-1 ..supports.. attributes-on-edges ,, edgeAttributes aspect
+format:cytoscape-cx-1 ..supports.. attributes-on-graphs ,, networkAttributes aspect
+format:cytoscape-cx-1 ..supports.. typed-edges ,, Interaction (i) field
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/connected-json/connected-json-8.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/connected-json/connected-json-8.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/connected-json/connected-json-8.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/connected-json/connected-json-8.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+format:connected-json ..has type.. format
+format:connected-json ..category.. json
+format:connected-json ..label.. Connected JSON
+format:connected-json ..alternative name.. CJ
+format:connected-json-8.0.0 ..version of.. format:connected-json
+format:connected-json-8.0.0 ..version.. 8.0.0
+format:connected-json-8.0.0 ..file extension.. .json
+format:connected-json-8.0.0 ..spec.. https://j-s-o-n.org/connected-json/8.0.0/
+format:connected-json-8.0.0 ..supports.. multiple-graphs-per-document ,, Via graphs array
+format:connected-json-8.0.0 ..supports.. nodes
+format:connected-json-8.0.0 ..supports.. undirected-edges ,, Via undir endpoint direction
+format:connected-json-8.0.0 ..supports.. directed-edges ,, Via in/out endpoint directions
+format:connected-json-8.0.0 ..supports.. hyperedges ,, N-ary endpoints
+format:connected-json-8.0.0 ..supports.. mixed-directionality-edges ,, Each endpoint specifies own direction
+format:connected-json-8.0.0 ..supports.. parallel-edges ,, Distinct edge objects may share endpoints
+format:connected-json-8.0.0 ..supports.. self-loops ,, An edge may reference the same node twice
+format:connected-json-8.0.0 ..lacks.. edges-on-edges
+format:connected-json-8.0.0 ..supports.. nested-graphs-in-nodes ,, Via graphs property (compound nodes)
+format:connected-json-8.0.0 ..supports.. nested-graphs-in-edges ,, Via graphs property (compound edges)
+format:connected-json-8.0.0 ..supports.. nested-graphs-in-graphs
+format:connected-json-8.0.0 ..supports.. node-labels ,, Multilingual support
+format:connected-json-8.0.0 ..supports.. edge-labels ,, Multilingual support
+format:connected-json-8.0.0 ..supports.. attributes-on-nodes ,, Via data property
+format:connected-json-8.0.0 ..supports.. attributes-on-edges ,, Via data property
+format:connected-json-8.0.0 ..supports.. attributes-on-graphs ,, Via data property
+format:connected-json-8.0.0 ..supports.. typed-edges ,, Via type, typeUri, typeNode
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/connected-json/connected-json-8.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+format:networkx-node-link ..has type.. format
+format:networkx-node-link ..category.. json
+format:networkx-node-link ..label.. NetworkX node-link JSON
+format:networkx-node-link ..alternative name.. node-link data
+format:networkx-node-link ..file extension.. .json
+format:networkx-node-link ..org.. NetworkX
+format:networkx-node-link ..spec.. https://networkx.org/documentation/stable/reference/readwrite/json_graph.html
+format:networkx-node-link ..lacks.. multiple-graphs-per-document ,, Document root is one graph
+format:networkx-node-link ..supports.. nodes ,, nodes list
+format:networkx-node-link ..supports.. undirected-edges ,, directed: false (default)
+format:networkx-node-link ..supports.. directed-edges ,, directed: true
+format:networkx-node-link ..lacks.. hyperedges
+format:networkx-node-link ..lacks.. mixed-directionality-edges ,, Single graph-level directed flag
+format:networkx-node-link ..supports.. parallel-edges ,, Multigraph via the multigraph flag and per-edge key
+format:networkx-node-link ..supports.. self-loops ,, An edge may have source equal to target
+format:networkx-node-link ..lacks.. edges-on-edges
+format:networkx-node-link ..lacks.. node-labels ,, Has id but no dedicated label
+format:networkx-node-link ..lacks.. edge-labels
+format:networkx-node-link ..supports.. attributes-on-nodes ,, Arbitrary per-node key/values
+format:networkx-node-link ..supports.. attributes-on-edges ,, Arbitrary per-edge key/values
+format:networkx-node-link ..supports.. attributes-on-graphs ,, Top-level graph dict
+format:networkx-node-link ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/grale/grale-1.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+format:grale ..has type.. format
+format:grale ..category.. json
+format:grale ..label.. grale
+format:grale ..alternative name.. Graph Layout Engine API
+format:grale ..file extension.. .grale.json
+format:grale ..media type.. application/json
+format:grale ..license.. MIT
+format:grale ..author.. max-voelkel
+format:grale-1.0.0 ..version of.. format:grale
+format:grale-1.0.0 ..version.. 1.0.0
+format:grale-1.0.0 ..released.. 2026-06-16
+format:grale-1.0.0 ..spec.. https://github.com/xamde/graph-layout-api/blob/main/doc/graph-layout-api.adoc
+format:grale-1.0.0 ..lacks.. multiple-graphs-per-document ,, One graph per document
+format:grale-1.0.0 ..supports.. nodes
+format:grale-1.0.0 ..supports.. undirected-edges ,, options.directed false
+format:grale-1.0.0 ..supports.. directed-edges ,, options.directed true
+format:grale-1.0.0 ..lacks.. mixed-directionality-edges ,, Directedness is graph-level via options.directed
+format:grale-1.0.0 ..supports.. hyperedges ,, n-ary hyperedges[] array, GraphML-style
+format:grale-1.0.0 ..supports.. parallel-edges ,, graphlib/dagre multigraph allows multiple edges per pair
+format:grale-1.0.0 ..supports.. self-loops ,, Edge source and target may be the same node
+format:grale-1.0.0 ..lacks.. edges-on-edges
+format:grale-1.0.0 ..supports.. nested-graphs-in-nodes ,, Compound graphs via node parent (options.compound)
+format:grale-1.0.0 ..lacks.. nested-graphs-in-edges
+format:grale-1.0.0 ..lacks.. nested-graphs-in-graphs
+format:grale-1.0.0 ..supports.. node-labels ,, Node value/meta label
+format:grale-1.0.0 ..supports.. edge-labels ,, Edge value/meta label
+format:grale-1.0.0 ..supports.. attributes-on-nodes ,, Node value plus opaque meta
+format:grale-1.0.0 ..supports.. attributes-on-edges ,, Edge value (weight, lineWidth, minlen) plus opaque meta
+format:grale-1.0.0 ..supports.. attributes-on-graphs ,, Graph value label plus opaque meta
+format:grale-1.0.0 ..lacks.. typed-edges ,, Markers are visual, not a semantic edge type
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/grale/grale-1.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+format:ocif ..has type.. format
+format:ocif ..category.. json
+format:ocif ..label.. OCIF
+format:ocif ..alternative name.. Open Canvas Interchange Format
+format:ocif-0.6 ..version of.. format:ocif
+format:ocif-0.6 ..version.. 0.6
+format:ocif-0.6 ..released.. 2025-04
+format:ocif-0.6 ..file extension.. .json
+format:ocif-0.6 ..spec.. https://spec.canvasprotocol.org/v0.6
+format:ocif-0.6 ..supports.. multiple-graphs-per-document ,, Multiple canvases
+format:ocif-0.6 ..supports.. nodes ,, Visual elements
+format:ocif-0.6 ..supports.. undirected-edges ,, Connections between elements
+format:ocif-0.6 ..supports.. directed-edges ,, Arrows/directed connections
+format:ocif-0.6 ..lacks.. hyperedges
+format:ocif-0.6 ..lacks.. mixed-directionality-edges
+format:ocif-0.6 ..supports.. parallel-edges ,, Connections are distinct objects; several may join the same elements
+format:ocif-0.6 ..supports.. self-loops ,, A connection may reference the same element at both ends
+format:ocif-0.6 ..lacks.. edges-on-edges
+format:ocif-0.6 ..supports.. nested-graphs-in-nodes ,, Groups/containers
+format:ocif-0.6 ..lacks.. nested-graphs-in-edges
+format:ocif-0.6 ..lacks.. nested-graphs-in-graphs
+format:ocif-0.6 ..supports.. node-labels ,, Text content
+format:ocif-0.6 ..supports.. edge-labels ,, Connection labels
+format:ocif-0.6 ..supports.. attributes-on-nodes ,, Visual properties, metadata
+format:ocif-0.6 ..supports.. attributes-on-edges ,, Line style, color
+format:ocif-0.6 ..supports.. attributes-on-graphs ,, Canvas metadata
+format:ocif-0.6 ..supports.. typed-edges
+format:ocif-0.6 ..status.. partial
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/neo4j-json/neo4j-json.adoc ..links to.. ../../../models/neo4j.adoc ,, Neo4j Property Graph Model
+format:neo4j-json ..has type.. format
+format:neo4j-json ..category.. json
+format:neo4j-json ..label.. Neo4j APOC JSON Export Format
+format:neo4j-json ..file extension.. .neo4j.json
+format:neo4j-json ..file extension.. .neo4j-export.json
+format:neo4j-json ..org.. Neo4j
+format:neo4j-json ..spec.. https://neo4j.com/docs/apoc/current/export/json/
+format:neo4j-json ..supports.. nodes
+format:neo4j-json ..supports.. directed-edges ,, Relationships have start and end nodes
+format:neo4j-json ..lacks.. undirected-edges
+format:neo4j-json ..supports.. typed-edges ,, Relationship type
+format:neo4j-json ..supports.. node-labels ,, Node labels array
+format:neo4j-json ..supports.. attributes-on-nodes ,, Node properties
+format:neo4j-json ..supports.. attributes-on-edges ,, Relationship properties
+format:neo4j-json ..supports.. parallel-edges ,, Multiple relationships may connect the same node pair
+format:neo4j-json ..supports.. self-loops ,, A relationship may have the same start and end node
+format:neo4j-json ..lacks.. hyperedges
+format:neo4j-json ..lacks.. edges-on-edges
+format:neo4j-json ..lacks.. nested-graphs-in-nodes
+format:neo4j-json ..lacks.. nested-graphs-in-edges
+format:neo4j-json ..lacks.. nested-graphs-in-graphs
+format:neo4j-json ..lacks.. attributes-on-graphs
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/neo4j-json/neo4j-json.adoc ..links to.. ../../../models/neo4j.adoc ,, Neo4j Property Graph Model
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/rdf-json/rdf-json.adoc ..links to.. ../../json/json-ld/json-ld.adoc ,, JSON-LD
+format:rdf-json ..has type.. format
+format:rdf-json ..category.. json
+format:rdf-json ..label.. RDF/JSON
+format:rdf-json ..file extension.. .rj
+format:rdf-json ..media type.. application/rdf+json
+format:rdf-json ..wikidata.. Q50322163
+format:rdf-json ..org.. W3C
+format:rdf-json ..spec.. https://www.w3.org/TR/rdf-json/
+format:rdf-json ..lacks.. multiple-graphs-per-document ,, No named graphs; single graph per document
+format:rdf-json ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:rdf-json ..lacks.. undirected-edges
+format:rdf-json ..supports.. directed-edges ,, Triples are directed subject to object
+format:rdf-json ..lacks.. hyperedges
+format:rdf-json ..lacks.. mixed-directionality-edges
+format:rdf-json ..supports.. parallel-edges ,, Via distinct predicates between the same two nodes
+format:rdf-json ..supports.. self-loops ,, A triple with subject equal to object
+format:rdf-json ..supports.. edges-on-edges
+format:rdf-json ..status.. partial
+format:rdf-json ..lacks.. nested-graphs-in-nodes
+format:rdf-json ..lacks.. nested-graphs-in-edges
+format:rdf-json ..lacks.. nested-graphs-in-graphs
+format:rdf-json ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:rdf-json ..supports.. edge-labels ,, Predicate IRI names the edge
+format:rdf-json ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:rdf-json ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:rdf-json ..lacks.. attributes-on-graphs
+format:rdf-json ..supports.. typed-edges ,, Every triple is typed by its predicate
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/rdf-json/rdf-json.adoc ..links to.. ../../json/json-ld/json-ld.adoc ,, JSON-LD
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/connected-json5/connected-json5.adoc ..links to.. ../../json/connected-json/connected-json-8.0.0.adoc ,, Connected JSON
+format:connected-json5 ..has type.. format
+format:connected-json5 ..category.. json
+format:connected-json5 ..label.. Connected JSON5
+format:connected-json5 ..alternative name.. CJ5
+format:connected-json5 ..file extension.. .cj.json5
+format:connected-json5 ..file extension.. .json5
+format:connected-json5 ..org.. calpano
+format:connected-json5 ..spec.. https://j-s-o-n.org/connected-json/8.0.0/
+format:connected-json5 ..supports.. multiple-graphs-per-document ,, Via graphs array
+format:connected-json5 ..supports.. nodes
+format:connected-json5 ..supports.. undirected-edges ,, Via undir endpoint direction
+format:connected-json5 ..supports.. directed-edges ,, Via in/out endpoint directions
+format:connected-json5 ..supports.. hyperedges ,, N-ary endpoints
+format:connected-json5 ..supports.. mixed-directionality-edges ,, Each endpoint specifies own direction
+format:connected-json5 ..supports.. parallel-edges ,, Distinct edge objects may share endpoints
+format:connected-json5 ..supports.. self-loops ,, An edge may reference the same node twice
+format:connected-json5 ..lacks.. edges-on-edges
+format:connected-json5 ..supports.. nested-graphs-in-nodes ,, Via graphs property (compound nodes)
+format:connected-json5 ..supports.. nested-graphs-in-edges ,, Via graphs property (compound edges)
+format:connected-json5 ..supports.. nested-graphs-in-graphs
+format:connected-json5 ..supports.. node-labels ,, Multilingual support
+format:connected-json5 ..supports.. edge-labels ,, Multilingual support
+format:connected-json5 ..supports.. attributes-on-nodes ,, Via data property
+format:connected-json5 ..supports.. attributes-on-edges ,, Via data property
+format:connected-json5 ..supports.. attributes-on-graphs ,, Via data property
+format:connected-json5 ..supports.. typed-edges ,, Via type, typeUri, typeNode
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/connected-json5/connected-json5.adoc ..links to.. ../../json/connected-json/connected-json-8.0.0.adoc ,, Connected JSON
+format:vosviewer ..has type.. format
+format:vosviewer ..category.. json
+format:vosviewer ..label.. VOSviewer JSON
+format:vosviewer ..file extension.. .json
+format:vosviewer ..spec.. https://app.vosviewer.com/docs/file-types/json-file-type/
+format:vosviewer ..lacks.. multiple-graphs-per-document ,, Single network object
+format:vosviewer ..supports.. nodes ,, Called items
+format:vosviewer ..supports.. undirected-edges ,, Called links with strength
+format:vosviewer ..lacks.. directed-edges ,, Links are undirected
+format:vosviewer ..lacks.. hyperedges ,, Links connect exactly 2 items
+format:vosviewer ..lacks.. mixed-directionality-edges
+format:vosviewer ..lacks.. parallel-edges ,, At most one link per item pair; strength is a single aggregated weight
+format:vosviewer ..lacks.. self-loops ,, Links connect two distinct items
+format:vosviewer ..lacks.. edges-on-edges
+format:vosviewer ..lacks.. nested-graphs-in-nodes
+format:vosviewer ..lacks.. nested-graphs-in-edges
+format:vosviewer ..lacks.. nested-graphs-in-graphs
+format:vosviewer ..supports.. node-labels ,, Via label field
+format:vosviewer ..lacks.. edge-labels
+format:vosviewer ..supports.. attributes-on-nodes ,, Via weights, scores, cluster, description, url
+format:vosviewer ..supports.. attributes-on-edges
+format:vosviewer ..status.. partial
+format:vosviewer ..lacks.. attributes-on-graphs
+format:vosviewer ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/json-gef/json-gef-8.0.0.adoc ..links to.. ../connected-json/connected-json-8.0.0.adoc ,, Connected JSON
+format:json-gef ..has type.. format
+format:json-gef ..category.. json
+format:json-gef ..label.. JSON Graph Entry Format
+format:json-gef ..alternative name.. GEF
+format:json-gef ..alternative name.. JSON GEF
+format:json-gef ..alternative name.. Graph Entry Format
+format:json-gef-8.0.0 ..version of.. format:json-gef
+format:json-gef-8.0.0 ..version.. 8.0.0
+format:json-gef-8.0.0 ..released.. 2025-07-14
+format:json-gef-8.0.0 ..file extension.. .gef.json
+format:json-gef-8.0.0 ..file extension.. .gef
+format:json-gef-8.0.0 ..file extension.. .json
+format:json-gef-8.0.0 ..spec.. https://j-s-o-n.org/connected-json/8.0.0/json-graph-entry-format/
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/json-gef/json-gef-8.0.0.adoc ..links to.. ../connected-json/connected-json-8.0.0.adoc ,, CJ 8.0.0
+format:json-gef-8.0.0 ..supports.. multiple-graphs-per-document ,, graphs array, or graph-at-root plus subgraphs
+format:json-gef-8.0.0 ..supports.. nodes
+format:json-gef-8.0.0 ..supports.. undirected-edges ,, undir endpoint, or edgeDefault undirected
+format:json-gef-8.0.0 ..supports.. directed-edges ,, in/out endpoints, or source/target shortcuts
+format:json-gef-8.0.0 ..supports.. hyperedges ,, N-ary endpoints array
+format:json-gef-8.0.0 ..supports.. mixed-directionality-edges ,, Each endpoint specifies its own direction
+format:json-gef-8.0.0 ..supports.. parallel-edges ,, Distinct edge objects may share endpoints
+format:json-gef-8.0.0 ..supports.. self-loops ,, An edge may reference the same node twice
+format:json-gef-8.0.0 ..lacks.. edges-on-edges
+format:json-gef-8.0.0 ..supports.. nested-graphs-in-nodes ,, Compound nodes via graph/graphs
+format:json-gef-8.0.0 ..supports.. nested-graphs-in-edges ,, Via graph/graphs on an edge
+format:json-gef-8.0.0 ..supports.. nested-graphs-in-graphs
+format:json-gef-8.0.0 ..supports.. node-labels ,, String shorthand or multilingual object
+format:json-gef-8.0.0 ..supports.. edge-labels ,, String shorthand or multilingual object
+format:json-gef-8.0.0 ..supports.. attributes-on-nodes ,, data property, or any unknown key
+format:json-gef-8.0.0 ..supports.. attributes-on-edges ,, data property, or any unknown key
+format:json-gef-8.0.0 ..supports.. attributes-on-graphs ,, data property, or any unknown key
+format:json-gef-8.0.0 ..supports.. typed-edges ,, Via type
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/json-gef/json-gef-8.0.0.adoc ..links to.. ../connected-json/connected-json-8.0.0.adoc ,, Connected JSON
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/jgf/jgf-2.0.adoc ..links to.. jgf.adoc ,, JGF (JSON Graph Format)
+format:jgf-2.0 ..version of.. format:jgf
+format:jgf-2.0 ..version.. 2.0
+format:jgf-2.0 ..released.. 2020-01
+format:jgf-2.0 ..file extension.. .json
+format:jgf-2.0 ..spec.. https://github.com/jsongraph/json-graph-specification
+format:jgf-2.0 ..supports.. multiple-graphs-per-document ,, Via graphs array
+format:jgf-2.0 ..supports.. nodes ,, Stored as map with ID as key
+format:jgf-2.0 ..supports.. undirected-edges ,, Via directed: false
+format:jgf-2.0 ..supports.. directed-edges ,, Via directed: true
+format:jgf-2.0 ..supports.. hyperedges ,, Both directed and undirected
+format:jgf-2.0 ..lacks.. mixed-directionality-edges ,, Graph uses one edge type only
+format:jgf-2.0 ..supports.. parallel-edges ,, Edges are a list; multiple entries may share source/target
+format:jgf-2.0 ..supports.. self-loops ,, An edge may have source equal to target
+format:jgf-2.0 ..lacks.. edges-on-edges
+format:jgf-2.0 ..lacks.. nested-graphs-in-nodes
+format:jgf-2.0 ..lacks.. nested-graphs-in-edges
+format:jgf-2.0 ..lacks.. nested-graphs-in-graphs
+format:jgf-2.0 ..supports.. node-labels ,, Via label field
+format:jgf-2.0 ..supports.. edge-labels ,, Via label field
+format:jgf-2.0 ..supports.. attributes-on-nodes ,, Via metadata object
+format:jgf-2.0 ..supports.. attributes-on-edges ,, Via metadata object
+format:jgf-2.0 ..supports.. attributes-on-graphs ,, Via metadata object
+format:jgf-2.0 ..supports.. typed-edges ,, Via relation field
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/jgf/jgf-2.0.adoc ..links to.. jgf.adoc ,, JGF (JSON Graph Format)
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/jgf/jgf-1.0.adoc ..links to.. jgf.adoc ,, JGF (JSON Graph Format)
+format:jgf-1.0 ..version of.. format:jgf
+format:jgf-1.0 ..version.. 1.0
+format:jgf-1.0 ..file extension.. .json
+format:jgf-1.0 ..spec.. https://github.com/jsongraph/json-graph-specification
+format:jgf-1.0 ..supports.. multiple-graphs-per-document ,, Via graphs array
+format:jgf-1.0 ..supports.. nodes ,, Stored as map with ID as key
+format:jgf-1.0 ..supports.. undirected-edges ,, Via directed: false
+format:jgf-1.0 ..supports.. directed-edges ,, Via directed: true
+format:jgf-1.0 ..supports.. hyperedges ,, Both directed and undirected
+format:jgf-1.0 ..lacks.. mixed-directionality-edges ,, Graph uses one edge type only
+format:jgf-1.0 ..supports.. parallel-edges ,, Edges are a list, multiple may share endpoints
+format:jgf-1.0 ..supports.. self-loops ,, Edge source and target may be the same node
+format:jgf-1.0 ..lacks.. edges-on-edges
+format:jgf-1.0 ..lacks.. nested-graphs-in-nodes
+format:jgf-1.0 ..lacks.. nested-graphs-in-edges
+format:jgf-1.0 ..lacks.. nested-graphs-in-graphs
+format:jgf-1.0 ..supports.. node-labels ,, Via label field
+format:jgf-1.0 ..supports.. edge-labels ,, Via label field
+format:jgf-1.0 ..supports.. attributes-on-nodes ,, Via metadata object
+format:jgf-1.0 ..supports.. attributes-on-edges ,, Via metadata object
+format:jgf-1.0 ..supports.. attributes-on-graphs ,, Via metadata object
+format:jgf-1.0 ..supports.. typed-edges ,, Via relation field
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/jgf/jgf-1.0.adoc ..links to.. jgf.adoc ,, JGF (JSON Graph Format)
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/jgf/jgf.adoc ..links to.. jgf-1.0.adoc ,, JGF 1.0
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/jgf/jgf.adoc ..links to.. jgf-2.0.adoc ,, JGF 2.0
+format:jgf ..has type.. format
+format:jgf ..category.. json
+format:jgf ..label.. JGF
+format:jgf ..alternative name.. JSON Graph Format
+format:jgf ..spec.. https://github.com/jsongraph/json-graph-specification
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/jgf/jgf.adoc ..links to.. jgf-1.0.adoc ,, JGF 1.0
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/jgf/jgf.adoc ..links to.. jgf-2.0.adoc ,, JGF 2.0
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/falcor-json-graph/falcor-json-graph.adoc ..links to.. ../../json/jgf/jgf.adoc ,, JSON Graph Format
+format:falcor-json-graph ..has type.. format
+format:falcor-json-graph ..category.. json
+format:falcor-json-graph ..label.. JSON Graph (Falcor)
+format:falcor-json-graph ..org.. Netflix
+format:falcor-json-graph ..spec.. https://netflix.github.io/falcor/documentation/jsongraph.html
+format:falcor-json-graph ..lacks.. multiple-graphs-per-document ,, One JSON Graph object per document
+format:falcor-json-graph ..supports.. nodes ,, Entities addressed by path
+format:falcor-json-graph ..lacks.. undirected-edges
+format:falcor-json-graph ..supports.. directed-edges ,, References point to a canonical path
+format:falcor-json-graph ..lacks.. mixed-directionality-edges
+format:falcor-json-graph ..lacks.. hyperedges
+format:falcor-json-graph ..lacks.. parallel-edges ,, References are keyed path slots, not a multigraph
+format:falcor-json-graph ..supports.. self-loops ,, An entity reference may target its own path
+format:falcor-json-graph ..lacks.. edges-on-edges
+format:falcor-json-graph ..lacks.. nested-graphs-in-nodes
+format:falcor-json-graph ..lacks.. nested-graphs-in-edges
+format:falcor-json-graph ..lacks.. nested-graphs-in-graphs
+format:falcor-json-graph ..lacks.. node-labels ,, Entities are keyed by path, no distinct label
+format:falcor-json-graph ..lacks.. edge-labels ,, References are paths, not labelled
+format:falcor-json-graph ..supports.. attributes-on-nodes ,, Atoms and JSON values on entities
+format:falcor-json-graph ..lacks.. attributes-on-edges
+format:falcor-json-graph ..lacks.. attributes-on-graphs
+format:falcor-json-graph ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/falcor-json-graph/falcor-json-graph.adoc ..links to.. ../../json/jgf/jgf.adoc ,, JSON Graph Format
+format:json-ld ..has type.. format
+format:json-ld ..category.. json
+format:json-ld ..label.. JSON-LD
+format:json-ld ..alternative name.. JSON Linked Data
+format:json-ld ..file extension.. .jsonld
+format:json-ld ..media type.. application/ld+json
+format:json-ld ..wikipedia.. https://en.wikipedia.org/wiki/JSON-LD
+format:json-ld ..wikidata.. Q6108942
+format:json-ld ..org.. W3C
+format:json-ld ..spec.. https://www.w3.org/TR/json-ld11/
+format:json-ld ..supports.. multiple-graphs-per-document ,, Named graphs via @graph
+format:json-ld ..supports.. nodes ,, Node objects (IRIs and blank nodes)
+format:json-ld ..lacks.. undirected-edges
+format:json-ld ..supports.. directed-edges ,, Triples are directed subject to object
+format:json-ld ..lacks.. hyperedges
+format:json-ld ..lacks.. mixed-directionality-edges
+format:json-ld ..supports.. parallel-edges ,, Via distinct predicates between the same two nodes
+format:json-ld ..supports.. self-loops ,, A triple with subject equal to object
+format:json-ld ..supports.. edges-on-edges
+format:json-ld ..status.. partial
+format:json-ld ..lacks.. nested-graphs-in-nodes
+format:json-ld ..lacks.. nested-graphs-in-edges
+format:json-ld ..lacks.. nested-graphs-in-graphs ,, RDF datasets are flat; named graphs are not nested
+format:json-ld ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:json-ld ..supports.. edge-labels ,, Predicate IRI names the edge
+format:json-ld ..supports.. attributes-on-nodes ,, Literal-valued properties on node objects
+format:json-ld ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:json-ld ..supports.. attributes-on-graphs
+format:json-ld ..status.. partial
+format:json-ld ..supports.. typed-edges ,, Every triple is typed by its predicate
+format:graphson ..has type.. format
+format:graphson ..category.. json
+format:graphson ..label.. GraphSON (Apache TinkerPop)
+format:graphson ..alternative name.. GraphSON
+format:graphson ..org.. Apache TinkerPop
+format:graphson-3.0 ..version of.. format:graphson
+format:graphson-3.0 ..version.. 3.0
+format:graphson-3.0 ..file extension.. .json
+format:graphson-3.0 ..spec.. https://tinkerpop.apache.org/docs/current/dev/io/
+format:graphson-3.0 ..lacks.. multiple-graphs-per-document ,, One vertex per line, one graph per document
+format:graphson-3.0 ..supports.. nodes ,, Vertices are first-class
+format:graphson-3.0 ..lacks.. undirected-edges ,, Edges always directed via inV/outV
+format:graphson-3.0 ..supports.. directed-edges ,, Explicit outV and inV
+format:graphson-3.0 ..lacks.. hyperedges
+format:graphson-3.0 ..lacks.. mixed-directionality-edges
+format:graphson-3.0 ..supports.. parallel-edges ,, TinkerPop multigraph allows multiple edges per vertex pair
+format:graphson-3.0 ..supports.. self-loops ,, An edge may have the same outV and inV
+format:graphson-3.0 ..lacks.. edges-on-edges
+format:graphson-3.0 ..lacks.. nested-graphs-in-nodes
+format:graphson-3.0 ..lacks.. nested-graphs-in-edges
+format:graphson-3.0 ..lacks.. nested-graphs-in-graphs
+format:graphson-3.0 ..supports.. node-labels ,, Vertex label
+format:graphson-3.0 ..supports.. edge-labels ,, Edge label
+format:graphson-3.0 ..supports.. attributes-on-nodes ,, Vertex properties (multi-valued)
+format:graphson-3.0 ..supports.. attributes-on-edges ,, Edge properties
+format:graphson-3.0 ..lacks.. attributes-on-graphs ,, Per-element serialization carries no graph-level variables
+format:graphson-3.0 ..supports.. typed-edges ,, Edge label is the edge type
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/binary/sparse6/sparse6.adoc ..links to.. ../../binary/graph6/graph6.adoc ,, graph6
+format:sparse6 ..has type.. format
+format:sparse6 ..category.. binary
+format:sparse6 ..label.. sparse6
+format:sparse6 ..file extension.. .s6
+format:sparse6 ..file extension.. .sparse6
+format:sparse6 ..author.. brendan-mckay
+format:sparse6 ..spec.. https://users.cecs.anu.edu.au/~bdm/data/formats.txt
+brendan-mckay ..has type.. person
+brendan-mckay ..label.. Brendan McKay
+format:sparse6 ..supports.. nodes
+format:sparse6 ..supports.. undirected-edges
+format:sparse6 ..supports.. parallel-edges ,, Sparse6 explicitly permits multiple edges
+format:sparse6 ..supports.. self-loops ,, Sparse6 explicitly permits loops
+format:sparse6 ..lacks.. directed-edges
+format:sparse6 ..lacks.. node-labels
+format:sparse6 ..lacks.. edge-labels
+format:sparse6 ..lacks.. attributes-on-nodes
+format:sparse6 ..lacks.. attributes-on-edges
+format:sparse6 ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/binary/sparse6/sparse6.adoc ..links to.. ../../binary/graph6/graph6.adoc ,, graph6
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/binary/digraph6/digraph6.adoc ..links to.. ../../binary/graph6/graph6.adoc ,, graph6
+format:digraph6 ..has type.. format
+format:digraph6 ..category.. binary
+format:digraph6 ..label.. digraph6
+format:digraph6 ..file extension.. .d6
+format:digraph6 ..file extension.. .digraph6
+format:digraph6 ..author.. brendan-mckay
+format:digraph6 ..spec.. https://users.cecs.anu.edu.au/~bdm/data/formats.txt
+brendan-mckay ..has type.. person
+brendan-mckay ..label.. Brendan McKay
+format:digraph6 ..supports.. nodes
+format:digraph6 ..supports.. directed-edges
+format:digraph6 ..lacks.. undirected-edges
+format:digraph6 ..lacks.. parallel-edges ,, Simple digraph, one bit per ordered pair
+format:digraph6 ..lacks.. self-loops ,, Simple digraph, no diagonal loops
+format:digraph6 ..lacks.. node-labels
+format:digraph6 ..lacks.. edge-labels
+format:digraph6 ..lacks.. attributes-on-nodes
+format:digraph6 ..lacks.. attributes-on-edges
+format:digraph6 ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/binary/digraph6/digraph6.adoc ..links to.. ../../binary/graph6/graph6.adoc ,, graph6
+format:graph6 ..has type.. format
+format:graph6 ..category.. binary
+format:graph6 ..label.. Graph6
+format:graph6 ..file extension.. .g6
+format:graph6 ..wikidata.. Q95999404
+format:graph6 ..spec.. https://users.cecs.anu.edu.au/~bdm/data/formats.txt
+format:graph6 ..supports.. nodes
+format:graph6 ..supports.. undirected-edges
+format:graph6 ..lacks.. parallel-edges ,, Simple graph, one bit per node pair
+format:graph6 ..lacks.. self-loops ,, Simple graph, no diagonal loops
+format:inchi ..has type.. format
+format:inchi ..category.. text
+format:inchi ..label.. InChI
+format:inchi ..alternative name.. International Chemical Identifier
+format:inchi ..alternative name.. IUPAC International Chemical Identifier
+format:inchi ..wikipedia.. https://en.wikipedia.org/wiki/International_Chemical_Identifier
+format:inchi ..wikidata.. Q203250
+format:inchi ..org.. IUPAC
+format:inchi ..spec.. https://www.inchi-trust.org/technical-faq/
+format:inchi ..lacks.. multiple-graphs-per-document ,, One identifier per structure
+format:inchi ..supports.. nodes ,, Atoms encoded in the formula and connection layers
+format:inchi ..supports.. undirected-edges ,, Connection layer encodes undirected bonds
+format:inchi ..lacks.. directed-edges
+format:inchi ..lacks.. hyperedges
+format:inchi ..lacks.. mixed-directionality-edges
+format:inchi ..lacks.. parallel-edges ,, One bond per atom pair; bond order is an attribute
+format:inchi ..lacks.. self-loops ,, No atom bonds itself
+format:inchi ..lacks.. edges-on-edges
+format:inchi ..lacks.. nested-graphs-in-nodes
+format:inchi ..lacks.. nested-graphs-in-edges
+format:inchi ..lacks.. nested-graphs-in-graphs
+format:inchi ..lacks.. node-labels
+format:inchi ..lacks.. edge-labels
+format:inchi ..supports.. attributes-on-nodes ,, Charge, isotope and H layers per atom
+format:inchi ..lacks.. attributes-on-edges ,, Bond order is normalized away
+format:inchi ..lacks.. attributes-on-graphs
+format:inchi ..lacks.. typed-edges ,, Bonds are not typed by order; tautomers/charges are normalized
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/plantuml/plantuml.adoc ..links to.. ../../text/mermaid/mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/plantuml/plantuml.adoc ..links to.. ../../../tools.adoc#_graphinout ,, GraphInOut
+format:plantuml ..has type.. format
+format:plantuml ..category.. text
+format:plantuml ..label.. PlantUML
+format:plantuml ..file extension.. .puml
+format:plantuml ..file extension.. .plantuml
+format:plantuml ..file extension.. .pu
+format:plantuml ..file extension.. .iuml
+format:plantuml ..author.. Arnaud Roques
+format:plantuml ..wikipedia.. https://en.wikipedia.org/wiki/PlantUML
+format:plantuml ..wikidata.. Q18346546
+format:plantuml ..spec.. https://plantuml.com/
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/plantuml/plantuml.adoc ..links to.. plantuml-class-diagram.adoc ,, PlantUML Class Diagram
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/plantuml/plantuml-class-diagram.adoc ..links to.. plantuml.adoc ,, PlantUML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/plantuml/plantuml-class-diagram.adoc ..links to.. ../../../tools.adoc#_graphinout ,, GraphInOut
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/plantuml/plantuml-class-diagram.adoc ..links to.. ../../text/mermaid/mermaid-class.adoc ,, Mermaid Class Diagram
+format:plantuml-class-diagram ..has type.. format
+format:plantuml-class-diagram ..subformat of.. format:plantuml
+format:plantuml-class-diagram ..category.. text
+format:plantuml-class-diagram ..label.. PlantUML Class Diagram
+format:plantuml-class-diagram ..spec.. https://plantuml.com/class-diagram
+format:plantuml-class-diagram ..supports.. multiple-graphs-per-document ,, Multiple @startuml..@enduml blocks
+format:plantuml-class-diagram ..supports.. nodes ,, class / interface / enum / abstract class
+format:plantuml-class-diagram ..supports.. undirected-edges ,, Plain association (--)
+format:plantuml-class-diagram ..supports.. directed-edges ,, Relationships are oriented
+format:plantuml-class-diagram ..supports.. mixed-directionality-edges ,, A diagram can mix -- and -->
+format:plantuml-class-diagram ..lacks.. hyperedges
+format:plantuml-class-diagram ..supports.. parallel-edges ,, Multiple associations between two classes
+format:plantuml-class-diagram ..supports.. self-loops ,, Self-association on a class
+format:plantuml-class-diagram ..lacks.. edges-on-edges
+format:plantuml-class-diagram ..lacks.. nested-graphs-in-nodes
+format:plantuml-class-diagram ..lacks.. nested-graphs-in-edges
+format:plantuml-class-diagram ..supports.. nested-graphs-in-graphs ,, package / namespace grouping
+format:plantuml-class-diagram ..supports.. node-labels ,, Display name via "Label" as Alias
+format:plantuml-class-diagram ..supports.. edge-labels ,, Relationship label after :
+format:plantuml-class-diagram ..supports.. attributes-on-nodes ,, Class members (fields/methods) and uml:kind
+format:plantuml-class-diagram ..supports.. attributes-on-edges
+format:plantuml-class-diagram ..status.. partial
+format:plantuml-class-diagram ..lacks.. attributes-on-graphs
+format:plantuml-class-diagram ..supports.. typed-edges ,, extension / realization / composition / aggregation / association / dependency
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/plantuml/plantuml-class-diagram.adoc ..links to.. plantuml.adoc ,, PlantUML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/plantuml/plantuml-class-diagram.adoc ..links to.. ../../text/mermaid/mermaid-class.adoc ,, Mermaid Class Diagram
+format:gml ..has type.. format
+format:gml ..category.. text
+format:gml ..label.. GML
+format:gml ..alternative name.. Graph Modelling Language
+format:gml ..file extension.. .gml
+format:gml ..wikipedia.. https://en.wikipedia.org/wiki/Graph_Modelling_Language
+format:gml ..wikidata.. Q1543319
+format:gml ..spec.. https://networkx.org/documentation/stable/reference/readwrite/gml.html
+format:gml ..supports.. multiple-graphs-per-document
+format:gml ..supports.. nodes
+format:gml ..supports.. undirected-edges
+format:gml ..supports.. directed-edges ,, Via directed 1 on graph
+format:gml ..lacks.. hyperedges
+format:gml ..lacks.. mixed-directionality-edges
+format:gml ..supports.. parallel-edges ,, Multiple edge blocks may repeat a source and target
+format:gml ..supports.. self-loops ,, An edge whose source equals its target
+format:gml ..lacks.. edges-on-edges
+format:gml ..supports.. nested-graphs-in-nodes ,, Via nested graph elements
+format:gml ..lacks.. nested-graphs-in-edges
+format:gml ..supports.. nested-graphs-in-graphs ,, Hierarchical structure
+format:gml ..supports.. node-labels ,, Via label key
+format:gml ..supports.. edge-labels ,, Via label key
+format:gml ..supports.. attributes-on-nodes ,, Arbitrary key-value pairs
+format:gml ..supports.. attributes-on-edges ,, Arbitrary key-value pairs
+format:gml ..supports.. attributes-on-graphs ,, Arbitrary key-value pairs
+format:gml ..supports.. typed-edges
+format:gml ..status.. partial
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/trig/trig.adoc ..links to.. ../../text/turtle/turtle.adoc ,, Turtle
+format:trig ..has type.. format
+format:trig ..category.. text
+format:trig ..label.. TriG
+format:trig ..file extension.. .trig
+format:trig ..media type.. application/trig
+format:trig ..wikipedia.. https://en.wikipedia.org/wiki/TriG_(syntax)
+format:trig ..wikidata.. Q7839811
+format:trig ..org.. W3C
+format:trig ..spec.. https://www.w3.org/TR/trig/
+format:trig ..supports.. multiple-graphs-per-document ,, Named graphs are the core feature
+format:trig ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:trig ..lacks.. undirected-edges
+format:trig ..supports.. directed-edges ,, Triples are directed subject to object
+format:trig ..lacks.. hyperedges
+format:trig ..lacks.. mixed-directionality-edges
+format:trig ..supports.. parallel-edges ,, Distinct predicates between the same two resources
+format:trig ..supports.. self-loops ,, Subject and object may be the same resource
+format:trig ..supports.. edges-on-edges
+format:trig ..status.. partial
+format:trig ..lacks.. nested-graphs-in-nodes
+format:trig ..lacks.. nested-graphs-in-edges
+format:trig ..lacks.. nested-graphs-in-graphs ,, Named graphs are a flat set, not nested
+format:trig ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:trig ..supports.. edge-labels ,, Predicate IRI names the edge
+format:trig ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:trig ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:trig ..supports.. attributes-on-graphs
+format:trig ..status.. partial
+format:trig ..supports.. typed-edges ,, Every triple is typed by its predicate
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/trig/trig.adoc ..links to.. ../../text/turtle/turtle.adoc ,, Turtle
+format:matrix-market ..has type.. format
+format:matrix-market ..category.. text
+format:matrix-market ..label.. Matrix Market
+format:matrix-market ..file extension.. .mtx
+format:matrix-market ..wikipedia.. https://en.wikipedia.org/wiki/Matrix_Market_exchange_formats
+format:matrix-market ..wikidata.. Q6787857
+format:matrix-market ..spec.. https://math.nist.gov/MatrixMarket/formats.html#MMformat
+format:matrix-market ..supports.. nodes ,, Implicit as indices
+format:matrix-market ..supports.. directed-edges ,, Sparse matrix entries
+format:matrix-market ..lacks.. parallel-edges ,, Single matrix cell per pair
+format:matrix-market ..supports.. self-loops ,, Diagonal entries
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/adjlist/adjlist.adoc ..links to.. ../../../tools.adoc#_networkx ,, NetworkX
+format:adjlist ..has type.. format
+format:adjlist ..category.. text
+format:adjlist ..label.. Adjacency List (NetworkX)
+format:adjlist ..file extension.. .adjlist
+format:adjlist ..spec.. https://networkx.org/documentation/stable/reference/readwrite/adjlist.html
+format:adjlist ..lacks.. multiple-graphs-per-document
+format:adjlist ..supports.. nodes
+format:adjlist ..status.. partial
+format:adjlist ..lacks.. undirected-edges ,, No direction marker; a line is read as directed (source -> listed neighbours)
+format:adjlist ..supports.. directed-edges
+format:adjlist ..lacks.. hyperedges
+format:adjlist ..lacks.. mixed-directionality-edges
+format:adjlist ..supports.. parallel-edges ,, A neighbour may be listed more than once on a line
+format:adjlist ..supports.. self-loops ,, A node may appear in its own adjacency list
+format:adjlist ..lacks.. edges-on-edges
+format:adjlist ..lacks.. nested-graphs-in-nodes
+format:adjlist ..lacks.. nested-graphs-in-edges
+format:adjlist ..lacks.. nested-graphs-in-graphs
+format:adjlist ..lacks.. node-labels
+format:adjlist ..lacks.. edge-labels
+format:adjlist ..lacks.. attributes-on-nodes
+format:adjlist ..supports.. attributes-on-edges
+format:adjlist ..status.. partial
+format:adjlist ..lacks.. attributes-on-graphs
+format:adjlist ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/adjlist/adjlist.adoc ..links to.. ../../../tools.adoc#_networkx ,, NetworkX
+format:molfile ..has type.. format
+format:molfile ..category.. text
+format:molfile ..label.. MDL Molfile / SDF
+format:molfile ..alternative name.. Chemical table file
+format:molfile ..alternative name.. CTfile
+format:molfile ..alternative name.. SDF
+format:molfile ..alternative name.. Structure-Data File
+format:molfile ..file extension.. .mol
+format:molfile ..file extension.. .sdf
+format:molfile ..wikipedia.. https://en.wikipedia.org/wiki/Chemical_table_file
+format:molfile ..wikidata.. Q5090500
+format:molfile ..org.. MDL
+format:molfile ..spec.. https://www.daylight.com/meetings/mug05/Kappler/ctfile.pdf
+format:molfile ..supports.. multiple-graphs-per-document ,, SDF concatenates molecules separated by $$$$
+format:molfile ..supports.. nodes ,, Atoms in the atom block
+format:molfile ..supports.. undirected-edges ,, Bonds are undirected
+format:molfile ..lacks.. directed-edges
+format:molfile ..lacks.. hyperedges
+format:molfile ..lacks.. mixed-directionality-edges
+format:molfile ..lacks.. parallel-edges ,, Bond order is an attribute, not multiple bonds
+format:molfile ..lacks.. self-loops ,, No bond from an atom to itself
+format:molfile ..lacks.. edges-on-edges
+format:molfile ..lacks.. nested-graphs-in-nodes
+format:molfile ..lacks.. nested-graphs-in-edges
+format:molfile ..lacks.. nested-graphs-in-graphs
+format:molfile ..lacks.. node-labels
+format:molfile ..lacks.. edge-labels
+format:molfile ..supports.. attributes-on-nodes ,, Element, charge, isotope, coordinates per atom
+format:molfile ..supports.. attributes-on-edges ,, Bond stereo and topology flags
+format:molfile ..supports.. attributes-on-graphs ,, SDF data fields per molecule
+format:molfile ..supports.. typed-edges ,, Bond order (single, double, triple, aromatic)
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/turtle/turtle.adoc ..links to.. ../../text/notation3/notation3.adoc ,, Notation3
+format:turtle ..has type.. format
+format:turtle ..category.. text
+format:turtle ..label.. Turtle
+format:turtle ..alternative name.. Terse RDF Triple Language
+format:turtle ..file extension.. .ttl
+format:turtle ..media type.. text/turtle
+format:turtle ..wikipedia.. https://en.wikipedia.org/wiki/Turtle_(syntax)
+format:turtle ..wikidata.. Q114409
+format:turtle ..org.. W3C
+format:turtle ..spec.. https://www.w3.org/TR/turtle/
+format:turtle ..lacks.. multiple-graphs-per-document ,, No named graphs; use TriG for multiple graphs
+format:turtle ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:turtle ..lacks.. undirected-edges
+format:turtle ..supports.. directed-edges ,, Triples are directed subject to object
+format:turtle ..lacks.. hyperedges
+format:turtle ..lacks.. mixed-directionality-edges
+format:turtle ..supports.. parallel-edges ,, Distinct predicates between the same two resources
+format:turtle ..supports.. self-loops ,, Subject and object may be the same resource
+format:turtle ..supports.. edges-on-edges
+format:turtle ..status.. partial
+format:turtle ..lacks.. nested-graphs-in-nodes
+format:turtle ..lacks.. nested-graphs-in-edges
+format:turtle ..lacks.. nested-graphs-in-graphs
+format:turtle ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:turtle ..supports.. edge-labels ,, Predicate IRI names the edge
+format:turtle ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:turtle ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:turtle ..lacks.. attributes-on-graphs
+format:turtle ..supports.. typed-edges ,, Every triple is typed by its predicate
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/turtle/turtle.adoc ..links to.. ../../text/notation3/notation3.adoc ,, Notation3
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/turtle/turtle.adoc ..links to.. ../../text/trig/trig.adoc ,, TriG
+format:dot ..has type.. format
+format:dot ..category.. text
+format:dot ..label.. DOT (GraphViz)
+format:dot ..alternative name.. GraphViz
+format:dot ..file extension.. .gv
+format:dot ..file extension.. .dot
+format:dot ..media type.. text/vnd.graphviz
+format:dot ..wikipedia.. https://en.wikipedia.org/wiki/DOT_(graph_description_language)
+format:dot ..wikidata.. Q900927
+format:dot ..author.. emden-gansner
+format:dot ..author.. stephen-north
+format:dot ..org.. att
+format:dot ..spec.. https://graphviz.org/doc/info/lang.html
+att ..has type.. org
+att ..org type.. company
+att ..label.. AT&T
+emden-gansner ..has type.. person
+emden-gansner ..label.. Emden R. Gansner
+emden-gansner ..affiliation.. att
+stephen-north ..has type.. person
+stephen-north ..label.. Stephen C. North
+stephen-north ..affiliation.. att
+Subject is the format id `format:dot`. Use ` ..supports.. ` for status = true and
+` ..lacks.. ` for status = false; attach a free-text note after ` ,, `.
+format:dot ..lacks.. multiple-graphs-per-document ,, One graph per file
+format:dot ..supports.. nodes
+format:dot ..supports.. undirected-edges ,, graph with -- operator
+format:dot ..supports.. directed-edges ,, digraph with -> operator
+format:dot ..lacks.. hyperedges
+format:dot ..lacks.. mixed-directionality-edges ,, Graph is either directed or undirected
+format:dot ..supports.. parallel-edges ,, Repeated edge statements between the same pair
+format:dot ..supports.. self-loops ,, An edge may have the same head and tail
+format:dot ..lacks.. edges-on-edges
+format:dot ..supports.. nested-graphs-in-nodes ,, Via subgraphs/clusters
+format:dot ..lacks.. nested-graphs-in-edges
+format:dot ..supports.. nested-graphs-in-graphs ,, Via subgraphs/clusters
+format:dot ..supports.. node-labels ,, Via label attribute
+format:dot ..supports.. edge-labels ,, Via label attribute
+format:dot ..supports.. attributes-on-nodes ,, Extensive attribute system
+format:dot ..supports.. attributes-on-edges ,, Extensive attribute system
+format:dot ..supports.. attributes-on-graphs ,, Extensive attribute system
+format:dot ..lacks.. typed-edges
+subject ..predicate.. object. Subjects and objects are nodes and predicates name
+format:ddot ..has type.. format
+format:ddot ..category.. text
+format:ddot ..label.. DDot.it Triple Text Format
+format:ddot ..file extension.. .ddot
+format:ddot ..file extension.. .ddot.txt
+format:ddot ..spec.. https://ddot.it
+format:ddot ..org.. calpano
+format:ddot ..supports.. nodes ,, Subjects and objects
+format:ddot ..supports.. directed-edges ,, Each triple is directed subject to object
+format:ddot ..lacks.. undirected-edges
+format:ddot ..supports.. parallel-edges ,, Distinct predicates between the same subject and object
+format:ddot ..supports.. self-loops ,, A triple whose subject equals its object
+format:ddot ..supports.. edge-labels ,, Predicate names the edge
+format:ddot ..supports.. typed-edges ,, Every triple is typed by its predicate
+format:ddot ..supports.. attributes-on-nodes ,, Literal-valued triples on a subject
+format:edge-list ..has type.. format
+format:edge-list ..category.. text
+format:edge-list ..label.. Edge List
+format:edge-list ..file extension.. .edgelist
+format:edge-list ..spec.. https://networkx.org/documentation/stable/reference/readwrite/edgelist.html
+format:edge-list ..lacks.. multiple-graphs-per-document
+format:edge-list ..supports.. nodes ,, Implicit from edge endpoints
+format:edge-list ..supports.. undirected-edges
+format:edge-list ..supports.. directed-edges
+format:edge-list ..lacks.. mixed-directionality-edges
+format:edge-list ..lacks.. hyperedges
+format:edge-list ..supports.. parallel-edges ,, The same pair may be listed more than once
+format:edge-list ..supports.. self-loops ,, A pair (a a) is a loop
+format:edge-list ..lacks.. edges-on-edges
+format:edge-list ..lacks.. nested-graphs-in-nodes
+format:edge-list ..lacks.. nested-graphs-in-edges
+format:edge-list ..lacks.. nested-graphs-in-graphs
+format:edge-list ..lacks.. node-labels ,, Nodes are bare tokens; no distinct label
+format:edge-list ..lacks.. edge-labels
+format:edge-list ..lacks.. attributes-on-nodes
+format:edge-list ..supports.. attributes-on-edges
+format:edge-list ..status.. partial
+format:edge-list ..lacks.. attributes-on-graphs
+format:edge-list ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/edge-list/edge-list.adoc ..links to.. ../../../tools.adoc#_networkx ,, NetworkX
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/edge-list/edge-list.adoc ..links to.. ../../../tools.adoc#_igraph ,, igraph
+format:lcf ..has type.. format
+format:lcf ..category.. text
+format:lcf ..label.. LCF notation
+format:lcf ..alternative name.. LCF
+format:lcf ..wikipedia.. https://en.wikipedia.org/wiki/LCF_notation
+format:lcf ..wikidata.. Q1797915
+format:lcf ..lacks.. multiple-graphs-per-document ,, One graph per notation
+format:lcf ..supports.. nodes ,, Vertices of a cubic Hamiltonian graph
+format:lcf ..supports.. undirected-edges ,, Edges of an undirected 3-regular graph
+format:lcf ..lacks.. directed-edges
+format:lcf ..lacks.. hyperedges
+format:lcf ..lacks.. mixed-directionality-edges
+format:lcf ..lacks.. parallel-edges ,, Cubic simple graph
+format:lcf ..lacks.. self-loops ,, Cubic simple graph
+format:lcf ..lacks.. edges-on-edges
+format:lcf ..lacks.. nested-graphs-in-nodes
+format:lcf ..lacks.. nested-graphs-in-edges
+format:lcf ..lacks.. nested-graphs-in-graphs
+format:lcf ..lacks.. node-labels
+format:lcf ..lacks.. edge-labels
+format:lcf ..lacks.. attributes-on-nodes
+format:lcf ..lacks.. attributes-on-edges
+format:lcf ..lacks.. attributes-on-graphs
+format:lcf ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/gdl-aisee/gdl-aisee.adoc ..links to.. ../../../tools.adoc#_aisee ,, aiSee
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/gdl-aisee/gdl-aisee.adoc ..links to.. ../../text/vcg/vcg-1.30.adoc ,, VCG
+format:gdl-aisee ..has type.. format
+format:gdl-aisee ..category.. text
+format:gdl-aisee ..label.. GDL (aiSee)
+format:gdl-aisee ..alternative name.. Graph Description Language
+format:gdl-aisee ..file extension.. .gdl
+format:gdl-aisee ..org.. AbsInt
+format:gdl-aisee ..spec.. https://www.absint.com/aisee/manual/
+format:gdl-aisee ..supports.. nodes ,, node entries
+format:gdl-aisee ..supports.. undirected-edges
+format:gdl-aisee ..status.. partial
+format:gdl-aisee ..supports.. directed-edges ,, source -> target
+format:gdl-aisee ..lacks.. hyperedges
+format:gdl-aisee ..supports.. mixed-directionality-edges
+format:gdl-aisee ..status.. partial
+format:gdl-aisee ..supports.. parallel-edges ,, Multiple edge entries may share a source and target
+format:gdl-aisee ..supports.. self-loops ,, An edge may target its own source node
+format:gdl-aisee ..lacks.. edges-on-edges
+format:gdl-aisee ..supports.. nested-graphs-in-nodes ,, A subgraph is a foldable node
+format:gdl-aisee ..lacks.. nested-graphs-in-edges
+format:gdl-aisee ..supports.. nested-graphs-in-graphs ,, Nested graph blocks (folding)
+format:gdl-aisee ..supports.. node-labels ,, label/info on nodes
+format:gdl-aisee ..supports.. edge-labels ,, label on edges
+format:gdl-aisee ..supports.. attributes-on-nodes ,, color, shape, textcolor, bitmap
+format:gdl-aisee ..supports.. attributes-on-edges ,, color, thickness, linestyle, arrowstyle, priority
+format:gdl-aisee ..supports.. attributes-on-graphs ,, layout, colors, spacing, orientation
+format:gdl-aisee ..supports.. typed-edges ,, edge class
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/gdl-aisee/gdl-aisee.adoc ..links to.. ../../text/vcg/vcg-1.30.adoc ,, VCG
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/pajek/pajek.adoc ..links to.. ../../../tools.adoc#_pajek ,, Pajek
+format:pajek ..has type.. format
+format:pajek ..category.. text
+format:pajek ..label.. Pajek
+format:pajek ..file extension.. .net
+format:pajek ..spec.. http://vlado.fmf.uni-lj.si/pub/networks/pajek/doc/pajekman.pdf
+format:pajek ..supports.. multiple-graphs-per-document ,, Multiple relations via *Arcs / *Edges sections
+format:pajek ..supports.. nodes ,, *Vertices section
+format:pajek ..supports.. undirected-edges ,, *Edges section
+format:pajek ..supports.. directed-edges ,, *Arcs section
+format:pajek ..lacks.. hyperedges
+format:pajek ..supports.. mixed-directionality-edges ,, Can have both *Arcs and *Edges
+format:pajek ..supports.. parallel-edges ,, Multiple arcs/edges between the same pair
+format:pajek ..supports.. self-loops ,, Loops permitted
+format:pajek ..lacks.. edges-on-edges
+format:pajek ..lacks.. nested-graphs-in-nodes
+format:pajek ..lacks.. nested-graphs-in-edges
+format:pajek ..lacks.. nested-graphs-in-graphs
+format:pajek ..supports.. node-labels ,, After vertex ID
+format:pajek ..supports.. edge-labels
+format:pajek ..status.. partial
+format:pajek ..supports.. attributes-on-nodes ,, Coordinates, colors, shapes
+format:pajek ..supports.. attributes-on-edges ,, Weights, colors, widths
+format:pajek ..lacks.. attributes-on-graphs
+format:pajek ..supports.. typed-edges
+format:pajek ..status.. partial
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/lemon/lemon.adoc ..links to.. ../../../tools.adoc#_lemon ,, LEMON
+format:lemon ..has type.. format
+format:lemon ..category.. text
+format:lemon ..label.. LEMON Graph Format
+format:lemon ..alternative name.. LGF
+format:lemon ..file extension.. .lgf
+format:lemon ..wikidata.. Q135728625
+format:lemon ..org.. Eötvös Loránd University
+format:lemon ..spec.. http://lemon.cs.elte.hu/pub/doc/1.3/a00002.html
+format:lemon ..lacks.. multiple-graphs-per-document
+format:lemon ..supports.. nodes ,, @nodes section
+format:lemon ..supports.. undirected-edges ,, @edges section
+format:lemon ..supports.. directed-edges ,, @arcs section
+format:lemon ..lacks.. hyperedges
+format:lemon ..supports.. parallel-edges ,, Multiple arcs/edges between the same nodes
+format:lemon ..supports.. self-loops ,, Loop arcs/edges permitted
+format:lemon ..lacks.. edges-on-edges
+format:lemon ..lacks.. nested-graphs-in-nodes
+format:lemon ..lacks.. nested-graphs-in-edges
+format:lemon ..lacks.. nested-graphs-in-graphs
+format:lemon ..supports.. node-labels ,, Mandatory label map on @nodes
+format:lemon ..supports.. edge-labels
+format:lemon ..status.. partial
+format:lemon ..supports.. attributes-on-nodes ,, Arbitrary named maps
+format:lemon ..supports.. attributes-on-edges ,, Arbitrary named maps
+format:lemon ..supports.. attributes-on-graphs ,, @attributes section
+format:lemon ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/tulip-tlp/tulip-tlp-2.3.adoc ..links to.. ../../../tools.adoc#_tulip ,, Tulip
+format:tulip-tlp ..has type.. format
+format:tulip-tlp ..category.. text
+format:tulip-tlp ..label.. Tulip TLP
+format:tulip-tlp ..alternative name.. TLP
+format:tulip-tlp ..org.. University of Bordeaux
+format:tulip-tlp-2.3 ..version of.. format:tulip-tlp
+format:tulip-tlp-2.3 ..version.. 2.3
+format:tulip-tlp-2.3 ..file extension.. .tlp
+format:tulip-tlp-2.3 ..spec.. https://tulip.labri.fr/site/?q=tlp-file-format
+format:tulip-tlp-2.3 ..lacks.. multiple-graphs-per-document ,, One root graph with subgraph hierarchy
+format:tulip-tlp-2.3 ..supports.. nodes ,, Integer index list
+format:tulip-tlp-2.3 ..supports.. undirected-edges
+format:tulip-tlp-2.3 ..status.. partial
+format:tulip-tlp-2.3 ..supports.. directed-edges ,, Ordered source/target pairs
+format:tulip-tlp-2.3 ..lacks.. hyperedges
+format:tulip-tlp-2.3 ..supports.. parallel-edges ,, Each edge has its own id; multiple edges may share endpoints
+format:tulip-tlp-2.3 ..supports.. self-loops ,, An edge may use the same node as source and target
+format:tulip-tlp-2.3 ..lacks.. edges-on-edges
+format:tulip-tlp-2.3 ..lacks.. nested-graphs-in-nodes
+format:tulip-tlp-2.3 ..lacks.. nested-graphs-in-edges
+format:tulip-tlp-2.3 ..supports.. nested-graphs-in-graphs ,, Cluster/subgraph hierarchy
+format:tulip-tlp-2.3 ..supports.. node-labels ,, viewLabel property
+format:tulip-tlp-2.3 ..supports.. edge-labels ,, viewLabel property
+format:tulip-tlp-2.3 ..supports.. attributes-on-nodes ,, Properties per node
+format:tulip-tlp-2.3 ..supports.. attributes-on-edges ,, Properties per edge
+format:tulip-tlp-2.3 ..supports.. attributes-on-graphs
+format:tulip-tlp-2.3 ..status.. partial
+format:tulip-tlp-2.3 ..lacks.. typed-edges
+format:n-triples ..has type.. format
+format:n-triples ..category.. text
+format:n-triples ..label.. N-Triples
+format:n-triples ..file extension.. .nt
+format:n-triples ..media type.. application/n-triples
+format:n-triples ..wikipedia.. https://en.wikipedia.org/wiki/N-Triples
+format:n-triples ..wikidata.. Q44044
+format:n-triples ..org.. W3C
+format:n-triples ..spec.. https://www.w3.org/TR/n-triples/
+format:n-triples ..lacks.. multiple-graphs-per-document ,, No named graphs; use N-Quads for multiple graphs
+format:n-triples ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:n-triples ..lacks.. undirected-edges
+format:n-triples ..supports.. directed-edges ,, Triples are directed subject to object
+format:n-triples ..lacks.. hyperedges
+format:n-triples ..lacks.. mixed-directionality-edges
+format:n-triples ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges
+format:n-triples ..supports.. self-loops ,, Subject and object may be the same resource
+format:n-triples ..supports.. edges-on-edges
+format:n-triples ..status.. partial
+format:n-triples ..lacks.. nested-graphs-in-nodes
+format:n-triples ..lacks.. nested-graphs-in-edges
+format:n-triples ..lacks.. nested-graphs-in-graphs
+format:n-triples ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:n-triples ..supports.. edge-labels ,, Predicate IRI names the edge
+format:n-triples ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:n-triples ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:n-triples ..lacks.. attributes-on-graphs
+format:n-triples ..supports.. typed-edges ,, Every triple is typed by its predicate
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/n-triples/n-triples.adoc ..links to.. ../../text/rdf-nquads/rdf-nquads.adoc ,, N-Quads
+format:graphviz-plain ..has type.. format
+format:graphviz-plain ..category.. text
+format:graphviz-plain ..label.. Graphviz plain output format
+format:graphviz-plain ..alternative name.. plain
+format:graphviz-plain ..org.. Graphviz
+format:graphviz-plain ..spec.. https://graphviz.org/docs/outputs/plain/
+format:graphviz-plain ..lacks.. multiple-graphs-per-document ,, One drawn graph per output
+format:graphviz-plain ..supports.. nodes ,, node lines
+format:graphviz-plain ..lacks.. hyperedges ,, Each edge has one tail and one head
+format:graphviz-plain ..supports.. parallel-edges ,, One edge line emitted per drawn edge, including duplicates
+format:graphviz-plain ..supports.. self-loops ,, An edge line may share its tail and head node
+format:graphviz-plain ..lacks.. edges-on-edges
+format:graphviz-plain ..lacks.. nested-graphs-in-nodes
+format:graphviz-plain ..lacks.. nested-graphs-in-edges
+format:graphviz-plain ..lacks.. nested-graphs-in-graphs ,, Clusters are flattened
+format:graphviz-plain ..supports.. node-labels ,, label field on node lines
+format:graphviz-plain ..supports.. edge-labels ,, Optional label on edge lines
+format:graphviz-plain ..supports.. attributes-on-nodes
+format:graphviz-plain ..status.. partial
+format:graphviz-plain ..supports.. attributes-on-edges
+format:graphviz-plain ..status.. partial
+format:graphviz-plain ..supports.. attributes-on-graphs
+format:graphviz-plain ..status.. partial
+format:graphviz-plain ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/graphviz-plain/graphviz-plain.adoc ..links to.. ../../text/dot/dot.adoc ,, DOT
+format:nested-network ..has type.. format
+format:nested-network ..category.. text
+format:nested-network ..label.. Nested Network Format
+format:nested-network ..spec.. https://manual.cytoscape.org/en/stable/Nested_Networks.html
+format:nested-network ..supports.. parallel-edges ,, Property-graph model allows several edges between the same nodes
+format:nested-network ..supports.. self-loops ,, An edge may connect a node to itself
+format:nested-network ..supports.. nested-graphs-in-nodes ,, Cytoscape format supporting nested networks within nodes.
+format:sif ..has type.. format
+format:sif ..category.. text
+format:sif ..label.. Cytoscape SIF (Simple Interaction Format)
+format:sif ..alternative name.. SIF
+format:sif ..alternative name.. Simple Interaction Format
+format:sif ..file extension.. .sif
+format:sif ..org.. Cytoscape
+format:sif ..wikidata.. Q125253619
+format:sif ..spec.. http://manual.cytoscape.org/en/stable/Supported_Network_File_Formats.html
+format:sif ..lacks.. multiple-graphs-per-document
+format:sif ..supports.. nodes ,, Implicit from interaction lines
+format:sif ..lacks.. hyperedges ,, Multi-target lines expand to binary edges
+format:sif ..supports.. parallel-edges ,, Distinct interaction types between the same pair are distinct edges
+format:sif ..supports.. self-loops ,, A node may interact with itself
+format:sif ..lacks.. edges-on-edges
+format:sif ..lacks.. nested-graphs-in-nodes
+format:sif ..lacks.. nested-graphs-in-edges
+format:sif ..lacks.. nested-graphs-in-graphs
+format:sif ..lacks.. node-labels ,, Node token is the id; no distinct label
+format:sif ..supports.. edge-labels
+format:sif ..status.. partial
+format:sif ..lacks.. attributes-on-nodes ,, Held in separate attribute files
+format:sif ..lacks.. attributes-on-edges ,, Held in separate attribute files
+format:sif ..lacks.. attributes-on-graphs
+format:sif ..supports.. typed-edges ,, Middle token is the interaction type
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/metis/metis.adoc ..links to.. ../../../tools.adoc#_metis ,, METIS
+format:metis ..has type.. format
+format:metis ..category.. text
+format:metis ..label.. METIS Graph Format
+format:metis ..file extension.. .graph
+format:metis ..org.. University of Minnesota
+format:metis ..spec.. https://github.com/KarypisLab/METIS/blob/master/manual/manual.pdf
+format:metis ..lacks.. multiple-graphs-per-document ,, One graph per file
+format:metis ..supports.. nodes ,, Vertices numbered 1..n, one line each
+format:metis ..supports.. undirected-edges ,, Symmetric adjacency, edge counted once
+format:metis ..lacks.. directed-edges
+format:metis ..lacks.. hyperedges
+format:metis ..lacks.. mixed-directionality-edges
+format:metis ..lacks.. parallel-edges ,, Simple undirected graph
+format:metis ..lacks.. self-loops ,, No vertex adjacent to itself
+format:metis ..lacks.. edges-on-edges
+format:metis ..lacks.. nested-graphs-in-nodes
+format:metis ..lacks.. nested-graphs-in-edges
+format:metis ..lacks.. nested-graphs-in-graphs
+format:metis ..lacks.. node-labels
+format:metis ..lacks.. edge-labels
+format:metis ..supports.. attributes-on-nodes
+format:metis ..status.. partial
+format:metis ..supports.. attributes-on-edges
+format:metis ..status.. partial
+format:metis ..lacks.. attributes-on-graphs
+format:metis ..lacks.. typed-edges
+format:scotch ..has type.. format
+format:scotch ..category.. text
+format:scotch ..label.. Scotch Graph Format
+format:scotch ..alternative name.. Scotch source graph
+format:scotch ..file extension.. .grf
+format:scotch ..file extension.. .src
+format:scotch ..author.. francois-pellegrini
+format:scotch ..org.. inria
+format:scotch ..spec.. https://gitlab.inria.fr/scotch/scotch
+inria ..has type.. org
+inria ..org type.. lab
+inria ..label.. Inria
+francois-pellegrini ..has type.. person
+francois-pellegrini ..label.. François Pellegrini
+francois-pellegrini ..affiliation.. inria
+format:scotch ..supports.. nodes
+format:scotch ..supports.. undirected-edges ,, Graphs are symmetric
+format:scotch ..supports.. node-labels ,, Optional vertex labels (labelling flag)
+format:scotch ..supports.. attributes-on-nodes ,, Optional vertex weights/loads
+format:scotch ..supports.. attributes-on-edges ,, Optional edge weights
+format:scotch ..lacks.. directed-edges
+format:scotch ..lacks.. multiple-graphs-per-document
+format:scotch ..lacks.. hyperedges
+format:scotch ..lacks.. mixed-directionality-edges
+format:scotch ..lacks.. parallel-edges ,, Simple graph
+format:scotch ..lacks.. self-loops ,, Simple graph
+format:scotch ..lacks.. edges-on-edges
+format:scotch ..lacks.. nested-graphs-in-nodes
+format:scotch ..lacks.. nested-graphs-in-edges
+format:scotch ..lacks.. nested-graphs-in-graphs
+format:scotch ..lacks.. edge-labels
+format:scotch ..lacks.. attributes-on-graphs
+format:scotch ..lacks.. typed-edges
+format:tgf ..has type.. format
+format:tgf ..category.. text
+format:tgf ..label.. TGF
+format:tgf ..alternative name.. Trivial Graph Format
+format:tgf ..file extension.. .tgf
+format:tgf ..wikipedia.. https://en.wikipedia.org/wiki/Trivial_Graph_Format
+format:tgf ..wikidata.. Q4051789
+format:tgf ..spec.. https://docs.yworks.com/yfiles/doc/developers-guide/tgf.html
+format:tgf ..lacks.. multiple-graphs-per-document
+format:tgf ..supports.. nodes
+format:tgf ..lacks.. undirected-edges ,, A source-target line is read as directed; treated as directed-only
+format:tgf ..supports.. directed-edges ,, Source-target order; the spec covers both directed and undirected graphs
+format:tgf ..lacks.. hyperedges
+format:tgf ..lacks.. mixed-directionality-edges
+format:tgf ..supports.. parallel-edges ,, Repeated source-target lines between a pair
+format:tgf ..supports.. self-loops ,, A line may use the same node as source and target
+format:tgf ..lacks.. edges-on-edges
+format:tgf ..lacks.. nested-graphs-in-nodes
+format:tgf ..lacks.. nested-graphs-in-edges
+format:tgf ..lacks.. nested-graphs-in-graphs
+format:tgf ..supports.. node-labels ,, After node ID
+format:tgf ..supports.. edge-labels ,, After edge endpoints
+format:tgf ..lacks.. attributes-on-nodes
+format:tgf ..lacks.. attributes-on-edges
+format:tgf ..lacks.. attributes-on-graphs
+format:tgf ..lacks.. typed-edges
+format:gtfs ..has type.. format
+format:gtfs ..category.. text
+format:gtfs ..label.. GTFS (General Transit Feed Specification)
+format:gtfs ..file extension.. .gtfs.zip
+format:gtfs ..file extension.. .gtfs
+format:gtfs ..wikipedia.. https://en.wikipedia.org/wiki/GTFS
+format:gtfs ..wikidata.. Q5532250
+format:gtfs ..org.. Google
+format:gtfs ..spec.. https://gtfs.org/documentation/overview/
+format:gtfs ..supports.. nodes ,, Stops and stations
+format:gtfs ..supports.. directed-edges ,, Ordered stop times along trips
+format:gtfs ..supports.. node-labels ,, Stop names
+format:gtfs ..supports.. attributes-on-nodes ,, Stop coordinates and metadata
+format:gtfs ..supports.. attributes-on-edges ,, Trip and transfer attributes
+format:gtfs ..lacks.. undirected-edges
+format:gtfs ..lacks.. hyperedges
+format:gtfs ..supports.. parallel-edges ,, Multiple trips and routes between the same two stops
+format:gtfs ..lacks.. self-loops ,, A stop linking to itself is not meaningful
+format:gtfs ..lacks.. edges-on-edges
+format:gtfs ..lacks.. nested-graphs-in-nodes
+format:gtfs ..lacks.. nested-graphs-in-edges
+format:gtfs ..lacks.. nested-graphs-in-graphs
+format:gtfs ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/chaco/chaco.adoc ..links to.. ../../../tools.adoc#_chaco ,, Chaco
+format:chaco ..has type.. format
+format:chaco ..category.. text
+format:chaco ..label.. Chaco
+format:chaco ..file extension.. .graph
+format:chaco ..supports.. nodes
+format:chaco ..supports.. undirected-edges
+format:chaco ..lacks.. parallel-edges ,, Adjacency model encodes a simple graph
+format:chaco ..lacks.. self-loops ,, Vertices may not be adjacent to themselves
+format:structurizr-dsl ..has type.. format
+format:structurizr-dsl ..category.. text
+format:structurizr-dsl ..label.. Structurizr DSL (C4 model)
+format:structurizr-dsl ..alternative name.. Structurizr DSL
+format:structurizr-dsl ..file extension.. .dsl
+format:structurizr-dsl ..spec.. https://docs.structurizr.com/dsl
+format:structurizr-dsl ..supports.. nodes ,, Software systems, containers, components, people
+format:structurizr-dsl ..supports.. directed-edges ,, Relationships (`a -> b`)
+format:structurizr-dsl ..supports.. parallel-edges ,, Multiple relationships between the same two elements
+format:structurizr-dsl ..supports.. self-loops ,, An element may relate to itself
+format:structurizr-dsl ..supports.. node-labels ,, Element names
+format:structurizr-dsl ..supports.. edge-labels ,, Relationship descriptions
+format:structurizr-dsl ..supports.. nested-graphs-in-nodes ,, Containment: containers within systems, components within containers
+format:structurizr-dsl ..supports.. attributes-on-nodes ,, Tags, technology, description, custom properties
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/structurizr-dsl/structurizr-dsl.adoc ..links to.. ../../../tools.adoc#_graphinout ,, GraphInOut
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/tripletext/tripletext.adoc ..links to.. ../../text/ddot/ddot.adoc ,, ddot
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/tripletext/tripletext.adoc ..links to.. ../../text/ddot/ddot.adoc ,, ddot
+format:tripletext ..has type.. format
+format:tripletext ..category.. text
+format:tripletext ..label.. TripleText Format
+format:tripletext ..file extension.. .tt.txt
+format:tripletext ..file extension.. .tt
+format:tripletext ..file extension.. .tripletext
+format:tripletext ..file extension.. triple.txt
+format:tripletext ..org.. calpano
+format:tripletext ..superseded by.. format:ddot
+format:tripletext ..supports.. nodes ,, Subjects and objects (identified by their text)
+format:tripletext ..supports.. directed-edges ,, Each line is an edge subject -> object
+format:tripletext ..supports.. parallel-edges ,, Distinct predicates between the same subject and object
+format:tripletext ..supports.. self-loops ,, Subject and object may be the same node
+format:tripletext ..lacks.. undirected-edges
+format:tripletext ..supports.. typed-edges ,, The predicate is the edge type
+format:tripletext ..supports.. attributes-on-edges ,, Optional ".. meta" stored as tt:meta data
+format:tripletext ..lacks.. node-labels ,, Node label field exists in the model but is never populated
+format:tripletext ..lacks.. edge-labels ,, Predicate is the edge type, not a display label
+format:tripletext ..lacks.. attributes-on-nodes
+format:tripletext ..lacks.. multiple-graphs-per-document
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/tripletext/tripletext.adoc ..links to.. ../../text/ddot/ddot.adoc ,, ddot
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/vcg/vcg-1.30.adoc ..links to.. ../../text/gdl-aisee/gdl-aisee.adoc ,, aiSee GDL
+format:vcg ..has type.. format
+format:vcg ..category.. text
+format:vcg ..label.. VCG (Visualization of Compiler Graphs)
+format:vcg ..alternative name.. VCG
+format:vcg ..wikidata.. Q105859875
+format:vcg ..org.. Universität des Saarlandes
+format:vcg ..author.. georg-sander
+georg-sander ..has type.. person
+georg-sander ..label.. Georg Sander
+georg-sander ..affiliation.. Universität des Saarlandes
+format:vcg-1.30 ..version of.. format:vcg
+format:vcg-1.30 ..version.. 1.30
+format:vcg-1.30 ..file extension.. .vcg
+format:vcg-1.30 ..spec.. https://www.rw.cdl.uni-saarland.de/people/sander/private/html/gsvcg1.html
+format:vcg-1.30 ..lacks.. multiple-graphs-per-document ,, Single top-level graph
+format:vcg-1.30 ..supports.. nodes ,, node entries with obligatory title
+format:vcg-1.30 ..supports.. undirected-edges
+format:vcg-1.30 ..status.. partial
+format:vcg-1.30 ..supports.. directed-edges ,, source -> target with arrows
+format:vcg-1.30 ..lacks.. hyperedges
+format:vcg-1.30 ..supports.. mixed-directionality-edges
+format:vcg-1.30 ..status.. partial
+format:vcg-1.30 ..supports.. parallel-edges ,, Multiple edge entries may share source and target
+format:vcg-1.30 ..supports.. self-loops ,, An edge may target its own source node
+format:vcg-1.30 ..lacks.. edges-on-edges
+format:vcg-1.30 ..supports.. nested-graphs-in-nodes ,, A foldable subgraph collapses into a summary node
+format:vcg-1.30 ..lacks.. nested-graphs-in-edges
+format:vcg-1.30 ..supports.. nested-graphs-in-graphs ,, Nested subgraph blocks (folding)
+format:vcg-1.30 ..supports.. node-labels ,, label distinct from title
+format:vcg-1.30 ..supports.. edge-labels ,, label on edges
+format:vcg-1.30 ..supports.. attributes-on-nodes ,, color, shape, width, folding
+format:vcg-1.30 ..supports.. attributes-on-edges ,, color, thickness, linestyle, priority, class
+format:vcg-1.30 ..supports.. attributes-on-graphs ,, layout, orientation, spacing
+format:vcg-1.30 ..supports.. typed-edges ,, class attribute names edge classes
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/vcg/vcg-1.30.adoc ..links to.. ../../text/gdl-aisee/gdl-aisee.adoc ,, aiSee GDL
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/leda/leda.adoc ..links to.. ../../../tools.adoc#_leda ,, LEDA
+format:leda ..has type.. format
+format:leda ..category.. text
+format:leda ..label.. LEDA Graph Format
+format:leda ..alternative name.. GW
+format:leda ..alternative name.. GraphWin format
+format:leda ..file extension.. .gw
+format:leda ..wikidata.. Q96035181
+format:leda ..org.. Max Planck Institute for Informatics
+format:leda ..org.. Algorithmic Solutions
+format:leda ..spec.. https://www.algorithmic-solutions.info/leda_manual/GW.html
+format:leda ..lacks.. multiple-graphs-per-document ,, One graph plus layout per file
+format:leda ..supports.. nodes
+format:leda ..supports.. undirected-edges ,, Undirected graphs / undirected_edge
+format:leda ..supports.. directed-edges ,, Directed by default
+format:leda ..lacks.. hyperedges
+format:leda ..supports.. mixed-directionality-edges
+format:leda ..status.. partial
+format:leda ..supports.. parallel-edges ,, Multigraphs permitted
+format:leda ..supports.. self-loops ,, Self-loops permitted
+format:leda ..lacks.. edges-on-edges
+format:leda ..lacks.. nested-graphs-in-nodes
+format:leda ..lacks.. nested-graphs-in-edges
+format:leda ..lacks.. nested-graphs-in-graphs
+format:leda ..supports.. node-labels
+format:leda ..status.. partial
+format:leda ..supports.. edge-labels
+format:leda ..status.. partial
+format:leda ..supports.. attributes-on-nodes
+format:leda ..status.. partial
+format:leda ..supports.. attributes-on-edges
+format:leda ..status.. partial
+format:leda ..supports.. attributes-on-graphs
+format:leda ..status.. partial
+format:leda ..supports.. typed-edges
+format:leda ..status.. partial
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/nexus/nexus.adoc ..links to.. ../../text/newick/newick.adoc ,, Newick
+format:nexus ..has type.. format
+format:nexus ..category.. text
+format:nexus ..label.. Nexus file
+format:nexus ..alternative name.. NEXUS
+format:nexus ..file extension.. .nex
+format:nexus ..file extension.. .nexus
+format:nexus ..file extension.. .nxs
+format:nexus ..wikipedia.. https://en.wikipedia.org/wiki/Nexus_file
+format:nexus ..wikidata.. Q1983918
+format:nexus ..released.. 1997
+format:nexus ..spec.. https://doi.org/10.1093/sysbio/46.4.590
+format:nexus ..supports.. multiple-graphs-per-document ,, TREES block may hold several trees
+format:nexus ..supports.. nodes ,, Internal and leaf nodes
+format:nexus ..supports.. undirected-edges ,, Unrooted trees
+format:nexus ..supports.. directed-edges ,, Rooted trees imply parent-to-child direction
+format:nexus ..lacks.. hyperedges
+format:nexus ..lacks.. mixed-directionality-edges
+format:nexus ..lacks.. parallel-edges ,, Tree-based: one branch per node pair
+format:nexus ..lacks.. self-loops ,, Tree-based: no node attaches to itself
+format:nexus ..lacks.. edges-on-edges
+format:nexus ..lacks.. nested-graphs-in-nodes
+format:nexus ..lacks.. nested-graphs-in-edges
+format:nexus ..lacks.. nested-graphs-in-graphs
+format:nexus ..supports.. node-labels ,, Taxon names on leaves
+format:nexus ..lacks.. edge-labels
+format:nexus ..supports.. attributes-on-edges ,, Branch lengths in Newick tree strings
+format:nexus ..supports.. attributes-on-graphs ,, Block-level commands and metadata
+format:nexus ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/nexus/nexus.adoc ..links to.. ../../text/newick/newick.adoc ,, Newick format
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/graphlet/graphlet.adoc ..links to.. ../../../tools.adoc#_graphlet ,, Graphlet
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/graphlet/graphlet.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+format:graphlet ..has type.. format
+format:graphlet ..category.. text
+format:graphlet ..label.. Graphlet file format
+format:graphlet ..alternative name.. GML
+format:graphlet ..alternative name.. Graph Modelling Language
+format:graphlet ..wikidata.. Q96034734
+format:graphlet ..org.. Universität Passau
+format:graphlet ..author.. michael-himsolt
+format:graphlet ..spec.. https://en.wikipedia.org/wiki/Graph_Modelling_Language
+michael-himsolt ..has type.. person
+michael-himsolt ..label.. Michael Himsolt
+michael-himsolt ..affiliation.. Universität Passau
+format:graphlet ..supports.. multiple-graphs-per-document
+format:graphlet ..status.. partial
+format:graphlet ..supports.. nodes ,, node [ id ... ]
+format:graphlet ..supports.. undirected-edges ,, directed 0
+format:graphlet ..supports.. directed-edges ,, directed 1
+format:graphlet ..lacks.. hyperedges
+format:graphlet ..lacks.. mixed-directionality-edges ,, Single graph-level directed flag
+format:graphlet ..supports.. parallel-edges ,, Multiple edge blocks may repeat a source and target
+format:graphlet ..supports.. self-loops ,, An edge whose source equals its target
+format:graphlet ..lacks.. edges-on-edges
+format:graphlet ..supports.. nested-graphs-in-nodes ,, A node may contain an inner graph
+format:graphlet ..lacks.. nested-graphs-in-edges
+format:graphlet ..supports.. nested-graphs-in-graphs
+format:graphlet ..status.. partial
+format:graphlet ..supports.. node-labels ,, node [ label "..." ]
+format:graphlet ..supports.. edge-labels ,, edge [ label "..." ]
+format:graphlet ..supports.. attributes-on-nodes ,, Arbitrary key-values in node
+format:graphlet ..supports.. attributes-on-edges ,, Arbitrary key-values in edge
+format:graphlet ..supports.. attributes-on-graphs ,, Arbitrary keys at graph level
+format:graphlet ..supports.. typed-edges
+format:graphlet ..status.. partial
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/graphlet/graphlet.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+format:gdf ..has type.. format
+format:gdf ..category.. text
+format:gdf ..label.. GDF
+format:gdf ..alternative name.. Graph Data Format
+format:gdf ..alternative name.. Graph Description Format
+format:gdf ..file extension.. .gdf
+format:gdf ..spec.. https://docs.gephi.org/desktop/User_Manual/Import/GDF_File_Format/
+format:gdf ..lacks.. multiple-graphs-per-document
+format:gdf ..supports.. nodes ,, nodedef> section
+format:gdf ..supports.. undirected-edges ,, Default
+format:gdf ..supports.. directed-edges ,, Via directed BOOLEAN attribute
+format:gdf ..lacks.. hyperedges
+format:gdf ..supports.. mixed-directionality-edges ,, Per-edge directed attribute
+format:gdf ..supports.. parallel-edges ,, Multiple edgedef rows may repeat a node pair
+format:gdf ..supports.. self-loops ,, An edge row may reference the same node twice
+format:gdf ..lacks.. edges-on-edges
+format:gdf ..lacks.. nested-graphs-in-nodes
+format:gdf ..lacks.. nested-graphs-in-edges
+format:gdf ..lacks.. nested-graphs-in-graphs
+format:gdf ..supports.. node-labels ,, Via label VARCHAR attribute
+format:gdf ..supports.. edge-labels ,, Via custom attribute
+format:gdf ..supports.. attributes-on-nodes ,, VARCHAR, DOUBLE, BOOLEAN types
+format:gdf ..supports.. attributes-on-edges ,, VARCHAR, DOUBLE, BOOLEAN types
+format:gdf ..lacks.. attributes-on-graphs
+format:gdf ..supports.. typed-edges
+format:gdf ..status.. partial
+format:mcdl ..has type.. format
+format:mcdl ..category.. text
+format:mcdl ..label.. MCDL (Modular Chemical Descriptor Language)
+format:mcdl ..alternative name.. Modular Chemical Descriptor Language
+format:mcdl ..wikipedia.. https://en.wikipedia.org/wiki/Modular_Chemical_Descriptor_Language
+format:mcdl ..wikidata.. Q104880084
+format:mcdl ..spec.. https://doi.org/10.1021/ci000108y
+format:mcdl ..lacks.. multiple-graphs-per-document ,, One descriptor per structure
+format:mcdl ..supports.. nodes ,, Atoms in the composition module
+format:mcdl ..supports.. undirected-edges ,, Connectivity module encodes undirected bonds
+format:mcdl ..lacks.. directed-edges
+format:mcdl ..lacks.. hyperedges
+format:mcdl ..lacks.. mixed-directionality-edges
+format:mcdl ..lacks.. parallel-edges ,, One bond per atom pair; bond order is an attribute
+format:mcdl ..lacks.. self-loops ,, No atom bonds itself
+format:mcdl ..lacks.. edges-on-edges
+format:mcdl ..lacks.. nested-graphs-in-nodes
+format:mcdl ..lacks.. nested-graphs-in-edges
+format:mcdl ..lacks.. nested-graphs-in-graphs
+format:mcdl ..lacks.. node-labels
+format:mcdl ..lacks.. edge-labels
+format:mcdl ..supports.. attributes-on-nodes ,, Charge, isotope, radicals via supplementary modules
+format:mcdl ..lacks.. attributes-on-edges ,, Only per-bond datum is bond order, covered by typed-edges; no other bond attributes
+format:mcdl ..lacks.. attributes-on-graphs
+format:mcdl ..supports.. typed-edges ,, Bond order (single, double, triple) via supplementary module
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/notation3/notation3.adoc ..links to.. ../../text/turtle/turtle.adoc ,, Turtle
+format:notation3 ..has type.. format
+format:notation3 ..category.. text
+format:notation3 ..label.. Notation3 (N3)
+format:notation3 ..alternative name.. N3
+format:notation3 ..file extension.. .n3
+format:notation3 ..media type.. text/n3
+format:notation3 ..wikipedia.. https://en.wikipedia.org/wiki/Notation3
+format:notation3 ..wikidata.. Q1424987
+format:notation3 ..org.. W3C
+format:notation3 ..spec.. https://w3c.github.io/N3/spec/
+format:notation3 ..supports.. multiple-graphs-per-document
+format:notation3 ..status.. partial
+format:notation3 ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:notation3 ..lacks.. undirected-edges
+format:notation3 ..supports.. directed-edges ,, Triples are directed subject to object
+format:notation3 ..lacks.. hyperedges
+format:notation3 ..lacks.. mixed-directionality-edges
+format:notation3 ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges
+format:notation3 ..supports.. self-loops ,, Subject and object may be the same resource
+format:notation3 ..supports.. edges-on-edges
+format:notation3 ..status.. partial
+format:notation3 ..supports.. nested-graphs-in-nodes ,, Formulae { ... } may be subject or object of a triple
+format:notation3 ..supports.. nested-graphs-in-edges
+format:notation3 ..status.. partial
+format:notation3 ..supports.. nested-graphs-in-graphs
+format:notation3 ..status.. partial
+format:notation3 ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:notation3 ..supports.. edge-labels ,, Predicate IRI names the edge
+format:notation3 ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:notation3 ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:notation3 ..lacks.. attributes-on-graphs
+format:notation3 ..supports.. typed-edges ,, Every triple is typed by its predicate
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/notation3/notation3.adoc ..links to.. ../../text/turtle/turtle.adoc ,, Turtle
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/rdf-nquads/rdf-nquads.adoc ..links to.. ../../text/n-triples/n-triples.adoc ,, N-Triples
+format:rdf-nquads ..has type.. format
+format:rdf-nquads ..category.. text
+format:rdf-nquads ..label.. N-Quads
+format:rdf-nquads ..file extension.. .nq
+format:rdf-nquads ..media type.. application/n-quads
+format:rdf-nquads ..wikipedia.. https://en.wikipedia.org/wiki/N-Quads
+format:rdf-nquads ..wikidata.. Q31398150
+format:rdf-nquads ..org.. W3C
+format:rdf-nquads ..spec.. https://www.w3.org/TR/n-quads/
+format:rdf-nquads ..supports.. multiple-graphs-per-document ,, Fourth term names the graph
+format:rdf-nquads ..supports.. nodes ,, Resources (IRIs and blank nodes)
+format:rdf-nquads ..lacks.. undirected-edges
+format:rdf-nquads ..supports.. directed-edges ,, Triples are directed subject to object
+format:rdf-nquads ..lacks.. hyperedges
+format:rdf-nquads ..lacks.. mixed-directionality-edges
+format:rdf-nquads ..supports.. parallel-edges ,, Distinct predicates between the same two resources
+format:rdf-nquads ..supports.. self-loops ,, Subject and object may be the same resource
+format:rdf-nquads ..supports.. edges-on-edges
+format:rdf-nquads ..status.. partial
+format:rdf-nquads ..lacks.. nested-graphs-in-nodes
+format:rdf-nquads ..lacks.. nested-graphs-in-edges
+format:rdf-nquads ..lacks.. nested-graphs-in-graphs
+format:rdf-nquads ..lacks.. node-labels ,, No native label slot; rdfs:label is data, not syntax
+format:rdf-nquads ..supports.. edge-labels ,, Predicate IRI names the edge
+format:rdf-nquads ..supports.. attributes-on-nodes ,, Literal-valued properties on resources
+format:rdf-nquads ..lacks.. attributes-on-edges ,, Edge is the predicate; no per-triple attributes except via reification
+format:rdf-nquads ..lacks.. attributes-on-graphs
+format:rdf-nquads ..supports.. typed-edges ,, Every triple is typed by its predicate
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/rdf-nquads/rdf-nquads.adoc ..links to.. ../../text/n-triples/n-triples.adoc ,, N-Triples
+format:d2 ..has type.. format
+format:d2 ..category.. text
+format:d2 ..label.. D2 (Terrastruct)
+format:d2 ..file extension.. .d2
+format:d2 ..spec.. https://d2lang.com/
+format:d2 ..supports.. nodes ,, Shapes
+format:d2 ..supports.. undirected-edges ,, Via -- connections
+format:d2 ..supports.. directed-edges ,, Via -> and <- connections
+format:d2 ..supports.. parallel-edges ,, Multiple connections allowed between the same pair
+format:d2 ..supports.. self-loops ,, A shape may connect to itself
+format:d2 ..supports.. node-labels ,, Shape labels
+format:d2 ..supports.. edge-labels ,, Connection labels
+format:d2 ..supports.. nested-graphs-in-nodes ,, Containers (nested shapes)
+format:d2 ..supports.. attributes-on-nodes ,, Style and shape attributes
+format:d2 ..supports.. attributes-on-edges ,, Style attributes on connections
+format:newick ..has type.. format
+format:newick ..category.. text
+format:newick ..label.. Newick format
+format:newick ..alternative name.. New Hampshire format
+format:newick ..file extension.. .nwk
+format:newick ..file extension.. .newick
+format:newick ..file extension.. .tree
+format:newick ..wikipedia.. https://en.wikipedia.org/wiki/Newick_format
+format:newick ..wikidata.. Q3339116
+format:newick ..spec.. http://evolution.genetics.washington.edu/phylip/newicktree.html
+format:newick ..lacks.. multiple-graphs-per-document ,, One tree per expression, though some tools concatenate several
+format:newick ..supports.. nodes ,, Internal and leaf nodes
+format:newick ..supports.. undirected-edges ,, Unrooted trees
+format:newick ..supports.. directed-edges ,, Rooted trees imply parent-to-child direction
+format:newick ..lacks.. hyperedges
+format:newick ..lacks.. mixed-directionality-edges
+format:newick ..lacks.. parallel-edges ,, Tree: one branch per node pair
+format:newick ..lacks.. self-loops ,, Tree: no node attaches to itself
+format:newick ..lacks.. edges-on-edges
+format:newick ..lacks.. nested-graphs-in-nodes
+format:newick ..lacks.. nested-graphs-in-edges
+format:newick ..lacks.. nested-graphs-in-graphs
+format:newick ..supports.. node-labels ,, Names on leaf and internal nodes
+format:newick ..lacks.. edge-labels
+format:newick ..lacks.. attributes-on-nodes
+format:newick ..supports.. attributes-on-edges ,, Branch lengths after a colon
+format:newick ..lacks.. attributes-on-graphs
+format:newick ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/dl/dl.adoc ..links to.. ../../../tools.adoc#_ucinet ,, UCINET
+format:dl ..has type.. format
+format:dl ..category.. text
+format:dl ..label.. UCINET DL
+format:dl ..file extension.. .dl
+format:dl ..spec.. https://docs.gephi.org/desktop/User_Manual/Import/UCINET_DL_Format/
+format:dl ..supports.. nodes
+format:dl ..supports.. directed-edges
+format:dl ..lacks.. parallel-edges ,, One matrix cell per ordered pair
+format:dl ..supports.. self-loops ,, Matrix diagonal
+are represented as sparse adjacency matrices. Largely superseded by link: ../.. /text/matrix-market/matrix-market.adoc[Matrix
+format:harwell-boeing ..has type.. format
+format:harwell-boeing ..category.. text
+format:harwell-boeing ..label.. Harwell-Boeing
+format:harwell-boeing ..alternative name.. HB
+format:harwell-boeing ..alternative name.. Harwell-Boeing Exchange Format
+format:harwell-boeing ..file extension.. .hb
+format:harwell-boeing ..wikipedia.. https://en.wikipedia.org/wiki/Harwell-Boeing_file_format
+format:harwell-boeing ..wikidata.. Q1587964
+format:harwell-boeing ..released.. 1982
+format:harwell-boeing ..author.. iain-duff
+format:harwell-boeing ..author.. roger-grimes
+format:harwell-boeing ..author.. john-lewis
+format:harwell-boeing ..author.. bill-poole
+format:harwell-boeing ..org.. harwell
+format:harwell-boeing ..org.. boeing
+format:harwell-boeing ..spec.. https://math.nist.gov/MatrixMarket/formats.html
+harwell ..has type.. org
+harwell ..org type.. lab
+harwell ..label.. Harwell Laboratory (AERE)
+boeing ..has type.. org
+boeing ..org type.. company
+boeing ..label.. Boeing Computer Services
+iain-duff ..has type.. person
+iain-duff ..label.. Iain Duff
+iain-duff ..affiliation.. harwell
+roger-grimes ..has type.. person
+roger-grimes ..label.. Roger Grimes
+roger-grimes ..affiliation.. boeing
+john-lewis ..has type.. person
+john-lewis ..label.. John Lewis
+john-lewis ..affiliation.. boeing
+bill-poole ..has type.. person
+bill-poole ..label.. Bill Poole
+bill-poole ..affiliation.. boeing
+format:harwell-boeing ..supports.. nodes ,, Implicit as matrix indices
+format:harwell-boeing ..supports.. undirected-edges ,, Symmetric matrices
+format:harwell-boeing ..supports.. directed-edges ,, Unsymmetric matrices
+format:harwell-boeing ..supports.. attributes-on-edges ,, Numeric matrix values (weights)
+format:harwell-boeing ..lacks.. multiple-graphs-per-document
+format:harwell-boeing ..lacks.. hyperedges
+format:harwell-boeing ..lacks.. mixed-directionality-edges
+format:harwell-boeing ..lacks.. parallel-edges ,, Single matrix cell per pair
+format:harwell-boeing ..supports.. self-loops ,, Diagonal entries
+format:harwell-boeing ..lacks.. edges-on-edges
+format:harwell-boeing ..lacks.. nested-graphs-in-nodes
+format:harwell-boeing ..lacks.. nested-graphs-in-edges
+format:harwell-boeing ..lacks.. nested-graphs-in-graphs
+format:harwell-boeing ..lacks.. node-labels
+format:harwell-boeing ..lacks.. edge-labels
+format:harwell-boeing ..lacks.. attributes-on-nodes
+format:harwell-boeing ..lacks.. attributes-on-graphs
+format:harwell-boeing ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/harwell-boeing/harwell-boeing.adoc ..links to.. ../../text/matrix-market/matrix-market.adoc ,, Matrix Market
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-sankey.adoc ..links to.. mermaid.adoc ,, Mermaid
+format:mermaid-sankey ..has type.. format
+format:mermaid-sankey ..subformat of.. format:mermaid
+format:mermaid-sankey ..category.. text
+format:mermaid-sankey ..label.. Mermaid Sankey
+format:mermaid-sankey ..spec.. https://mermaid.js.org/syntax/sankey.html
+format:mermaid-sankey ..lacks.. multiple-graphs-per-document
+format:mermaid-sankey ..supports.. nodes ,, Implied by source/target names
+format:mermaid-sankey ..lacks.. undirected-edges
+format:mermaid-sankey ..supports.. directed-edges ,, source to target flow
+format:mermaid-sankey ..lacks.. mixed-directionality-edges
+format:mermaid-sankey ..lacks.. hyperedges
+format:mermaid-sankey ..lacks.. parallel-edges ,, Aggregated flows: one link per ordered pair
+format:mermaid-sankey ..lacks.. self-loops ,, No flow from a node to itself
+format:mermaid-sankey ..lacks.. edges-on-edges
+format:mermaid-sankey ..lacks.. nested-graphs-in-nodes
+format:mermaid-sankey ..lacks.. nested-graphs-in-edges
+format:mermaid-sankey ..lacks.. nested-graphs-in-graphs
+format:mermaid-sankey ..lacks.. node-labels ,, Node name is the id; no separate label
+format:mermaid-sankey ..lacks.. edge-labels
+format:mermaid-sankey ..lacks.. attributes-on-nodes
+format:mermaid-sankey ..supports.. attributes-on-edges ,, Flow value (weight) per edge
+format:mermaid-sankey ..lacks.. attributes-on-graphs
+format:mermaid-sankey ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-sankey.adoc ..links to.. mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-flowchart.adoc ..links to.. mermaid.adoc ,, Mermaid
+format:mermaid-flowchart ..has type.. format
+format:mermaid-flowchart ..subformat of.. format:mermaid
+format:mermaid-flowchart ..category.. text
+format:mermaid-flowchart ..label.. Mermaid Flowchart
+format:mermaid-flowchart ..spec.. https://mermaid.js.org/syntax/flowchart.html
+format:mermaid-flowchart ..lacks.. multiple-graphs-per-document
+format:mermaid-flowchart ..supports.. nodes
+format:mermaid-flowchart ..supports.. undirected-edges ,, Via --- links
+format:mermaid-flowchart ..supports.. directed-edges ,, Via --> links
+format:mermaid-flowchart ..supports.. mixed-directionality-edges ,, Directed and undirected links may be mixed
+format:mermaid-flowchart ..lacks.. hyperedges
+format:mermaid-flowchart ..supports.. parallel-edges ,, Multiple links between the same two nodes
+format:mermaid-flowchart ..supports.. self-loops ,, A node may link to itself (A-->A)
+format:mermaid-flowchart ..lacks.. edges-on-edges
+format:mermaid-flowchart ..supports.. nested-graphs-in-nodes ,, Via subgraph … end
+format:mermaid-flowchart ..lacks.. nested-graphs-in-edges
+format:mermaid-flowchart ..lacks.. nested-graphs-in-graphs
+format:mermaid-flowchart ..supports.. node-labels ,, Label inside the node shape
+format:mermaid-flowchart ..supports.. edge-labels ,, Via -->|text| or -- text -->
+format:mermaid-flowchart ..supports.. attributes-on-nodes
+format:mermaid-flowchart ..status.. partial
+format:mermaid-flowchart ..lacks.. attributes-on-edges
+format:mermaid-flowchart ..lacks.. attributes-on-graphs
+format:mermaid-flowchart ..lacks.. typed-edges ,, Arrow variants (==>, -.-) are visual, not semantic types
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-flowchart.adoc ..links to.. mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-class.adoc ..links to.. mermaid.adoc ,, Mermaid
+format:mermaid-class ..has type.. format
+format:mermaid-class ..subformat of.. format:mermaid
+format:mermaid-class ..category.. text
+format:mermaid-class ..label.. Mermaid Class Diagram
+format:mermaid-class ..spec.. https://mermaid.js.org/syntax/classDiagram.html
+format:mermaid-class ..lacks.. multiple-graphs-per-document
+format:mermaid-class ..supports.. nodes ,, Classes
+format:mermaid-class ..supports.. undirected-edges ,, Plain association (--)
+format:mermaid-class ..supports.. directed-edges ,, Inheritance/association arrows
+format:mermaid-class ..lacks.. mixed-directionality-edges
+format:mermaid-class ..lacks.. hyperedges
+format:mermaid-class ..supports.. parallel-edges ,, Multiple relationships between the same two classes
+format:mermaid-class ..supports.. self-loops ,, Self-association on a class
+format:mermaid-class ..lacks.. edges-on-edges
+format:mermaid-class ..lacks.. nested-graphs-in-nodes
+format:mermaid-class ..lacks.. nested-graphs-in-edges
+format:mermaid-class ..lacks.. nested-graphs-in-graphs
+format:mermaid-class ..supports.. node-labels
+format:mermaid-class ..status.. partial
+format:mermaid-class ..supports.. edge-labels ,, Relationship label after :
+format:mermaid-class ..supports.. attributes-on-nodes ,, Class members (fields and methods)
+format:mermaid-class ..lacks.. attributes-on-edges
+format:mermaid-class ..lacks.. attributes-on-graphs
+format:mermaid-class ..supports.. typed-edges ,, Inheritance, composition, aggregation, association, dependency
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-class.adoc ..links to.. mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. ../../../tools.adoc#_graphinout ,, GraphInOut
+format:mermaid ..has type.. format
+format:mermaid ..category.. text
+format:mermaid ..label.. Mermaid
+format:mermaid ..file extension.. .mmd
+format:mermaid ..file extension.. .mermaid
+format:mermaid ..wikipedia.. https://en.wikipedia.org/wiki/Mermaid_(software)
+format:mermaid ..wikidata.. Q110961986
+format:mermaid ..spec.. https://mermaid.js.org/
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. mermaid-flowchart.adoc ,, Mermaid Flowchart
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. mermaid-class.adoc ,, Mermaid Class Diagram
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. mermaid-state.adoc ,, Mermaid State Diagram
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. mermaid-er.adoc ,, Mermaid ER Diagram
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. mermaid-c4.adoc ,, Mermaid C4 Diagram
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. mermaid-mindmap.adoc ,, Mermaid Mindmap
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. mermaid-sankey.adoc ,, Mermaid Sankey
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid.adoc ..links to.. mermaid-architecture.adoc ,, Mermaid Architecture
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-c4.adoc ..links to.. mermaid.adoc ,, Mermaid
+`Rel( ...)` declares directed relationships; `Boundary(.. .)` blocks nest elements.
+format:mermaid-c4 ..has type.. format
+format:mermaid-c4 ..subformat of.. format:mermaid
+format:mermaid-c4 ..category.. text
+format:mermaid-c4 ..label.. Mermaid C4 Diagram
+format:mermaid-c4 ..spec.. https://mermaid.js.org/syntax/c4.html
+format:mermaid-c4 ..lacks.. multiple-graphs-per-document
+format:mermaid-c4 ..supports.. nodes ,, Person, System, Container, Component, …
+format:mermaid-c4 ..lacks.. undirected-edges
+format:mermaid-c4 ..supports.. directed-edges ,, Rel(from, to, …)
+format:mermaid-c4 ..lacks.. mixed-directionality-edges
+format:mermaid-c4 ..lacks.. hyperedges
+format:mermaid-c4 ..supports.. parallel-edges ,, Multiple Rel(...) between the same two elements
+format:mermaid-c4 ..supports.. self-loops ,, Rel(...) from an element to itself
+format:mermaid-c4 ..lacks.. edges-on-edges
+format:mermaid-c4 ..supports.. nested-graphs-in-nodes ,, Boundary / Enterprise_Boundary / System_Boundary
+format:mermaid-c4 ..lacks.. nested-graphs-in-edges
+format:mermaid-c4 ..lacks.. nested-graphs-in-graphs
+format:mermaid-c4 ..supports.. node-labels ,, Label argument
+format:mermaid-c4 ..supports.. edge-labels ,, Rel label argument
+format:mermaid-c4 ..supports.. attributes-on-nodes
+format:mermaid-c4 ..status.. partial
+format:mermaid-c4 ..lacks.. attributes-on-edges
+format:mermaid-c4 ..lacks.. attributes-on-graphs
+format:mermaid-c4 ..lacks.. typed-edges ,, Rel variants encode direction/layout, not edge type
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-c4.adoc ..links to.. mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-architecture.adoc ..links to.. mermaid.adoc ,, Mermaid
+format:mermaid-architecture ..has type.. format
+format:mermaid-architecture ..subformat of.. format:mermaid
+format:mermaid-architecture ..category.. text
+format:mermaid-architecture ..label.. Mermaid Architecture
+format:mermaid-architecture ..spec.. https://mermaid.js.org/syntax/architecture.html
+format:mermaid-architecture ..lacks.. multiple-graphs-per-document
+format:mermaid-architecture ..supports.. nodes ,, Services, groups, junctions
+format:mermaid-architecture ..supports.. undirected-edges ,, Plain connection (--)
+format:mermaid-architecture ..supports.. directed-edges ,, Arrow connection (-->)
+format:mermaid-architecture ..supports.. mixed-directionality-edges ,, Connections may be plain or arrowed
+format:mermaid-architecture ..lacks.. hyperedges
+format:mermaid-architecture ..supports.. parallel-edges ,, Multiple connections may join the same services
+format:mermaid-architecture ..supports.. self-loops ,, A service may connect to itself
+format:mermaid-architecture ..lacks.. edges-on-edges
+format:mermaid-architecture ..supports.. nested-graphs-in-nodes ,, A service or group may sit in a parent group
+format:mermaid-architecture ..lacks.. nested-graphs-in-edges
+format:mermaid-architecture ..lacks.. nested-graphs-in-graphs
+format:mermaid-architecture ..supports.. node-labels ,, Label in square brackets
+format:mermaid-architecture ..supports.. edge-labels
+format:mermaid-architecture ..status.. partial
+format:mermaid-architecture ..lacks.. attributes-on-nodes
+format:mermaid-architecture ..lacks.. attributes-on-edges
+format:mermaid-architecture ..lacks.. attributes-on-graphs
+format:mermaid-architecture ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-architecture.adoc ..links to.. mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-er.adoc ..links to.. mermaid.adoc ,, Mermaid
+format:mermaid-er ..has type.. format
+format:mermaid-er ..subformat of.. format:mermaid
+format:mermaid-er ..category.. text
+format:mermaid-er ..label.. Mermaid ER Diagram
+format:mermaid-er ..spec.. https://mermaid.js.org/syntax/entityRelationshipDiagram.html
+format:mermaid-er ..lacks.. multiple-graphs-per-document
+format:mermaid-er ..supports.. nodes ,, Entities
+format:mermaid-er ..supports.. undirected-edges ,, Relationships are non-directional with cardinality at each end
+format:mermaid-er ..lacks.. directed-edges
+format:mermaid-er ..lacks.. mixed-directionality-edges
+format:mermaid-er ..lacks.. hyperedges
+format:mermaid-er ..supports.. parallel-edges ,, Multiple relationships between the same two entities
+format:mermaid-er ..supports.. self-loops ,, Recursive relationship on one entity
+format:mermaid-er ..lacks.. edges-on-edges
+format:mermaid-er ..lacks.. nested-graphs-in-nodes
+format:mermaid-er ..lacks.. nested-graphs-in-edges
+format:mermaid-er ..lacks.. nested-graphs-in-graphs
+format:mermaid-er ..supports.. node-labels ,, Entity name
+format:mermaid-er ..supports.. edge-labels ,, Relationship verb phrase after :
+format:mermaid-er ..supports.. attributes-on-nodes
+format:mermaid-er ..status.. partial
+format:mermaid-er ..lacks.. attributes-on-edges
+format:mermaid-er ..lacks.. attributes-on-graphs
+format:mermaid-er ..supports.. typed-edges ,, Cardinality types (one / zero-or-one / one-or-many / zero-or-many)
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-er.adoc ..links to.. mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-mindmap.adoc ..links to.. mermaid.adoc ,, Mermaid
+format:mermaid-mindmap ..has type.. format
+format:mermaid-mindmap ..subformat of.. format:mermaid
+format:mermaid-mindmap ..category.. text
+format:mermaid-mindmap ..label.. Mermaid Mindmap
+format:mermaid-mindmap ..spec.. https://mermaid.js.org/syntax/mindmap.html
+format:mermaid-mindmap ..lacks.. multiple-graphs-per-document
+format:mermaid-mindmap ..supports.. nodes
+format:mermaid-mindmap ..lacks.. undirected-edges
+format:mermaid-mindmap ..supports.. directed-edges ,, Implicit parent-to-child edges from indentation
+format:mermaid-mindmap ..lacks.. mixed-directionality-edges
+format:mermaid-mindmap ..lacks.. hyperedges
+format:mermaid-mindmap ..lacks.. parallel-edges ,, Tree: one parent edge per node
+format:mermaid-mindmap ..lacks.. self-loops ,, Tree: no node attaches to itself
+format:mermaid-mindmap ..lacks.. edges-on-edges
+format:mermaid-mindmap ..supports.. nested-graphs-in-nodes ,, Indentation hierarchy (tree)
+format:mermaid-mindmap ..lacks.. nested-graphs-in-edges
+format:mermaid-mindmap ..lacks.. nested-graphs-in-graphs
+format:mermaid-mindmap ..supports.. node-labels ,, Label, shape brackets stripped
+format:mermaid-mindmap ..lacks.. edge-labels
+format:mermaid-mindmap ..lacks.. attributes-on-nodes
+format:mermaid-mindmap ..lacks.. attributes-on-edges
+format:mermaid-mindmap ..lacks.. attributes-on-graphs
+format:mermaid-mindmap ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-mindmap.adoc ..links to.. mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-state.adoc ..links to.. mermaid.adoc ,, Mermaid
+format:mermaid-state ..has type.. format
+format:mermaid-state ..subformat of.. format:mermaid
+format:mermaid-state ..category.. text
+format:mermaid-state ..label.. Mermaid State Diagram
+format:mermaid-state ..spec.. https://mermaid.js.org/syntax/stateDiagram.html
+format:mermaid-state ..lacks.. multiple-graphs-per-document
+format:mermaid-state ..supports.. nodes ,, States
+format:mermaid-state ..lacks.. undirected-edges
+format:mermaid-state ..supports.. directed-edges ,, Transitions (-->)
+format:mermaid-state ..lacks.. mixed-directionality-edges
+format:mermaid-state ..lacks.. hyperedges
+format:mermaid-state ..supports.. parallel-edges ,, Multiple transitions (different triggers) between two states
+format:mermaid-state ..supports.. self-loops ,, Self-transition (A --> A)
+format:mermaid-state ..lacks.. edges-on-edges
+format:mermaid-state ..supports.. nested-graphs-in-nodes ,, Composite states
+format:mermaid-state ..lacks.. nested-graphs-in-edges
+format:mermaid-state ..lacks.. nested-graphs-in-graphs
+format:mermaid-state ..supports.. node-labels ,, State long description via alias
+format:mermaid-state ..supports.. edge-labels ,, Transition label after :
+format:mermaid-state ..lacks.. attributes-on-nodes
+format:mermaid-state ..lacks.. attributes-on-edges
+format:mermaid-state ..lacks.. attributes-on-graphs
+format:mermaid-state ..lacks.. typed-edges
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/mermaid/mermaid-state.adoc ..links to.. mermaid.adoc ,, Mermaid
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/sln/sln.adoc ..links to.. ../../text/smiles/smiles.adoc ,, SMILES
+format:sln ..has type.. format
+format:sln ..category.. text
+format:sln ..label.. SYBYL Line Notation (SLN)
+format:sln ..alternative name.. SLN
+format:sln ..wikipedia.. https://en.wikipedia.org/wiki/SYBYL_line_notation
+format:sln ..wikidata.. Q7395247
+format:sln ..org.. Tripos
+format:sln ..spec.. https://doi.org/10.1021/ci960109j
+format:sln ..supports.. multiple-graphs-per-document ,, Multiple molecules per notation (separated by + ; also . for zero-order)
+format:sln ..supports.. nodes ,, Atoms as element symbols
+format:sln ..supports.. undirected-edges ,, Bonds are undirected
+format:sln ..lacks.. directed-edges
+format:sln ..lacks.. hyperedges
+format:sln ..lacks.. mixed-directionality-edges
+format:sln ..lacks.. parallel-edges ,, Bond order is an attribute, not distinct edges
+format:sln ..lacks.. self-loops ,, A bond connects two distinct atoms
+format:sln ..lacks.. edges-on-edges
+format:sln ..lacks.. nested-graphs-in-nodes
+format:sln ..lacks.. nested-graphs-in-edges
+format:sln ..lacks.. nested-graphs-in-graphs
+format:sln ..lacks.. node-labels
+format:sln ..lacks.. edge-labels
+format:sln ..supports.. attributes-on-nodes ,, Bracketed atom attribute lists (charge, isotope)
+format:sln ..supports.. attributes-on-edges ,, Bracketed bond attribute lists
+format:sln ..supports.. attributes-on-graphs ,, Global CT attributes such as NAME and REGID
+format:sln ..supports.. typed-edges ,, Bond order and aromaticity as bond attributes
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/sln/sln.adoc ..links to.. ../../text/smiles/smiles.adoc ,, SMILES
+format:dimacs ..has type.. format
+format:dimacs ..category.. text
+format:dimacs ..label.. DIMACS Graph Format
+format:dimacs ..alternative name.. DIMACS Challenge format
+format:dimacs ..file extension.. .col
+format:dimacs ..file extension.. .gr
+format:dimacs ..org.. DIMACS
+format:dimacs ..spec.. http://dimacs.rutgers.edu/archive/pub/challenge/graph/doc/ccformat.tex
+format:dimacs ..lacks.. multiple-graphs-per-document ,, One problem line per file
+format:dimacs ..supports.. nodes ,, Vertices numbered 1..N
+format:dimacs ..supports.. undirected-edges ,, Each edge listed once
+format:dimacs ..lacks.. directed-edges
+format:dimacs ..lacks.. hyperedges
+format:dimacs ..lacks.. mixed-directionality-edges
+format:dimacs ..lacks.. parallel-edges ,, Simple graph; one edge per vertex pair
+format:dimacs ..lacks.. self-loops ,, Simple graph; no loops
+format:dimacs ..lacks.. edges-on-edges
+format:dimacs ..lacks.. nested-graphs-in-nodes
+format:dimacs ..lacks.. nested-graphs-in-edges
+format:dimacs ..lacks.. nested-graphs-in-graphs
+format:dimacs ..lacks.. node-labels
+format:dimacs ..lacks.. edge-labels
+format:dimacs ..supports.. attributes-on-nodes
+format:dimacs ..status.. partial
+format:dimacs ..lacks.. attributes-on-edges
+format:dimacs ..lacks.. attributes-on-graphs
+format:dimacs ..lacks.. typed-edges
+format:psimi-tab ..has type.. format
+format:psimi-tab ..category.. text
+format:psimi-tab ..label.. PSI-MI Tab 2.5
+format:psimi-tab-2.5 ..version of.. format:psimi-tab
+format:psimi-tab-2.5 ..version.. 2.5
+format:psimi-tab-2.5 ..file extension.. .txt
+format:psimi-tab-2.5 ..spec.. https://bmcbiol.biomedcentral.com/articles/10.1186/1741-7007-5-44
+format:psimi-tab-2.5 ..supports.. nodes
+format:psimi-tab-2.5 ..supports.. undirected-edges ,, Interactions
+format:psimi-tab-2.5 ..supports.. parallel-edges ,, Multiple interaction records (distinct evidence) per pair
+format:psimi-tab-2.5 ..supports.. self-loops ,, Self-interaction (same molecule as both partners)
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/netdraw-vna/netdraw-vna.adoc ..links to.. ../../text/pajek/pajek.adoc ,, Pajek
+format:netdraw-vna ..has type.. format
+format:netdraw-vna ..category.. text
+format:netdraw-vna ..label.. Netdraw VNA
+format:netdraw-vna ..file extension.. .vna
+format:netdraw-vna ..spec.. https://faculty.ucr.edu/~hanneman/nettext/C4_netdraw.html
+format:netdraw-vna ..supports.. nodes
+format:netdraw-vna ..supports.. directed-edges
+format:netdraw-vna ..supports.. parallel-edges ,, Multiple relation types between two actors
+format:netdraw-vna ..supports.. self-loops ,, Self-ties representable
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/text/netdraw-vna/netdraw-vna.adoc ..links to.. ../../text/pajek/pajek.adoc ,, Pajek
+format:biogrid-tab ..has type.. format
+format:biogrid-tab ..category.. text
+format:biogrid-tab ..label.. BioGRID Tab 3.0
+format:biogrid-tab ..wikipedia.. https://en.wikipedia.org/wiki/BioGRID
+format:biogrid-tab ..wikidata.. Q4914619
+format:biogrid-tab-3.0 ..version of.. format:biogrid-tab
+format:biogrid-tab-3.0 ..version.. 3.0
+format:biogrid-tab-3.0 ..spec.. https://wiki.thebiogrid.org/doku.php/biogrid_tab_version_3.0
+format:biogrid-tab-3.0 ..supports.. nodes
+format:biogrid-tab-3.0 ..supports.. undirected-edges ,, Interactions
+format:biogrid-tab-3.0 ..supports.. parallel-edges ,, Multiple interaction records for the same pair (distinct evidence)
+format:biogrid-tab-3.0 ..supports.. self-loops ,, Self-interactions are representable
+format:helm ..has type.. format
+format:helm ..category.. text
+format:helm ..label.. HELM
+format:helm ..alternative name.. Hierarchical Editing Language for Macromolecules
+format:helm ..wikipedia.. https://en.wikipedia.org/wiki/Hierarchical_editing_language_for_macromolecules
+format:helm ..wikidata.. Q25303708
+format:helm ..org.. Pistoia Alliance
+format:helm ..spec.. https://pistoiaalliance.atlassian.net/wiki/spaces/PUB/pages/13795362/HELM+Notation
+format:helm ..supports.. multiple-graphs-per-document ,, Multiple simple polymers per notation
+format:helm ..supports.. nodes ,, Monomers as nodes
+format:helm ..supports.. undirected-edges ,, Backbone and explicit connections
+format:helm ..lacks.. directed-edges
+format:helm ..lacks.. hyperedges
+format:helm ..lacks.. mixed-directionality-edges
+format:helm ..lacks.. parallel-edges ,, Distinct R-group attachment points, not duplicate connections, join a monomer pair
+format:helm ..lacks.. self-loops ,, A monomer does not connect to itself
+format:helm ..lacks.. edges-on-edges
+format:helm ..supports.. nested-graphs-in-nodes ,, A monomer expands to an atom-level structure
+format:helm ..lacks.. nested-graphs-in-edges
+format:helm ..supports.. nested-graphs-in-graphs ,, Simple polymers nest within the complex polymer
+format:helm ..supports.. node-labels ,, Monomer symbols name each node
+format:helm ..lacks.. edge-labels
+format:helm ..supports.. attributes-on-nodes ,, Per-monomer annotations
+format:helm ..supports.. attributes-on-edges ,, Connections specify attachment points (R-groups)
+format:helm ..supports.. attributes-on-graphs ,, Extended annotation section
+format:helm ..lacks.. typed-edges ,, No bond-type taxonomy; bond determined implicitly by R-group attachment points (an edge attribute, not a type)
+format:smiles ..has type.. format
+format:smiles ..category.. text
+format:smiles ..label.. SMILES
+format:smiles ..alternative name.. Simplified Molecular Input Line Entry System
+format:smiles ..file extension.. .smi
+format:smiles ..wikipedia.. https://en.wikipedia.org/wiki/Simplified_Molecular_Input_Line_Entry_System
+format:smiles ..wikidata.. Q466769
+format:smiles ..spec.. http://opensmiles.org/opensmiles.html
+format:smiles ..supports.. multiple-graphs-per-document ,, Disconnected components joined with . ; .smi files hold one per line
+format:smiles ..supports.. nodes ,, Atoms as element symbols
+format:smiles ..supports.. undirected-edges ,, Bonds are undirected
+format:smiles ..lacks.. directed-edges ,, / and \ mark cis/trans geometry, not direction
+format:smiles ..lacks.. hyperedges
+format:smiles ..lacks.. mixed-directionality-edges
+format:smiles ..lacks.. parallel-edges ,, Bond order is an attribute, not distinct edges
+format:smiles ..lacks.. self-loops ,, A bond connects two distinct atoms
+format:smiles ..lacks.. edges-on-edges
+format:smiles ..lacks.. nested-graphs-in-nodes
+format:smiles ..lacks.. nested-graphs-in-edges
+format:smiles ..lacks.. nested-graphs-in-graphs
+format:smiles ..lacks.. node-labels
+format:smiles ..lacks.. edge-labels
+format:smiles ..supports.. attributes-on-nodes ,, Charge, isotope, chirality in bracket atoms
+format:smiles ..lacks.. attributes-on-edges
+format:smiles ..lacks.. attributes-on-graphs
+format:smiles ..supports.. typed-edges ,, Bond order via - = # : characters

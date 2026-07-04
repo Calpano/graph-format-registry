@@ -24,10 +24,7 @@ format:graphml ..wikidata.. Q1543325
 format:graphml ..spec.. http://graphml.graphdrawing.org/specification.html
 ----
 
-== References
-
-* Specification: http://graphml.graphdrawing.org/specification.html[graphml.graphdrawing.org specification]
-* Wikipedia: https://en.wikipedia.org/wiki/GraphML[GraphML]
-* Wikidata: https://www.wikidata.org/wiki/Q1543325[Q1543325]
+Compressed GraphML Format ‘.graphmlz’
+Same as the GraphML Format. The GraphML file is subsequently losslessly compressed to reduce file size. No information gets lost by this compression.
 
 See also: link:graphml-1.0.adoc[GraphML 1.0], link:graphml-1.1.adoc[GraphML 1.1]
