@@ -69,7 +69,9 @@ text <|-- xml
 | link:formats/xml/gexf/gexf-1.3.adoc[format:gexf-1.3]  | 1.3   |  | xml  | GEXF| Graph Exchange XML Format
 | link:formats/json/gjgf/gjgf-0.1.adoc[format:gjgf-0.1]  | 0.1   |  | json | gJGF| gravis JSON Graph Format
 | link:formats/text/gml/gml.adoc[format:gml]  |  |  | text | GML | Graph Modelling Language
-| link:formats/json/grale/grale-1.0.0.adoc[format:grale-1.0.0]  | 1.0.0 | 2026-06-16 | json | grale| Graph Layout Engine API
+| link:formats/json/grale/grale.adoc[format:grale]    2+| Family | json | grale | Graph Layout Engine API
+| link:formats/json/grale/grale-1.0.0.adoc[format:grale-1.0.0]  | 1.0.0 | 2026-06-16 | json | grale | Graph Layout Engine API
+| link:formats/json/grale/grale-2.0.0.adoc[format:grale-2.0.0]  | 2.0.0 | 2026-07-04 | json | grale | Graph Layout Engine API
 | link:formats/binary/graph6/graph6.adoc[format:graph6]    |  |  | binary | Graph6     |
 | link:formats/text/graphlet/graphlet.adoc[format:graphlet] |    || text | Graphlet file format   |
 | link:formats/xml/graphml/graphml.adoc[format:graphml]    2+| Family | xml  | GraphML     | Graph Markup Language

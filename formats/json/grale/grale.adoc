@@ -1,0 +1,36 @@
+= grale
+:toc:
+
+grale (**gra**ph **l**ayout **e**ngine) is a JSON graph-layout format: JSON in,
+JSON out. It is a strict superset of the dagre / graphlib serialised envelope
+(`{ options, value, nodes, edges }`) — any serialised dagre graph is a valid
+grale request unchanged — adding optional capabilities dagre lacks: pinned and
+focus nodes, layout stability across turns, per-edge preferred directions,
+per-side ports, reusable markers, n-ary hyperedges (the same `edge` vs
+`hyperedge` distinction link:../../xml/graphml/graphml.adoc[GraphML] draws), an
+edge-routing style hint (2.0.0), and honoured edge weight and lineWidth. A
+layout engine fills in `x`/`y` on nodes, `points` on edges, and
+`width`/`height` on the graph label.
+
+== Identity
+
+[source]
+----
+format:grale ..has type.. format
+format:grale ..category.. json
+format:grale ..label.. grale
+format:grale ..alternative name.. Graph Layout Engine API
+format:grale ..file extension.. .grale.json
+format:grale ..media type.. application/json
+format:grale ..license.. MIT
+format:grale ..author.. max-voelkel
+// max-voelkel is defined in tools.adoc
+----
+
+== References
+
+* Specification: https://github.com/Calpano/grale-api/blob/main/api/doc/graph-layout-api.adoc[grale API spec]
+* Repository: https://github.com/Calpano/grale-api[github.com/Calpano/grale-api]
+
+See also: link:grale-1.0.0.adoc[grale 1.0.0] · link:grale-2.0.0.adoc[grale 2.0.0] ·
+link:../../xml/graphml/graphml.adoc[GraphML]

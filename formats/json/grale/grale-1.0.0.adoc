@@ -1,34 +1,18 @@
 = grale 1.0.0
 :toc:
 
-grale (**gra**ph **l**ayout **e**ngine) is a JSON graph-layout format: JSON in,
-JSON out. It is a strict superset of the dagre / graphlib serialised envelope
-(`{ options, value, nodes, edges }`) — any serialised dagre graph is a valid
-grale request unchanged — adding optional capabilities dagre lacks: pinned and
-focus nodes, layout stability across turns, per-edge preferred directions,
-per-side ports, reusable markers, n-ary hyperedges (the same `edge` vs
-`hyperedge` distinction link:../../xml/graphml/graphml.adoc[GraphML] draws), and honoured
-edge weight and lineWidth. A layout engine fills in `x`/`y` on nodes, `points` on
-edges, and `width`/`height` on the graph label.
+See link:grale.adoc[grale] for the family-level identity. This entry covers the
+1.0.0 release, whose opaque passthrough label field was named `meta` (renamed
+to `data` in link:grale-2.0.0.adoc[2.0.0]).
 
 == Identity
 
 [source]
 ----
-format:grale ..has type.. format
-format:grale ..category.. json
-format:grale ..label.. grale
-format:grale ..alternative name.. Graph Layout Engine API
-format:grale ..file extension.. .grale.json
-format:grale ..media type.. application/json
-format:grale ..license.. MIT
-format:grale ..author.. max-voelkel
-// max-voelkel is defined in tools.adoc
-
 format:grale-1.0.0 ..version of.. format:grale
 format:grale-1.0.0 ..version.. 1.0.0
 format:grale-1.0.0 ..released.. 2026-06-16
-format:grale-1.0.0 ..spec.. https://github.com/xamde/graph-layout-api/blob/main/doc/graph-layout-api.adoc
+format:grale-1.0.0 ..spec.. https://github.com/Calpano/grale-api/blob/main/api/doc/graph-layout-api.adoc
 ----
 
 == Features
@@ -55,9 +39,4 @@ format:grale-1.0.0 ..supports.. attributes-on-graphs ,, Graph value label plus o
 format:grale-1.0.0 ..lacks.. typed-edges ,, Markers are visual, not a semantic edge type
 ----
 
-== References
-
-* Specification: https://github.com/xamde/graph-layout-api/blob/main/doc/graph-layout-api.adoc[grale API spec (v1.0.0)]
-* Repository: https://github.com/xamde/graph-layout-api[github.com/xamde/graph-layout-api]
-
-See also: link:../../xml/graphml/graphml.adoc[GraphML]
+See also: link:grale.adoc[grale] · link:grale-2.0.0.adoc[grale 2.0.0]

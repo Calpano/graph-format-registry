@@ -605,7 +605,7 @@ format:networkx-node-link ..supports.. attributes-on-nodes ,, Arbitrary per-node
 format:networkx-node-link ..supports.. attributes-on-edges ,, Arbitrary per-edge key/values
 format:networkx-node-link ..supports.. attributes-on-graphs ,, Top-level graph dict
 format:networkx-node-link ..lacks.. typed-edges
-file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/grale/grale-1.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/grale/grale.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
 format:grale ..has type.. format
 format:grale ..category.. json
 format:grale ..label.. grale
@@ -617,7 +617,7 @@ format:grale ..author.. max-voelkel
 format:grale-1.0.0 ..version of.. format:grale
 format:grale-1.0.0 ..version.. 1.0.0
 format:grale-1.0.0 ..released.. 2026-06-16
-format:grale-1.0.0 ..spec.. https://github.com/xamde/graph-layout-api/blob/main/doc/graph-layout-api.adoc
+format:grale-1.0.0 ..spec.. https://github.com/Calpano/grale-api/blob/main/api/doc/graph-layout-api.adoc
 format:grale-1.0.0 ..lacks.. multiple-graphs-per-document ,, One graph per document
 format:grale-1.0.0 ..supports.. nodes
 format:grale-1.0.0 ..supports.. undirected-edges ,, options.directed false
@@ -636,7 +636,28 @@ format:grale-1.0.0 ..supports.. attributes-on-nodes ,, Node value plus opaque me
 format:grale-1.0.0 ..supports.. attributes-on-edges ,, Edge value (weight, lineWidth, minlen) plus opaque meta
 format:grale-1.0.0 ..supports.. attributes-on-graphs ,, Graph value label plus opaque meta
 format:grale-1.0.0 ..lacks.. typed-edges ,, Markers are visual, not a semantic edge type
-file:/Users/maxvolkel/_data_/_git/GitHub/graph-format-registry/formats/json/grale/grale-1.0.0.adoc ..links to.. ../../xml/graphml/graphml.adoc ,, GraphML
+format:grale-2.0.0 ..version of.. format:grale
+format:grale-2.0.0 ..version.. 2.0.0
+format:grale-2.0.0 ..released.. 2026-07-04
+format:grale-2.0.0 ..spec.. https://github.com/Calpano/grale-api/blob/main/api/doc/graph-layout-api.adoc
+format:grale-2.0.0 ..lacks.. multiple-graphs-per-document ,, One graph per document
+format:grale-2.0.0 ..supports.. nodes
+format:grale-2.0.0 ..supports.. undirected-edges ,, options.directed false
+format:grale-2.0.0 ..supports.. directed-edges ,, options.directed true
+format:grale-2.0.0 ..lacks.. mixed-directionality-edges ,, Directedness is graph-level via options.directed
+format:grale-2.0.0 ..supports.. hyperedges ,, n-ary hyperedges[] array, GraphML-style
+format:grale-2.0.0 ..supports.. parallel-edges ,, graphlib/dagre multigraph allows multiple edges per pair
+format:grale-2.0.0 ..supports.. self-loops ,, Edge source and target may be the same node
+format:grale-2.0.0 ..lacks.. edges-on-edges
+format:grale-2.0.0 ..supports.. nested-graphs-in-nodes ,, Compound graphs via node parent (options.compound)
+format:grale-2.0.0 ..lacks.. nested-graphs-in-edges
+format:grale-2.0.0 ..lacks.. nested-graphs-in-graphs
+format:grale-2.0.0 ..supports.. node-labels ,, Node value/data label
+format:grale-2.0.0 ..supports.. edge-labels ,, Edge value/data label
+format:grale-2.0.0 ..supports.. attributes-on-nodes ,, Node value plus opaque data
+format:grale-2.0.0 ..supports.. attributes-on-edges ,, Edge value (weight, lineWidth, minlen) plus opaque data
+format:grale-2.0.0 ..supports.. attributes-on-graphs ,, Graph value label plus opaque data
+format:grale-2.0.0 ..lacks.. typed-edges ,, Markers are visual, not a semantic edge type
 format:ocif ..has type.. format
 format:ocif ..category.. json
 format:ocif ..label.. OCIF
