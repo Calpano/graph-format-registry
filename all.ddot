@@ -65,7 +65,7 @@ format:gxl-1.0 ..supports.. hyperedges
 format:sbgn-ml-0.3 ..supports.. directed-edges ,, arc elements with source and target
 format:sbol ..has type.. format
 format:xtg ..has type.. format
-format:gxl-1.0 ..lacks.. mixed-directionality-edges
+format:gxl-1.0 ..supports.. mixed-directionality-edges ,, edgemode="defaultdirected"/"defaultundirected" with per-edge isdirected
 format:rdf-xml ..lacks.. undirected-edges
 format:biopax-l3 ..supports.. directed-edges ,, Conversion (left/right, conversionDirection) and Control (controlType)
 format:cml ..supports.. nodes ,, <atom> elements
@@ -94,21 +94,21 @@ format:sbol ..wikipedia.. https://en.wikipedia.org/wiki/Synthetic_Biology_Open_L
 format:cml ..lacks.. hyperedges
 format:rdf-xml ..supports.. parallel-edges ,, Distinct predicates between two resources are distinct edges (RDF/OWL based)
 format:biopax-l3 ..supports.. edge-labels ,, Interactions are Entities with displayName / standardName
-format:gxl-1.0 ..lacks.. nested-graphs-in-edges
+format:gxl-1.0 ..supports.. nested-graphs-in-edges ,, <edge> and <rel> may contain <graph> (gxl.dtd)
 format:sbol ..wikidata.. Q25304751
 format:sbgn-ml-0.3 ..supports.. attributes-on-graphs ,, 0.3 adds map metadata, notes and extension
 format:rdf-xml ..supports.. self-loops ,, A triple may have the same subject and object (RDF/OWL based)
 format:cml ..lacks.. mixed-directionality-edges
-format:gxl-1.0 ..supports.. nested-graphs-in-graphs ,, Hierarchical graphs
+format:gxl-1.0 ..lacks.. nested-graphs-in-graphs ,, A <graph> holds only <node>, <edge> and <rel>; graphs nest in those (gxl.dtd)
 format:biopax-l3 ..supports.. attributes-on-nodes ,, OWL datatype and object properties
 format:sbol-3.1 ..version of.. format:sbol
 format:rdf-xml ..supports.. edges-on-edges
 format:sbgn-ml-0.3 ..supports.. typed-edges ,, arc class (production, consumption, catalysis, etc.)
-format:gxl-1.0 ..supports.. node-labels
+format:gxl-1.0 ..supports.. node-labels ,, No label element; by convention an <attr name="label">
 format:cml ..lacks.. parallel-edges ,, One <bond> per atom pair; bond order is an attribute, not a second edge
 format:biopax-l3 ..supports.. attributes-on-edges ,, Interaction properties (controlType, evidence, comment)
 format:sbol-3.1 ..version.. 3.1
-format:gxl-1.0 ..supports.. edge-labels
+format:gxl-1.0 ..supports.. edge-labels ,, No label element; by convention an <attr name="label">
 format:rdf-xml ..status.. partial
 format:sbgn-ml-0.3 ..lacks.. undirected-edges
 format:cml ..lacks.. self-loops ,, A <bond> connects two distinct atoms

@@ -29,15 +29,15 @@ format:gxl-1.0 ..supports.. nodes
 format:gxl-1.0 ..supports.. undirected-edges
 format:gxl-1.0 ..supports.. directed-edges
 format:gxl-1.0 ..supports.. hyperedges
-format:gxl-1.0 ..lacks.. mixed-directionality-edges
+format:gxl-1.0 ..supports.. mixed-directionality-edges ,, edgemode="defaultdirected"/"defaultundirected" with per-edge isdirected
 format:gxl-1.0 ..supports.. parallel-edges ,, Each edge has its own id; multiple typed edges may connect a pair
 format:gxl-1.0 ..supports.. self-loops ,, An edge may connect a node to itself
 format:gxl-1.0 ..lacks.. edges-on-edges
 format:gxl-1.0 ..supports.. nested-graphs-in-nodes ,, Hierarchical graphs
-format:gxl-1.0 ..lacks.. nested-graphs-in-edges
-format:gxl-1.0 ..supports.. nested-graphs-in-graphs ,, Hierarchical graphs
-format:gxl-1.0 ..supports.. node-labels
-format:gxl-1.0 ..supports.. edge-labels
+format:gxl-1.0 ..supports.. nested-graphs-in-edges ,, <edge> and <rel> may contain <graph> (gxl.dtd)
+format:gxl-1.0 ..lacks.. nested-graphs-in-graphs ,, A <graph> holds only <node>, <edge> and <rel>; graphs nest in those (gxl.dtd)
+format:gxl-1.0 ..supports.. node-labels ,, No label element; by convention an <attr name="label">
+format:gxl-1.0 ..supports.. edge-labels ,, No label element; by convention an <attr name="label">
 format:gxl-1.0 ..supports.. attributes-on-nodes
 format:gxl-1.0 ..supports.. attributes-on-edges
 format:gxl-1.0 ..supports.. attributes-on-graphs
