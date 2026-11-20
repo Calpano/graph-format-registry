@@ -30,7 +30,7 @@ format:neo4j-json ..supports.. typed-edges ,, Relationship type
 format:neo4j-json ..supports.. node-labels ,, Node labels array
 format:neo4j-json ..supports.. attributes-on-nodes ,, Node properties
 format:neo4j-json ..supports.. attributes-on-edges ,, Relationship properties
-format:neo4j-json ..supports.. parallel-edges ,, Multiple relationships may connect the same node pair
+format:neo4j-json ..supports.. parallel-edges ,, Multiple relationships, also of the same type, may connect the same node pair
 format:neo4j-json ..supports.. self-loops ,, A relationship may have the same start and end node
 format:neo4j-json ..lacks.. hyperedges
 format:neo4j-json ..lacks.. edges-on-edges
@@ -39,6 +39,21 @@ format:neo4j-json ..lacks.. nested-graphs-in-edges
 format:neo4j-json ..lacks.. nested-graphs-in-graphs
 format:neo4j-json ..lacks.. attributes-on-graphs
 ----
+
+== Sources for the feature claims
+
+Checked 2026-11-20 against neo4j.com:
+
+* parallel-edges: Cypher Manual, MERGE, "Concurrent relationship merges": "Cypher has no constraint that limits
+  the number of relationships of a given type between two nodes"
+  (https://neo4j.com/docs/cypher-manual/current/clauses/merge/); CREATE, "Comparing CREATE and MERGE": running
+  the same CREATE statement multiple times "will therefore produce duplicate entries"
+  (https://neo4j.com/docs/cypher-manual/current/clauses/create/).
+* self-loops: Graph database concepts, "Relationship": "It is possible for a node to have a relationship to
+  itself." (https://neo4j.com/docs/getting-started/appendix/graphdb-concepts/)
+* directed-edges, lacks undirected-edges: same page, "Relationships always have a direction."
+* typed-edges: What is a graph database, relationships "Must always have a start node, an end node, and exactly
+  one type." (https://neo4j.com/docs/getting-started/graph-database/)
 
 == References
 
